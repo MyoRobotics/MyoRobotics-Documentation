@@ -25,19 +25,14 @@ The CAD designs are owned by Fraunhofer IPA.
 .. _Fraunhofer IPA: http://www.ipa.fraunhofer.de/baukasten_fuer_softrobotik.html
 
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
 
 
+The main documentation for the site is organized into a couple sections:
 
-Indices and tables
-==================
+* :ref:`getting-started`
+* :ref:`make-your-own`
+* :ref:`suppliers_partners`
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 .. _getting-started:
 
