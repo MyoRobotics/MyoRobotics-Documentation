@@ -9,7 +9,7 @@ This document describes the use of the MyoRobotics toolkit,
 including assembly of muscle units, joints and bones, as well as
 configuration and control of through the Flexray interface.
 
-This documentation is compiled from documentation produced by the concluded `FP7 ICT MyoRobotics Project`_, the ongoing `Roboy Project at TU Munich`_ , `Embedded Robotics Systems`_ and the `Fraunhofer IPA`_.
+This documentation is compiled from documentation produced by the concluded `FP7 ICT MyoRobotics Project`_, the ongoing `Roboy Project at TU Munich`_ , `Embedded Robotic Systems`_ and the `Fraunhofer IPA`_.
 
 License
 -------
@@ -41,14 +41,15 @@ Indices and tables
 * :ref:`search`
 
 .. _getting-started:
+
 .. toctree::
    :maxdepth: 2
    :caption: Using MyoRobotics
 
    getting-started/*
 
-
 .. _make-your-own:
+
 .. toctree::
    :maxdepth: 2
    :caption: Make your own.
@@ -56,6 +57,7 @@ Indices and tables
    assembly/*
 
 .. _suppliers_partners:
+
 .. toctree::
    :maxdepth: 2
    :caption: Suppliers and Partners
