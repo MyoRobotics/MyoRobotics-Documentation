@@ -15,9 +15,9 @@ License
 -------
 Unless specified otherwise all
 
-software and this documentation is released under the `BSD license`_, and
+this documentation and the hardware is released under the `CC by 4.0 license`_,
+the software under the `BSD license`_.
 
-hardware under the `CC by 4.0 license`_.
 
 .. _FP7 ICT MyoRobotics Project: http://myorobotics.eu/the-myo-project/
 .. _Roboy Project at TU Munich: http://roboy.org
