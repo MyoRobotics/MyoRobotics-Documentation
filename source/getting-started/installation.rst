@@ -16,7 +16,8 @@ Create a new workspace
 ************************
 Create a new folder that will contain your ROS / catkin workspace and all code.
 
-.. code-block:: bash
+.. code-block:: console
+
    source /opt/ros/kinetic/setup.bash
    mkdir -p ~/MyoArm_ws/src && cd MyoArm_ws/src && catkin_init_workspace
    cd ..
@@ -25,12 +26,14 @@ Create a new folder that will contain your ROS / catkin workspace and all code.
 Now add the workspace to your ~/.bashrc so that it gets automatically sourced upon opening a shell:
 
 .. code-block:: bash
+
    echo 'source ~/MyoArm_ws/devel/setup.bash' >> ~/.bashrc
 
 Install flexrayusbinterface
 ****************************
 
-.. code-block:: bash
+.. code-block:: console
+
    roscd && cd ../src
    git clone https://github.com/Victor-Savu/flexrayusbinterface.git -b reflex
    cd flexrayusbinterface && ./install_deps.sh
@@ -38,21 +41,24 @@ Install flexrayusbinterface
 Install myo_blink
 *****************
 
-.. code-block:: bash
+.. code-block:: console
+
    roscd && cd ../src
    git clone https://github.com/Victor-Savu/myo_blink.git -b reflex
 
 Install ros_control_boilerplate fork
 ************************************
 
-.. code-block:: bash
+.. code-block:: console
+
    roscd && cd ../src
    git clone https://github.com/compiaffe/ros_control_boilerplate.git -b MyoArm
 
 Build it
 ***************
 
-.. code-block:: bash
+.. code-block:: console
+
    roscd && cd ..
    catkin_make
 

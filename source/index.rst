@@ -44,6 +44,7 @@ Indices and tables
 
 .. toctree::
    :maxdepth: 2
+   :glob:
    :caption: Using MyoRobotics
 
    getting-started/*
@@ -52,6 +53,7 @@ Indices and tables
 
 .. toctree::
    :maxdepth: 2
+   :glob:
    :caption: Make your own.
 
    assembly/*
@@ -60,6 +62,7 @@ Indices and tables
 
 .. toctree::
    :maxdepth: 2
+   :glob:
    :caption: Suppliers and Partners
 
    partners/*
