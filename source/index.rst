@@ -26,19 +26,14 @@ hardware under the `CC by 4.0 license`_.
 .. _BSD License: https://opensource.org/licenses/BSD-3-Clause
 .. _CC by 4.0 license: https://creativecommons.org/licenses/by/4.0/
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
 
 
+The main documentation for the site is organized into a couple sections:
 
-Indices and tables
-==================
+* :ref:`getting-started`
+* :ref:`make-your-own`
+* :ref:`suppliers_partners`
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 .. _getting-started:
 
