@@ -52,6 +52,15 @@ The main documentation for the site is organized into a couple sections:
 
    assembly/*
 
+.. _Electronics:
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :caption: Electronics
+
+    Electronics/*
+
 .. _suppliers_partners:
 
 .. toctree::
