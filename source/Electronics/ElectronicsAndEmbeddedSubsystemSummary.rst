@@ -1,37 +1,26 @@
-.. role:: math(raw)
-   :format: html latex
-..
-
-.. contents::
-   :depth: 3
-..
-
-|
-| **Myorobotics
-  Electronics and Embedded System
-  **
 
 Introduction
 ============
 
-| The control of highly coupled and compliant musculoskeletal systems is
-  a complex task. In contrast to the well established control concepts
-  of stiff robots widely used in industry, control strategies and
-  algorithms for musculoskeletal systems are still areas of active
-  research. In order to experiment with advanced control algorithms, it
-  is desirable to have a set of simple linear controllers to control the
-  muscle state. This baseline system fulfils two purposes; it provides a
-  benchmark against which more advance control schemes can be tested
-  and, perhaps more importantly, it provides a control interface that
-  can be utilised by advanced and higher level control algorithms.
-| In order to run a range of linear (feedback) controllers on the
-  MYO-Muscles, a control environment for sensing, processing and
-  actuation is required. Due to the modular nature of the Myorobotic
-  system, a heterogeneous and distributed control infrastructure has
-  been devised. It allows the Myorobotics developers and users to test
-  and control their Myorobot through the MYO-Muscles. In the following
-  document, the main components of the control system are described from
-  both a hardware and software perspective.
+The control of highly coupled and compliant musculoskeletal systems is
+a complex task. In contrast to the well established control concepts
+of stiff robots widely used in industry, control strategies and
+algorithms for musculoskeletal systems are still areas of active
+research. In order to experiment with advanced control algorithms, it
+is desirable to have a set of simple linear controllers to control the
+muscle state. This baseline system fulfils two purposes; it provides a
+benchmark against which more advance control schemes can be tested
+and, perhaps more importantly, it provides a control interface that
+can be utilised by advanced and higher level control algorithms.
+
+In order to run a range of linear (feedback) controllers on the
+MYO-Muscles, a control environment for sensing, processing and
+actuation is required. Due to the modular nature of the Myorobotic
+system, a heterogeneous and distributed control infrastructure has
+been devised. It allows the Myorobotics developers and users to test
+and control their Myorobot through the MYO-Muscles. In the following
+document, the main components of the control system are described from
+both a hardware and software perspective.
 
 Overview
 ========
@@ -41,9 +30,14 @@ An overview of the distributed control system is presented in Figure
 consists of the PC (UBUNTU 12.04 LTS) application ‘Caliper’ including
 the ‘MYODE’ plug-in that communicates with the Myorobot via a USB 2.0
 interface. The USBFlexRay board establishes the link between the FlexRay
-bus (the main Myorobotics communiation system) and the PC.
+bus (the main Myorobotics communication system) and the PC.
 
-|
+.. _my-figure:
+.. figure:: img\systemOverviewECUAndCommsIntegrationSeptember2014WideVersionUSBFlexRay.png
+   :alt: Overview of the Myorobotics distributed control infrastructure.
+   :align: center
+
+   This is the caption of the figure (a simple paragraph).
 
 A Myrobotics system consists of up to 6 MYO-Ganglions, which are local
 32-bit floating point electronic control units (ECU) that communicate
@@ -57,6 +51,9 @@ CAN bus is also utilised to read the state of up to 12 MYO-Perceptors,
 scalar sensors that can be used for various purpuses like tactile or
 temperature sensing. These sensors broadcast their sensory state at a
 rate of 100Hz.
+:numref:`my-figure`
+
+:numref:`Image of Sphinx (Fig. %s) <my-figure>`
 
 MYO-Ganglion
 ============
@@ -74,7 +71,7 @@ and distribution boards, respectively.
 
 Addressing
 ----------
-
+:numref:`mytable`
 A Myorobot can have up to six MYO-Ganglions sharing the FlexRay bus.
 Each Ganglion has a unique address which is configured using the
 DIP-switches 1 to 6. In order to enable the Ganglion, one (and only one)
@@ -86,25 +83,32 @@ will not participate in the FlexRay communication. This provides a
 convenient way to temporarily disable a Ganglion that is not required
 (see also Table [tab:MyoGanglionAddresses]).
 
-+-------+---------------------------+-------+-------+-------+-------+-----------------------+
-| SW1   | SW2                       | SW3   | SW4   | SW5   | SW6   | Address / C++ index   |
-+=======+===========================+=======+=======+=======+=======+=======================+
-| 1     | 0                         | 0     | 0     | 0     | 0     | [0]                   |
-+-------+---------------------------+-------+-------+-------+-------+-----------------------+
-| 0     | 1                         | 0     | 0     | 0     | 0     | [1]                   |
-+-------+---------------------------+-------+-------+-------+-------+-----------------------+
-| 0     | 0                         | 1     | 0     | 0     | 0     | [2]                   |
-+-------+---------------------------+-------+-------+-------+-------+-----------------------+
-| 0     | 0                         | 0     | 1     | 0     | 0     | [3]                   |
-+-------+---------------------------+-------+-------+-------+-------+-----------------------+
-| 0     | 0                         | 0     | 0     | 1     | 0     | [4]                   |
-+-------+---------------------------+-------+-------+-------+-------+-----------------------+
-| 0     | 0                         | 0     | 0     | 0     | 1     | [5]                   |
-+-------+---------------------------+-------+-------+-------+-------+-----------------------+
-|       | invalid / not connected   |       |       |       |       |                       |
-+-------+---------------------------+-------+-------+-------+-------+-----------------------+
 
-Table: MYO-Ganglion addressing scheme
+
+
+.. _mytable:
+
+.. table:: MYO-Ganglion addressing scheme
+
+    +-------+-------+-------+-------+-------+-------+-----------------------+
+    | SW1   | SW2   | SW3   | SW4   | SW5   | SW6   | Address / C++ index   |
+    +=======+=======+=======+=======+=======+=======+=======================+
+    | 1     | 0     | 0     | 0     | 0     | 0     | [0]                   |
+    +-------+-------+-------+-------+-------+-------+-----------------------+
+    | 0     | 1     | 0     | 0     | 0     | 0     | [1]                   |
+    +-------+-------+-------+-------+-------+-------+-----------------------+
+    | 0     | 0     | 1     | 0     | 0     | 0     | [2]                   |
+    +-------+-------+-------+-------+-------+-------+-----------------------+
+    | 0     | 0     | 0     | 1     | 0     | 0     | [3]                   |
+    +-------+-------+-------+-------+-------+-------+-----------------------+
+    | 0     | 0     | 0     | 0     | 1     | 0     | [4]                   |
+    +-------+-------+-------+-------+-------+-------+-----------------------+
+    | 0     | 0     | 0     | 0     | 0     | 1     | [5]                   |
+    +-------+-------+-------+-------+-------+-------+-----------------------+
+    |             any other combination             |invalid / not connected|
+    +-------+-------+-------+-------+-------+-------+-----------------------+
+
+
 
 USB-FlexRay Bridge
 ==================
@@ -155,7 +159,7 @@ JST connector [1]_ as depicted in Figure [fig:springDisplacementSensor].
 
 |
 
-Wiring Scheme: Spring Displacement Sensor :math:`\LONG LEFT RIGHT ARROW` Motor Driver Board 
+Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------+-------+--------+--------+-----+-------+-------+
@@ -212,7 +216,7 @@ dependent upon the SPI connector it is connected to (see Table
 
 Table: Motor driver addressing scheme:
 
-Wiring Scheme SPI Connector: Ganglion Distribution Board :math:`\LONG LEFT RIGHT ARROW` Motor Driver Board 
+Wiring Scheme SPI Connector: Ganglion Distribution Board - Motor Driver Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +-----------------------------------------+--------+--------+-------+------+-------+
@@ -314,7 +318,7 @@ manner that never more than one joints sends a given CAN message ID.
 Refer to table [tab:canMessageIDSensorBoard] for details on CAN
 addresses.
 
-Wiring Scheme: Joint Angle Sensor Board :math:`\LONG LEFT RIGHT ARROW` Ganglion Distribution Board
+Wiring Scheme: Joint Angle Sensor Board - Ganglion Distribution Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +------------------------------------------+---------+---------+-------+-------+
@@ -335,7 +339,7 @@ Wiring Scheme: Joint Angle Sensor Board :math:`\LONG LEFT RIGHT ARROW` Ganglion 
    ganglion distribution board; red circles mark the applicable
    connectors on the printed circuit boards.
 
-Wiring Scheme: Analogue joint sensor :math:`\LONG LEFT RIGHT ARROW` Joint Angle Sensor Board
+Wiring Scheme: Analogue joint sensor - Joint Angle Sensor Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The analogue joint sensor are soldered straight into the soldering pad
@@ -452,53 +456,54 @@ be re-configured.
 Configuring a Controller
 ------------------------
 
-| The MYODE interface to a muscle provides a controller configuration
-  method, namely
-| ``void setControllerParams(const comsControllerMode controlMode, control_Parameters_t controlParameters)``.
-| The control mode is implemented as an enumeration the valid modes of
-  which are:
-| ``Raw, Torque, Velocity, Position, Force``.
-| To set the control parameters an instance of structure
-  ``control_Parameters_t`` needs to be created, filled and then passed
-  to the ``setControllerParams(.)`` method. The structures required are
-  shown (including comments) in Figure
-  [fig:controllerParametersStructure]. In addition to the values found
-  in the controller diagram in Figure [fig:LFCUpdated], the structure
-  also provide entries for the controller update frequency
-  (``float32 timePeriod``) in :math:`\mu s`, and values to map the
-  physical system parameters into appropriate units (e.g.
-  ``float32 radPerEncoderCount, float32 torqueConstant``).
+The MYODE interface to a muscle provides a controller configuration
+method, namely ``void setControllerParams(const comsControllerMode controlMode, control_Parameters_t controlParameters)``.
+The control mode is implemented as an enumeration the valid modes of
+which are:
+``Raw, Torque, Velocity, Position, Force``.
+To set the control parameters an instance of structure
+``control_Parameters_t`` needs to be created, filled and then passed
+to the ``setControllerParams(.)`` method. The structures required are
+shown (including comments) in Figure
+[fig:controllerParametersStructure]. In addition to the values found
+in the controller diagram in Figure [fig:LFCUpdated], the structure
+also provide entries for the controller update frequency
+(``float32 timePeriod``) in :math:`\mu s`, and values to map the
+physical system parameters into appropriate units (e.g.
+``float32 radPerEncoderCount, float32 torqueConstant``).
 
-| The four parameter array ``float32 polyPar[4]`` describes the
-  non-linear mapping of the spring displacement measurement to a force.
+The four parameter array ``float32 polyPar[4]`` describes the
+non-linear mapping of the spring displacement measurement to a force.
 
 Communication Timing
 --------------------
 
-| Before a snippet of example code is presented, let us briefly consider
-  the timing behaviour of this (partly) asynchronous communication
-  system. In principle, four different timing cycles can be
-  distinguished and they are illustrated in Figure
-  [fig:CommunicationCycleTimes]. At the highest level is the **user
-  application (UA)** running as part of MYODE. Typically, the cycle time
-  of this control loop is in the tens of milliseconds range (e.g.
-  :math:`20ms`) and is set by the user. Since a standard Ubuntu
-  installation is used, it is important to note that the cycle time of
-  the UA is not ‘hard real-time’ and some variance on the timing is to
-  be expected. In the UA, data from the Myorobot is read, such as motor
-  velocity or joint angles, or set in the case of tendon force and motor
-  position. All those operations are thread-safe.
-| Data is exchanged with the Myorobot via a thread that is hidden from
-  the user and referred to as the **USB interface (USBI)**. The USBI
-  also runs as a ‘soft real-time’ system with a nominal update rate of
-  500Hz. In other words, data exchange between the UA (via the USBI) and
-  the Myorobot is also limited to a minimum update rate of 2ms.
-| The next level of communication is realised with the **USB-FlexRay
-  bridge (UFR)** (see section [sec:USB-FlexRay]). Here, the USB data is
-  exchanged with the ‘hard real-time’ FlexRay bus that forms the
-  communication backbone of the Myorobot, allowing the exchange of data
-  between the UFR and the MYO-Ganglions in a fully synchronous and
-  time-trigger fashion at a rate of 1kHz.
+Before a snippet of example code is presented, let us briefly consider
+the timing behaviour of this (partly) asynchronous communication
+system. In principle, four different timing cycles can be
+distinguished and they are illustrated in Figure
+[fig:CommunicationCycleTimes]. At the highest level is the **user
+application (UA)** running as part of MYODE. Typically, the cycle time
+of this control loop is in the tens of milliseconds range (e.g.
+:math:`20ms`) and is set by the user. Since a standard Ubuntu
+installation is used, it is important to note that the cycle time of
+the UA is not ‘hard real-time’ and some variance on the timing is to
+be expected. In the UA, data from the Myorobot is read, such as motor
+velocity or joint angles, or set in the case of tendon force and motor
+position. All those operations are thread-safe.
+
+Data is exchanged with the Myorobot via a thread that is hidden from
+the user and referred to as the **USB interface (USBI)**. The USBI
+also runs as a ‘soft real-time’ system with a nominal update rate of
+500Hz. In other words, data exchange between the UA (via the USBI) and
+the Myorobot is also limited to a minimum update rate of 2ms.
+
+The next level of communication is realised with the **USB-FlexRay
+bridge (UFR)** (see section [sec:USB-FlexRay]). Here, the USB data is
+exchanged with the ‘hard real-time’ FlexRay bus that forms the
+communication backbone of the Myorobot, allowing the exchange of data
+between the UFR and the MYO-Ganglions in a fully synchronous and
+time-trigger fashion at a rate of 1kHz.
 
 The lowest level in this communication chain is formed by the
 **linear-feedback controllers (LFC)**\ (see Figure [fig:LFCUpdated])
