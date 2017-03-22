@@ -25,19 +25,17 @@ both a hardware and software perspective.
 Overview
 ========
 
-An overview of the distributed control system is presented in Figure
-[fig:systemOverviewECUAndCommsIntegration]. The Myorobotics system
-consists of the PC (UBUNTU 12.04 LTS) application ‘Caliper’ including
-the ‘MYODE’ plug-in that communicates with the Myorobot via a USB 2.0
+An overview of the distributed control system is presented in :numref:`my-figure`.
+The Myorobotics system consists of the PC (UBUNTU 12.04 LTS) application ‘Caliper’
+including the ‘MYODE’ plug-in that communicates with the Myorobot via a USB 2.0
 interface. The USBFlexRay board establishes the link between the FlexRay
 bus (the main Myorobotics communication system) and the PC.
 
 .. _my-figure:
 .. figure:: img\systemOverviewECUAndCommsIntegrationSeptember2014WideVersionUSBFlexRay.png
-   :alt: Overview of the Myorobotics distributed control infrastructure.
    :align: center
 
-   This is the caption of the figure (a simple paragraph).
+   Overview of the Myorobotics distributed control infrastructure.
 
 A Myrobotics system consists of up to 6 MYO-Ganglions, which are local
 32-bit floating point electronic control units (ECU) that communicate
@@ -51,7 +49,6 @@ CAN bus is also utilised to read the state of up to 12 MYO-Perceptors,
 scalar sensors that can be used for various purpuses like tactile or
 temperature sensing. These sensors broadcast their sensory state at a
 rate of 100Hz.
-:numref:`my-figure`
 
 :numref:`Image of Sphinx (Fig. %s) <my-figure>`
 
@@ -60,18 +57,29 @@ MYO-Ganglion
 
 The MYO-Ganglion comprises three printed circuit boards (PCB) that are
 mounted on a carrier that can be clipped onto a medium-size MYO-Bone
-(Figure [fig:GanglionOnBone]). The centre board features the main
+(:numref:`her-figure`). The centre board features the main
 floating-point processor, the TMS570LS20216 from Texas Instruments
 running at 140MHz. Adjacent to the processor board are the power supply
 and distribution boards, respectively.
 
-|
+.. _your-figure:
+.. figure:: img\MyoGanglionConnectivity_withlabels.png
+   :align: center
 
-|
+   The MYO-Ganglion PCB assembly: distribution board with CAN and SPI
+   connections is shown on the left, the centre board is equipped with the main DSP
+   (TMS570LS20216 on bottom side , not visible), the power supply board (24V) is mounted
+   on the right side of the carrier.
+
+.. _her-figure:
+.. figure:: img\GanglionOnBone.jpg
+   :align: center
+
+   The MYO-Ganglion mounted on bone before cables are attached.
 
 Addressing
 ----------
-:numref:`mytable`
+
 A Myorobot can have up to six MYO-Ganglions sharing the FlexRay bus.
 Each Ganglion has a unique address which is configured using the
 DIP-switches 1 to 6. In order to enable the Ganglion, one (and only one)
@@ -81,10 +89,7 @@ the Ganglion will not participate in the FlexRay communication.
 Similarly, if none of the switches are in the ON position, the Ganglion
 will not participate in the FlexRay communication. This provides a
 convenient way to temporarily disable a Ganglion that is not required
-(see also Table [tab:MyoGanglionAddresses]).
-
-
-
+(see also :numref:`mytable`).
 
 .. _mytable:
 
@@ -114,32 +119,41 @@ USB-FlexRay Bridge
 ==================
 
 In order to connect MYODE with a Myorobot, a USB-FlexRay bridge is
-provided. This system is illustrated in Figure [fig:FlexRayBridge]. To
+provided. This system is illustrated in :numref:`his-figure`. To
 connnect to the PC, a mini-USB lead is necessary. The bridge board is
 also supplied with 24V, which should be the same voltage source that
 supplies the Myorobot to establish a common ground connection. The
 connection to the Myorobot, i.e., via the MYO-Ganglions, is established
 through a 2-wire FlexRay interface.
 
-|
+.. _his-figure:
+.. figure:: img\USBFlexRayBridgeCutOut_withlabels.png
+   :align: center
+
+   The Myorobotics USB-FlexRay Bridge
 
 FlexRay is a differential serial bus and the FlexRay cables used for a
 Myorobot are a simple twisted pair wires. The two FlexRay signal lines
 are referred to as **FRp** (FlexRay Plus, the positive signal) and
 **FRm** (FlexRay Minus, the negative signal). The FlexRay cable provided
-with your Myorobotic system is shown in Figure [fig:FlexRayCable]. The
+with your Myorobotic system is shown in :numref:`its-figure`. The
 pink cable is used for the FRp and the green cable for the FRm signal.
 The MYO-Ganglions feature two pairs of FlexRay connections (see Figure
 [fig:MyoGanglionConnectivity]) which affords easy daisy-chaining of
 multiple MYO-Ganglions.
 
-|
+.. _its-figure:
+.. figure:: img\FlexRayCable_withlabels.png
+   :align: center
+
+   The FlexRay cable used for Myorobotic system: green is the FRm signal, pink
+   the FRp signal.
 
 Motor Driver
 ============
 
 In order to drive the MYO-Muscles, a motor driver board is provided.
-This is illustrated in Figure [fig:MotorDriverBoard]. The motor driver
+This is illustrated in :numref:`our-figure`. The motor driver
 board is supplied with 24V and communicates with the MYO-Ganglion via a
 5MHz SPI connection. It provides sockets to connect the MYO-Muscle motor
 as well as a further connection for the spring-displacement sensor. For
@@ -147,7 +161,11 @@ further hardware developments and other extensions, there is also a CAN
 interface and a micro-USB connection. However, they are not required
 when building a Myorobot.
 
-|
+.. _our-figure:
+.. figure:: img\MotorDriverBoardCutOut-withlabels.png
+   :align: center
+
+   The Myorobotics motor driver board.
 
 Spring Displacement Sensor
 --------------------------
@@ -155,9 +173,16 @@ Spring Displacement Sensor
 To measure the displacement of the spring (a proxy for tendon force), a
 spring displacement sensor is connected to the motor driver board. The
 sensor is supplied via the motor driver board and connected via a 6-pin
-JST connector [1]_ as depicted in Figure [fig:springDisplacementSensor].
+JST connector [1]_ as depicted in :numref:`their-figure`.
 
-|
+.. _their-figure:
+.. figure:: img\displacementSensor_withlabels.png
+   :align: center
+
+   The spring displacement sensor and connector: Please note that the connector
+   cable is not symmetric. Consequently, one end of the connector cable (marked with S or D)
+   is plugged into the sensor board (A) and the other end (B) (marked with M) is plugged into
+   the motor driver board (:numref:`our-figure`)
 
 Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -180,16 +205,27 @@ Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
    the motor driver board; red circles mark the applicable connectors on
    the printed circuit boards.
 
+.. _the-figure:
+.. figure:: img\Cablesandconnectors.png
+    :align: center
+
+    Cables and connectors to connect the spring displacement sensor with the motor
+    driver board; red circles mark the applicable connectors on the printed circuit boards.
+
 MYO-Muscle Assembly
 -------------------
 
 To illustrate how a motor driver board is mounted on the MYO-Muscle
-please refer to Figure [fig:motorDriverOnMuscle]. The connector for the
+please refer to :numref:`a-figure`. The connector for the
 spring displacement sensor should be facing the spring. Two screws are
 sufficient to mount the motor driver board on the MYO-Muscle as shown in
-Figure [fig:motorDriverOnMuscle].
+:numref:`a-figure`.
 
-|
+.. _a-figure:
+.. figure:: img\motordriverboard_withlabels.png
+    :align: center
+
+    Motor driver board mounted on MYO-Muscle
 
 Connectivity
 ------------
@@ -199,22 +235,23 @@ using the 5-pin JST connectors [2]_ . Depending where the motor driver
 board is plugged in (SPI0, SPI1, SPI2 or SPI3) the associate MYO-Muscle
 can be addressed with the corresponding index in MYODE. In other words,
 the address of a motor driver board (and therefore the MYO-Muscle) is
-dependent upon the SPI connector it is connected to (see Table
-[tab:MotorDriverAddress]).
+dependent upon the SPI connector it is connected to (see :numref:`atable`).
 
-+------------------+-----------------------+
-| SPI Connection   | Address / C++ index   |
-+==================+=======================+
-| SPI0             | [0]                   |
-+------------------+-----------------------+
-| SPI1             | [1]                   |
-+------------------+-----------------------+
-| SPI2             | [2]                   |
-+------------------+-----------------------+
-| SPI3             | [3]                   |
-+------------------+-----------------------+
+.. _atable:
 
-Table: Motor driver addressing scheme:
+.. table:: Motor driver addressing scheme
+
+    +------------------+-----------------------+
+    | SPI Connection   | Address / C++ index   |
+    +==================+=======================+
+    | SPI0             | [0]                   |
+    +------------------+-----------------------+
+    | SPI1             | [1]                   |
+    +------------------+-----------------------+
+    | SPI2             | [2]                   |
+    +------------------+-----------------------+
+    | SPI3             | [3]                   |
+    +------------------+-----------------------+
 
 Wiring Scheme SPI Connector: Ganglion Distribution Board - Motor Driver Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,16 +263,11 @@ Wiring Scheme SPI Connector: Ganglion Distribution Board - Motor Driver Board
 +-----------------------------------------+--------+--------+-------+------+-------+
 | **Motor Driver Board, pin #**           | 1      | 2      | 4     | 3    | 5     |
 +-----------------------------------------+--------+--------+-------+------+-------+
-
-.. figure:: SpiConnectionMotorDriverToDistributionBoard-crop.pdf
-   :alt: Cables and connectors to connect the SPI of the distribution
-   board with the motor driver board; red circles mark the applicable
-   connectors on the printed circuit boards.
-   :width: 50.0%
-
-   Cables and connectors to connect the SPI of the distribution board
-   with the motor driver board; red circles mark the applicable
-   connectors on the printed circuit boards.
+.. _one-figure:
+.. figure:: img\cablesandconnectors_withlabels.png
+    :align: center
+    Cables and connectors to connect the SPI of the distribution board with the
+    motor driver board; red circles mark the applicable connectors on the printed circuit boards.
 
 Joint Sensor Board
 ==================
