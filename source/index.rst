@@ -52,7 +52,7 @@ The main documentation for the site is organized into a couple sections:
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: Make your own.
+   :caption: Make your own
 
    assembly/*
 
@@ -61,7 +61,7 @@ The main documentation for the site is organized into a couple sections:
 .. toctree::
     :maxdepth: 2
     :glob:
-    :caption: Electronics
+    :caption: Electronics and Embedded System
 
     Electronics/*
 
