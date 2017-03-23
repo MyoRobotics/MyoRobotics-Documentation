@@ -32,7 +32,7 @@ interface. The USBFlexRay board establishes the link between the FlexRay
 bus (the main Myorobotics communication system) and the PC.
 
 .. _my-figure:
-.. figure:: /Electronics/img/systemOverviewECUAndCommsIntegrationSeptember2014WideVersionUSBFlexRay.png
+.. figure:: /Electronics/img/systemOverviewECU.png
    :align: center
 
    Overview of the Myorobotics distributed control infrastructure.
@@ -50,8 +50,6 @@ scalar sensors that can be used for various purpuses like tactile or
 temperature sensing. These sensors broadcast their sensory state at a
 rate of 100Hz.
 
-:numref:`Image of Sphinx (Fig. %s) <my-figure>`
-
 MYO-Ganglion
 ============
 
@@ -63,7 +61,7 @@ running at 140MHz. Adjacent to the processor board are the power supply
 and distribution boards, respectively.
 
 .. _your-figure:
-.. figure:: img\MyoGanglionConnectivity_withlabels.png
+.. figure:: /Electronics/img/MyoGanglionConnectivity_withlabels.png
    :align: center
 
    The MYO-Ganglion PCB assembly: distribution board with CAN and SPI
@@ -72,7 +70,7 @@ and distribution boards, respectively.
    on the right side of the carrier.
 
 .. _her-figure:
-.. figure:: img\GanglionOnBone.jpg
+.. figure:: /Electronics/img/GanglionOnBone.jpg
    :align: center
 
    The MYO-Ganglion mounted on bone before cables are attached.
@@ -115,6 +113,8 @@ convenient way to temporarily disable a Ganglion that is not required
 
 
 
+.. _forth-section:
+
 USB-FlexRay Bridge
 ==================
 
@@ -127,7 +127,7 @@ connection to the Myorobot, i.e., via the MYO-Ganglions, is established
 through a 2-wire FlexRay interface.
 
 .. _his-figure:
-.. figure:: img\USBFlexRayBridgeCutOut_withlabels.png
+.. figure:: /Electronics/img/USBFlexRayBridgeCutOut_withlabels.png
    :align: center
 
    The Myorobotics USB-FlexRay Bridge
@@ -143,11 +143,13 @@ The MYO-Ganglions feature two pairs of FlexRay connections (see Figure
 multiple MYO-Ganglions.
 
 .. _its-figure:
-.. figure:: img\FlexRayCable_withlabels.png
+.. figure:: /Electronics/img/FlexRayCable_withlabels.png
    :align: center
 
    The FlexRay cable used for Myorobotic system: green is the FRm signal, pink
    the FRp signal.
+
+.. _fifth-section:
 
 Motor Driver
 ============
@@ -162,7 +164,7 @@ interface and a micro-USB connection. However, they are not required
 when building a Myorobot.
 
 .. _our-figure:
-.. figure:: img\MotorDriverBoardCutOut-withlabels.png
+.. figure:: /Electronics/img/MotorDriverBoardCutOut-withlabels.png
    :align: center
 
    The Myorobotics motor driver board.
@@ -176,7 +178,7 @@ sensor is supplied via the motor driver board and connected via a 6-pin
 JST connector [1]_ as depicted in :numref:`their-figure`.
 
 .. _their-figure:
-.. figure:: img\displacementSensor_withlabels.png
+.. figure:: /Electronics/img/displacementSensor_withlabels.png
    :align: center
 
    The spring displacement sensor and connector: Please note that the connector
@@ -195,18 +197,9 @@ Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
 | **Motor Driver Board, pin #**    | 5     | 3      | 2      | 1   | 4     | 6     |
 +----------------------------------+-------+--------+--------+-----+-------+-------+
 
-.. figure:: MotorToSpringSensorConnectivity.pdf
-   :alt: Cables and connectors to connect the spring displacement sensor
-   with the motor driver board; red circles mark the applicable
-   connectors on the printed circuit boards.
-   :width: 50.0%
-
-   Cables and connectors to connect the spring displacement sensor with
-   the motor driver board; red circles mark the applicable connectors on
-   the printed circuit boards.
 
 .. _the-figure:
-.. figure:: img\Cablesandconnectors.png
+.. figure:: /Electronics/img/Cablesandconnectors.png
     :align: center
 
     Cables and connectors to connect the spring displacement sensor with the motor
@@ -222,7 +215,7 @@ sufficient to mount the motor driver board on the MYO-Muscle as shown in
 :numref:`a-figure`.
 
 .. _a-figure:
-.. figure:: img\motordriverboard_withlabels.png
+.. figure:: /Electronics/img/motordriverboard_withlabels.png
     :align: center
 
     Motor driver board mounted on MYO-Muscle
@@ -263,9 +256,11 @@ Wiring Scheme SPI Connector: Ganglion Distribution Board - Motor Driver Board
 +-----------------------------------------+--------+--------+-------+------+-------+
 | **Motor Driver Board, pin #**           | 1      | 2      | 4     | 3    | 5     |
 +-----------------------------------------+--------+--------+-------+------+-------+
+
 .. _one-figure:
-.. figure:: img\cablesandconnectors_withlabels.png
+.. figure:: /Electronics/img/cablesandconnectors_withlabels2.png
     :align: center
+
     Cables and connectors to connect the SPI of the distribution board with the
     motor driver board; red circles mark the applicable connectors on the printed circuit boards.
 
@@ -274,7 +269,7 @@ Joint Sensor Board
 
 The MYO-Joints are equiped with an absolute position sensors. An
 interface board (joint sensor board) is mounted on each joint as shown
-in Figure [fig:JointAndJointSensorBoard]. The joint position is sent to
+in :numref:`second-figure`. The joint position is sent to
 the MYO-Ganglion via CAN. The joint sensor board reads the magnetic
 joint sensor (within the joint) at a rate of 16kHz. A filtered value of
 this joint position (moving average filter) is sent to the MYO-Ganglion
@@ -292,6 +287,12 @@ CAN requires two :math:`120\Omega` termination resistors. One of them is
 present on the MYO-Ganglion board and therefore only one of the joint
 sensors should have its termination resistor enabled.
 
+.. _second-figure:
+.. figure:: /Electronics/img/Myojoint.png
+    :align: center
+
+    The MYO-Joint (A) with a close-up (B) of the joint angle sensor board
+
 Connectivity
 ------------
 
@@ -299,56 +300,54 @@ The joint sensor board is supplied with a 4-pin [4]_ JST connector and
 should be directly connected to the MYO-Ganglion using any of the 5
 available CAN connectors. The address of the joint is subject to the
 address of the joint sensor board, using DIP switches 1 and 2 as shown
-in Table [tab:JointSensorAddress].
+in :numref:`yourtable`.
 
 During 1DOF operation, only one CAN message with the MsgID indicated by
 switches S1 and S2 is sent. For 2DOF operation two CAN messages are
 sent, the first one has the MsgID indicated by switches S1 and S2, the
 second CAN message has the ID indicated with switches S1 and S2 plus 1.
 
-+------+------+------+---------------------+
-| S1   | S2   | S3   | messageIDs on bus   |
-+======+======+======+=====================+
-| 0    | 0    | 0    | 0x50                |
-+------+------+------+---------------------+
-| 0    | 0    | 1    | 0x50 and 0x51       |
-+------+------+------+---------------------+
-| 0    | 1    | 0    | 0x51                |
-+------+------+------+---------------------+
-| 0    | 1    | 1    | 0x51 and 0x52       |
-+------+------+------+---------------------+
-| 1    | 0    | 0    | 0x52                |
-+------+------+------+---------------------+
-| 1    | 0    | 1    | 0x52 and 0x53       |
-+------+------+------+---------------------+
-| 1    | 1    | 0    | 0x53                |
-+------+------+------+---------------------+
-| 1    | 1    | 1    | 0x53                |
-+------+------+------+---------------------+
+.. _ourtable:
 
-Table: CAN message IDs of the sensor board as a function of the DIP
-Switches S1,S2 and S3. S6 (not shown in the table) is used to switch the
-CAN termination on and off, S4 is for calibration and needs to be set to
-off during operation. S5 is currently reserved.
+.. table:: CAN message IDs of the sensor board as a function of the DIP Switches S1,S2 and S3. S6 (not shown in the table) is used to switch the CAN termination on and o, S4 is for calibration and needs to be set to o during operation. S5 is currently reserved.
 
-+------+------+-----------------------+
-| S1   | S2   | Address / C++ index   |
-+======+======+=======================+
-| 0    | 0    | [0]                   |
-+------+------+-----------------------+
-| 0    | 1    | [1]                   |
-+------+------+-----------------------+
-| 1    | 0    | [2]                   |
-+------+------+-----------------------+
-| 1    | 1    | [3]                   |
-+------+------+-----------------------+
+    +------+------+------+---------------------+
+    | S1   | S2   | S3   | messageIDs on bus   |
+    +======+======+======+=====================+
+    | 0    | 0    | 0    | 0x50                |
+    +------+------+------+---------------------+
+    | 0    | 0    | 1    | 0x50 and 0x51       |
+    +------+------+------+---------------------+
+    | 0    | 1    | 0    | 0x51                |
+    +------+------+------+---------------------+
+    | 0    | 1    | 1    | 0x51 and 0x52       |
+    +------+------+------+---------------------+
+    | 1    | 0    | 0    | 0x52                |
+    +------+------+------+---------------------+
+    | 1    | 0    | 1    | 0x52 and 0x53       |
+    +------+------+------+---------------------+
+    | 1    | 1    | 0    | 0x53                |
+    +------+------+------+---------------------+
+    | 1    | 1    | 1    | 0x53                |
+    +------+------+------+---------------------+
 
-Table: Joint sensor addressing scheme for 1DOF operation. In the 2DOF
-configuration two consecutive indices are valid, i.e. either 0 and 1, 1
-and 2, or 2 and 3. The joint addresses have to be selected in such a
-manner that never more than one joints sends a given CAN message ID.
-Refer to table [tab:canMessageIDSensorBoard] for details on CAN
-addresses.
+
+.. _yourtable:
+
+.. table:: Joint sensor addressing scheme for 1DOF operation. In the 2DOF configuration two consecutive indices are valid, i.e. either 0 and 1, 1 and 2, or 2 and 3. The joint addresses have to be selected in such a manner that never more than one joints sends a given CAN message ID. Refer to :numref:`ourtable` for details on CAN addresses.
+
+    +------+------+-----------------------+
+    | S1   | S2   | Address / C++ index   |
+    +======+======+=======================+
+    | 0    | 0    | [0]                   |
+    +------+------+-----------------------+
+    | 0    | 1    | [1]                   |
+    +------+------+-----------------------+
+    | 1    | 0    | [2]                   |
+    +------+------+-----------------------+
+    | 1    | 1    | [3]                   |
+    +------+------+-----------------------+
+
 
 Wiring Scheme: Joint Angle Sensor Board - Ganglion Distribution Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -361,15 +360,13 @@ Wiring Scheme: Joint Angle Sensor Board - Ganglion Distribution Board
 | **Ganglion Distribution Board, pin #**   | 3       | 2       | 1     | 4     |
 +------------------------------------------+---------+---------+-------+-------+
 
-.. figure:: jointAngleSensorWithConnector-crop.pdf
-   :alt: Cables and connectors to connect the joint angle sensor board
-   to the ganglion distribution board; red circles mark the applicable
-   connectors on the printed circuit boards.
-   :width: 50.0%
+.. _third-figure:
+.. figure:: /Electronics/img/cablesandconnectorsnew.png
+    :align: center
 
-   Cables and connectors to connect the joint angle sensor board to the
-   ganglion distribution board; red circles mark the applicable
-   connectors on the printed circuit boards.
+    Cables and connectors to connect the joint angle sensor board to the
+    ganglion distribution board; red circles mark the applicable
+    connectors on the printed circuit boards.
 
 Wiring Scheme: Analogue joint sensor - Joint Angle Sensor Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -390,7 +387,7 @@ Wiring Scheme: 5V and 3.3V configuration
 
 The joint angle sensor board can operate with 5V or 3.3V sensors,
 depending on the resistors populated and solder-bridges made. Details
-can be seen in Figure [fig:jointAngleSensor5VConfiguration]. Resistors
+can be seen in :numref:`fourth-figure`. Resistors
 R5,R6,R7 and R8 are required to divide down the sensor output, in case
 of the 5V configuration, to the 3.3 analogue input voltage range of the
 micro-controller on the sensor board. One, and only one, solder-bridge
@@ -399,29 +396,20 @@ required to supply the sensor with the appropriate voltage. For 3.3V
 operations resistors R7 and R8 should be removed and R5 and R6 replaced
 with a 0\ :math:`\Omega` resistor.
 
-.. figure:: boardConfiguration5Vand3_3V-crop.pdf
-   :alt: PCB with components for 5V operation:
-   :math:`R5=5k\Omega,R6=5k\Omega,R7=10k\Omega,R8=10k\Omega` and
-   solder-bridge (SB) implementing the connection between +5V and the
-   sensor supply voltage :math:`V_{sensor}`. For 3.3V operation the
-   solder-bridge is required between the 3.3V pad and
-   :math:`V_{senosr}`. Importantly, the SB between +5V and
-   :math:`V_{sensor}` needs then be removed. In 3.3V operation R7 and R8
-   should be removed and R5 and R6 replaced with a :math:`0\Omega`
-   resistor (or a resistance :math:`<10\Omega`). Red tracks/pads mark
-   the PCB top, blue tracks/pads are on the bottom side of the PCB.
-   :width: 50.0%
+.. _fourth-figure:
+.. figure:: /Electronics/img/PCBwithcomponents.png
+    :align: center
 
-   PCB with components for 5V operation:
-   :math:`R5=5k\Omega,R6=5k\Omega,R7=10k\Omega,R8=10k\Omega` and
-   solder-bridge (SB) implementing the connection between +5V and the
-   sensor supply voltage :math:`V_{sensor}`. For 3.3V operation the
-   solder-bridge is required between the 3.3V pad and
-   :math:`V_{senosr}`. Importantly, the SB between +5V and
-   :math:`V_{sensor}` needs then be removed. In 3.3V operation R7 and R8
-   should be removed and R5 and R6 replaced with a :math:`0\Omega`
-   resistor (or a resistance :math:`<10\Omega`). Red tracks/pads mark
-   the PCB top, blue tracks/pads are on the bottom side of the PCB.
+    PCB with components for 5V operation:
+    :math:`R5=5k\Omega,R6=5k\Omega,R7=10k\Omega,R8=10k\Omega` and
+    solder-bridge (SB) implementing the connection between +5V and the
+    sensor supply voltage :math:`V_{sensor}`. For 3.3V operation the
+    solder-bridge is required between the 3.3V pad and
+    :math:`V_{senosr}`. Importantly, the SB between +5V and
+    :math:`V_{sensor}` needs then be removed. In 3.3V operation R7 and R8
+    should be removed and R5 and R6 replaced with a :math:`0\Omega`
+    resistor (or a resistance :math:`<10\Omega`). Red tracks/pads mark
+    the PCB top, blue tracks/pads are on the bottom side of the PCB.
 
 Calibration Procedure
 ---------------------
@@ -444,8 +432,7 @@ when joint ID zero (S0=0, S1=2) is selected. The calibration works for
 1DOF and 2DOF operation. The following procedure will lead to a
 successful calibration:
 
--  S0 and S1 are set to 0 (off),S4 is off, S3 off in 1DOF operation or
-   S3 on for 2DOF operation
+-  S0 and S1 are set to 0 (off), S4 is off, S3 off in 1DOF operation or S3 on for 2DOF operation
 
 -  power up joint angle sensor board
 
@@ -472,7 +459,16 @@ velocity, force* and *torque*. In the raw mode, no feedback controller
 is enabled. Rather, the muscle is driven in an open-loop mode where the
 motor supply voltage can be varied between :math:`\pm 100\%`. The
 remaining four control modes use the freely configurable linear-feedback
-control topology depicted in Figure [fig:LFCUpdated].
+control topology depicted in :numref:`fifth-figure`.
+
+.. _fifth-figure:
+.. figure:: /Electronics/img/linearfeedbackcontroller.png
+    :align: center
+
+    The linear feedback controller topology: the controller is freely congurable within
+    MYODE and runs on the MYO-Ganglion. Four motor controllers run in parallel, controlling
+    the four MYO-Muscles. The control frequency is currently limited to a maximum of 2:5kHz
+    and is also configurable.
 
 To be clear, these controllers run on the MYO-Ganglion autonomously.
 They are configured via MYODE (control parameters, cycle time, etc)
@@ -485,6 +481,8 @@ during runtime. Note, however, that the control parameters are not
 stored on the MYO-Ganglion. Following reset, all the controllers need to
 be re-configured.
 
+.. _sixth-section:
+
 Configuring a Controller
 ------------------------
 
@@ -496,16 +494,20 @@ which are:
 To set the control parameters an instance of structure
 ``control_Parameters_t`` needs to be created, filled and then passed
 to the ``setControllerParams(.)`` method. The structures required are
-shown (including comments) in Figure
-[fig:controllerParametersStructure]. In addition to the values found
-in the controller diagram in Figure [fig:LFCUpdated], the structure
+shown (including comments) in :numref:`sixth-figure`. In addition to the values found
+in the controller diagram in :numref:`fifth-figure`, the structure
 also provide entries for the controller update frequency
 (``float32 timePeriod``) in :math:`\mu s`, and values to map the
 physical system parameters into appropriate units (e.g.
 ``float32 radPerEncoderCount, float32 torqueConstant``).
-
 The four parameter array ``float32 polyPar[4]`` describes the
 non-linear mapping of the spring displacement measurement to a force.
+
+.. _sixth-figure:
+.. figure:: /Electronics/img/localmusclecontroller.png
+    :align: center
+
+    The structures required to configure a local muscle controller.
 
 Communication Timing
 --------------------
@@ -513,16 +515,26 @@ Communication Timing
 Before a snippet of example code is presented, let us briefly consider
 the timing behaviour of this (partly) asynchronous communication
 system. In principle, four different timing cycles can be
-distinguished and they are illustrated in Figure
-[fig:CommunicationCycleTimes]. At the highest level is the **user
-application (UA)** running as part of MYODE. Typically, the cycle time
-of this control loop is in the tens of milliseconds range (e.g.
-:math:`20ms`) and is set by the user. Since a standard Ubuntu
+distinguished and they are illustrated in :numref:`seventh-figure`.
+At the highest level is the **user application (UA)** running as part of MYODE.
+Typically, the cycle time of this control loop is in the tens of milliseconds range
+(e.g.:math:`20ms`) and is set by the user. Since a standard Ubuntu
 installation is used, it is important to note that the cycle time of
 the UA is not ‘hard real-time’ and some variance on the timing is to
 be expected. In the UA, data from the Myorobot is read, such as motor
 velocity or joint angles, or set in the case of tendon force and motor
 position. All those operations are thread-safe.
+
+.. _seventh-figure:
+.. figure:: /Electronics/img/cycleandcommunicationtimes.png
+    :align: center
+
+    The cycle and communication times of the complete Myorobotics communication
+    chain. Red arrows indicate that this communication parameter is user congurable. From
+    left to right, the user application (UA), the USB interface (UI), the USB-FlexRay bridge
+    (UFR) the linear-feedback controller (LFC) and the motor-driver board(MD) are illustrated,
+    including the implementation and communication media.
+
 
 Data is exchanged with the Myorobot via a thread that is hidden from
 the user and referred to as the **USB interface (USBI)**. The USBI
@@ -531,28 +543,30 @@ also runs as a ‘soft real-time’ system with a nominal update rate of
 the Myorobot is also limited to a minimum update rate of 2ms.
 
 The next level of communication is realised with the **USB-FlexRay
-bridge (UFR)** (see section [sec:USB-FlexRay]). Here, the USB data is
+bridge (UFR)** (see :numref:`forth-section`). Here, the USB data is
 exchanged with the ‘hard real-time’ FlexRay bus that forms the
 communication backbone of the Myorobot, allowing the exchange of data
 between the UFR and the MYO-Ganglions in a fully synchronous and
 time-trigger fashion at a rate of 1kHz.
 
 The lowest level in this communication chain is formed by the
-**linear-feedback controllers (LFC)**\ (see Figure [fig:LFCUpdated])
+**linear-feedback controllers (LFC)**\  (see :numref:`fifth-figure`)
 running on the MYO-Ganglions. The controllers run in a ‘hard real-time’
 loop on the MYO-Ganglion and exchange data with the FlexRay bus and the
-motor driver boards (**MD**); see section [sec:MotorDriver]. As
+motor driver boards (**MD**); see :numref:`fifth-section`. As
 explained above, the cycle time of the linear-feedback controllers is
 user configurable by setting the ``float32 timePeriod`` variable of the
 structure `` control_Parameters_t ``\ and configuration of the
 controller via the ``setControllerParams(.)`` method. The minimum cycle
 time is :math:`400\mu s`.
 
+.. _seventh-section:
+
 An Example
 ----------
 
 To further illustrate the control of a Myorobot using MYODE, a minimal
-example is shown in Figure [fig:GeneralControlLoopExample]. The
+example is shown in :numref:`eight-figure`. The
 ``GeneralControlLoop`` class is derived from the
 ``IGeneralControlLoop`` interface class and receives a pointer to the
 ``IRobot`` class (``p_robot``) in its constructor. This establishes
@@ -566,14 +580,14 @@ control parameters. A reference to this structure is then passed to
 the ``setControllerParams(.)`` method of the MYO-Muscle. In this
 example, we configure MYO-Muscle 0 on MYO-Ganglion 0 of the Myorobot
 as a position controller (``p_robot->getGanglion(0)- >getMuscles()[0]->setControllerParams(Position,localParameters)``).
-
 The cyclic control loop, which could run at a user configurable rate
 (e.g. 20ms), is implemented with the ``IGeneralControlLoop::cycle()``
 method. As above, this pure virtual function needs to be implemented
 by the user.
+
 Before the actual controllers can be used, the application needs to
 check if the configuration of the controller has been completed. This
-is done by checking the `` p_robot->controlparameterRequestQueueEmpty()`` method. The reason
+is done by checking the ``p_robot->controlparameterRequestQueueEmpty()`` method. The reason
 for this check is that the configuration parameters to all controllers
 are transmitted on the FlexRay bus using a shared (dynamic) slot.
 Consequently, the configuration of several controllers will take some
@@ -581,10 +595,18 @@ time. This is in contrast to setting reference value or
 enabling/disabling a controller, here each MYO-Ganglion can be
 addressed separately using dedicated slots on the FlexRay bus. This
 maintains the real time performance of the controllers within the
-limits outlined in section [sec:controllerConfiguration].
+limits outlined in :numref:`sixth-section`.
+
 When the configuration queue is empty, the controllers can be enabled
 by calling ``p_robot->getGanglion(0)->getMuscles()[0]->enableController().``
-The controller reference values can be set with ``p_robot->getGanglion(0)->getMuscles()[0]->setControllerRef(Position,referencePosition) ``.
+The controller reference values can be set with ``p_robot->getGanglion(0)->getMuscles()[0]->setControllerRef(Position,referencePosition).``
+
+.. _eight-figure:
+.. figure:: /Electronics/img/exampleofrobotcontrol.png
+    :align: center
+
+    A minimal example of robot control code running in MYODE, using a single
+    MYO-Muscle.
 
 Summary
 =======

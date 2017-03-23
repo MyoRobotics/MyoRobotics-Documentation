@@ -61,6 +61,7 @@ The main documentation for the site is organized into a couple sections:
 .. toctree::
     :maxdepth: 2
     :glob:
+    :numbered:
     :caption: Electronics and Embedded System
 
     Electronics/*
