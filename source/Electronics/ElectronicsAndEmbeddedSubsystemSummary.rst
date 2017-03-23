@@ -32,7 +32,7 @@ interface. The USBFlexRay board establishes the link between the FlexRay
 bus (the main Myorobotics communication system) and the PC.
 
 .. _my-figure:
-.. figure:: img\systemOverviewECUAndCommsIntegrationSeptember2014WideVersionUSBFlexRay.png
+.. figure:: /Electronics/img/systemOverviewECUAndCommsIntegrationSeptember2014WideVersionUSBFlexRay.png
    :align: center
 
    Overview of the Myorobotics distributed control infrastructure.
@@ -551,44 +551,40 @@ time is :math:`400\mu s`.
 An Example
 ----------
 
-| To further illustrate the control of a Myorobot using MYODE, a minimal
-  example is shown in Figure [fig:GeneralControlLoopExample]. The
-  ``GeneralControlLoop`` class is derived from the
-  ``IGeneralControlLoop`` interface class and receives a pointer to the
-  ``IRobot`` class (``p_robot``) in its constructor. This establishes
-  the link to the physical or simulated robot. The
-  ``IGeneralControlLoop::init()`` method is a pure virtual function and
-  needs to implemented by the user. It is called once after the
-  controller has been instantiated. The member variable
-  ``localParameters`` is a private instance of the control parameter
-  structure ``control_parameters_t`` and is filled with the motor
-  control parameters. A reference to this structure is then passed to
-  the ``setControllerParams(.)`` method of the MYO-Muscle. In this
-  example, we configure MYO-Muscle 0 on MYO-Ganglion 0 of the Myorobot
-  as a position controller
-| (``p_robot->getGanglion(0)- >getMuscles()[0]->setControllerParams(Position,localParameters)``).
+To further illustrate the control of a Myorobot using MYODE, a minimal
+example is shown in Figure [fig:GeneralControlLoopExample]. The
+``GeneralControlLoop`` class is derived from the
+``IGeneralControlLoop`` interface class and receives a pointer to the
+``IRobot`` class (``p_robot``) in its constructor. This establishes
+the link to the physical or simulated robot. The
+``IGeneralControlLoop::init()`` method is a pure virtual function and
+needs to implemented by the user. It is called once after the
+controller has been instantiated. The member variable
+``localParameters`` is a private instance of the control parameter
+structure ``control_parameters_t`` and is filled with the motor
+control parameters. A reference to this structure is then passed to
+the ``setControllerParams(.)`` method of the MYO-Muscle. In this
+example, we configure MYO-Muscle 0 on MYO-Ganglion 0 of the Myorobot
+as a position controller (``p_robot->getGanglion(0)- >getMuscles()[0]->setControllerParams(Position,localParameters)``).
 
-| The cyclic control loop, which could run at a user configurable rate
-  (e.g. 20ms), is implemented with the ``IGeneralControlLoop::cycle()``
-  method. As above, this pure virtual function needs to be implemented
-  by the user.
-| Before the actual controllers can be used, the application needs to
-  check if the configuration of the controller has been completed. This
-  is done by checking the
-| `` p_robot->controlparameterRequestQueueEmpty()`` method. The reason
-  for this check is that the configuration parameters to all controllers
-  are transmitted on the FlexRay bus using a shared (dynamic) slot.
-  Consequently, the configuration of several controllers will take some
-  time. This is in contrast to setting reference value or
-  enabling/disabling a controller, here each MYO-Ganglion can be
-  addressed separately using dedicated slots on the FlexRay bus. This
-  maintains the real time performance of the controllers within the
-  limits outlined in section [sec:controllerConfiguration].
-| When the configuration queue is empty, the controllers can be enabled
-  by calling
-| ``p_robot->getGanglion(0)->getMuscles()[0]->enableController().``
-| The controller reference values can be set with
-| ``p_robot->getGanglion(0)->getMuscles()[0]->setControllerRef(Position,referencePosition) ``.
+The cyclic control loop, which could run at a user configurable rate
+(e.g. 20ms), is implemented with the ``IGeneralControlLoop::cycle()``
+method. As above, this pure virtual function needs to be implemented
+by the user.
+Before the actual controllers can be used, the application needs to
+check if the configuration of the controller has been completed. This
+is done by checking the `` p_robot->controlparameterRequestQueueEmpty()`` method. The reason
+for this check is that the configuration parameters to all controllers
+are transmitted on the FlexRay bus using a shared (dynamic) slot.
+Consequently, the configuration of several controllers will take some
+time. This is in contrast to setting reference value or
+enabling/disabling a controller, here each MYO-Ganglion can be
+addressed separately using dedicated slots on the FlexRay bus. This
+maintains the real time performance of the controllers within the
+limits outlined in section [sec:controllerConfiguration].
+When the configuration queue is empty, the controllers can be enabled
+by calling ``p_robot->getGanglion(0)->getMuscles()[0]->enableController().``
+The controller reference values can be set with ``p_robot->getGanglion(0)->getMuscles()[0]->setControllerRef(Position,referencePosition) ``.
 
 Summary
 =======
