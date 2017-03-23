@@ -14,8 +14,6 @@ This documentation is compiled from documentation produced by the concluded `FP7
 License
 -------
 
-License
--------
 Unless specified otherwise all
 
 this documentation and the hardware is released under the `CC by 4.0 license`_,
