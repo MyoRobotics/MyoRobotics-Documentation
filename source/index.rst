@@ -62,6 +62,17 @@ The main documentation for the site is organized into a couple sections:
 
     Electronics/*
 
+
+.. _Controllers:
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :numbered:
+    :caption: Muscle Linear Feedback Controllers
+
+    Controllers/*
+
 .. _suppliers_partners:
 
 .. toctree::
