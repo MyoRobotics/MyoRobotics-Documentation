@@ -13,6 +13,7 @@ This documentation is compiled from documentation produced by the concluded `FP7
 
 License
 -------
+
 Unless specified otherwise all
 
 this documentation and the hardware is released under the `CC by 4.0 license`_,
@@ -49,9 +50,30 @@ The main documentation for the site is organized into a couple sections:
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: Make your own.
+   :caption: Make your own
 
    assembly/*
+
+.. _Electronics:
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :numbered:
+    :caption: Electronics and Embedded System
+
+    Electronics/*
+
+
+.. _Controllers:
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :numbered:
+    :caption: Muscle Linear Feedback Controllers
+
+    Controllers/*
 
 .. _suppliers_partners:
 
