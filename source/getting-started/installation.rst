@@ -54,6 +54,13 @@ Install ros_control_boilerplate fork
    roscd && cd ../src
    git clone https://github.com/compiaffe/ros_control_boilerplate.git -b MyoArm
 
+Install all ROS dependencies
+****************************
+
+.. code-block:: console
+   apt-get install -y ros-kinetic-rosparam-shortcuts ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-control-msgs ros-kinetic-urdf ros-kinetic-control-toolbox ros-kinetic-robot-state-publisher libgflags-dev libncurses5-dev libncursesw5-dev wget vim
+
+
 Build it
 ***************
 
@@ -61,6 +68,19 @@ Build it
 
    roscd && cd ..
    catkin_make
+
+Run it
+********
+In different terminals run:
+
+
+.. code-block:: console
+    source .../MyoArm/devel/setup.bash
+    roscore
+    rostopic echo -c /rrbot/joint_states
+    rostopic echo -c /rrbot/joint_effort/controller/command
+    roslaunch ros_control_boilerplate rrbot_hardware.launch
+    rosrun ros_control_boilerplate keyboard_teleop
 
 
 .. _myo_blink: https://github.com/Victor-Savu/myo_blink/tree/reflex
