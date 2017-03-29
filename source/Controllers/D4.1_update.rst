@@ -1047,8 +1047,7 @@ with the change in motor shaft position the joint angle changes too. The
 steady state is reached at :math:`t\approx 2400ms`.
 
 .. figure:: test26000Myo1DOFPlot2.pdf
-   :alt: 1DOF arm control: the plots show the change of motor, joint and
-   spring position.
+   :alt: 1DOF arm control: the plots show the change of motor, joint and spring position.
    :width: 80.0%
 
    1DOF arm control: the plots show the change of motor, joint and

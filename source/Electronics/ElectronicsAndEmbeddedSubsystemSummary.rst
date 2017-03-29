@@ -32,7 +32,7 @@ interface. The USBFlexRay board establishes the link between the FlexRay
 bus (the main Myorobotics communication system) and the PC.
 
 .. _EAESS_my-figure:
-.. figure:: /Electronics/img/systemoverviewecu.png
+.. figure:: /img/systemoverviewecu.png
    :align: center
 
    Overview of the Myorobotics distributed control infrastructure.
