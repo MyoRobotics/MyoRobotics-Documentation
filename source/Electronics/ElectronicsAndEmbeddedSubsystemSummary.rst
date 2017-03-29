@@ -127,7 +127,7 @@ connection to the Myorobot, i.e., via the MYO-Ganglions, is established
 through a 2-wire FlexRay interface.
 
 .. _his-figure:
-.. figure:: /Electronics/img/USBFlexRayBridgeCutOut_withlabels.png
+.. figure:: /Electronics/img/USBFlexRayBridgeCutOutwithlabels.png
    :align: center
 
    The Myorobotics USB-FlexRay Bridge
@@ -143,7 +143,7 @@ The MYO-Ganglions feature two pairs of FlexRay connections (see Figure
 multiple MYO-Ganglions.
 
 .. _its-figure:
-.. figure:: /Electronics/img/FlexRayCable_withlabels.png
+.. figure:: /Electronics/img/FlexRayCablewithlabels.png
    :align: center
 
    The FlexRay cable used for Myorobotic system: green is the FRm signal, pink
@@ -164,7 +164,7 @@ interface and a micro-USB connection. However, they are not required
 when building a Myorobot.
 
 .. _our-figure:
-.. figure:: /Electronics/img/MotorDriverBoardCutOut-withlabels.png
+.. figure:: /Electronics/img/MotorDriverBoardCutOutwithlabels.png
    :align: center
 
    The Myorobotics motor driver board.
@@ -178,7 +178,7 @@ sensor is supplied via the motor driver board and connected via a 6-pin
 JST connector [1]_ as depicted in :numref:`their-figure`.
 
 .. _their-figure:
-.. figure:: /Electronics/img/displacementSensor_withlabels.png
+.. figure:: /Electronics/img/displacementSensorwithlabels.png
    :align: center
 
    The spring displacement sensor and connector: Please note that the connector
@@ -199,7 +199,7 @@ Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
 
 
 .. _the-figure:
-.. figure:: /Electronics/img/Cablesandconnectors.png
+.. figure:: /Electronics/img/cablesandconnectors.png
     :align: center
 
     Cables and connectors to connect the spring displacement sensor with the motor
@@ -215,7 +215,7 @@ sufficient to mount the motor driver board on the MYO-Muscle as shown in
 :numref:`a-figure`.
 
 .. _a-figure:
-.. figure:: /Electronics/img/motordriverboard_withlabels.png
+.. figure:: /Electronics/img/motordriverboardwithlabels.png
     :align: center
 
     Motor driver board mounted on MYO-Muscle
@@ -258,7 +258,7 @@ Wiring Scheme SPI Connector: Ganglion Distribution Board - Motor Driver Board
 +-----------------------------------------+--------+--------+-------+------+-------+
 
 .. _one-figure:
-.. figure:: /Electronics/img/cablesandconnectors_withlabels2.png
+.. figure:: /Electronics/img/cablesandconnectorswithlabels2.png
     :align: center
 
     Cables and connectors to connect the SPI of the distribution board with the
@@ -288,7 +288,7 @@ present on the MYO-Ganglion board and therefore only one of the joint
 sensors should have its termination resistor enabled.
 
 .. _second-figure:
-.. figure:: /Electronics/img/Myojoint.png
+.. figure:: /Electronics/img/myojoint.png
     :align: center
 
     The MYO-Joint (A) with a close-up (B) of the joint angle sensor board
@@ -397,7 +397,7 @@ operations resistors R7 and R8 should be removed and R5 and R6 replaced
 with a 0\ :math:`\Omega` resistor.
 
 .. _fourth-figure:
-.. figure:: /Electronics/img/PCBwithcomponents.png
+.. figure:: /Electronics/img/pcbwithcomponents.png
     :align: center
 
     PCB with components for 5V operation:
