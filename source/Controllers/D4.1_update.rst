@@ -52,11 +52,11 @@ utilisation of the CAN bus, whilst guaranteeing a sufficient update rate
 for the joint angles, important for their control.
 
 An overview of the communication and control infrastructure is given in
-:numref:`my-figure`. In the following sections, we will introduce and
+:numref:`D4.1_my-figure`. In the following sections, we will introduce and
 desrcibe the relevant subsystems and explain how the several linear
 control schemes are implemented.
 
-.. _my-figure:
+.. _D4.1_my-figure:
 .. figure:: /Controllers/images/heterogmyorob.png
    :align: center
 
@@ -75,7 +75,7 @@ Texas Instruments. This micro-controller is based on their ARM Cortex
 RISC CPU, provides analogue and digital I/O and several relevant
 communication interfaces. The 140MHz clock and the floating point unit
 enable high-performance signal processing and control algorithms to be
-implemented. Together with the appropriate motor drivers (see section :numref:`two.two.three-section`),
+implemented. Together with the appropriate motor drivers (see section :numref:`D4.1_two.two.three-section`),
 a MYO-Ganglion is able to control up to four
 actuators. Fully transparent access to motor and sensor data from
 MYODE is possible through the integrated 10Mbit/s FlexRay interface,
@@ -91,7 +91,7 @@ necessary for high-level users. Similarly, an additional bank of DIP
 switches will allow the user to configure how many motor driver boards
 are connected to the MYO-Ganglion.
 
-.. _your-figure:
+.. _D4.1_your-figure:
 .. figure:: /Controllers/images/myoganghardware.png
    :align: center
 
@@ -102,18 +102,18 @@ are connected to the MYO-Ganglion.
 
 In addition to the FlexRay interface, the MYO-Ganglion provides a CAN
 communication bus (1 Mbit/s) to allow the connection of joint angle
-sensors (:numref:`two.two.two-section`) and MYO-Perceptors, the external
-sensors (:numref:`two.two.five-section`).
+sensors (:numref:`D4.1_two.two.two-section`) and MYO-Perceptors, the external
+sensors (:numref:`D4.1_two.two.five-section`).
 Communication to the motor driver boards is established with four [1]_
 dedicated SPI links, each running at 2 Mbit/s.
 
-.. _our-figure:
+.. _D4.1_our-figure:
 .. figure:: /Controllers/images/circuitdiagram.png
    :align: center
 
    Circuit diagram of the MYO-Ganglion (without power supply).
 
-.. _two.two.two-section:
+.. _D4.1_two.two.two-section:
 
 Joint Angle Sensor Board (JASB)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -122,7 +122,7 @@ The position of each joint is measured using a joint angle sensor that
 communicates with the MYO-Ganglion on a shared 1Mbit/s CAN bus. This
 printed circuit board, that interfaces with the actual sensor, is based
 on the dsPIC33FJ128GP802 from Microchip. It is supplied with 5V DC and
-communicates with the MYO-Ganglion CAN bus (see :numref:`my-figure`).
+communicates with the MYO-Ganglion CAN bus (see :numref:`D4.1_my-figure`).
 The actual joint sensor can be a simple potentiometer or a hall-effect
 based absolute position sensor. Any of those sensor is supplied with 3.3
 V from the JASB and must provide an analogue output.
@@ -143,7 +143,7 @@ by switches S1 and S2 is sent. For 2DOF operations two CAN messages are
 sent, the first one has the MsgID indicated by switches S1 and S2, the
 second CAN message has the ID indicated with switches S1 and S2 plus 1.
 
-.. _mytable:
+.. _D4.1_mytable:
 
 .. table:: CAN message IDs of the sensor board as a function of the DIP Switches S1,S2 and S3. S6 (not shown in the table) is used to switch the CAN termination on and off, S4 is for calibration and needs to be set to off during operation. S5 is currently reserved.
 
@@ -216,7 +216,7 @@ When calibrating a 2DOF joint move both degrees of freedom to there
 negative and positive end position at the same time when performing this
 calibration procedure.
 
-.. _its-figure:
+.. _D4.1_its-figure:
 .. figure:: /Controllers/images/jointangletopview.png
    :align: center
 
@@ -224,13 +224,13 @@ calibration procedure.
    indicate basic functionality, sensor reading on AN0 and CAN error
    states. Size: :math:`\approx 14mm \times 19mm`\
 
-.. _his-figure:
+.. _D4.1_his-figure:
 .. figure:: /Controllers/images/jointsensorangleboard.png
     :align: center
 
     Joint sensor angle board PCB layout to illustrate sensor connections.
 
-.. _two.two.three-section:
+.. _D4.1_two.two.three-section:
 
 Brushless-DC Motor Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -273,27 +273,27 @@ mode, so that resolution of
 :math:`\frac{2.4 mm}{40 \times 4} = 15 \mbox { }  \mu m/count` ,
 i.e. :math:`r_{displacement}=66.\overline{6} \mbox{ }counts/mm`.
 
-.. _her-figure:
+.. _D4.1_her-figure:
 .. figure:: /Controllers/images/jointanglesensor.png
    :align: center
 
    Circuit diagram of the joint angle sensor interface board.
 
-.. _their-figure:
+.. _D4.1_their-figure:
 .. figure:: /Controllers/images/driverboard.png
     :align: center
 
     Brushless-DC motor driver board. Size:
     :math:`\approx 40mm \times 55mm`\
 
-.. _first-figure:
+.. _D4.1_first-figure:
 .. figure:: /Controllers/images/operprinciple.png
     :align: center
 
     Operational principle of the spring displacement sensor using the
     AS5306 from AMS.
 
-.. _second-figure:
+.. _D4.1_second-figure:
 .. figure:: /Controllers/images/circuitboardwithspring.png
     :align: center
 
@@ -343,7 +343,7 @@ MYO-Ganglion, a distribution circuit has been designed. This printed
 circuit board sits inside the MYO-Bone and can be wired-up by the
 Myorobotics users.
 
-.. _two.two.five-section:
+.. _D4.1_two.two.five-section:
 
 MYO-Perceptor
 ~~~~~~~~~~~~~
@@ -357,13 +357,13 @@ message rate of 100Hz, i.e. they distribute their state every
 etc. From an electronics design point of view, this constitutes a simple
 modification of the joint angle sensor board.
 
-.. _third-figure:
+.. _D4.1_third-figure:
 .. figure:: /Controllers/images/brushlessdcmotor.png
     :align: center
 
     Circuit diagram of the brushless-DC motor driver.
 
-.. _forth-figure:
+.. _D4.1_forth-figure:
 .. figure:: /Controllers/images/printedcircuitboard.png
     :align: center
 
@@ -389,7 +389,7 @@ Spring Displacement Sensor :math:`\Longleftrightarrow` Motor Driver Board
 | **Motor Driver Board, pin #**    | 5     | 3      | 2      | 1   | 4     | 6     |
 +----------------------------------+-------+--------+--------+-----+-------+-------+
 
-.. _fifth-figure:
+.. _D4.1_fifth-figure:
 .. figure:: /Controllers/images/cablesandconnectorsto.png
     :align: center
 
@@ -410,7 +410,7 @@ SPI: Distribution Board :math:`\Longleftrightarrow` Motor Driver Board
 | **Motor Driver Board, pin #**   | 1      | 2      | 4     | 3    | 5     |
 +---------------------------------+--------+--------+-------+------+-------+
 
-.. _sixth-figure:
+.. _D4.1_sixth-figure:
 .. figure:: /Controllers/images/cablesandconnectorstoSPI.png
     :align: center
 
@@ -431,7 +431,7 @@ SPI:MYO-Ganglion :math:`\Longleftrightarrow` Distribution Board
 | **Distribution Board, pin #**   | 8      | 7      | 6    | 5     | 4     | 3     | 2     | 1     |
 +---------------------------------+--------+--------+------+-------+-------+-------+-------+-------+
 
-.. _seventh-figure:
+.. _D4.1_seventh-figure:
 .. figure:: /Controllers/images/cablesandconnectorstoSPI2.png
     :align: center
 
@@ -452,7 +452,7 @@ CAN 1: MYO-Ganglion :math:`\Longleftrightarrow` Distribution Board
 | **Distribution Board, pin #**   | 2       | 1       |
 +---------------------------------+---------+---------+
 
-.. _eight-figure:
+.. _D4.1_eight-figure:
 .. figure:: /Controllers/images/cablesandconnectorstoSPI3.png
     :align: center
 
@@ -473,7 +473,7 @@ FlexRay 1: MYO-Ganglion :math:`\Longleftrightarrow` Distribution Board
 | **Distribution Board, pin #**   | 2    | 1    |
 +---------------------------------+------+------+
 
-.. _nine-figure:
+.. _D4.1_nine-figure:
 .. figure:: /Controllers/images/cablesandconnectorstoflex.png
     :align: center
 
@@ -494,7 +494,7 @@ Joint Angle Sensor Board :math:`\Longleftrightarrow` Distribution Board
 | **Distribution Board, pin #**   | 3       | 2       | 1     | 4     |
 +---------------------------------+---------+---------+-------+-------+
 
-.. _ten-figure:
+.. _D4.1_ten-figure:
 .. figure:: /Controllers/images/cablesandconnectorstojointangle.png
     :align: center
 
@@ -516,7 +516,7 @@ on the joint angle sensor boards.
 | **magnetic sensor cable colour**   | orange   | orange   | red     | red     | white   | white   |
 +------------------------------------+----------+----------+---------+---------+---------+---------+
 
-.. _eleven-figure:
+.. _D4.1_eleven-figure:
 .. figure:: /Controllers/images/colourcodesandpadnumber.png
     :align: center
 
@@ -574,7 +574,7 @@ MYO-Ganglion, and dependent on the error message this might also trigger
 a diagnostic message to be sent in the next communication cycle to allow
 full error analysis and reporting.
 
-.. _twelve-figure:
+.. _D4.1_twelve-figure:
 .. figure:: /Controllers/images/datastructureofSPI.png
     :align: center
 
@@ -628,7 +628,7 @@ be commanded with a 1ms refresh rate, allowing the control of up to 24
 muscles, the structure of data in a communication cycle is shown in
 Fig. [fig:FrayCycle].
 
-.. _theirtable:
+.. _D4.1_theirtable:
 
 .. table:: FlexRay communication data size.
 
@@ -657,7 +657,7 @@ Fig. [fig:FrayCycle].
     +--------------------------+--------------------+------------------------------+
 
 
-.. _thirteen-figure:
+.. _D4.1_thirteen-figure:
 .. figure:: /Controllers/images/structureofflexray.png
     :align: center
 
@@ -700,7 +700,7 @@ process variable controllers, and their conversion factors are described
 in Table [tab:controlmodes]. The means for user extensibility of the
 controller infrastructure is detailed in the API documentation.
 
-.. _ourtable:
+.. _D4.1_ourtable:
 
 .. table:: Implemented control modes, and conversion factors from raw sensor values to process variables. Note that the conversion from spring displacement to tendon strain is non-linear so uses a 4 term polynomial.
 
@@ -744,7 +744,7 @@ all terms, and in this case the gain of unused terms is set to zero.
 Limits (:math:`outputPosMax` and :math:`outputPosMax`) for the control
 output are used to ensure safe operation.
 
-.. _fourtheen-figure:
+.. _D4.1_fourtheen-figure:
 .. figure:: /Controllers/images/blockdiagramoflinearfeedbackcontroller.png
     :align: center
 
@@ -769,7 +769,7 @@ Below (Figure [fig:codePID]) the C++ code of the linear feedback
 controller is shown. Note, the controller parameters (gains etc.) are
 class variables for the pidController class.
 
-.. _fifteen-figure:
+.. _D4.1_fifteen-figure:
 .. figure:: /Controllers/images/c++method.png
     :align: center
 

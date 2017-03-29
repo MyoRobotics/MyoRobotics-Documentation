@@ -25,13 +25,13 @@ both a hardware and software perspective.
 Overview
 ========
 
-An overview of the distributed control system is presented in :numref:`my-figure`.
+An overview of the distributed control system is presented in :numref:`EAESS_my-figure`.
 The Myorobotics system consists of the PC (UBUNTU 12.04 LTS) application ‘Caliper’
 including the ‘MYODE’ plug-in that communicates with the Myorobot via a USB 2.0
 interface. The USBFlexRay board establishes the link between the FlexRay
 bus (the main Myorobotics communication system) and the PC.
 
-.. _my-figure:
+.. _EAESS_my-figure:
 .. figure:: /Electronics/img/systemOverviewECU.png
    :align: center
 
@@ -55,12 +55,12 @@ MYO-Ganglion
 
 The MYO-Ganglion comprises three printed circuit boards (PCB) that are
 mounted on a carrier that can be clipped onto a medium-size MYO-Bone
-(:numref:`her-figure`). The centre board features the main
+(:numref:`EAESS_her-figure`). The centre board features the main
 floating-point processor, the TMS570LS20216 from Texas Instruments
 running at 140MHz. Adjacent to the processor board are the power supply
 and distribution boards, respectively.
 
-.. _your-figure:
+.. _EAESS_your-figure:
 .. figure:: /Electronics/img/MyoGanglionConnectivity_withlabels.png
    :align: center
 
@@ -69,7 +69,7 @@ and distribution boards, respectively.
    (TMS570LS20216 on bottom side , not visible), the power supply board (24V) is mounted
    on the right side of the carrier.
 
-.. _her-figure:
+.. _EAESS_her-figure:
 .. figure:: /Electronics/img/GanglionOnBone.jpg
    :align: center
 
@@ -87,9 +87,9 @@ the Ganglion will not participate in the FlexRay communication.
 Similarly, if none of the switches are in the ON position, the Ganglion
 will not participate in the FlexRay communication. This provides a
 convenient way to temporarily disable a Ganglion that is not required
-(see also :numref:`mytable`).
+(see also :numref:`EAESS_mytable`).
 
-.. _mytable:
+.. _EAESS_mytable:
 
 .. table:: MYO-Ganglion addressing scheme
 
@@ -113,20 +113,20 @@ convenient way to temporarily disable a Ganglion that is not required
 
 
 
-.. _forth-section:
+.. _EAESS_forth-section:
 
 USB-FlexRay Bridge
 ==================
 
 In order to connect MYODE with a Myorobot, a USB-FlexRay bridge is
-provided. This system is illustrated in :numref:`his-figure`. To
+provided. This system is illustrated in :numref:`EAESS_his-figure`. To
 connnect to the PC, a mini-USB lead is necessary. The bridge board is
 also supplied with 24V, which should be the same voltage source that
 supplies the Myorobot to establish a common ground connection. The
 connection to the Myorobot, i.e., via the MYO-Ganglions, is established
 through a 2-wire FlexRay interface.
 
-.. _his-figure:
+.. _EAESS_his-figure:
 .. figure:: /Electronics/img/USBFlexRayBridgeCutOutwithlabels.png
    :align: center
 
@@ -136,26 +136,26 @@ FlexRay is a differential serial bus and the FlexRay cables used for a
 Myorobot are a simple twisted pair wires. The two FlexRay signal lines
 are referred to as **FRp** (FlexRay Plus, the positive signal) and
 **FRm** (FlexRay Minus, the negative signal). The FlexRay cable provided
-with your Myorobotic system is shown in :numref:`its-figure`. The
+with your Myorobotic system is shown in :numref:`EAESS_its-figure`. The
 pink cable is used for the FRp and the green cable for the FRm signal.
 The MYO-Ganglions feature two pairs of FlexRay connections (see Figure
 [fig:MyoGanglionConnectivity]) which affords easy daisy-chaining of
 multiple MYO-Ganglions.
 
-.. _its-figure:
+.. _EAESS_its-figure:
 .. figure:: /Electronics/img/FlexRayCablewithlabels.png
    :align: center
 
    The FlexRay cable used for Myorobotic system: green is the FRm signal, pink
    the FRp signal.
 
-.. _fifth-section:
+.. _EAESS_fifth-section:
 
 Motor Driver
 ============
 
 In order to drive the MYO-Muscles, a motor driver board is provided.
-This is illustrated in :numref:`our-figure`. The motor driver
+This is illustrated in :numref:`EAESS_our-figure`. The motor driver
 board is supplied with 24V and communicates with the MYO-Ganglion via a
 5MHz SPI connection. It provides sockets to connect the MYO-Muscle motor
 as well as a further connection for the spring-displacement sensor. For
@@ -163,7 +163,7 @@ further hardware developments and other extensions, there is also a CAN
 interface and a micro-USB connection. However, they are not required
 when building a Myorobot.
 
-.. _our-figure:
+.. _EAESS_our-figure:
 .. figure:: /Electronics/img/MotorDriverBoardCutOutwithlabels.png
    :align: center
 
@@ -175,16 +175,16 @@ Spring Displacement Sensor
 To measure the displacement of the spring (a proxy for tendon force), a
 spring displacement sensor is connected to the motor driver board. The
 sensor is supplied via the motor driver board and connected via a 6-pin
-JST connector [1]_ as depicted in :numref:`their-figure`.
+JST connector [1]_ as depicted in :numref:`EAESS_their-figure`.
 
-.. _their-figure:
+.. _EAESS_their-figure:
 .. figure:: /Electronics/img/displacementSensorwithlabels.png
    :align: center
 
    The spring displacement sensor and connector: Please note that the connector
    cable is not symmetric. Consequently, one end of the connector cable (marked with S or D)
    is plugged into the sensor board (A) and the other end (B) (marked with M) is plugged into
-   the motor driver board (:numref:`our-figure`)
+   the motor driver board (:numref:`EAESS_our-figure`)
 
 Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -198,7 +198,7 @@ Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
 +----------------------------------+-------+--------+--------+-----+-------+-------+
 
 
-.. _the-figure:
+.. _EAESS_the-figure:
 .. figure:: /Electronics/img/cablesandconnectors.png
     :align: center
 
@@ -209,12 +209,12 @@ MYO-Muscle Assembly
 -------------------
 
 To illustrate how a motor driver board is mounted on the MYO-Muscle
-please refer to :numref:`a-figure`. The connector for the
+please refer to :numref:`EAESS_a-figure`. The connector for the
 spring displacement sensor should be facing the spring. Two screws are
 sufficient to mount the motor driver board on the MYO-Muscle as shown in
-:numref:`a-figure`.
+:numref:`EAESS_a-figure`.
 
-.. _a-figure:
+.. _EAESS_a-figure:
 .. figure:: /Electronics/img/motordriverboardwithlabels.png
     :align: center
 
@@ -228,9 +228,9 @@ using the 5-pin JST connectors [2]_ . Depending where the motor driver
 board is plugged in (SPI0, SPI1, SPI2 or SPI3) the associate MYO-Muscle
 can be addressed with the corresponding index in MYODE. In other words,
 the address of a motor driver board (and therefore the MYO-Muscle) is
-dependent upon the SPI connector it is connected to (see :numref:`atable`).
+dependent upon the SPI connector it is connected to (see :numref:`EAESS_atable`).
 
-.. _atable:
+.. _EAESS_atable:
 
 .. table:: Motor driver addressing scheme
 
@@ -257,7 +257,7 @@ Wiring Scheme SPI Connector: Ganglion Distribution Board - Motor Driver Board
 | **Motor Driver Board, pin #**           | 1      | 2      | 4     | 3    | 5     |
 +-----------------------------------------+--------+--------+-------+------+-------+
 
-.. _one-figure:
+.. _EAESS_one-figure:
 .. figure:: /Electronics/img/cablesandconnectorswithlabels2.png
     :align: center
 
@@ -269,7 +269,7 @@ Joint Sensor Board
 
 The MYO-Joints are equiped with an absolute position sensors. An
 interface board (joint sensor board) is mounted on each joint as shown
-in :numref:`second-figure`. The joint position is sent to
+in :numref:`EAESS_second-figure`. The joint position is sent to
 the MYO-Ganglion via CAN. The joint sensor board reads the magnetic
 joint sensor (within the joint) at a rate of 16kHz. A filtered value of
 this joint position (moving average filter) is sent to the MYO-Ganglion
@@ -287,7 +287,7 @@ CAN requires two :math:`120\Omega` termination resistors. One of them is
 present on the MYO-Ganglion board and therefore only one of the joint
 sensors should have its termination resistor enabled.
 
-.. _second-figure:
+.. _EAESS_second-figure:
 .. figure:: /Electronics/img/myojoint.png
     :align: center
 
@@ -300,14 +300,14 @@ The joint sensor board is supplied with a 4-pin [4]_ JST connector and
 should be directly connected to the MYO-Ganglion using any of the 5
 available CAN connectors. The address of the joint is subject to the
 address of the joint sensor board, using DIP switches 1 and 2 as shown
-in :numref:`yourtable`.
+in :numref:`EAESS_yourtable`.
 
 During 1DOF operation, only one CAN message with the MsgID indicated by
 switches S1 and S2 is sent. For 2DOF operation two CAN messages are
 sent, the first one has the MsgID indicated by switches S1 and S2, the
 second CAN message has the ID indicated with switches S1 and S2 plus 1.
 
-.. _ourtable:
+.. _EAESS_ourtable:
 
 .. table:: CAN message IDs of the sensor board as a function of the DIP Switches S1,S2 and S3. S6 (not shown in the table) is used to switch the CAN termination on and o, S4 is for calibration and needs to be set to o during operation. S5 is currently reserved.
 
@@ -332,9 +332,9 @@ second CAN message has the ID indicated with switches S1 and S2 plus 1.
     +------+------+------+---------------------+
 
 
-.. _yourtable:
+.. _EAESS_yourtable:
 
-.. table:: Joint sensor addressing scheme for 1DOF operation. In the 2DOF configuration two consecutive indices are valid, i.e. either 0 and 1, 1 and 2, or 2 and 3. The joint addresses have to be selected in such a manner that never more than one joints sends a given CAN message ID. Refer to :numref:`ourtable` for details on CAN addresses.
+.. table:: Joint sensor addressing scheme for 1DOF operation. In the 2DOF configuration two consecutive indices are valid, i.e. either 0 and 1, 1 and 2, or 2 and 3. The joint addresses have to be selected in such a manner that never more than one joints sends a given CAN message ID. Refer to :numref:`EAESS_ourtable` for details on CAN addresses.
 
     +------+------+-----------------------+
     | S1   | S2   | Address / C++ index   |
@@ -360,7 +360,7 @@ Wiring Scheme: Joint Angle Sensor Board - Ganglion Distribution Board
 | **Ganglion Distribution Board, pin #**   | 3       | 2       | 1     | 4     |
 +------------------------------------------+---------+---------+-------+-------+
 
-.. _third-figure:
+.. _EAESS_third-figure:
 .. figure:: /Electronics/img/cablesandconnectorsnew.png
     :align: center
 
@@ -387,7 +387,7 @@ Wiring Scheme: 5V and 3.3V configuration
 
 The joint angle sensor board can operate with 5V or 3.3V sensors,
 depending on the resistors populated and solder-bridges made. Details
-can be seen in :numref:`fourth-figure`. Resistors
+can be seen in :numref:`EAESS_fourth-figure`. Resistors
 R5,R6,R7 and R8 are required to divide down the sensor output, in case
 of the 5V configuration, to the 3.3 analogue input voltage range of the
 micro-controller on the sensor board. One, and only one, solder-bridge
@@ -396,7 +396,7 @@ required to supply the sensor with the appropriate voltage. For 3.3V
 operations resistors R7 and R8 should be removed and R5 and R6 replaced
 with a 0\ :math:`\Omega` resistor.
 
-.. _fourth-figure:
+.. _EAESS_fourth-figure:
 .. figure:: /Electronics/img/pcbwithcomponents.png
     :align: center
 
@@ -459,9 +459,9 @@ velocity, force* and *torque*. In the raw mode, no feedback controller
 is enabled. Rather, the muscle is driven in an open-loop mode where the
 motor supply voltage can be varied between :math:`\pm 100\%`. The
 remaining four control modes use the freely configurable linear-feedback
-control topology depicted in :numref:`fifth-figure`.
+control topology depicted in :numref:`EAESS_fifth-figure`.
 
-.. _fifth-figure:
+.. _EAESS_fifth-figure:
 .. figure:: /Electronics/img/linearfeedbackcontroller.png
     :align: center
 
@@ -481,7 +481,7 @@ during runtime. Note, however, that the control parameters are not
 stored on the MYO-Ganglion. Following reset, all the controllers need to
 be re-configured.
 
-.. _sixth-section:
+.. _EAESS_sixth-section:
 
 Configuring a Controller
 ------------------------
@@ -494,8 +494,8 @@ which are:
 To set the control parameters an instance of structure
 ``control_Parameters_t`` needs to be created, filled and then passed
 to the ``setControllerParams(.)`` method. The structures required are
-shown (including comments) in :numref:`sixth-figure`. In addition to the values found
-in the controller diagram in :numref:`fifth-figure`, the structure
+shown (including comments) in :numref:`EAESS_sixth-figure`. In addition to the values found
+in the controller diagram in :numref:`EAESS_fifth-figure`, the structure
 also provide entries for the controller update frequency
 (``float32 timePeriod``) in :math:`\mu s`, and values to map the
 physical system parameters into appropriate units (e.g.
@@ -503,7 +503,7 @@ physical system parameters into appropriate units (e.g.
 The four parameter array ``float32 polyPar[4]`` describes the
 non-linear mapping of the spring displacement measurement to a force.
 
-.. _sixth-figure:
+.. _EAESS_sixth-figure:
 .. figure:: /Electronics/img/localmusclecontroller.png
     :align: center
 
@@ -515,7 +515,7 @@ Communication Timing
 Before a snippet of example code is presented, let us briefly consider
 the timing behaviour of this (partly) asynchronous communication
 system. In principle, four different timing cycles can be
-distinguished and they are illustrated in :numref:`seventh-figure`.
+distinguished and they are illustrated in :numref:`EAESS_seventh-figure`.
 At the highest level is the **user application (UA)** running as part of MYODE.
 Typically, the cycle time of this control loop is in the tens of milliseconds range
 (e.g.:math:`20ms`) and is set by the user. Since a standard Ubuntu
@@ -525,7 +525,7 @@ be expected. In the UA, data from the Myorobot is read, such as motor
 velocity or joint angles, or set in the case of tendon force and motor
 position. All those operations are thread-safe.
 
-.. _seventh-figure:
+.. _EAESS_seventh-figure:
 .. figure:: /Electronics/img/cycleandcommunicationtimes.png
     :align: center
 
@@ -543,30 +543,30 @@ also runs as a ‘soft real-time’ system with a nominal update rate of
 the Myorobot is also limited to a minimum update rate of 2ms.
 
 The next level of communication is realised with the **USB-FlexRay
-bridge (UFR)** (see :numref:`forth-section`). Here, the USB data is
+bridge (UFR)** (see :numref:`EAESS_forth-section`). Here, the USB data is
 exchanged with the ‘hard real-time’ FlexRay bus that forms the
 communication backbone of the Myorobot, allowing the exchange of data
 between the UFR and the MYO-Ganglions in a fully synchronous and
 time-trigger fashion at a rate of 1kHz.
 
 The lowest level in this communication chain is formed by the
-**linear-feedback controllers (LFC)**\  (see :numref:`fifth-figure`)
+**linear-feedback controllers (LFC)**\  (see :numref:`EAESS_fifth-figure`)
 running on the MYO-Ganglions. The controllers run in a ‘hard real-time’
 loop on the MYO-Ganglion and exchange data with the FlexRay bus and the
-motor driver boards (**MD**); see :numref:`fifth-section`. As
+motor driver boards (**MD**); see :numref:`EAESS_fifth-section`. As
 explained above, the cycle time of the linear-feedback controllers is
 user configurable by setting the ``float32 timePeriod`` variable of the
 structure `` control_Parameters_t ``\ and configuration of the
 controller via the ``setControllerParams(.)`` method. The minimum cycle
 time is :math:`400\mu s`.
 
-.. _seventh-section:
+.. _EAESS_seventh-section:
 
 An Example
 ----------
 
 To further illustrate the control of a Myorobot using MYODE, a minimal
-example is shown in :numref:`eight-figure`. The
+example is shown in :numref:`EAESS_eight-figure`. The
 ``GeneralControlLoop`` class is derived from the
 ``IGeneralControlLoop`` interface class and receives a pointer to the
 ``IRobot`` class (``p_robot``) in its constructor. This establishes
@@ -595,13 +595,13 @@ time. This is in contrast to setting reference value or
 enabling/disabling a controller, here each MYO-Ganglion can be
 addressed separately using dedicated slots on the FlexRay bus. This
 maintains the real time performance of the controllers within the
-limits outlined in :numref:`sixth-section`.
+limits outlined in :numref:`EAESS_sixth-section`.
 
 When the configuration queue is empty, the controllers can be enabled
 by calling ``p_robot->getGanglion(0)->getMuscles()[0]->enableController().``
 The controller reference values can be set with ``p_robot->getGanglion(0)->getMuscles()[0]->setControllerRef(Position,referencePosition).``
 
-.. _eight-figure:
+.. _EAESS_eight-figure:
 .. figure:: /Electronics/img/exampleofrobotcontrol.png
     :align: center
 
