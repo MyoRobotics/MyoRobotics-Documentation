@@ -57,7 +57,7 @@ desrcibe the relevant subsystems and explain how the several linear
 control schemes are implemented.
 
 .. _D4.1_my-figure:
-.. figure:: /Controllers/images/heterogmyorob.png
+.. figure:: images/heterogmyorob.png
    :align: center
 
    Overview of the heterogeneous Myorobotics control infrastructure.
@@ -92,7 +92,7 @@ switches will allow the user to configure how many motor driver boards
 are connected to the MYO-Ganglion.
 
 .. _D4.1_your-figure:
-.. figure:: /Controllers/images/myoganghardware.png
+.. figure:: images/myoganghardware.png
    :align: center
 
    The MYO-Ganglion hardware, a densely packed 4 layer printed
@@ -108,7 +108,7 @@ Communication to the motor driver boards is established with four [1]_
 dedicated SPI links, each running at 2 Mbit/s.
 
 .. _D4.1_our-figure:
-.. figure:: /Controllers/images/circuitdiagram.png
+.. figure:: images/circuitdiagram.png
    :align: center
 
    Circuit diagram of the MYO-Ganglion (without power supply).
@@ -172,6 +172,7 @@ The DIP switches (S1, S2 and S3) are read after power-on reset.
 Manipulation of the switches during operation has no effect. The
 analogue inputs are 16 times oversampled (16kHz) and the CAN output
 data is the moving average of the last 16 measurements.
+
 LED1 on the sensor board blinks at 1 Hz, indicating operation. LED2
 blinks as a function of the AN0 value, the lowest frequency is 1Hz,
 the highest frequency is 500Hz. (AN0=0) In other words, a low
@@ -217,7 +218,7 @@ negative and positive end position at the same time when performing this
 calibration procedure.
 
 .. _D4.1_its-figure:
-.. figure:: /Controllers/images/jointangletopview.png
+.. figure:: images/jointangletopview.png
    :align: center
 
    Top View of the joint angle sensor board: LED1, LED2 and LED3
@@ -225,7 +226,7 @@ calibration procedure.
    states. Size: :math:`\approx 14mm \times 19mm`\
 
 .. _D4.1_his-figure:
-.. figure:: /Controllers/images/jointsensorangleboard.png
+.. figure:: images/jointsensorangleboard.png
     :align: center
 
     Joint sensor angle board PCB layout to illustrate sensor connections.
@@ -274,27 +275,27 @@ mode, so that resolution of
 i.e. :math:`r_{displacement}=66.\overline{6} \mbox{ }counts/mm`.
 
 .. _D4.1_her-figure:
-.. figure:: /Controllers/images/jointanglesensor.png
+.. figure:: images/jointanglesensor.png
    :align: center
 
    Circuit diagram of the joint angle sensor interface board.
 
 .. _D4.1_their-figure:
-.. figure:: /Controllers/images/driverboard.png
+.. figure:: images/driverboard.png
     :align: center
 
     Brushless-DC motor driver board. Size:
     :math:`\approx 40mm \times 55mm`\
 
 .. _D4.1_first-figure:
-.. figure:: /Controllers/images/operprinciple.png
+.. figure:: images/operprinciple.png
     :align: center
 
     Operational principle of the spring displacement sensor using the
     AS5306 from AMS.
 
 .. _D4.1_second-figure:
-.. figure:: /Controllers/images/circuitboardwithspring.png
+.. figure:: images/circuitboardwithspring.png
     :align: center
 
     Circuit board with the spring displacement sensor, the AS5306
@@ -358,13 +359,13 @@ etc. From an electronics design point of view, this constitutes a simple
 modification of the joint angle sensor board.
 
 .. _D4.1_third-figure:
-.. figure:: /Controllers/images/brushlessdcmotor.png
+.. figure:: images/brushlessdcmotor.png
     :align: center
 
     Circuit diagram of the brushless-DC motor driver.
 
 .. _D4.1_forth-figure:
-.. figure:: /Controllers/images/printedcircuitboard.png
+.. figure:: images/printedcircuitboard.png
     :align: center
 
     Printed circuit board for power and communication distribution.
@@ -390,7 +391,7 @@ Spring Displacement Sensor :math:`\Longleftrightarrow` Motor Driver Board
 +----------------------------------+-------+--------+--------+-----+-------+-------+
 
 .. _D4.1_fifth-figure:
-.. figure:: /Controllers/images/cablesandconnectorsto.png
+.. figure:: images/cablesandconnectorsto.png
     :align: center
 
     Cables and connectors to connect the spring displacement sensor
@@ -411,7 +412,7 @@ SPI: Distribution Board :math:`\Longleftrightarrow` Motor Driver Board
 +---------------------------------+--------+--------+-------+------+-------+
 
 .. _D4.1_sixth-figure:
-.. figure:: /Controllers/images/cablesandconnectorstoSPI.png
+.. figure:: images/cablesandconnectorstoSPI.png
     :align: center
 
     Cables and connectors to connect the SPI of the distribution
@@ -432,7 +433,7 @@ SPI:MYO-Ganglion :math:`\Longleftrightarrow` Distribution Board
 +---------------------------------+--------+--------+------+-------+-------+-------+-------+-------+
 
 .. _D4.1_seventh-figure:
-.. figure:: /Controllers/images/cablesandconnectorstoSPI2.png
+.. figure:: images/cablesandconnectorstoSPI2.png
     :align: center
 
     Cables and connectors to connect the SPI of the distribution
@@ -453,7 +454,7 @@ CAN 1: MYO-Ganglion :math:`\Longleftrightarrow` Distribution Board
 +---------------------------------+---------+---------+
 
 .. _D4.1_eight-figure:
-.. figure:: /Controllers/images/cablesandconnectorstoSPI3.png
+.. figure:: images/cablesandconnectorstoSPI3.png
     :align: center
 
     Cables and connectors to connect the CAN of the distribution
@@ -474,7 +475,7 @@ FlexRay 1: MYO-Ganglion :math:`\Longleftrightarrow` Distribution Board
 +---------------------------------+------+------+
 
 .. _D4.1_nine-figure:
-.. figure:: /Controllers/images/cablesandconnectorstoflex.png
+.. figure:: images/cablesandconnectorstoflex.png
     :align: center
 
     Cables and connectors to connect the FlexRay of the
@@ -495,7 +496,7 @@ Joint Angle Sensor Board :math:`\Longleftrightarrow` Distribution Board
 +---------------------------------+---------+---------+-------+-------+
 
 .. _D4.1_ten-figure:
-.. figure:: /Controllers/images/cablesandconnectorstojointangle.png
+.. figure:: images/cablesandconnectorstojointangle.png
     :align: center
 
     Cables and connectors to connect the joint angle sensor board
@@ -517,7 +518,7 @@ on the joint angle sensor boards.
 +------------------------------------+----------+----------+---------+---------+---------+---------+
 
 .. _D4.1_eleven-figure:
-.. figure:: /Controllers/images/colourcodesandpadnumber.png
+.. figure:: images/colourcodesandpadnumber.png
     :align: center
 
     Colour codes and pad number for connecting the magnetic angles
@@ -557,7 +558,7 @@ Communication between a MYO-Ganglion and up to 4 motor driver boards is
 performed using an SPI bus. In each communication cycle the MYO-Ganglion
 sends a duty cycle period demand and some command data, and receives the
 sensor values for the muscle it is actuating in return. The data
-structure for the SPI message frame is shown in Fig. [fig:SPIdata].
+structure for the SPI message frame is shown in :numref:`D4.1_twelve-figure`.
 There are two types of message that can be sent to a motor driver,
 command and diagnostic. Command is the standard motor command, while
 diagnostic requests that the motor driver uses the standard data fields
@@ -575,7 +576,7 @@ a diagnostic message to be sent in the next communication cycle to allow
 full error analysis and reporting.
 
 .. _D4.1_twelve-figure:
-.. figure:: /Controllers/images/datastructureofSPI.png
+.. figure:: images/datastructureofSPI.png
     :align: center
 
     Data structure of an SPI data frame. The MYO-Ganglion transmits
@@ -609,7 +610,7 @@ used for fault reporting by the MYO-Ganglions.
 
 All static frames must be the same size, and the largest (and most
 prevalent) frame type is the sensor data frame, the composition of which
-is shown in Table [tab:sensordataframe]. Each static frame is sized to
+is shown in :numref:`D4.1_theirtable`. Each static frame is sized to
 allow a MYO-Ganglion to transmit sensor data for up to 4 muscles,
 including the possibility of 1 joint per muscle (muscle 0 reports data
 for joint ID 0x50, muscle 1 joint ID 0x51 etc.), and 12 16-bit
@@ -623,10 +624,10 @@ MYO-Ganglion, commands for up to 6 MYO-Ganglia can be contained in one
 static frame. The MYODE suite requires an additional static frame to
 provide mode control commands for the controllers on each MYO-Ganglion,
 which may be indicators of the presence and purpose of data in the
-dynamic frame (see section [sec:modes]). Hence, up to 6 MYO-Ganglia may
+dynamic frame (see :numref:`D4.1_third-section`). Hence, up to 6 MYO-Ganglia may
 be commanded with a 1ms refresh rate, allowing the control of up to 24
 muscles, the structure of data in a communication cycle is shown in
-Fig. [fig:FrayCycle].
+:numref:`D4.1_thirteen-figure`.
 
 .. _D4.1_theirtable:
 
@@ -658,7 +659,7 @@ Fig. [fig:FrayCycle].
 
 
 .. _D4.1_thirteen-figure:
-.. figure:: /Controllers/images/structureofflexray.png
+.. figure:: images/structureofflexray.png
     :align: center
 
     Structure of a FlexRay communication cycle. Static frames are
@@ -682,12 +683,12 @@ inherit a parent controller class, and implement its core set of (pure
 virtual) functions. These functions allow the getting and setting of the
 controller type and parameters (utilising a controller parameters
 union), and the invocation of the control loop with the desired set
-point (:math:`sp`) and current process variable (:math:`pv`)values.
+point (:math:`sp`) and current process variable (:math:`pv`) values.
 
 A MYO-Ganglion has an array of controller objects, containing a
 controller for each available control mode, for each motor connected to
 it. Which controller is active for each motor is determined by part of
-the command in the controller mode frame (see section [sec:modes]). Each
+the command in the controller mode frame (see :numref:`D4.1_third-section`). Each
 motor has an independent control loop frequency, and each iteration (if
 the the currently selected controller is enabled) it calculates the
 needed demand signal to be sent. In the core API we have implemented
@@ -697,7 +698,7 @@ setting of the motor driving PWM duty cycle. Each process variable is
 calculated from the raw sensor data provided by the motor driver board,
 to allow transparent tuning of PID gains via MYODE; the implemented
 process variable controllers, and their conversion factors are described
-in Table [tab:controlmodes]. The means for user extensibility of the
+in :numref:`D4.1_ourtable`]. The means for user extensibility of the
 controller infrastructure is detailed in the API documentation.
 
 .. _D4.1_ourtable:
@@ -745,7 +746,7 @@ Limits (:math:`outputPosMax` and :math:`outputPosMax`) for the control
 output are used to ensure safe operation.
 
 .. _D4.1_fourtheen-figure:
-.. figure:: /Controllers/images/blockdiagramoflinearfeedbackcontroller.png
+.. figure:: images/blockdiagramoflinearfeedbackcontroller.png
     :align: center
 
     Block diagram of the linear feedback controller: note the
@@ -757,7 +758,7 @@ output is in saturation and a control error is still present. Integral
 wind-up is implemented with thresholds (IntegralPosMax and
 IntegralNegMax) beyond which the integral cannot be increased. The
 symmetric dead-band is implemented similarly with minimum error
-thresholds (:math:`deadBand` and :math:` -1 \times deadBand`) required
+thresholds (:math:`deadBand` and :math:`-1\times deadBand`) required
 to trigger a change in control effort. To ensure jerk-free operation
 when switching between control modes, the integral term is reset to zero
 when control modes are changed.
@@ -765,15 +766,18 @@ when control modes are changed.
 Code
 ^^^^
 
-Below (Figure [fig:codePID]) the C++ code of the linear feedback
+Below (:numref:`D4.1_fifteen-figure`) the C++ code of the linear feedback
 controller is shown. Note, the controller parameters (gains etc.) are
 class variables for the pidController class.
 
 .. _D4.1_fifteen-figure:
-.. figure:: /Controllers/images/c++method.png
+.. figure:: images/c++method.png
     :align: center
 
     C++ method of the linear feedback controller.
+
+
+.. _D4.1_third-section:
 
 Parameter Modification and Modes
 --------------------------------
@@ -883,7 +887,7 @@ reference values manually, a GUI for MYODE plugin suite has been
 created. Based on the QT4 framework, this interface allows the real time
 display of all process states which are supplied via the FlexRay bus.
 
-The Myorobot plugin (see Figure [fig:MyorobotPluginGui]) for Caliper
+The Myorobot plugin (see :numref:`D4.1_sixteenth-figure`) for Caliper
 presents the component parts of the embedded control infrastructure as a
 tree. The robot has a number of ganglions, each with a number of
 connected muscles (motors in this case), each muscle has a set of
@@ -900,11 +904,12 @@ only sent to the robot when ‘Send Data’ is pressed; selection of the
 control mode, and whether to enable or disable each motor is performed
 using the check boxes.
 
-.. figure:: myorobotPlugin.png
-   :alt: Sceenshot of the Myorobot plugin GUI.
-   :width: 50.0%
+.. _D4.1_sixteenth-figure:
+.. figure:: images/myorobotPlugin2.png
+    :align: center
 
-   Sceenshot of the Myorobot plugin GUI.
+    Sceenshot of the Myorobot plugin GUI.
+
 
 Controller Tests
 ================
@@ -927,7 +932,7 @@ Position Motor Control
 For the first demonstration of the controller capabilities the position
 controller running at 100Hz was selected. The demand or reference value
 was set to 10 rad (shaft position) from an initial position of 0 rad.
-Figure [fig:PIControlNoOvershoot] shows the result with a slightly
+:numref:`D4.1_seventeen-figure` shows the result with a slightly
 under-gained PI controller. It is observable that the final position is
 reached after approximately :math:`300ms`. During the control phase, the
 control output saturates at a duty cycle of :math:`100\%` and a maximum
@@ -935,40 +940,39 @@ velocity of approximately :math:`35 rad/s` is achieved. Please note that
 no tendon is attached to the motor and the only ‘load’ is the motor
 gearbox.
 
-.. figure:: test1Expr1.pdf
-   :alt: PI control of motor shaft position: motor position in rad
-   (top); duty cycle (DC) of PWM signal (centre); shaft velocity in
-   rad/s (bottom)
-   :width: 80.0%
+.. _D4.1_seventeen-figure:
+.. figure:: images/test1Expr1.png
+    :align: center
 
-   PI control of motor shaft position: motor position in rad (top); duty
-   cycle (DC) of PWM signal (centre); shaft velocity in rad/s (bottom)
+    PI control of motor shaft position: motor position in rad
+    (top); duty cycle (DC) of PWM signal (centre); shaft velocity in
+    rad/s (bottom).
 
-In the next experiment (Figure [fig:PIDControlOvershoot]), the PI gains
+
+In the next experiment (:numref:`D4.1_eighteen-figure`), the PI gains
 were increased and it is observable how the control system overshoots
 and a slight second-order oscillation is visible.
 
-.. figure:: test2Expr1.pdf
-   :alt: PI control of motor shaft position: motor position in rad
-   (top); duty cycle (DC) of PWM signal (centre); shaft velocity in
-   rad/s (bottom)
-   :width: 80.0%
+.. _D4.1_eighteen-figure:
+.. figure:: images/test2Expr1.png
+    :align: center
 
-   PI control of motor shaft position: motor position in rad (top); duty
-   cycle (DC) of PWM signal (centre); shaft velocity in rad/s (bottom)
+    PI control of motor shaft position: motor position in rad
+    (top); duty cycle (DC) of PWM signal (centre); shaft velocity in
+    rad/s (bottom).
+
 
 In order to reduce this overshoot, the controller is enhanced with a D
-component and it is clearly visible in Figure
-[fig:PIDControlLessOvershoot] that the overshoot is reduced.
+component and it is clearly visible in :numref:`D4.1_nineteen-figure` that the overshoot is reduced.
 
-.. figure:: test3Expr1.pdf
-   :alt: PI control of motor shaft position: motor position in rad
-   (top); duty cycle (DC) of PWM signal (centre); shaft velocity in
-   rad/s (bottom)
-   :width: 80.0%
+.. _D4.1_nineteen-figure:
+.. figure:: images/test3Expr1.png
+    :align: center
 
-   PI control of motor shaft position: motor position in rad (top); duty
-   cycle (DC) of PWM signal (centre); shaft velocity in rad/s (bottom)
+    PI control of motor shaft position: motor position in rad
+    (top); duty cycle (DC) of PWM signal (centre); shaft velocity in
+    rad/s (bottom).
+
 
 Overall, this brief set of experiments demonstrates the PID controller’s
 capabilities and the principle operation. Note, that it was not our
@@ -984,37 +988,38 @@ Velocity Motor Control
 The next set of experiments demonstrate the velocity control mode. Here,
 a sample rate of :math:`1KHz` is chosen and the controller is configured
 as a PI controller. The step response to a velocity demand is shown in
-Figure [fig:PIVelocity1] and [fig:PIVelocity2]. It is clearly observable
+:numref:`D4.1_twenty-figure` and :numref:`D4.1_twentyone-figure`. It is clearly observable
 how the P element of the controller leads to a very fast increase in
 shaft velocity and how the I element of the controller then slowly
 increases the velocity until the reference is reached asymptotically.
+
+
+.. _D4.1_twenty-figure:
+.. figure:: images/test1Expr2.png
+    :align: center
+
+    PI control of motor shaft velocity:shaft velocity in rad/s
+    (top) ; dutcy cycle (DC) of PWM signal (bottom).
+
+
+.. _D4.1_twentyone-figure:
+.. figure:: images/test2Expr2.png
+    :align: center
+
+    PI control of motor shaft velocity:shaft velocity in rad/s
+    (top) ; dutcy cycle (DC) of PWM signal (bottom).
+
 
 The velocity signals is obtained by simple numerical differentiation of
 the encoder signal. The blue line in the plot shows the measured signal
 and the black line shows the filtered velocity signal (2nd order
 Butterworth, cut-off frequency 1/5 of Nyquist frequency for the given
-sample rate). Figure [fig:PIVelocity2] is merely a zoomed in version of
-Figure [fig:PIVelocity1].
+sample rate). :numref:`D4.1_twenty-figure` is merely a zoomed in version of
+:numref:`D4.1_twentyone-figure`.
 
 As for the position control, only a small part of the controllers
 functionality is demonstrated in this summary of work and further tests
 are ongoing.
-
-.. figure:: test1Expr2.pdf
-   :alt: PI control of motor shaft velocity:shaft velocity in rad/s
-   (top) ; dutcy cycle (DC) of PWM signal (bottom)
-   :width: 80.0%
-
-   PI control of motor shaft velocity:shaft velocity in rad/s (top) ;
-   dutcy cycle (DC) of PWM signal (bottom)
-
-.. figure:: test2Expr2.pdf
-   :alt: PI control of motor shaft velocity:shaft velocity in rad/s
-   (top) ; dutcy cycle (DC) of PWM signal (bottom)
-   :width: 80.0%
-
-   PI control of motor shaft velocity:shaft velocity in rad/s (top) ;
-   dutcy cycle (DC) of PWM signal (bottom)
 
 Position Control of 1-DOF Arm
 -----------------------------
@@ -1022,40 +1027,39 @@ Position Control of 1-DOF Arm
 We conclude this report by demonstrating simple position control of the
 MYO-Muscle with an attached arm. This is a 1-DOF experiment with a
 single muscle, the counterforce is produced by gravity as can be
-understood from Figure [fig:Bristol1DofExp1].
+understood from :numref:`D4.1_twentytwo-figure`.
 
-.. figure:: Bristol1DofExp1.jpg
-   :alt: Simple Myorobotic test rig: Only the upper MYO-Muscle is
-   attached via the tendon with the distal bone. The experimenter
-   deflects the bone to demonstrate the compliant nature of the system
-   and the sensing capabilities.
-   :width: 80.0%
+.. _D4.1_twentytwo-figure:
+.. figure:: images/Bristol1DofExp1.jpg
+    :align: center
 
-   Simple Myorobotic test rig: Only the upper MYO-Muscle is attached via
-   the tendon with the distal bone. The experimenter deflects the bone
-   to demonstrate the compliant nature of the system and the sensing
-   capabilities.
+    Simple Myorobotic test rig: Only the upper MYO-Muscle is
+    attached via the tendon with the distal bone. The experimenter
+    deflects the bone to demonstrate the compliant nature of the system
+    and the sensing capabilities.
+
 
 In this experiment, the linear feedback controller is configured as a
 pure P position controller of the MYO-Muscle. To limit the motor
 velocity and to demonstrate the functionality of the output saturation
-system, the PWM duty cycle was limited to :math:`15\% `. The plots in
-Figure [fig:Bristol1DofExpPositionPlots] show the joint angle, the motor
+system, the PWM duty cycle was limited to :math:`15\%`. The plots in
+:numref:`D4.1_twentythree-figure` show the joint angle, the motor
 shaft position and the spring displacement. At :math:`t \approx 1200 ms`
 the motor shaft reference value is changed and it is observable that
 with the change in motor shaft position the joint angle changes too. The
 steady state is reached at :math:`t\approx 2400ms`.
 
-.. figure:: test26000Myo1DOFPlot2.pdf
-   :alt: 1DOF arm control: the plots show the change of motor, joint and spring position.
-   :width: 80.0%
+.. _D4.1_twentythree-figure:
+.. figure:: images/test2.png
+    :align: center
 
-   1DOF arm control: the plots show the change of motor, joint and
-   spring position.
+    1DOF arm control: the plots show the change of motor, joint and
+    spring position.
+
 
 It is interesting to note that during the first phase of the motion
 (from 1200ms to 2400ms) the spring of the MYO-Muscle is not deformed.
-Only later, at :math:`t \approx 4000ms `, when the experimenter applies
+Only later, at :math:`t\approx 4000ms`, when the experimenter applies
 an additional vertical force to the distal bone, is a spring
 displacement and a change in joint angle observable. What is
 demonstrated here is the inherent compliance of the musculoskeletal
@@ -1063,29 +1067,28 @@ approach. Clearly, under a great load or greater accelerations, a spring
 displacement is also expected during the change in joint position
 without external disturbances.
 
-.. figure:: test26000Myo1DOFPlot1.pdf
-   :alt: 1DOF arm control: the plots show the motor shaft velocity (blue
-   raw signal, black LP filtered) and the duty cycle (DC) of the motor
-   control signal.
-   :width: 80.0%
+.. _D4.1_twentyfour-figure:
+.. figure:: images/test1.png
+    :align: center
 
-   1DOF arm control: the plots show the motor shaft velocity (blue raw
-   signal, black LP filtered) and the duty cycle (DC) of the motor
-   control signal.
+    1DOF arm control: the plots show the motor shaft velocity (blue
+    raw signal, black LP filtered) and the duty cycle (DC) of the motor
+    control signal.
+
 
 Also note that the change in motor shaft position negligible, i.e. the
 position controller holds the position despite the external
 disturbances. In other words, the system is passively compliant and not
 dependent on ‘softly tuned’ motor controllers.
 
-.. figure:: test26000Myo1DOFPlot0.pdf
-   :alt: 1DOF arm control: normalised plot of MYO-Muscle control states.
-   :width: 80.0%
+.. _D4.1_twentyfive-figure:
+.. figure:: images/test0.png
+    :align: center
 
-   1DOF arm control: normalised plot of MYO-Muscle control states.
+    1DOF arm control: normalised plot of MYO-Muscle control states.
 
-To further demonstrate the quality of control system, Figure
-[fig:Bristol1DofExpNormalisedPlots] shows the normalised signals of
+
+To further demonstrate the quality of control system, :numref:`D4.1_twentyfive-figure` shows the normalised signals of
 several motor states. Here it is important to note that the signals are
 only normalised to allow their display in a single plot in order to
 demonstrate how they correlate. They are not post-processed for plotting
