@@ -32,7 +32,7 @@ interface. The USBFlexRay board establishes the link between the FlexRay
 bus (the main Myorobotics communication system) and the PC.
 
 .. _EAESS_my-figure:
-.. figure:: img/systemoverviewecu.png
+.. figure:: img/systemoverviewECU.png
    :align: center
 
    Overview of the Myorobotics distributed control infrastructure.
@@ -70,7 +70,7 @@ and distribution boards, respectively.
    on the right side of the carrier.
 
 .. _EAESS_her-figure:
-.. figure:: img/gangliononbone.jpg
+.. figure:: img/GanglionOnBone.jpg
    :align: center
 
    The MYO-Ganglion mounted on bone before cables are attached.
@@ -127,7 +127,7 @@ connection to the Myorobot, i.e., via the MYO-Ganglions, is established
 through a 2-wire FlexRay interface.
 
 .. _EAESS_his-figure:
-.. figure:: /Electronics/img/usbflexraybridgecutoutwithlabels.png
+.. figure:: img/USBFlexRayBridgeCutOutwithlabels.png
    :align: center
 
    The Myorobotics USB-FlexRay Bridge
@@ -143,7 +143,7 @@ The MYO-Ganglions feature two pairs of FlexRay connections (see Figure
 multiple MYO-Ganglions.
 
 .. _EAESS_its-figure:
-.. figure:: /Electronics/img/FlexRayCablewithlabels.png
+.. figure:: img/FlexRayCablewithlabels.png
    :align: center
 
    The FlexRay cable used for Myorobotic system: green is the FRm signal, pink
@@ -164,7 +164,7 @@ interface and a micro-USB connection. However, they are not required
 when building a Myorobot.
 
 .. _EAESS_our-figure:
-.. figure:: /Electronics/img/MotorDriverBoardCutOutwithlabels.png
+.. figure:: img/MotorDriverBoardCutOutwithlabels.png
    :align: center
 
    The Myorobotics motor driver board.
@@ -178,7 +178,7 @@ sensor is supplied via the motor driver board and connected via a 6-pin
 JST connector [1]_ as depicted in :numref:`EAESS_their-figure`.
 
 .. _EAESS_their-figure:
-.. figure:: /Electronics/img/displacementSensorwithlabels.png
+.. figure:: img/displacementSensorwithlabels.png
    :align: center
 
    The spring displacement sensor and connector: Please note that the connector
@@ -199,7 +199,7 @@ Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
 
 
 .. _EAESS_the-figure:
-.. figure:: /Electronics/img/cablesandconnectors.png
+.. figure:: img/Cablesandconnectors.png
     :align: center
 
     Cables and connectors to connect the spring displacement sensor with the motor
@@ -215,7 +215,7 @@ sufficient to mount the motor driver board on the MYO-Muscle as shown in
 :numref:`EAESS_a-figure`.
 
 .. _EAESS_a-figure:
-.. figure:: /Electronics/img/motordriverboardwithlabels.png
+.. figure:: img/motordriverboardwithlabels.png
     :align: center
 
     Motor driver board mounted on MYO-Muscle
@@ -258,7 +258,7 @@ Wiring Scheme SPI Connector: Ganglion Distribution Board - Motor Driver Board
 +-----------------------------------------+--------+--------+-------+------+-------+
 
 .. _EAESS_one-figure:
-.. figure:: /Electronics/img/cablesandconnectorswithlabels2.png
+.. figure:: img/cablesandconnectorswithlabels2.png
     :align: center
 
     Cables and connectors to connect the SPI of the distribution board with the
@@ -288,7 +288,7 @@ present on the MYO-Ganglion board and therefore only one of the joint
 sensors should have its termination resistor enabled.
 
 .. _EAESS_second-figure:
-.. figure:: /Electronics/img/myojoint.png
+.. figure:: img/Myojoint.png
     :align: center
 
     The MYO-Joint (A) with a close-up (B) of the joint angle sensor board
@@ -361,7 +361,7 @@ Wiring Scheme: Joint Angle Sensor Board - Ganglion Distribution Board
 +------------------------------------------+---------+---------+-------+-------+
 
 .. _EAESS_third-figure:
-.. figure:: /Electronics/img/cablesandconnectorsnew.png
+.. figure:: img/cablesandconnectorsnew.png
     :align: center
 
     Cables and connectors to connect the joint angle sensor board to the
@@ -397,7 +397,7 @@ operations resistors R7 and R8 should be removed and R5 and R6 replaced
 with a 0\ :math:`\Omega` resistor.
 
 .. _EAESS_fourth-figure:
-.. figure:: /Electronics/img/pcbwithcomponents.png
+.. figure:: img/PCBwithcomponents.png
     :align: center
 
     PCB with components for 5V operation:
@@ -462,7 +462,7 @@ remaining four control modes use the freely configurable linear-feedback
 control topology depicted in :numref:`EAESS_fifth-figure`.
 
 .. _EAESS_fifth-figure:
-.. figure:: /Electronics/img/linearfeedbackcontroller.png
+.. figure:: img/linearfeedbackcontroller.png
     :align: center
 
     The linear feedback controller topology: the controller is freely congurable within
@@ -504,7 +504,7 @@ The four parameter array ``float32 polyPar[4]`` describes the
 non-linear mapping of the spring displacement measurement to a force.
 
 .. _EAESS_sixth-figure:
-.. figure:: /Electronics/img/localmusclecontroller.png
+.. figure:: img/localmusclecontroller.png
     :align: center
 
     The structures required to configure a local muscle controller.
@@ -526,7 +526,7 @@ velocity or joint angles, or set in the case of tendon force and motor
 position. All those operations are thread-safe.
 
 .. _EAESS_seventh-figure:
-.. figure:: /Electronics/img/cycleandcommunicationtimes.png
+.. figure:: img/cycleandcommunicationtimes.png
     :align: center
 
     The cycle and communication times of the complete Myorobotics communication
@@ -602,7 +602,7 @@ by calling ``p_robot->getGanglion(0)->getMuscles()[0]->enableController().``
 The controller reference values can be set with ``p_robot->getGanglion(0)->getMuscles()[0]->setControllerRef(Position,referencePosition).``
 
 .. _EAESS_eight-figure:
-.. figure:: /Electronics/img/exampleofrobotcontrol.png
+.. figure:: img/exampleofrobotcontrol.png
     :align: center
 
     A minimal example of robot control code running in MYODE, using a single
