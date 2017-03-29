@@ -32,7 +32,7 @@ interface. The USBFlexRay board establishes the link between the FlexRay
 bus (the main Myorobotics communication system) and the PC.
 
 .. _EAESS_my-figure:
-.. figure:: /Electronics/img/systemOverviewECU.png
+.. figure:: /Electronics/img/systemoverviewecu.png
    :align: center
 
    Overview of the Myorobotics distributed control infrastructure.
@@ -61,7 +61,7 @@ running at 140MHz. Adjacent to the processor board are the power supply
 and distribution boards, respectively.
 
 .. _EAESS_your-figure:
-.. figure:: /Electronics/img/MyoGanglionConnectivity_withlabels.png
+.. figure:: /Electronics/img/myoganglionconnectivitywithlabels.png
    :align: center
 
    The MYO-Ganglion PCB assembly: distribution board with CAN and SPI
@@ -70,7 +70,7 @@ and distribution boards, respectively.
    on the right side of the carrier.
 
 .. _EAESS_her-figure:
-.. figure:: /Electronics/img/GanglionOnBone.jpg
+.. figure:: /Electronics/img/gangliononbone.jpg
    :align: center
 
    The MYO-Ganglion mounted on bone before cables are attached.
@@ -127,7 +127,7 @@ connection to the Myorobot, i.e., via the MYO-Ganglions, is established
 through a 2-wire FlexRay interface.
 
 .. _EAESS_his-figure:
-.. figure:: /Electronics/img/USBFlexRayBridgeCutOutwithlabels.png
+.. figure:: /Electronics/img/usbflexraybridgecutoutwithlabels.png
    :align: center
 
    The Myorobotics USB-FlexRay Bridge
