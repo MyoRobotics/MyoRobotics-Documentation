@@ -73,7 +73,19 @@ The main documentation for the site is organized into a couple sections:
     :numbered:
     :caption: Muscle Linear Feedback Controllers
 
-    Controllers/*
+Controllers/*
+
+
+.. _Assembly:
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :numbered:
+    :caption: Production techniques, assembly guidelines and final design primitive library
+
+Assembly/*
+
 
 .. _suppliers_partners:
 
