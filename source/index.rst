@@ -73,7 +73,7 @@ The main documentation for the site is organized into a couple sections:
     :numbered:
     :caption: Muscle Linear Feedback Controllers
 
-Controllers/*
+    Controllers/*
 
 
 .. _Assembly:
@@ -84,7 +84,7 @@ Controllers/*
     :numbered:
     :caption: Production techniques, assembly guidelines and final design primitive library
 
-Assembly/*
+    Assembly/*
 
 
 .. _suppliers_partners:

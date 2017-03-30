@@ -1,170 +1,4 @@
-.. role:: math(raw)
-   :format: html latex
-..
-
-.. contents::
-   :depth: 3
-..
-
-|image0|\ **MYOROBOTICS**
-
-A framework for musculoskeletal robot development
-
-Project no.: 288219
-
-Instrument: Collaborative project
-
-Thematic Priority: ICT – Cognitive systems, Interaction, Robotics
-
-Project start date: 01/03/2012
-
-Project duration: 36 months
-
-**Deliverable D3.4:**
-
-**Production techniques, assembly guidelines
-and final design primitive library**
-
-| Due date of deliverable: 31/08/2014
-| Actual submission date: 27/02/2015
-
-Lead partner: Fraunhofer IPA
-
-Editor: Christophe Maufroy
-
-Author(s): Fraunhofer: Christophe Maufroy, Maik Siee, Michael Hoepf
-
-BRL: Alexander Lenz, Jason Welsby
-
-SVN Revision: -
-
-Document version: draft
-
-+---------------------------+----------------------------------------------------------------------------------------+------+
-| **Dissemination Level**   |
-+---------------------------+----------------------------------------------------------------------------------------+------+
-| **PU**                    | Public                                                                                 | PU   |
-+---------------------------+----------------------------------------------------------------------------------------+------+
-| **PP**                    | Restricted to other programme participants (including the Commission Services)         |      |
-+---------------------------+----------------------------------------------------------------------------------------+------+
-| **RE**                    | Restricted to a group specified by the consortium (including the Commission Service)   |      |
-+---------------------------+----------------------------------------------------------------------------------------+------+
-| **CO**                    | Confidential, only for members of the consortium (including the Commission Services)   |      |
-+---------------------------+----------------------------------------------------------------------------------------+------+
-
-Table of Contents
-
-`1 Scope of this document 4 <#scope-of-this-document>`__
-
-`2 Content of the design primitive library
-5 <#content-of-the-design-primitive-library>`__
-
-`2.1 Organization and description of the library elements
-5 <#organization-and-description-of-the-library-elements>`__
-
-`2.2 Overview of the implemented library elements
-6 <#overview-of-the-implemented-library-elements>`__
-
-`2.2.1 Mechanical couplings 6 <#mechanical-couplings>`__
-
-`2.2.2 Design Primitives 7 <#design-primitives>`__
-
-`3 Structural Bond 11 <#structural-bond-1>`__
-
-`3.1 Type 1: Flange clamp with conical flange
-11 <#type-1-flange-clamp-with-conical-flange-1>`__
-
-`3.1.1 Variety 1: Screwed Half Clamps 11 <#_Toc412816147>`__
-
-`4 Anchor – Fastener 14 <#anchor-fastener-1>`__
-
-`4.1 Type 1: Screw Fasteners 14 <#type-1-screw-fasteners-1>`__
-
-`4.1.1 Variety 1: Pair of Screws 14 <#_Toc412816150>`__
-
-`5 Cable attachment 15 <#cable-attachment-3>`__
-
-`5.1 Type 1: Through hole 15 <#_Toc412816152>`__
-
-`5.2 Type 2: Conical socket 15 <#type-2-conical-socket>`__
-
-`6 MYO-Bone 17 <#_Toc412816154>`__
-
-`6.1 Type 1: Parallel Assemblies 17 <#_Toc412816155>`__
-
-`6.1.1 Variety 1: Four Round Tube Fibres 17 <#_Toc412816156>`__
-
-`6.2 Type 2 – Monolithic core 28 <#_Toc412816157>`__
-
-`6.2.1 Variety 1 – T-slot profile 28 <#variety-1-t-slot-profile>`__
-
-`7 MYO-Joint 34 <#myo-joint>`__
-
-`7.1 Type 1: Symmetric Hinge 34 <#type-1-symmetric-hinge-1>`__
-
-`7.1.1 Variety 1 35 <#_Toc412816161>`__
-
-`7.3 Type 2: Asymmetric Hinge 41 <#type-2-asymmetric-hinge-1>`__
-
-`7.3.1 Variety 1 [obsolete] 42 <#_Toc412816163>`__
-
-`7.3.2 Variety 2 43 <#_Toc412816164>`__
-
-`7.4 Type 3 – Pivot 54 <#type-3-pivot-1>`__
-
-`7.4.1 Variety 1 55 <#_Toc412816166>`__
-
-`7.5 Type 4: Hinge-Pivot 61 <#type-4-hinge-pivot-1>`__
-
-`7.5.1 Variety 1 61 <#_Toc412816168>`__
-
-`7.6 Type 5: Hinge-Hinge 65 <#type-5-hinge-hinge-1>`__
-
-`7.6.1 Variety 1: Universal Joint 65 <#_Toc412816170>`__
-
-`8 MYO-Muscle 70 <#myo-muscle>`__
-
-`8.1 Type 0: Passive Muscle 70 <#type-0-passive-muscle-1>`__
-
-`8.1.1 Variety 1 - Simple spring 70 <#_Toc412816173>`__
-
-`8.2 Type 1: Unilateral Series Elastic Actuator
-71 <#type-1-unilateral-series-elastic-actuator-1>`__
-
-`8.2.1 Variety 1: Compression Spring 71 <#_Toc412816175>`__
-
-`9 MYO-Ganglion 80 <#myo-ganglion-1>`__
-
-`9.1 Type1: ECU with FlexRay bus 80 <#_Toc412816177>`__
-
-`10 Integration the Electronics 81 <#integration-the-electronics>`__
-
-`10.1 Integration of the MYO-Ganglion
-81 <#integration-of-the-myo-ganglion>`__
-
-`10.2 Integration of the cabling and connectivity
-81 <#integration-of-the-cabling-and-connectivity>`__
-
-`11 Other developments 82 <#_Toc412816181>`__
-
-`11.1 Alternative concept for the MYO-Bone design 82 <#_Toc412816182>`__
-
-`11.2 Ball-and-socket joint 83 <#_Toc412816183>`__
-
-`11.2.1 Sensor principle 83 <#sensor-principle>`__
-
-`11.2.2 Mechanical design 84 <#mechanical-design>`__
-
-`11.3 Alternative concept for MYO-Muscle design using leaf spring
-86 <#_Toc412816186>`__
-
-`11.4 Bi-articular muscle modules 87 <#_Toc412816187>`__
-
-`11.5 Scaling of selected design primitives 88 <#_Toc412816188>`__
-
-`11.6 Injection Moulding 90 <#_Toc412816189>`__
-
-Scope of this document
+Introduction
 ======================
 
 The deliverable in hand is the fourth deliverable of WP3, which aims at
@@ -199,11 +33,8 @@ framework for future extensions, the developed hardware elements are
 organized, for each DP functional category, using the following
 hierarchical classification:
 
-+-------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
-| Types       | (T)   | are used to distinguish the hardware elements on the basis of their design principle                                                           |
-+=============+=======+================================================================================================================================================+
-| Varieties   | (V)   | are used, if needed, to distinguish the hardware elements based on the same design principles, on the basis of the technical implementation.   |
-+-------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------+
+Types        (T)    are used to distinguish the hardware elements on the basis of their design principle.
+Varieties    (V)    are used, if needed, to distinguish the hardware elements based on the same design principles, on the basis of the technical implementation.
 
 The description of each variety follows the following structure:
 
@@ -229,192 +60,163 @@ Overview of the implemented library elements
 Mechanical couplings
 ~~~~~~~~~~~~~~~~~~~~
 
-+--------------------------------------------------------------+----------------------------------+
-| .. rubric:: **Structural Bond**                              |
-|    :name: structural-bond                                    |
-+==============================================================+==================================+
-| .. rubric:: ***Type 1: Flange clamp with conical flange***   |
-|    :name: type-1-flange-clamp-with-conical-flange            |
-+--------------------------------------------------------------+----------------------------------+
-| Variety 1 (D3.4 - page 13)                                   | .. rubric:: |image1|\ |image2|   |
-|                                                              |    :name: section                |
-+--------------------------------------------------------------+----------------------------------+
-|                                                              | .. rubric::                      |
-|                                                              |    :name: section-1              |
-+--------------------------------------------------------------+----------------------------------+
-| .. rubric:: **Anchor Fastener**                              |
-|    :name: anchor-fastener                                    |
-+--------------------------------------------------------------+----------------------------------+
-| .. rubric:: ***Type 1: Screw Fasteners***                    |
-|    :name: type-1-screw-fasteners                             |
-+--------------------------------------------------------------+----------------------------------+
-| Variety 1 (D3.4 - page 18)                                   | .. rubric:: |image3|             |
-|                                                              |    :name: section-2              |
-+--------------------------------------------------------------+----------------------------------+
-| .. rubric::                                                  | .. rubric::                      |
-|    :name: section-3                                          |    :name: section-4              |
-+--------------------------------------------------------------+----------------------------------+
-| .. rubric:: **Cable attachment**                             |
-|    :name: cable-attachment                                   |
-+--------------------------------------------------------------+----------------------------------+
-| .. rubric:: ***Type 1: Through hole                          | .. rubric:: |image4|             |
-|    (D3.4 - page 19)***                                       |    :name: section-5              |
-|    :name: type-1-through-hole-d3.4---page-19                 |                                  |
-+--------------------------------------------------------------+----------------------------------+
-| .. rubric::                                                  | .. rubric::                      |
-|    :name: section-6                                          |    :name: section-7              |
-+--------------------------------------------------------------+----------------------------------+
-| Type 2: Conical socket                                       | .. rubric:: |image5|\ |image6|   |
-| (D3.4 - page 19)                                             |    :name: section-8              |
-+--------------------------------------------------------------+----------------------------------+
-| .. rubric::                                                  | .. rubric::                      |
-|    :name: section-9                                          |    :name: section-10             |
-+--------------------------------------------------------------+----------------------------------+
+Structural Bond
+
+Type 1: Flange clamp with conical flange
+
+.. _D3.4_image1:
+.. figure:: images/image1.png
+   :align: center
+
+   Variety 1 (D3.4 - page 13)
+
+Anchor Fastener
+
+Type 1: Screw Fasteners
+
+.. _D3.4_image3:
+.. figure:: images/image3.png
+  :align: center
+
+  Variety 1 (D3.4 - page 18)
+
+Cable attachment
+
+Type 1: Through hole
+
+.. _D3.4_image4:
+.. figure:: images/image4.png
+  :align: center
+
+  (D3.4 - page 19)
+
+Type 2: Conical socket
+
+
+.. _D3.4_image5:
+.. figure:: images/image5.png
+  :align: center
+
+  (D3.4 - page 19)
+
 
 Design Primitives
 ~~~~~~~~~~~~~~~~~
 
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric:: **MYO-Bones**                       |
-|    :name: myo-bones                             |
-+=================================================+======================================+=================================+====================================+
-| .. rubric:: ***Type 1: Parallel Assemblies***   |
-|    :name: type-1-parallel-assemblies            |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| Variety 1 (D3.4 - page 21)                      | .. rubric:: |image7|                 |
-|                                                 |    :name: section-13                 |
-| Four Round Tubes Fibres                         |                                      |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric::                                     | .. rubric::                          |
-|    :name: section-14                            |    :name: section-15                 |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric:: **Accessories: **                   | .. rubric:: **MYO-Muscle adaptor**   | .. rubric:: **Pulley module**   | .. rubric:: **Cable attachment**   |
-|    :name: accessories                           |    :name: myo-muscle-adaptor         |    :name: pulley-module         |    :name: cable-attachment-1       |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric::                                     | .. rubric:: |image8|                 | .. rubric:: |image9|            | .. rubric:: |image10|              |
-|    :name: section-16                            |    :name: section-17                 |    :name: section-18            |    :name: section-19               |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric::                                     | .. rubric::                          | .. rubric::                     | .. rubric::                        |
-|    :name: section-20                            |    :name: section-21                 |    :name: section-22            |    :name: section-23               |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric:: ***Type 2: Monolithic core***       |
-|    :name: type-2-monolithic-core                |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric:: **Variety 1 (D3.4 - page 31)**      | .. rubric:: |image11|                |
-|    :name: variety-1-d3.4---page-31              |    :name: section-24                 |
-|                                                 |                                      |
-| .. rubric:: **T-slot profile**                  |                                      |
-|    :name: t-slot-profile                        |                                      |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric::                                     | .. rubric::                          |
-|    :name: section-25                            |    :name: section-26                 |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric:: **Accessories: **                   | .. rubric:: **MYO-Muscle adaptor**   | .. rubric:: **Pulley module**   | .. rubric:: **Cable attachment**   |
-|    :name: accessories-1                         |    :name: myo-muscle-adaptor-1       |    :name: pulley-module-1       |    :name: cable-attachment-2       |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric::                                     | .. rubric:: |image12|                | .. rubric:: |image13|           | .. rubric:: |image14|              |
-|    :name: section-27                            |    :name: section-28                 |    :name: section-29            |    :name: section-30               |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
-| .. rubric::                                     | .. rubric::                          | .. rubric::                     | .. rubric::                        |
-|    :name: section-31                            |    :name: section-32                 |    :name: section-33            |    :name: section-34               |
-+-------------------------------------------------+--------------------------------------+---------------------------------+------------------------------------+
+MYO-Bones
 
-+----------------------------------------------+-------------------------+
-| .. rubric:: **MYO-Joints**                   |
-|    :name: myo-joints                         |
-+==============================================+=========================+
-| .. rubric:: ***Type 1: Symmetric Hinge***    |
-|    :name: type-1-symmetric-hinge             |
-+----------------------------------------------+-------------------------+
-| Variety 1 (D3.4 - page 35)                   | .. rubric:: |image15|   |
-|                                              |    :name: section-35    |
-+----------------------------------------------+-------------------------+
-| .. rubric::                                  | .. rubric::             |
-|    :name: section-36                         |    :name: section-37    |
-+----------------------------------------------+-------------------------+
-| .. rubric:: ***Type 2: Asymmetric Hinge***   |
-|    :name: type-2-asymmetric-hinge            |
-+----------------------------------------------+-------------------------+
-| Variety 1 (D3.4 - page 43)                   | .. rubric:: |image16|   |
-|                                              |    :name: section-38    |
-+----------------------------------------------+-------------------------+
-| .. rubric::                                  | .. rubric::             |
-|    :name: section-39                         |    :name: section-40    |
-+----------------------------------------------+-------------------------+
-| Variety 2 (D3.4 - page 44)                   | .. rubric:: |image17|   |
-|                                              |    :name: section-41    |
-+----------------------------------------------+-------------------------+
-| .. rubric::                                  | .. rubric::             |
-|    :name: section-42                         |    :name: section-43    |
-+----------------------------------------------+-------------------------+
-| .. rubric:: ***Type 3: Pivot***              |
-|    :name: type-3-pivot                       |
-+----------------------------------------------+-------------------------+
-| Variety 1 (D3.4 - page 50)                   | .. rubric:: |image18|   |
-|                                              |    :name: section-44    |
-+----------------------------------------------+-------------------------+
-| .. rubric::                                  | .. rubric::             |
-|    :name: section-45                         |    :name: section-46    |
-+----------------------------------------------+-------------------------+
+Type 1: Parallel Assemblies
 
-+-----------------------------------------+-------------------------+
-| .. rubric:: ***Type 4: Hinge-Pivot***   |
-|    :name: type-4-hinge-pivot            |
-+=========================================+=========================+
-| Variety 1 (D3.4 - page 56)              | .. rubric:: |image19|   |
-|                                         |    :name: section-47    |
-+-----------------------------------------+-------------------------+
-| .. rubric::                             | .. rubric::             |
-|    :name: section-48                    |    :name: section-49    |
-+-----------------------------------------+-------------------------+
-| .. rubric:: ***Type 5: Hinge-Hinge***   |
-|    :name: type-5-hinge-hinge            |
-+-----------------------------------------+-------------------------+
-| Variety 1 (D3.4 - page 60)              | .. rubric:: |image20|   |
-|                                         |    :name: section-50    |
-+-----------------------------------------+-------------------------+
-| .. rubric::                             | .. rubric::             |
-|    :name: section-51                    |    :name: section-52    |
-+-----------------------------------------+-------------------------+
+Variety 1 (D3.4 - page 21)
 
-+----------------------------------------------------------------+-------------------------+-------------------------+
-| .. rubric:: **MYO-Muscles**                                    |
-|    :name: myo-muscles                                          |
-+================================================================+=========================+=========================+
-| .. rubric:: ***Type 0: Passive Muscle***                       |
-|    :name: type-0-passive-muscle                                |
-+----------------------------------------------------------------+-------------------------+-------------------------+
-| Variety 1 (D3.4 - page 65)                                     | .. rubric:: |image21|   | .. rubric:: |image22|   |
-|                                                                |    :name: section-53    |    :name: section-54    |
-| Simple spring                                                  |                         |                         |
-+----------------------------------------------------------------+-------------------------+-------------------------+
-| .. rubric::                                                    | .. rubric::             | .. rubric::             |
-|    :name: section-55                                           |    :name: section-56    |    :name: section-57    |
-+----------------------------------------------------------------+-------------------------+-------------------------+
-| .. rubric:: ***Type 1: Unilateral Series Elastic Actuator***   |
-|    :name: type-1-unilateral-series-elastic-actuator            |
-+----------------------------------------------------------------+-------------------------+-------------------------+
-| Variety 1 (D3.4 - page 65)                                     | .. rubric:: |image23|   |
-|                                                                |    :name: section-58    |
-| Compression spring                                             |                         |
-+----------------------------------------------------------------+-------------------------+-------------------------+
-| .. rubric::                                                    | .. rubric::             |
-|    :name: section-59                                           |    :name: section-60    |
-+----------------------------------------------------------------+-------------------------+-------------------------+
-| .. rubric::                                                    | .. rubric::             |
-|    :name: section-61                                           |    :name: section-62    |
-+----------------------------------------------------------------+-------------------------+-------------------------+
+.. _D3.4_image7:
+.. figure:: images/image7.png
+  :align: center
 
-+------------------------------------------------------------+-------------------------+
-| .. rubric:: **MYO-Ganglion**                               |
-|    :name: myo-ganglion                                     |
-+============================================================+=========================+
-| .. rubric:: ***Type 1: ECU with FlexRay bus (page 73)***   |
-|    :name: type-1-ecu-with-flexray-bus-page-73              |
-+------------------------------------------------------------+-------------------------+
-|                                                            | .. rubric:: |image24|   |
-|                                                            |    :name: section-63    |
-+------------------------------------------------------------+-------------------------+
+  Four Round Tubes Fibres
+
+.. _D3.4_image8:
+.. figure:: images/image8.png
+  :align: center
+
+  Accessories: 	MYO-Muscle adaptor	Pulley module	 Cable attachment
+
+Type 2: Monolithic core
+
+Variety 1 (D3.4 - page 31)
+
+.. _D3.4_image11:
+.. figure:: images/image11.png
+  :align: center
+
+  T-slot profile
+
+.. _D3.4_image12:
+.. figure:: images/image12.png
+  :align: center
+
+  Accessories: 	MYO-Muscle adaptor	Pulley module	 Cable attachment
+
+MYO-Joints
+
+Type 1: Symmetric Hinge
+
+.. _D3.4_image15:
+.. figure:: images/image15.png
+  :align: center
+
+  Variety 1 (D3.4 - page 35)
+
+
+Type 2: Asymmetric Hinge
+
+.. _D3.4_image16:
+.. figure:: images/image16.png
+  :align: center
+
+  Variety 1 (D3.4 - page 43)
+
+.. _D3.4_image17:
+.. figure:: images/image17.png
+  :align: center
+
+  Variety 2 (D3.4 - page 44
+
+Type 3: Pivot
+
+.. _D3.4_image18:
+.. figure:: images/image18.png
+  :align: center
+
+  Variety 1 (D3.4 - page 50)
+
+Type 4: Hinge-Pivot
+
+.. _D3.4_image19:
+.. figure:: images/image19.png
+  :align: center
+
+  Variety 1 (D3.4 - page 56)
+
+Type 5: Hinge-Hinge
+
+.. _D3.4_image20:
+.. figure:: images/image20.png
+  :align: center
+
+  Variety 1 (D3.4 - page 60)
+
+
+MYO-Muscles
+
+Type 0: Passive Muscle
+
+Variety 1 (D3.4 - page 65)
+
+.. _D3.4_image21:
+.. figure:: images/image21.png
+  :align: center
+
+  Simple spring
+
+Type 1: Unilateral Series Elastic Actuator
+
+Variety 1 (D3.4 - page 65)
+
+.. _D3.4_image23:
+.. figure:: images/image23.png
+  :align: center
+
+  Compression spring
+
+MYO-Ganglion
+
+Type 1: ECU with FlexRay bus (page 73)
+
+.. _D3.4_image24:
+.. figure:: images/image24.png
+  :align: center
+
 
 Structural Bond
 ===============
@@ -442,22 +244,19 @@ screws.
 Illustrations
 ^^^^^^^^^^^^^
 
-|image25|\ Overview:
+Overview:
 
-|image26|
-
-|image27|
-
-|image28|
+.. _D3.4_image25:
+.. figure:: images/image25.png
+  :align: center
 
 Individual elements:
 
-|image29|
-
-|image30|\ |image31|
+.. _D3.4_image26:
+.. figure:: images/image26.png
+  :align: center
 
 Dimensions
-^^^^^^^^^^
 
 +------+----------------------------------------------------------------------------------+
 | D1   | distance between the outer faces of the clamp ring                               |
@@ -480,12 +279,11 @@ Dimensions
 +------+----------------------------------------------------------------------------------+
 
 Implemented instances:
-^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------+----------------+--------+--------+
-| Reference                | SB-SC2-T1-V1   |
+| Reference                | SB-SC2-T1-V1   |        |        |
 +==========================+================+========+========+
-| Corresponding DP-Class   | II             |
+| Corresponding DP-Class   | II             |        |        |
 +--------------------------+----------------+--------+--------+
 | Dimensions               | D1             | 8      | [mm]   |
 +--------------------------+----------------+--------+--------+
@@ -507,7 +305,6 @@ Implemented instances:
 +--------------------------+----------------+--------+--------+
 
 Features:
-^^^^^^^^^
 
 Flange plates:
 
@@ -530,7 +327,6 @@ Clamp ring:
 1) The clamp ring is made of two parts, joined together by two screws
 
 Material and fabrication
-^^^^^^^^^^^^^^^^^^^^^^^^
 
 +----------------+-----------------+-------------------------+
 | Element name   | Material        | Fabrication processes   |
@@ -543,7 +339,6 @@ Material and fabrication
 +----------------+-----------------+-------------------------+
 
 Integration of the electronics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order to implement power (24V) and communication (FlexRay)
 connectivity, PCBs with spring loaded contacts are integrated into the
@@ -551,9 +346,12 @@ structural bonds. These circuit boards have a reverse polarity
 protection and were tested on their current carrying capability and can
 perform up to 20A.
 
-|image32|
+.. _D3.4_image32:
+.. figure:: images/image32.png
+  :align: center
 
-Figure 1: Structural Bond with electronic interface
+  Structural Bond with electronic interface
+
 
 Anchor – Fastener
 =================
@@ -570,12 +368,13 @@ Variety 1: Pair of Screws
 This variety uses two screw-thread pairs, whose openings are coplanar.
 
 Illustrations
-^^^^^^^^^^^^^
 
-|image33|
+.. _D3.4_image33:
+.. figure:: images/image33.png
+  :align: center
+
 
 Dimensions
-^^^^^^^^^^
 
 +------+-----------------------------------+
 | D1   | screw diameter                    |
@@ -586,7 +385,6 @@ Dimensions
 +------+-----------------------------------+
 
 Implemented instances
-^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------+----------------+------+--------+
 | Reference                | AF-SC2-T1-V1   |
@@ -607,12 +405,12 @@ Type 1: Through hole
 --------------------
 
 Overview
-~~~~~~~~
 
-|image34|
+.. _D3.4_image34:
+.. figure:: images/image34.png
+  :align: center
 
 Dimensions
-~~~~~~~~~~
 
 +------+-------------------------+
 | D1   | cable diameter          |
@@ -623,7 +421,6 @@ Dimensions
 +------+-------------------------+
 
 Implemented instances
-~~~~~~~~~~~~~~~~~~~~~
 
 +--------------------------+-------------+-------+--------+
 | Reference                | CA-SC2-T1   |
@@ -643,15 +440,13 @@ Type 2: Conical socket
 In this type, the cable-end and the corresponding socket, have a conical
 shape.
 
-|image35|\ Overview
-~~~~~~~~~~~~~~~~~~~
+Overview
 
-|image36|
-
-|image37|
+.. _D3.4_image35:
+.. figure:: images/image35.png
+  :align: center
 
 Dimensions
-~~~~~~~~~~
 
 +------+----------------------------------+
 | D1   | cable diameter                   |
@@ -664,12 +459,11 @@ Dimensions
 +------+----------------------------------+
 
 Implemented instances
-~~~~~~~~~~~~~~~~~~~~~
 
 +--------------------------+-------------+-------+--------+
-| Reference                | CA-SC2-T2   |
+| Reference                | CA-SC2-T2   |                |
 +==========================+=============+=======+========+
-| Corresponding DP-Class   | II          |
+| Corresponding DP-Class   | II          |                |
 +--------------------------+-------------+-------+--------+
 | Dimensions               | D1          | 2     | [mm]   |
 +--------------------------+-------------+-------+--------+
@@ -681,7 +475,6 @@ Implemented instances
 +--------------------------+-------------+-------+--------+
 
 Features
-~~~~~~~~
 
 1) The cable-end has a conical shape to allow a better distribution of
    the transmitted force.
@@ -697,7 +490,6 @@ Features
    one of the Design Primitives
 
 Material and fabrication
-~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------+----------------------+------------------------------------+
 | Element name   | Material             | Fabrication processes              |
@@ -705,7 +497,11 @@ Material and fabrication
 | cable-end      | aluminium or brass   | -  standard component, machining   |
 +----------------+----------------------+------------------------------------+
 
-|image38|
+.. _D3.4_image36:
+.. figure:: images/image36.png
+  :align: center
+
+Conical socket with HPPE cable
 
 MYO-Bone
 ========
@@ -715,7 +511,7 @@ Type 1: Parallel Assemblies
 
 This bone type implements the design principle “Parallel assemblies”.
 The bone is designed as an assembly made of three types of elements (see
-Figure 3):
+:numref:`D3.4_image37`):
 
 -  Elongated structural profiles, hereafter called *fibres*, form the
    main structural element.
@@ -727,11 +523,15 @@ Figure 3):
 -  *End-spacers* are spacers placed on each end of the bone, which
    provide additional interfaces.
 
-|image39|\ Together, the fibres and the spacers are making up the bone
+Together, the fibres and the spacers are making up the bone
 core, while the end-spacers play the role of the bone ends.
 
-Figure 3: Illustration of the bone construction Type 1 – “Parallel
-Assemblies”
+.. _D3.4_image37:
+.. figure:: images/image37.png
+  :align: center
+
+  Illustration of the bone construction Type 1 – “Parallel Assemblies”
+
 
 Variety 1: Four Round Tube Fibres
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -744,18 +544,25 @@ fibre longitudinal axes with the transverse plane are located at the
 vertex of a square.
 
 Illustrations
-^^^^^^^^^^^^^
 
-Overview: |image40|
+Overview:
 
-|image41|
+.. _D3.4_image38:
+.. figure:: images/image38.png
+  :align: center
+
+.. _D3.4_image39:
+.. figure:: images/image39.png
+  :align: center
+
 
 Individual elements:
 
-|image42|
+.. _D3.4_image40:
+.. figure:: images/image40.png
+  :align: center
 
 Dimensions
-^^^^^^^^^^
 
 +------+--------------------------------------------+
 | D1   | Diameter of the round tubes.               |
@@ -766,12 +573,11 @@ Dimensions
 +------+--------------------------------------------+
 
 Implemented instances
-^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------+------------------+-------+--------+
-| Reference                | BONE-SC2-T1-V1   |
+| Reference                | BONE-SC2-T1-V1   |                |
 +==========================+==================+=======+========+
-| Corresponding DP-Class   | II               |
+| Corresponding DP-Class   | II               |                |
 +--------------------------+------------------+-------+--------+
 | Dimensions               | D1               | 6     | [mm]   |
 +--------------------------+------------------+-------+--------+
@@ -783,7 +589,6 @@ Implemented instances
 +--------------------------+------------------+-------+--------+
 
 Features
-^^^^^^^^
 
 Fibres:
 
@@ -796,31 +601,30 @@ Fibres:
 
 Spacers:
 
-1) The spacers are attached to the fibres using flexure clamps.
+4) The spacers are attached to the fibres using flexure clamps.
 
-2) The spacers are shaped to allow the integration of the muscle, close
+5) The spacers are shaped to allow the integration of the muscle, close
    to the central axis on the four lateral sides of the bone.
 
-3) The spacers have a central hole to let the electric cables run
+6) The spacers have a central hole to let the electric cables run
    through them.
 
 End-spacers:
 
-1) The fixation of the fibres to the end-spacers is achieved via a screw
+7) The fixation of the fibres to the end-spacers is achieved via a screw
    connection.
 
-2) The end-spacers also have a central hole to let the electric cables
+8) The end-spacers also have a central hole to let the electric cables
    run through them.
 
 Attachment points:
 
-1) Each end-spacer has a screw pattern to attach one side of a SB.
+9) Each end-spacer has a screw pattern to attach one side of a SB.
 
-2) Each section of fibre between two successive spacers can be used to
+10) Each section of fibre between two successive spacers can be used to
    attach one or more anchor carriers (see Accessories).
 
 Material and fabrication
-^^^^^^^^^^^^^^^^^^^^^^^^
 
 +----------------+----------------------+------------------------------------+
 | Element name   | Material             | Fabrication processes              |
@@ -841,11 +645,12 @@ Material and fabrication
 +----------------+----------------------+------------------------------------+
 
 Accessories
-^^^^^^^^^^^
 
 MYO-Muscle adaptor
 
-|image43| |image44|
+.. _D3.4_image41:
+.. figure:: images/image41.png
+  :align: center
 
 Features:
 
@@ -861,7 +666,9 @@ Features:
 
 Pulley module
 
-|image45| |image46|
+.. _D3.4_image42:
+.. figure:: images/image42.png
+  :align: center
 
 Features:
 
@@ -880,10 +687,11 @@ Features:
 
 Cable attachment
 
-|image47|
+.. _D3.4_image43:
+.. figure:: images/image43.png
+  :align: center
 
- Features: 
-^^^^^^^^^^^
+ Features:
 
 1) The end of the tendon cable is secured with a pin that can be quickly
 mounted or unmounted
@@ -901,183 +709,201 @@ MYO-Bone, while leaving sufficient space in the middle to let the
 electric cables run through.
 
 In-house production manual
-^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Production of the fibers
 
-+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| **Step 1: Cut fibres to the desired length**   |
-+================================================+=================================================================================================================================+
-| |image48|                                      | Cut the fibres to the desired length.                                                                                           |
-|                                                |                                                                                                                                 |
-|                                                | Tips:                                                                                                                           |
-|                                                |                                                                                                                                 |
-|                                                | -  Lathe can create a precise cut and avoids damaging the tube                                                                  |
-+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| **Step 2: Mill the tube ends**                 |
-+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| |image49|                                      | Mill the inside hole of both tube ends in order to create a rough surface for gluing.                                           |
-|                                                |                                                                                                                                 |
-|                                                | Tips:                                                                                                                           |
-|                                                |                                                                                                                                 |
-|                                                | -  Use a round moulding cutter with an automatic screwdriver                                                                    |
-|                                                |                                                                                                                                 |
-|                                                | -  Use gloves to protect you from dust                                                                                          |
-+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| **Step 3: Positioning of the tube length**     |
-+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| |image50|                                      | Insert the tubes in the tube holding-support and position the tubes with the distance support. Fix the tubes with the screws.   |
-+------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
+Step 1: Cut fibres to the desired length
 
-+------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-| **Step 4: Gluing threaded pin in tube ends**   |
-+================================================+=======================================================================================================+
-| |image51|                                      | Add glue evenly to the threaded pin and hole. Use the distances according to the MYO-Bone class       |
-|                                                |                                                                                                       |
-|                                                | Tips:                                                                                                 |
-|                                                |                                                                                                       |
-|                                                | -  While drying, use a fixture to keep the thread pin and fibre centred and at the correct distance   |
-|                                                |                                                                                                       |
-|                                                | -  Wear protective gloves                                                                             |
-+------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-| **Step 5: Remove the leftover glue**           |
-+------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-| |image52|                                      | Remove the glue with a cutter knife. Consider the hardening-time of the glue.                         |
-+------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+.. _D3.4_image44:
+.. figure:: images/image44.png
+  :align: center
+
+Cut the fibres to the desired length.
+
+Tips:
+-	Lathe can create a precise cut and avoids damaging the tube
+
+Step 2: Mill the tube ends
+
+.. _D3.4_image45:
+.. figure:: images/image45.png
+  :align: center
+
+Mill the inside hole of both tube ends in order to create a rough surface for gluing.
+
+Tips:
+-	Use a round moulding cutter with an automatic screwdriver
+-	Use gloves to protect you from dust
+
+Step 3: Positioning of the tube length
+
+.. _D3.4_image46:
+.. figure:: images/image46.png
+  :align: center
+
+Insert the tubes in the tube holding-support and position the tubes with the distance support. Fix the tubes with the screws.
+
+Step 4: Gluing threaded pin in tube ends
+
+.. _D3.4_image47:
+.. figure:: images/image47.png
+  :align: center
+
+Add glue evenly to the threaded pin and hole. Use the distances according to the MYO-Bone class
+
+Tips:
+-	While drying, use a fixture to keep the thread pin and fibre centred and at the correct distance
+-	Wear protective gloves
+
+Step 5: Remove the leftover glue
+
+.. _D3.4_image48:
+.. figure:: images/image48.png
+  :align: center
+
+Remove the glue with a cutter knife. Consider the hardening-time of the glue.
 
 Production of spacers
 
-+-------------------------+----------------------------------------------+
-| **Step 1: Water-jet**   |
-+=========================+==============================================+
-| |image53|               | Order water-jet cut part shape (aluminium)   |
-+-------------------------+----------------------------------------------+
+Step 1: Water-jet
 
-+-----------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-| **Step 2: Drilling and threading of holes**   |
-+===============================================+==================================================================================================================+
-| |image54|                                     | Drill and thread the holes of the flexure clamps.                                                                |
-|                                               |                                                                                                                  |
-|                                               | Tips:                                                                                                            |
-|                                               |                                                                                                                  |
-|                                               | -  Put small fibers in the flexure clamps to avoid deformation caused by the pressure exerted by the drill bit   |
-+-----------------------------------------------+------------------------------------------------------------------------------------------------------------------+
+.. _D3.4_image49:
+.. figure:: images/image49.png
+  :align: center
+
+Order water-jet cut part shape (aluminium)
+
+Step 2: Drilling and threading of holes
+
+.. _D3.4_image50:
+.. figure:: images/image50.png
+  :align: center
+
+Drill and thread the holes of the flexure clamps.
+
+Tips:
+-	Put small fibers in the flexure clamps to avoid deformation caused by the pressure exerted by the drill bit
+
 
 Production of the other parts
 
-+-------------+-----------------------------------------------+
-| |image55|   | End Spacer:                                   |
-|             |                                               |
-|             | -  Selective Laser Sintering (Polyamide)      |
-|             |                                               |
-|             | SB Flange plate:                              |
-|             |                                               |
-|             | -  Machining (Aluminium)                      |
-|             |                                               |
-|             | -  Selective Laser Sintering (Polyamide)      |
-|             |                                               |
-|             | Screws, nuts and washers are standard parts   |
-+=============+===============================================+
-+-------------+-----------------------------------------------+
+.. _D3.4_image51:
+.. figure:: images/image51.png
+  :align: center
+
+End Spacer:
+-	Selective Laser Sintering (Polyamide)
+
+SB Flange plate:
+-	Machining (Aluminium)
+-	Selective Laser Sintering  (Polyamide)
+
+Screws, nuts and washers are standard parts
 
 Assembly
-^^^^^^^^
 
-|image56|
+.. _D3.4_image52:
+.. figure:: images/image52.png
+  :align: center
 
 Material needed
+4 x 	CFRP tubes with threaded ends
 
-    4 x CFRP tubes with threaded ends
+4 x 	spacers
+16 x 	M2.5x10 countersunk head screw (DIN 965)
 
-4 x spacers
+2 x 	end spacer
+8 x 	M4 thin nut (DIN 39)
+8 x 	M4 spring washer (DIN 127)
 
-16 x M2.5x10 countersunk head screw (DIN 965)
+2 x 	SB flange plates
+8 x 	M3x25 countersunk head screw (DIN 7991)
+8 x 	M3 thin nut (DIN 39)
+8 x 	M3 spring washer (DIN 6798)
 
-2 x end spacer
+Step 1: Assemble fibres and spacers
 
-    8 x M4 thin nut (DIN 39)
+.. _D3.4_image53:
+.. figure:: images/image53.png
+  :align: center
 
-    8 x M4 spring washer (DIN 127)
+Slide the fibres (1) in the flexure clamps (2) of the spacers.
 
-2 x SB flange plates
+Tips:
+-	Slide one fibre through all spacers, and then go on with the next fibre
+-	Flexure clamp screws should be loose
+-	In preparation for next step, regroup the spacers next to each other
 
-    8 x M3x25 countersunk head screw (DIN 7991)
+Step 2: Plug fibres in the end-spacer
 
-    8 x M3 thin nut (DIN 39)
+.. _D3.4_image54:
+.. figure:: images/image54.png
+  :align: center
 
-    8 x M3 spring washer (DIN 6798)
+Plug each fibre in one of the holes of the end-spacer.
 
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| **Step 1: Assemble fibres and spacers**      |
-+==============================================+==========================================================================================================================+
-| |image57|                                    | Slide the fibres (1) in the flexure clamps (2) of the spacers.                                                           |
-|                                              |                                                                                                                          |
-|                                              | Tips:                                                                                                                    |
-|                                              |                                                                                                                          |
-|                                              | -  Slide one fibre through all spacers, and then go on with the next fibre                                               |
-|                                              |                                                                                                                          |
-|                                              | -  Flexure clamp screws should be loose                                                                                  |
-|                                              |                                                                                                                          |
-|                                              | -  In preparation for next step, regroup the spacers next to each other                                                  |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| **Step 2: Plug fibres in the end-spacer**    |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| |image58|                                    | Plug each fibre in one of the holes of the end-spacer.                                                                   |
-|                                              |                                                                                                                          |
-|                                              | Tips:                                                                                                                    |
-|                                              |                                                                                                                          |
-|                                              | -  Apply sufficient pressure so that the end of the cfc tube is in contact with the shoulder at the bottom of the hole   |
-|                                              |                                                                                                                          |
-|                                              | -  Do not press the fibers firmly into the holes                                                                         |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| **Step 3: Screw fibres to the end spacer**   |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| |image59|                                    | Screw each of the fibers to the end-spacer using the M4 nuts and the large spring washers.                               |
-|                                              |                                                                                                                          |
-|                                              | Tips:                                                                                                                    |
-|                                              |                                                                                                                          |
-|                                              | -  Screw the nut until the spring washer is nearly flat, not more                                                        |
-|                                              |                                                                                                                          |
-|                                              | -  (if you screw further, you may pull the threaded pin out of the tube)                                                 |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| **Step 4: Attach the other end-spacer**      |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| |image60|\ |image61|                         | Repeat steps 2 & 3 for the other end-spacer.                                                                             |
-|                                              |                                                                                                                          |
-|                                              | Tips:                                                                                                                    |
-|                                              |                                                                                                                          |
-|                                              | -  Make sure the end-spacers are as much as possible:                                                                    |
-|                                              |                                                                                                                          |
-|                                              | -  Parallel to each other                                                                                                |
-|                                              |                                                                                                                          |
-|                                              | -  Perpendicular to the fibres                                                                                           |
-|                                              |                                                                                                                          |
-|                                              | -  Lay the bone on the table to ensure that it is not twisted                                                            |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| **Step 5: Adjust the spacers**               |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| |image62|                                    | Arrange the spacers equidistantly between the two end-spacers.                                                           |
-|                                              |                                                                                                                          |
-|                                              | Tips:                                                                                                                    |
-|                                              |                                                                                                                          |
-|                                              | -  Distance between spacers: 51 to 52 mm                                                                                 |
-|                                              |                                                                                                                          |
-|                                              | -  Ensure that the spacers are perpendicular to the fibres                                                               |
-+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
+Tips:
+-	Apply sufficient pressure so that the end of the cfc tube is in contact with the shoulder at the bottom of the hole
+-	Do not press the fibers firmly into the holes
 
-+-------------------------------------------+---------------------------------------------------------------------------------------------+
-| **Step 6: Check straightness**            |
-+===========================================+=============================================================================================+
-| |image63|                                 | Check that the MYO-Bone is straight and that both end-spacers are parallel to each other.   |
-|                                           |                                                                                             |
-|                                           | If necessary proceed to adjustments                                                         |
-+-------------------------------------------+---------------------------------------------------------------------------------------------+
-| **Step 7: Attach the SB flange plates**   |
-+-------------------------------------------+---------------------------------------------------------------------------------------------+
-| |image64|                                 | Screw the SB flange plates to the end-spacers with the M3 screws.                           |
-|                                           |                                                                                             |
-|                                           | Use the small spring washers together with the M3 nuts (backside)                           |
-+-------------------------------------------+---------------------------------------------------------------------------------------------+
+Step 3: Screw fibres to the end spacer
+
+.. _D3.4_image55:
+.. figure:: images/image55.png
+  :align: center
+
+Screw each of the fibers to the end-spacer using the M4 nuts and the large spring washers.
+
+Tips:
+-	Screw the nut until the spring washer is nearly flat, not more
+-	(if you screw further, you may pull the threaded pin out of the tube)
+
+
+Step 4: Attach the other end-spacer
+
+.. _D3.4_image56:
+.. figure:: images/image56.png
+  :align: center
+
+Repeat steps 2 & 3 for the other end-spacer.
+
+Tips:
+-	Make sure the end-spacers are as much as possible:
+-	Parallel to each other
+-	Perpendicular to the fibres
+-	Lay the bone on the table to ensure that it is not twisted
+
+Step 5: Adjust the spacers
+
+.. _D3.4_image57:
+.. figure:: images/image57.png
+  :align: center
+
+Arrange the spacers equidistantly between the two end-spacers.
+
+Tips:
+-	Distance between spacers: 51 to 52 mm
+-	Ensure that the spacers are perpendicular to the fibres
+
+Step 6: Check straightness
+
+.. _D3.4_image58:
+.. figure:: images/image58.png
+  :align: center
+
+Check that the MYO-Bone is straight and that both end-spacers are parallel to each other.
+
+If necessary proceed to adjustments.
+
+Step 7: Attach the SB flange plates
+
+.. _D3.4_image59:
+.. figure:: images/image59.png
+  :align: center
+
+Screw the SB flange plates to the end-spacers with the M3 screws.
+
+Use the small spring washers together with the M3 nuts (backside).
 
 Type 2 – Monolithic core
 ------------------------
@@ -1086,17 +912,19 @@ This bone type implements the design principle “Monolithic core”. The
 bone is designed as a solid aluminium profile with an *end adaptor* on
 each side of the bone.
 
-Variety 1 – T-slot profile 
+Variety 1 – T-slot profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this variant, a T-slot profile is used, enabling the easy fixation of
 design primitives or accessories on the MYO-Bone structure using nuts
 fitting in the T-slot.
 
-|image65|
+.. _D3.4_image60:
+.. figure:: images/image60.png
+  :align: center
+
 
 Dimensions
-^^^^^^^^^^
 
 +------+--------------------------------+
 | D1   | Width of the profile section   |
@@ -1105,12 +933,11 @@ Dimensions
 +------+--------------------------------+
 
 Implemented instances
-^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------------+------------------+-------+--------+
-| Reference                | BONE-SC2-T2-V1   |
+| Reference                | BONE-SC2-T2-V1   |                |
 +==========================+==================+=======+========+
-| Corresponding DP-Class   | II               |
+| Corresponding DP-Class   | II               |                |
 +--------------------------+------------------+-------+--------+
 | Dimensions               | D1               | 25    | [mm]   |
 +--------------------------+------------------+-------+--------+
@@ -1120,7 +947,6 @@ Implemented instances
 +--------------------------+------------------+-------+--------+
 
 Features
-^^^^^^^^
 
 Aluminium profile:
 
@@ -1145,7 +971,6 @@ Adaptor:
 3) The end adaptor has a screw pattern to attach one side of a SB
 
 Material and fabrication
-^^^^^^^^^^^^^^^^^^^^^^^^
 
 +------------------+-------------+---------------------------------+
 | Element name     | Material    | Fabrication processes           |
@@ -1160,11 +985,12 @@ Material and fabrication
 +------------------+-------------+---------------------------------+
 
 Accessories
-^^^^^^^^^^^
 
 MYO-Muscle Adaptor
 
-|image66|
+.. _D3.4_image61:
+.. figure:: images/image61.png
+  :align: center
 
 Features:
 
@@ -1175,7 +1001,11 @@ Features:
 3) Each adaptor is attached with two screws on one of the four sides of
    the T-Slot profile.
 
-*Pulley module*\ |image67|
+Pulley module
+
+.. _D3.4_image62:
+.. figure:: images/image62.png
+  :align: center
 
 Features:
 
@@ -1188,9 +1018,12 @@ Features:
 3) The pulley module is shaped to allow a fast attachment with one screw
    to the profile.
 
-*Cable attachment*
+Cable attachment
 
-|image68|
+.. _D3.4_image63:
+.. figure:: images/image63.png
+  :align: center
+
 
 Features:
 
@@ -1204,77 +1037,95 @@ Features:
 3) The cable attachment is shaped to allow a fast attachment with two
    screws to the profile.
 
-In-house production manual 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In-house production manual
 
 Profile
 
-+------------------------------------------------------------+-----------------------------------------------------------------------------+
-| **Step 1: Cut profiles to the desired length**             |
-+============================================================+=============================================================================+
-| |image69|                                                  | Cut the profiles to the desired length.                                     |
-|                                                            |                                                                             |
-|                                                            | Tips:                                                                       |
-|                                                            |                                                                             |
-|                                                            | -  Using circular saw creates a suitable cut and provides a good surface.   |
-+------------------------------------------------------------+-----------------------------------------------------------------------------+
-| **Step 2: Thread the holes at both ends of the profile**   |
-+------------------------------------------------------------+-----------------------------------------------------------------------------+
-| |image70|                                                  | -  Drill first the holes with a :math:`\varnothing\ `\ 4,2 mm bit           |
-|                                                            |                                                                             |
-|                                                            | -  Thread with a M5 tap                                                     |
-+------------------------------------------------------------+-----------------------------------------------------------------------------+
+Step 1: Cut profiles to the desired length
 
-*Adaptor*
+.. _D3.4_image64:
+.. figure:: images/image64.png
+  :align: center
 
-+---------------------------------------------+--------------------------------------------------------------------------+
-|     **Step 1: Order water-jet cut parts**   |
-+=============================================+==========================================================================+
-|     |image71|                               |     Order water-jet cut part shape                                       |
-+---------------------------------------------+--------------------------------------------------------------------------+
-|     **Step 2: Countersinking of holes**     |
-+---------------------------------------------+--------------------------------------------------------------------------+
-| |image72|                                   |     Countersink the M5 clearance holes for the fixation to the profile   |
-+---------------------------------------------+--------------------------------------------------------------------------+
+Cut the profiles to the desired length.
+
+Tips:
+-	Using circular saw creates a suitable cut and provides a good surface.
+
+Step 2: Thread the holes at both ends of the profile
+
+.. _D3.4_image65:
+.. figure:: images/image65.png
+  :align: center
+
+•	Drill first the holes with a ∅ 4,2 mm bit
+•	Thread with a M5 tap
+
+Adaptor
+
+Step 1: Order water-jet cut parts
+
+.. _D3.4_image66:
+.. figure:: images/image66.png
+  :align: center
+
+Order water-jet cut part shape
+
+Step 2: Countersinking of holes
+
+.. _D3.4_image67:
+.. figure:: images/image67.png
+  :align: center
+
+Countersink the M5 clearance holes for the fixation to the profile
 
 **Assembly**
 
-+-------------+----------------------------------------------+
-| |image73|   | ***Material needed***                        |
-|             |                                              |
-|             | 1X Aluminum profile with threaded ends       |
-|             |                                              |
-|             | 2X Adaptor                                   |
-|             |                                              |
-|             | 8X M5 countersunk head screw (DIN 965)       |
-|             |                                              |
-|             | 2X SB flange plates                          |
-|             |                                              |
-|             | 8X M3x25 countersunk head screw (DIN 7991)   |
-|             |                                              |
-|             | 8X M3 thin nut (DIN 31)                      |
-|             |                                              |
-|             | 8X M3 spring washer (DIN 6798)               |
-+=============+==============================================+
-+-------------+----------------------------------------------+
+.. _D3.4_image68:
+.. figure:: images/image68.png
+  :align: center
 
-+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
-|     **Step 1: Assemble profile and adaptors**                                 |
-+===============================================================================+===============================================================================+
-|     |image74|\ |image75|                                                      |     Screw the adaptors at the end of the profile with the M5 screws.          |
-+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
-|     **Step 2: Attach the SB flange plates**                                   |
-+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
-|     |image76|\ |image77|                                                      |     Screw the SB flange plates to the adaptors with the M3 screws and nuts.   |
-|                                                                               |                                                                               |
-|                                                                               |     Tips:                                                                     |
-|                                                                               |                                                                               |
-|                                                                               | -  Use the small spring washers together with the M3 nuts (backside)          |
-+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
-|     **Step 3: Drill the profile for electric cables outlet (if necessary)**   |
-+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
-|     |image78|                                                                 | Drill an outlet for the electric cables at the suitable position.             |
-+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+**Material needed**
+
+1X       Aluminum profile with threaded ends
+
+2X       Adaptor
+
+8X       M5 countersunk head screw (DIN 965)
+
+2X       SB flange plates
+
+8X       M3x25 countersunk head screw (DIN 7991)
+
+8X       M3 thin nut (DIN 31)
+
+8X       M3 spring washer (DIN 6798)
+
+**Step 1: Assemble profile and adaptors**
+
+.. _D3.4_image69:
+.. figure:: images/image69.png
+  :align: center
+
+Screw the adaptors at the end of the profile with the M5 screws.
+
+ **Step 2: Attach the SB flange plates**
+
+.. _D3.4_image70:
+.. figure:: images/image70.png
+ :align: center
+
+Screw the SB flange plates to the adaptors with the M3 screws and nuts.
+Tips:
+•	Use the small spring washers together with the M3 nuts (backside)
+
+**Step 3: Drill the profile for electric cables outlet (if necessary)**
+
+.. _D3.4_image71:
+.. figure:: images/image71.png
+ :align: center
+
+Drill an outlet for the electric cables at the suitable position.
 
 MYO-Joint
 =========
@@ -1297,7 +1148,11 @@ electrical cabling. The attachment and guidance for the cable
 transmission are placed centrally for a symmetrical application of the
 force on the bearings.
 
-|image79|
+.. _D3.4_image72:
+.. figure:: images/image72.png
+ :align: center
+
+ Illustration of the joint construction for Type 1
 
 Variety 1
 ~~~~~~~~~
@@ -1312,17 +1167,17 @@ of the axles and an electronic board located inside the joint. The
 corresponding sensor interface module (SIM) is located on the outside of
 the joint to be easily accessible for configuration purpose.
 
-Illustrations
-^^^^^^^^^^^^^
+**Illustrations**
 
-|image80|
+.. _D3.4_image73:
+.. figure:: images/image73.png
+ :align: center
 
-|image81|
+.. _D3.4_image74:
+.. figure:: images/image74.png
+:align: center
 
-|image82|
-
-Dimensions
-^^^^^^^^^^
+**Dimensions**
 
 +-----+-------------------------------------+
 | H   | Distance between joint end planes   |
@@ -1336,13 +1191,12 @@ Dimensions
 | Θ   | Motion range of the joint           |
 +-----+-------------------------------------+
 
-Implemented instances
-^^^^^^^^^^^^^^^^^^^^^
+**Implemented instances**
 
 +--------------------------+-------------------+-------+--------+
-| Reference                | JOINT-SC2-T1-V1   |
+| Reference                | JOINT-SC2-T1-V1   |                |
 +==========================+===================+=======+========+
-| Corresponding DP-Class   | II                |
+| Corresponding DP-Class   | II                |                |
 +--------------------------+-------------------+-------+--------+
 | Dimensions               | H                 | 60    | [mm]   |
 +--------------------------+-------------------+-------+--------+
@@ -1357,8 +1211,7 @@ Implemented instances
 |                          | M                 | 70    | [g]    |
 +--------------------------+-------------------+-------+--------+
 
-Features
-^^^^^^^^
+**Features**
 
 Under joint fork:
 
@@ -1375,38 +1228,37 @@ Under joint fork:
 
 Upper joint fork:
 
-1) Two cable attachments (CA-SC2-T2), allowing the bidirectional
+6) Two cable attachments (CA-SC2-T2), allowing the bidirectional
    actuation of the joint, and a continuous guide for the cables are
    implemented.
 
-2) The SB is integrated on the upper joint fork.
+7) The SB is integrated on the upper joint fork.
 
-3) The topology of the force transmitting volume from the SB to the
+8) The topology of the force transmitting volume from the SB to the
    joint axis is optimised
 
-4) The “neck” of the upper joint fork features a location to add an
+9) The “neck” of the upper joint fork features a location to add an
    extension, providing if necessary additional CA on the joint.
 
-5) Both shafts of the joint are implemented with interference fit.
+10) Both shafts of the joint are implemented with interference fit.
 
 Sensor and electrical interfaces:
 
-1) The sensor board and its protection cap can be easily fixed on the
+11) The sensor board and its protection cap can be easily fixed on the
    under joint fork.
 
-2) To measure the movement between the joint parts, the magnet element
+12) To measure the movement between the joint parts, the magnet element
    of the sensor is mounted in the shaft.
 
-3) The electrical interfaces are small PCBs which are embedded in the
+13) The electrical interfaces are small PCBs which are embedded in the
    structural bonds.
 
-4) Openings and cable channels are implemented to enable the electrical
+14) Openings and cable channels are implemented to enable the electrical
    cabling between sensor and SIM-board (described in Deliverable 4.1)
    and between the electrical interfaces of the structural bonds on both
    sides of the joint.
 
-Material and fabrication
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Material and fabrication**
 
 +--------------------+------------------+------------------------------------+
 | Element name       | Material         | Fabrication processes              |
@@ -1422,10 +1274,11 @@ Material and fabrication
 | Bearing            | Steel            | -  purchase (standard component)   |
 +--------------------+------------------+------------------------------------+
 
-Assembly Procedure
-^^^^^^^^^^^^^^^^^^
+**Assembly Procedure**
 
-|image83|
+.. _D3.4_image75:
+.. figure:: images/image75.png
+:align: center
 
 Material needed:
 
@@ -1574,7 +1427,7 @@ the next section.
 
 |image94|
 
-Variety 2 
+Variety 2
 ~~~~~~~~~~
 
 This variety has the same basic construction as variety 1 regarding the
@@ -1930,7 +1783,7 @@ joint, two ball bearings are used to support the joint axle.
 |image122|\ Illustrations
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dimensions 
+Dimensions
 ^^^^^^^^^^^
 
 +-----+-------------------------------------+
@@ -2813,7 +2666,7 @@ Assembly Procedure MYO-Muscle
  MYO-Ganglion
 =============
 
-Type1: ECU with FlexRay bus 
+Type1: ECU with FlexRay bus
 ----------------------------
 
 The MYO-Ganglia are main control and signal processing units,
