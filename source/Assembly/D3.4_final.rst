@@ -76,9 +76,9 @@ Type 1: Screw Fasteners
 
 .. _D3.4_image3:
 .. figure:: images/image3.png
-  :align: center
+    :align: center
 
-  Variety 1 (D3.4 - page 18)
+    Variety 1 (D3.4 - page 18)
 
 Cable attachment
 
@@ -86,19 +86,18 @@ Type 1: Through hole
 
 .. _D3.4_image4:
 .. figure:: images/image4.png
-  :align: center
+    :align: center
 
-  (D3.4 - page 19)
+    (D3.4 - page 19)
 
 Type 2: Conical socket
 
 
 .. _D3.4_image5:
 .. figure:: images/image5.png
-  :align: center
+    :align: center
 
-  (D3.4 - page 19)
-
+    (D3.4 - page 19)
 
 Design Primitives
 ~~~~~~~~~~~~~~~~~
@@ -111,15 +110,15 @@ Variety 1 (D3.4 - page 21)
 
 .. _D3.4_image7:
 .. figure:: images/image7.png
-  :align: center
+    :align: center
 
-  Four Round Tubes Fibres
+    Four Round Tubes Fibres
 
 .. _D3.4_image8:
 .. figure:: images/image8.png
-  :align: center
+    :align: center
 
-  Accessories: 	MYO-Muscle adaptor	Pulley module	 Cable attachment
+    Accessories: 	MYO-Muscle adaptor	Pulley module	 Cable attachment
 
 Type 2: Monolithic core
 
@@ -127,15 +126,15 @@ Variety 1 (D3.4 - page 31)
 
 .. _D3.4_image11:
 .. figure:: images/image11.png
-  :align: center
+    :align: center
 
-  T-slot profile
+    T-slot profile
 
 .. _D3.4_image12:
 .. figure:: images/image12.png
-  :align: center
+    :align: center
 
-  Accessories: 	MYO-Muscle adaptor	Pulley module	 Cable attachment
+    Accessories: 	MYO-Muscle adaptor	Pulley module	 Cable attachment
 
 MYO-Joints
 
@@ -143,49 +142,47 @@ Type 1: Symmetric Hinge
 
 .. _D3.4_image15:
 .. figure:: images/image15.png
-  :align: center
+    :align: center
 
-  Variety 1 (D3.4 - page 35)
-
+    Variety 1 (D3.4 - page 35)
 
 Type 2: Asymmetric Hinge
 
 .. _D3.4_image16:
 .. figure:: images/image16.png
-  :align: center
+    :align: center
 
-  Variety 1 (D3.4 - page 43)
+    Variety 1 (D3.4 - page 43)
 
 .. _D3.4_image17:
 .. figure:: images/image17.png
-  :align: center
+    :align: center
 
-  Variety 2 (D3.4 - page 44
+    Variety 2 (D3.4 - page 44)
 
 Type 3: Pivot
 
 .. _D3.4_image18:
 .. figure:: images/image18.png
-  :align: center
+    :align: center
 
-  Variety 1 (D3.4 - page 50)
+    Variety 1 (D3.4 - page 50)
 
 Type 4: Hinge-Pivot
 
 .. _D3.4_image19:
 .. figure:: images/image19.png
-  :align: center
+    :align: center
 
-  Variety 1 (D3.4 - page 56)
+    Variety 1 (D3.4 - page 56)
 
 Type 5: Hinge-Hinge
 
 .. _D3.4_image20:
 .. figure:: images/image20.png
-  :align: center
+    :align: center
 
-  Variety 1 (D3.4 - page 60)
-
+    Variety 1 (D3.4 - page 60)
 
 MYO-Muscles
 
@@ -195,9 +192,9 @@ Variety 1 (D3.4 - page 65)
 
 .. _D3.4_image21:
 .. figure:: images/image21.png
-  :align: center
+    :align: center
 
-  Simple spring
+    Simple spring
 
 Type 1: Unilateral Series Elastic Actuator
 
@@ -205,9 +202,9 @@ Variety 1 (D3.4 - page 65)
 
 .. _D3.4_image23:
 .. figure:: images/image23.png
-  :align: center
+    :align: center
 
-  Compression spring
+    Compression spring
 
 MYO-Ganglion
 
@@ -215,8 +212,7 @@ Type 1: ECU with FlexRay bus (page 73)
 
 .. _D3.4_image24:
 .. figure:: images/image24.png
-  :align: center
-
+    :align: center
 
 Structural Bond
 ===============
@@ -226,9 +222,7 @@ Type 1: Flange clamp with conical flange
 
 The structural bond is made of the following elements:
 
--  Two *flange plates* which include the conical flanges. The
-   side-plates can be integrated in the bone or joint, on one or both
-   sides.
+-  Two *flange plates* which include the conical flanges. The side-plates can be integrated in the bone or joint, on one or both sides.
 
 -  One *clamp ring* which clamps the two flange plates together.
 
@@ -248,13 +242,13 @@ Overview:
 
 .. _D3.4_image25:
 .. figure:: images/image25.png
-  :align: center
+    :align: center
 
 Individual elements:
 
 .. _D3.4_image26:
 .. figure:: images/image26.png
-  :align: center
+    :align: center
 
 Dimensions
 
@@ -309,22 +303,22 @@ Features:
 Flange plates:
 
 1) The flange plates are fixed to the joint or bone assembly using a
-   square screw pattern
+square screw pattern
 
 2) The flange plates can also be integrated in the bone or joint
-   construction
+construction
 
 3) The two flange plates are additionally connected via a set of up to
-   four pins. They prevent the relative rotation of the flange plates
-   along the longitudinal axis and contribute to transmit the torsion
-   moment.
+four pins. They prevent the relative rotation of the flange plates
+along the longitudinal axis and contribute to transmit the torsion
+moment.
 
 4) The flange plates have an octagon in their centre to fix the
-   electronic interface in it
+electronic interface in it
 
 Clamp ring:
 
-1) The clamp ring is made of two parts, joined together by two screws
+5) The clamp ring is made of two parts, joined together by two screws
 
 Material and fabrication
 
@@ -348,10 +342,9 @@ perform up to 20A.
 
 .. _D3.4_image32:
 .. figure:: images/image32.png
-  :align: center
+    :align: center
 
-  Structural Bond with electronic interface
-
+    Structural Bond with electronic interface
 
 Anchor – Fastener
 =================
@@ -371,8 +364,7 @@ Illustrations
 
 .. _D3.4_image33:
 .. figure:: images/image33.png
-  :align: center
-
+    :align: center
 
 Dimensions
 
@@ -387,11 +379,11 @@ Dimensions
 Implemented instances
 
 +--------------------------+----------------+------+--------+
-| Reference                | AF-SC2-T1-V1   |
+| Reference                | AF-SC2-T1-V1   |               |
 +==========================+================+======+========+
-| Corresponding DP-Class   | II             |
+| Corresponding DP-Class   | II             |               |
 +--------------------------+----------------+------+--------+
-| Dimensions               | D1             | M3   | -      |
+| Dimensions               | D1             | M3   |        |
 +--------------------------+----------------+------+--------+
 |                          | D2             | 5    | [mm]   |
 +--------------------------+----------------+------+--------+
@@ -408,7 +400,7 @@ Overview
 
 .. _D3.4_image34:
 .. figure:: images/image34.png
-  :align: center
+    :align: center
 
 Dimensions
 
@@ -423,9 +415,9 @@ Dimensions
 Implemented instances
 
 +--------------------------+-------------+-------+--------+
-| Reference                | CA-SC2-T1   |
+| Reference                | CA-SC2-T1   |                |
 +==========================+=============+=======+========+
-| Corresponding DP-Class   | II          |
+| Corresponding DP-Class   | II          |                |
 +--------------------------+-------------+-------+--------+
 | Dimensions               | D1          | 1.6   | [mm]   |
 +--------------------------+-------------+-------+--------+
@@ -444,7 +436,7 @@ Overview
 
 .. _D3.4_image35:
 .. figure:: images/image35.png
-  :align: center
+    :align: center
 
 Dimensions
 
@@ -476,18 +468,17 @@ Implemented instances
 
 Features
 
-1) The cable-end has a conical shape to allow a better distribution of
-   the transmitted force.
+1) The cable-end has a conical shape to allow a better distribution of the transmitted force.
 
 2) The cable runs through the cylindrical channel of the cable-end.
 
 3) To fix the cable to the cable-end, a knot is made at the end of the
-   cable, which is melted to prevent the knot to loosen. This knot is
-   larger than the cylindrical channel and therefore applies the cable
-   force on the internal cylindrical surface of the cable-end.
+cable, which is melted to prevent the knot to loosen. This knot is
+larger than the cylindrical channel and therefore applies the cable
+force on the internal cylindrical surface of the cable-end.
 
 4) The conical cable-end can be secured in a cylindrical socket built in
-   one of the Design Primitives
+one of the Design Primitives.
 
 Material and fabrication
 
@@ -499,9 +490,9 @@ Material and fabrication
 
 .. _D3.4_image36:
 .. figure:: images/image36.png
-  :align: center
+    :align: center
 
-Conical socket with HPPE cable
+    Conical socket with HPPE cable
 
 MYO-Bone
 ========
@@ -513,25 +504,20 @@ This bone type implements the design principle “Parallel assemblies”.
 The bone is designed as an assembly made of three types of elements (see
 :numref:`D3.4_image37`):
 
--  Elongated structural profiles, hereafter called *fibres*, form the
-   main structural element.
+-  Elongated structural profiles, hereafter called *fibres*, form the main structural element.
 
--  Transverse *spacers* bind the fibres together and increase the
-   assembly stiffness and strength. The spacers are shaped to allow the
-   compact integration of other DPs and the electric cabling.
+-  Transverse *spacers* bind the fibres together and increase the assembly stiffness and strength. The spacers are shaped to allow the compact integration of other DPs and the electric cabling.
 
--  *End-spacers* are spacers placed on each end of the bone, which
-   provide additional interfaces.
+-  *End-spacers* are spacers placed on each end of the bone, which provide additional interfaces.
 
 Together, the fibres and the spacers are making up the bone
 core, while the end-spacers play the role of the bone ends.
 
 .. _D3.4_image37:
 .. figure:: images/image37.png
-  :align: center
+    :align: center
 
-  Illustration of the bone construction Type 1 – “Parallel Assemblies”
-
+    Illustration of the bone construction Type 1 – “Parallel Assemblies”
 
 Variety 1: Four Round Tube Fibres
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -549,18 +535,17 @@ Overview:
 
 .. _D3.4_image38:
 .. figure:: images/image38.png
-  :align: center
+    :align: center
 
 .. _D3.4_image39:
 .. figure:: images/image39.png
-  :align: center
-
+    :align: center
 
 Individual elements:
 
 .. _D3.4_image40:
 .. figure:: images/image40.png
-  :align: center
+    :align: center
 
 Dimensions
 
@@ -594,8 +579,7 @@ Fibres:
 
 1) The fibres are implemented with standard tubes with a round section.
 
-2) Each fibre is terminated with two inserts equipped with screw
-   threads.
+2) Each fibre is terminated with two inserts equipped with screw threads.
 
 3) The inserts are glued to or pressed in each of the tube.
 
@@ -604,25 +588,25 @@ Spacers:
 4) The spacers are attached to the fibres using flexure clamps.
 
 5) The spacers are shaped to allow the integration of the muscle, close
-   to the central axis on the four lateral sides of the bone.
+to the central axis on the four lateral sides of the bone.
 
 6) The spacers have a central hole to let the electric cables run
-   through them.
+through them.
 
 End-spacers:
 
 7) The fixation of the fibres to the end-spacers is achieved via a screw
-   connection.
+connection.
 
 8) The end-spacers also have a central hole to let the electric cables
-   run through them.
+run through them.
 
 Attachment points:
 
 9) Each end-spacer has a screw pattern to attach one side of a SB.
 
 10) Each section of fibre between two successive spacers can be used to
-   attach one or more anchor carriers (see Accessories).
+attach one or more anchor carriers (see Accessories).
 
 Material and fabrication
 
@@ -650,48 +634,39 @@ MYO-Muscle adaptor
 
 .. _D3.4_image41:
 .. figure:: images/image41.png
-  :align: center
+    :align: center
 
 Features:
 
-1) The adaptor implements four anchor points of type AF-SCX-T1-V1, one
-   on each of the four sides of the bone core.
+1) The adaptor implements four anchor points of type AF-SCX-T1-V1, one on each of the four sides of the bone core.
 
-2) The four parts making up the carrier are fixed to each other with
-   screws.
+2) The four parts making up the carrier are fixed to each other with screws.
 
-3) Like the spacers, the carrier is shaped to allow the compact
-   integration of the muscles and has a hole in the middle to let the
-   electric cables run through.
+3) Like the spacers, the carrier is shaped to allow the compact integration of the muscles and has a hole in the middle to let the electric cables run through.
 
 Pulley module
 
 .. _D3.4_image42:
 .. figure:: images/image42.png
-  :align: center
+    :align: center
 
 Features:
 
-1) The pulley module includes a closed profile to keep the cable in
-   place.
+1) The pulley module includes a closed profile to keep the cable in place.
 
-2) The guide sleeve has a shape that aligns the cable. Additionally its
-   supporting shaft has two ball bearings to minimize the friction.
+2) The guide sleeve has a shape that aligns the cable. Additionally its supporting shaft has two ball bearings to minimize the friction.
 
-3) The pulley is shaped to allow a fast attachment to the parallel
-   fibres.
+3) The pulley is shaped to allow a fast attachment to the parallel fibres.
 
-4) The connector allows a secure lock of up to four pulleys. It has a
-   hole in the middle to let the electric cables run through and an
-   opening to allow an easy insertion.
+4) The connector allows a secure lock of up to four pulleys. It has a hole in the middle to let the electric cables run through and an opening to allow an easy insertion.
 
 Cable attachment
 
 .. _D3.4_image43:
 .. figure:: images/image43.png
-  :align: center
+    :align: center
 
- Features:
+Features:
 
 1) The end of the tendon cable is secured with a pin that can be quickly
 mounted or unmounted
@@ -715,51 +690,56 @@ Production of the fibers
 Step 1: Cut fibres to the desired length
 
 .. _D3.4_image44:
-.. figure:: images/image44.png
-  :align: center
+.. figure:: images/image44.jpg
+    :align: center
 
 Cut the fibres to the desired length.
 
 Tips:
+
 -	Lathe can create a precise cut and avoids damaging the tube
 
 Step 2: Mill the tube ends
 
 .. _D3.4_image45:
-.. figure:: images/image45.png
-  :align: center
+.. figure:: images/image45.jpg
+    :align: center
 
 Mill the inside hole of both tube ends in order to create a rough surface for gluing.
 
 Tips:
+
 -	Use a round moulding cutter with an automatic screwdriver
+
 -	Use gloves to protect you from dust
 
 Step 3: Positioning of the tube length
 
 .. _D3.4_image46:
-.. figure:: images/image46.png
-  :align: center
+.. figure:: images/image46.jpg
+    :align: center
 
 Insert the tubes in the tube holding-support and position the tubes with the distance support. Fix the tubes with the screws.
 
 Step 4: Gluing threaded pin in tube ends
 
 .. _D3.4_image47:
-.. figure:: images/image47.png
-  :align: center
+.. figure:: images/image47.jpg
+    :align: center
 
 Add glue evenly to the threaded pin and hole. Use the distances according to the MYO-Bone class
 
 Tips:
+
 -	While drying, use a fixture to keep the thread pin and fibre centred and at the correct distance
+
 -	Wear protective gloves
 
 Step 5: Remove the leftover glue
 
 .. _D3.4_image48:
 .. figure:: images/image48.png
-  :align: center
+    :align: center
 
 Remove the glue with a cutter knife. Consider the hardening-time of the glue.
 
@@ -768,28 +748,28 @@ Production of spacers
 Step 1: Water-jet
 
 .. _D3.4_image49:
-.. figure:: images/image49.png
-  :align: center
+.. figure:: images/image49.jpg
+    :align: center
 
 Order water-jet cut part shape (aluminium)
 
 Step 2: Drilling and threading of holes
 
 .. _D3.4_image50:
-.. figure:: images/image50.png
-  :align: center
+.. figure:: images/image50.jpg
+    :align: center
 
 Drill and thread the holes of the flexure clamps.
 
 Tips:
--	Put small fibers in the flexure clamps to avoid deformation caused by the pressure exerted by the drill bit
 
+-	Put small fibers in the flexure clamps to avoid deformation caused by the pressure exerted by the drill bit
 
 Production of the other parts
 
 .. _D3.4_image51:
 .. figure:: images/image51.png
-  :align: center
+    :align: center
 
 End Spacer:
 -	Selective Laser Sintering (Polyamide)
@@ -804,7 +784,7 @@ Assembly
 
 .. _D3.4_image52:
 .. figure:: images/image52.png
-  :align: center
+    :align: center
 
 Material needed
 4 x 	CFRP tubes with threaded ends
@@ -825,71 +805,81 @@ Step 1: Assemble fibres and spacers
 
 .. _D3.4_image53:
 .. figure:: images/image53.png
-  :align: center
+    :align: center
 
 Slide the fibres (1) in the flexure clamps (2) of the spacers.
 
 Tips:
+
 -	Slide one fibre through all spacers, and then go on with the next fibre
+
 -	Flexure clamp screws should be loose
+
 -	In preparation for next step, regroup the spacers next to each other
 
 Step 2: Plug fibres in the end-spacer
 
 .. _D3.4_image54:
-.. figure:: images/image54.png
-  :align: center
+.. figure:: images/image54.jpg
+    :align: center
 
 Plug each fibre in one of the holes of the end-spacer.
 
 Tips:
+
 -	Apply sufficient pressure so that the end of the cfc tube is in contact with the shoulder at the bottom of the hole
+
 -	Do not press the fibers firmly into the holes
 
 Step 3: Screw fibres to the end spacer
 
 .. _D3.4_image55:
-.. figure:: images/image55.png
-  :align: center
+.. figure:: images/image55.jpg
+    :align: center
 
 Screw each of the fibers to the end-spacer using the M4 nuts and the large spring washers.
 
 Tips:
--	Screw the nut until the spring washer is nearly flat, not more
--	(if you screw further, you may pull the threaded pin out of the tube)
 
+-	Screw the nut until the spring washer is nearly flat, not more
+
+-	(if you screw further, you may pull the threaded pin out of the tube)
 
 Step 4: Attach the other end-spacer
 
 .. _D3.4_image56:
 .. figure:: images/image56.png
-  :align: center
+    :align: center
 
 Repeat steps 2 & 3 for the other end-spacer.
 
 Tips:
+
 -	Make sure the end-spacers are as much as possible:
--	Parallel to each other
--	Perpendicular to the fibres
--	Lay the bone on the table to ensure that it is not twisted
+
+  -	Parallel to each other
+  -	Perpendicular to the fibres
+  -	Lay the bone on the table to ensure that it is not twisted
 
 Step 5: Adjust the spacers
 
 .. _D3.4_image57:
-.. figure:: images/image57.png
-  :align: center
+.. figure:: images/image57.jpg
+    :align: center
 
 Arrange the spacers equidistantly between the two end-spacers.
 
 Tips:
+
 -	Distance between spacers: 51 to 52 mm
+
 -	Ensure that the spacers are perpendicular to the fibres
 
 Step 6: Check straightness
 
 .. _D3.4_image58:
-.. figure:: images/image58.png
-  :align: center
+.. figure:: images/image58.jpg
+    :align: center
 
 Check that the MYO-Bone is straight and that both end-spacers are parallel to each other.
 
@@ -898,8 +888,8 @@ If necessary proceed to adjustments.
 Step 7: Attach the SB flange plates
 
 .. _D3.4_image59:
-.. figure:: images/image59.png
-  :align: center
+.. figure:: images/image59.jpg
+    :align: center
 
 Screw the SB flange plates to the end-spacers with the M3 screws.
 
@@ -921,8 +911,7 @@ fitting in the T-slot.
 
 .. _D3.4_image60:
 .. figure:: images/image60.png
-  :align: center
-
+    :align: center
 
 Dimensions
 
@@ -950,23 +939,17 @@ Features
 
 Aluminium profile:
 
-1) The profile is standard aluminium T-slot profile with a square
-   section. According to the shape of profile, it is possible to fix the
-   muscle in any place along the profile.
+1) The profile is standard aluminium T-slot profile with a square section. According to the shape of profile, it is possible to fix the muscle in any place along the profile.
 
 2) The profile has a high stiffness against torsion and bending.
 
-3) The channel in the centre of the profile can host the electric cables
-   running through the bone. A hole must be drilled at the desired
-   position to let the electrical cables in and out.
+3) The channel in the centre of the profile can host the electric cables running through the bone. A hole must be drilled at the desired position to let the electrical cables in and out.
 
 Adaptor:
 
-1) The end adaptor is screwed to the aluminium profile using the four
-   peripheral holes that can easily be threaded
+1) The end adaptor is screwed to the aluminium profile using the four peripheral holes that can easily be threaded
 
-2) The end adaptor has a central hole to let the electric cables run
-   through it.
+2) The end adaptor has a central hole to let the electric cables run through it.
 
 3) The end adaptor has a screw pattern to attach one side of a SB
 
@@ -990,7 +973,7 @@ MYO-Muscle Adaptor
 
 .. _D3.4_image61:
 .. figure:: images/image61.png
-  :align: center
+    :align: center
 
 Features:
 
@@ -998,44 +981,35 @@ Features:
 
 2) Two adaptors are required to attach one MYO-Muscle.
 
-3) Each adaptor is attached with two screws on one of the four sides of
-   the T-Slot profile.
+3) Each adaptor is attached with two screws on one of the four sides of the T-Slot profile.
 
 Pulley module
 
 .. _D3.4_image62:
 .. figure:: images/image62.png
-  :align: center
+    :align: center
 
 Features:
 
-1) The pulley module includes a closed profile to keep the cable in
-   place.
+1) The pulley module includes a closed profile to keep the cable in place.
 
-2) The guide sleeve has a shape that aligns the cable. Additionally its
-   supporting shaft has two ball bearings to minimize the friction.
+2) The guide sleeve has a shape that aligns the cable. Additionally its supporting shaft has two ball bearings to minimize the friction.
 
-3) The pulley module is shaped to allow a fast attachment with one screw
-   to the profile.
+3) The pulley module is shaped to allow a fast attachment with one screw to the profile.
 
 Cable attachment
 
 .. _D3.4_image63:
 .. figure:: images/image63.png
-  :align: center
-
+    :align: center
 
 Features:
 
-1) The end of the tendon cable is secured with a pin that can be quickly
-   mounted or unmounted
+1) The end of the tendon cable is secured with a pin that can be quickly mounted or unmounted.
 
-2) The construction includes two aluminium plates that can be easily
-   exchanged to adjust the pin position with respect to the end of the
-   MYO-Bone
+2) The construction includes two aluminium plates that can be easily exchanged to adjust the pin position with respect to the end of the MYO-Bone.
 
-3) The cable attachment is shaped to allow a fast attachment with two
-   screws to the profile.
+3) The cable attachment is shaped to allow a fast attachment with two screws to the profile.
 
 In-house production manual
 
@@ -1044,19 +1018,20 @@ Profile
 Step 1: Cut profiles to the desired length
 
 .. _D3.4_image64:
-.. figure:: images/image64.png
-  :align: center
+.. figure:: images/image64.jpg
+    :align: center
 
 Cut the profiles to the desired length.
 
 Tips:
+
 -	Using circular saw creates a suitable cut and provides a good surface.
 
 Step 2: Thread the holes at both ends of the profile
 
 .. _D3.4_image65:
-.. figure:: images/image65.png
-  :align: center
+.. figure:: images/image65.jpg
+    :align: center
 
 •	Drill first the holes with a ∅ 4,2 mm bit
 •	Thread with a M5 tap
@@ -1066,64 +1041,60 @@ Adaptor
 Step 1: Order water-jet cut parts
 
 .. _D3.4_image66:
-.. figure:: images/image66.png
-  :align: center
+.. figure:: images/image66.jpg
+    :align: center
 
 Order water-jet cut part shape
 
 Step 2: Countersinking of holes
 
 .. _D3.4_image67:
-.. figure:: images/image67.png
-  :align: center
+.. figure:: images/image67.jpg
+    :align: center
 
 Countersink the M5 clearance holes for the fixation to the profile
 
 **Assembly**
 
 .. _D3.4_image68:
-.. figure:: images/image68.png
-  :align: center
+.. figure:: images/image68.jpg
+    :align: center
 
 **Material needed**
 
 1X       Aluminum profile with threaded ends
-
 2X       Adaptor
-
 8X       M5 countersunk head screw (DIN 965)
-
 2X       SB flange plates
-
 8X       M3x25 countersunk head screw (DIN 7991)
-
 8X       M3 thin nut (DIN 31)
-
 8X       M3 spring washer (DIN 6798)
 
 **Step 1: Assemble profile and adaptors**
 
 .. _D3.4_image69:
 .. figure:: images/image69.png
-  :align: center
+    :align: center
 
 Screw the adaptors at the end of the profile with the M5 screws.
 
- **Step 2: Attach the SB flange plates**
+**Step 2: Attach the SB flange plates**
 
 .. _D3.4_image70:
 .. figure:: images/image70.png
- :align: center
+   :align: center
 
 Screw the SB flange plates to the adaptors with the M3 screws and nuts.
+
 Tips:
-•	Use the small spring washers together with the M3 nuts (backside)
+
+-	Use the small spring washers together with the M3 nuts (backside)
 
 **Step 3: Drill the profile for electric cables outlet (if necessary)**
 
 .. _D3.4_image71:
-.. figure:: images/image71.png
- :align: center
+.. figure:: images/image71.jpg
+   :align: center
 
 Drill an outlet for the electric cables at the suitable position.
 
@@ -1150,9 +1121,9 @@ force on the bearings.
 
 .. _D3.4_image72:
 .. figure:: images/image72.png
- :align: center
+    :align: center
 
- Illustration of the joint construction for Type 1
+    Illustration of the joint construction for Type 1
 
 Variety 1
 ~~~~~~~~~
@@ -1171,11 +1142,11 @@ the joint to be easily accessible for configuration purpose.
 
 .. _D3.4_image73:
 .. figure:: images/image73.png
- :align: center
+   :align: center
 
 .. _D3.4_image74:
 .. figure:: images/image74.png
-:align: center
+    :align: center
 
 **Dimensions**
 
@@ -1221,42 +1192,34 @@ Under joint fork:
 
 3) The structural bond (SB) is integrated on the under joint fork.
 
-4) The topology of the force transmitting volume from the SB to the
-   joint axis is optimised.
+4) The topology of the force transmitting volume from the SB to the joint axis is optimised.
 
 5) A holding device allows attaching a SIM-board on the side.
 
 Upper joint fork:
 
-6) Two cable attachments (CA-SC2-T2), allowing the bidirectional
-   actuation of the joint, and a continuous guide for the cables are
-   implemented.
+6) Two cable attachments (CA-SC2-T2), allowing the bidirectional actuation of the joint, and a continuous guide for the cables are implemented.
 
 7) The SB is integrated on the upper joint fork.
 
-8) The topology of the force transmitting volume from the SB to the
-   joint axis is optimised
+8) The topology of the force transmitting volume from the SB to the joint axis is optimised
 
-9) The “neck” of the upper joint fork features a location to add an
-   extension, providing if necessary additional CA on the joint.
+9) The “neck” of the upper joint fork features a location to add an extension, providing if necessary additional CA on the joint.
 
 10) Both shafts of the joint are implemented with interference fit.
 
 Sensor and electrical interfaces:
 
-11) The sensor board and its protection cap can be easily fixed on the
-   under joint fork.
+11) The sensor board and its protection cap can be easily fixed on the under joint fork.
 
-12) To measure the movement between the joint parts, the magnet element
-   of the sensor is mounted in the shaft.
+12) To measure the movement between the joint parts, the magnet element of the sensor is mounted in the shaft.
 
-13) The electrical interfaces are small PCBs which are embedded in the
-   structural bonds.
+13) The electrical interfaces are small PCBs which are embedded in the structural bonds.
 
 14) Openings and cable channels are implemented to enable the electrical
-   cabling between sensor and SIM-board (described in Deliverable 4.1)
-   and between the electrical interfaces of the structural bonds on both
-   sides of the joint.
+cabling between sensor and SIM-board (described in Deliverable 4.1)
+and between the electrical interfaces of the structural bonds on both
+sides of the joint.
 
 **Material and fabrication**
 
@@ -1278,103 +1241,134 @@ Sensor and electrical interfaces:
 
 .. _D3.4_image75:
 .. figure:: images/image75.png
-:align: center
+    :align: center
 
 Material needed:
 
 1 x Upper hinge part
-
 1 x Lower hinge part
-
 1 x Sensor cap
-
 2 Bearings 625 5x16x5 mm
-
 1 x shaft left side
-
 1 x shaft sensor side
-
 4 data wires 0,25 mm\ :sup:`2`
-
 2 power wires highly flexible silicon 1,5 mm\ :sup:`2`
-
 2 x connector boards, four spring contacts
-
 8 x M1,6 x 6
 
-+-----------------------------------+--------------------------------------------------------------------------------+
-| **Step 1: Mount sensor board **   |                                                                                |
-+===================================+================================================================================+
-| |image84|                         | Push the sensor cables through the cable channel.                              |
-|                                   |                                                                                |
-|                                   | Place the sensor board on the pins and glue on two points.                     |
-|                                   |                                                                                |
-|                                   | Tips:                                                                          |
-|                                   |                                                                                |
-|                                   | -  for pre fixation of the board melt the plastic pins with a soldering iron   |
-+-----------------------------------+--------------------------------------------------------------------------------+
+**Step 1: Mount sensor board**
 
-+-----------------------------------+-----------------------------------------------------------+
-| **Step 2: Glue sensor cap**       |
-+===================================+===========================================================+
-| |image85|                         | Put glue on the sensor cap and screw it on the housing.   |
-|                                   |                                                           |
-|                                   | Tips:                                                     |
-|                                   |                                                           |
-|                                   | -  just a small amount of glue is needed                  |
-+-----------------------------------+-----------------------------------------------------------+
-| **Step 3: Mount Ball Bearings**   |                                                           |
-+-----------------------------------+-----------------------------------------------------------+
-| |image86|                         | Put the ball bearings in the housing on both sides.       |
-+-----------------------------------+-----------------------------------------------------------+
+.. _D3.4_image76:
+.. figure:: images/image76.png
+    :align: center
 
-+---------------------------------------------------+-----------------------------------------------------+
-| **Step 4: Assemble upper and under hinge part**   |
-+===================================================+=====================================================+
-| |image87|                                         | Assemble the upper and under hinge part.            |
-|                                                   |                                                     |
-|                                                   | Plug in the shafts to fix the joint parts.          |
-|                                                   |                                                     |
-|                                                   | Tips:                                               |
-|                                                   |                                                     |
-|                                                   | - The shaft with magnet must on the sensor side     |
-|                                                   |                                                     |
-|                                                   | - For better fixation put lock tide on the shafts   |
-+---------------------------------------------------+-----------------------------------------------------+
+Push the sensor cables through the cable channel.
+Place the sensor board on the pins and glue on two points.
 
-+-------------------------------------------+----------------------------------------------------------+
-| **Step 5: Connect cables to the board**   |
-+===========================================+==========================================================+
-| |image88|                                 | Prepare cable tree on connector boards                   |
-|                                           |                                                          |
-|                                           | Cut on 15 cm length:                                     |
-|                                           |                                                          |
-|                                           | 4 data wires 0,25 mm\ :sup:`2`                           |
-|                                           |                                                          |
-|                                           | 2 power wires highly flexible silicon 1,5 mm\ :sup:`2`   |
-+-------------------------------------------+----------------------------------------------------------+
+Tips:
 
-+------------------------+-------------------------------------+
-| **Step 6: Cabling**    |
-+========================+=====================================+
-| |image89|\ |image90|   | Place PCB carrier in SB             |
-|                        |                                     |
-|                        | Push cable tree through the joint   |
-+------------------------+-------------------------------------+
+-	for pre fixation of the board melt the plastic pins with a soldering iron
 
-+--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-| **Step 7: Connect cables to the second board**   |
-+==================================================+========================================================================================================================+
-| |image91|                                        | Skinning all cables long till the SB-pocket.                                                                           |
-|                                                  |                                                                                                                        |
-|                                                  | Pull cables through connector board and solder from top. Screw both connector boards to joint with four M1,6 screws.   |
-|                                                  |                                                                                                                        |
-|                                                  | Tips:                                                                                                                  |
-|                                                  |                                                                                                                        |
-|                                                  | -  Turn Joint in the position of the longest cable path!                                                               |
-|                                                  |                                                                                                                        |
-|                                                  | -  Avoid cable crossovers by connecting to board                                                                       |
-+--------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
+**Step 2: Glue sensor cap**
+
+.. _D3.4_image77:
+.. figure:: images/image77.png
+    :align: center
+
+Put glue on the sensor cap and screw it on the housing.
+
+Tips:
+
+-	just a small amount of glue is needed
+
+**Step 3: Mount Ball Bearings**
+
+.. _D3.4_image78:
+.. figure:: images/image78.png
+    :align: center
+
+Put the ball bearings in the housing on both sides.
+
+**Step 4: Assemble upper and under hinge part**
+
+.. _D3.4_image79:
+ .. figure:: images/image79.png
+   :align: center
+
+Assemble the upper and under hinge part.
+Plug in the shafts to fix the joint parts.
+
+Tips:
+
+- The shaft with magnet must on the sensor side
+
+- For better fixation put lock tide on the shafts
+
+**Step 5: Connect cables to the board**
+
+.. _D3.4_image80:
+.. figure:: images/image80.jpg
+    :align: center
+
+Prepare cable tree on connector boards
+Cut on 15 cm length:
+4 data wires 0,25 mm2
+2 power wires highly flexible silicon 1,5 mm2
+
+Connector side:
+
+.. _D3.4_image80A:
+.. figure:: images/image80A.png
+    :align: center
+
+Pin colour code:
+F1+ white
+F1 - brown
+F2 + yellow
+F2 - green
+
+**Step 6: Cabling**
+
+.. _D3.4_image81:
+.. figure:: images/image81.png
+   :align: center
+
+Place PCB carrier in SB
+
+Carrier orientation:
+
+.. _D3.4_image81A:
+.. figure:: images/image81A.png
+   :align: center
+
+Push cable tree through the joint
+
+**Step 7: Connect cables to the second board**
+
+.. _D3.4_image82:
+.. figure:: images/image82.png
+    :align: center
+
+Skinning all cables long till the SB-pocket.
+Pull cables through connector board and solder from top. Screw both connector boards to joint with four M1,6 screws.
+
+Connector side:
+
+.. _D3.4_image82A:
+.. figure:: images/image82A.png
+    :align: center
+
+Pin colour code:
+F1+ white
+F1 - brown
+F2 + yellow
+F2 - green
+
+Tips:
+
+-	Turn Joint in the position of the longest cable path!
+
+-	Avoid cable crossovers by connecting to board
 
 Type 2: Asymmetric Hinge
 ------------------------
@@ -1395,7 +1389,11 @@ electrical cabling. The attachment and guidance for the cable
 transmission are placed centrally for a symmetrical application of the
 force on the bearings.
 
-|image92|
+.. _D3.4_image83:
+.. figure:: images/image83.png
+    :align: center
+
+    Illustration of the joint construction
 
 Variety 1 [obsolete]
 ~~~~~~~~~~~~~~~~~~~~
@@ -1408,7 +1406,11 @@ joint axle and an electronic board located on the side of the joint,
 together with its corresponding sensor interface module (SIM). The
 electronic boards are integrated in one of the side covers.
 
-|image93|
+.. _D3.4_image84:
+.. figure:: images/image84.png
+    :align: center
+
+    Illustration of the joint construction
 
 Given the constraint of asymmetric angular range, it was not possible to
 use the same mechanism for cable guidance as for the symmetric hinge
@@ -1420,12 +1422,17 @@ direction.
 
 This cable guidance implementation does not insure a constant lever arm
 length, which significantly decreases as the joint flexes, as shown in
-Figure 7. Tests performed by ETH showed that this pronounced decrease of
+:numref:`D3.4_image84`. Tests performed by ETH showed that this pronounced decrease of
 the lever arm length was prejudicial in applications. For that reason
 another asymmetric hinge variety was developed, which is described in
 the next section.
 
-|image94|
+.. _D3.4_image85:
+.. figure:: images/image85.png
+    :align: center
+
+    Lever arm length variation of the extensor muscle cable (red line) as the
+    asymmetric hinge joint (variety 1) flexes from 0° to 140°
 
 Variety 2
 ~~~~~~~~~~
@@ -1446,37 +1453,52 @@ pulley. To prevent this, two mechanisms were devised to centre the cable
 attachment (cable centring mechanism) and to keep the cable running on
 the pulley (cable catching mechanisms).
 
-|image95|
+.. _D3.4_image86:
+.. figure:: images/image86.png
+    :align: center
 
-|image96|
+    Illustration of the joint construction
+
+.. _D3.4_image87:
+.. figure:: images/image87.png
+    :align: center
+
+    Lever arm length variation of the extensor and flexor muscles cables
+    (resp. red and green lines) as the asymmetric hinge joint (variety 2) flexes from 0° to 140°
+
 Illustrations
 ^^^^^^^^^^^^^
 
-|image97|
+.. _D3.4_image88:
+.. figure:: images/image88.png
+    :align: center
 
-Dimensions
-^^^^^^^^^^
+**Dimensions**
 
-+-----+-------------------------------------+
-| H   | Distance between joint end planes   |
-+=====+=====================================+
-| W   | Maximal width of the joint          |
-+-----+-------------------------------------+
-| T   | Maximal thickness of the joint      |
-+-----+-------------------------------------+
-| X   | Height of the rotation axis         |
-+-----+-------------------------------------+
-| Θ   | Angular range of the joint          |
-+-----+-------------------------------------+
+H	Distance between joint end planes
 
-|image98|
-Implemented instances
-^^^^^^^^^^^^^^^^^^^^^
+W	Maximal width of the joint
+
+T	Maximal thickness of the joint
+
+X	Height of the rotation axis
+
+Θ	Angular range of the joint
+
+.. _D3.4_image89:
+.. figure:: images/image89.png
+    :align: center
+
+.. _D3.4_image90:
+.. figure:: images/image90.png
+    :align: center
+
+**Implemented instances**
 
 +--------------------------+-------------------+---------+--------+
-| Reference                | JOINT-SC2-T2-V2   |
+| Reference                | JOINT-SC2-T2-V2   |                  |
 +==========================+===================+=========+========+
-| Corresponding DP-Class   | II                |
+| Corresponding DP-Class   | II                |                  |
 +--------------------------+-------------------+---------+--------+
 | Dimensions               | H                 | 80      | [mm]   |
 +--------------------------+-------------------+---------+--------+
@@ -1491,91 +1513,70 @@ Implemented instances
 |                          | M                 | 224     | [g]    |
 +--------------------------+-------------------+---------+--------+
 
-Features
-^^^^^^^^
+**Features**
 
 Under joint fork:
 
-1) The joint axle is pressed through the under joint fork, while
-   relative rotation is prevented via a chamfer
+1) The joint axle is pressed through the under joint fork, while relative rotation is prevented via a chamfer
 
 2) The axle is axially secured with one circlip on each of its sides
 
-3) Two mechanical stoppers on each side of the under joint fork limit
-   the extension of the joint
+3) Two mechanical stoppers on each side of the under joint fork limit the extension of the joint
 
 4) The structural bond (SB) is integrated on the under joint fork
 
-5) M2 brass inserts are embedded in the under joint fork as fixation
-   points for the metal sheets holding the guiding pulley
+5) M2 brass inserts are embedded in the under joint fork as fixation points for the metal sheets holding the guiding pulley
 
-6) A M2 brass insert is embedded in the top part of the under joint fork
-   as fixation point for the cable catching mechanism
+6) A M2 brass insert is embedded in the top part of the under joint fork as fixation point for the cable catching mechanism
 
 Upper joint fork:
 
-1) The ball bearings are mounted in the upper joint fork
+7) The ball bearings are mounted in the upper joint fork
 
-2) The bearings are axially secured on the medial side by the upper
-   joint fork itself and on the lateral side by the two side covers
-   screwed on the upper joint fork
+8) The bearings are axially secured on the medial side by the upper joint fork itself and on the lateral side by the two side covers screwed on the upper joint fork
 
-3) Two mechanical stoppers on each side of the upper joint fork limit
-   the flexion of the joint
+9) Two mechanical stoppers on each side of the upper joint fork limit the flexion of the joint
 
-4) The SB is integrated on the under joint fork
+10) The SB is integrated on the under joint fork
 
-5) M2 brass inserts are embedded in the upper joint fork as fixation
-   points for the metal sheets holding the cable attachment for the
-   extensor muscle cable
+11) M2 brass inserts are embedded in the upper joint fork as fixation points for the metal sheets holding the cable attachment for the extensor muscle cable
 
 Flexor muscle cable guidance and attachment:
 
-1) The cable attachment is implemented as a transversal parallel pin
-   around which the end of the cable is attached. The pin is pressed in
-   the upper joint fork
+12) The cable attachment is implemented as a transversal parallel pin around which the end of the cable is attached. The pin is pressed in the upper joint fork
 
-2) A pulley equipped with ball bearing is fixed on the under joint fork
-   to guide the cable when the joint is close to most extended position
+13) A pulley equipped with ball bearing is fixed on the under joint fork to guide the cable when the joint is close to most extended position
 
 Extensor muscle cable guidance and attachment:
 
-1) The cable attachment is implemented as a transversal parallel pin
-   around which the end of the cable is attached. The pin is supported
-   by the two metal sheets inserted in the upper joint fork structure
-   and additionally fixed to it with four screws
+14) The cable attachment is implemented as a transversal parallel pin around which the end of the cable is attached. The pin is supported by the two metal sheets inserted in the upper joint fork structure
+and additionally fixed to it with four screws
 
-2) To prevent that the cable slides laterally, a part (“cable centring
-   clip”) is clipped on the pin to constraint the position of the cable
-   to its centre
+15) To prevent that the cable slides laterally, a part (“cable centring
+clip”) is clipped on the pin to constraint the position of the cable
+to its centre
 
-3) The cable guidance is implemented as a roller born by a transversal
-   parallel pin supported by the two metal sheets screwed to the under
-   joint fork
+16) The cable guidance is implemented as a roller born by a transversal
+parallel pin supported by the two metal sheets screwed to the under
+joint fork
 
-4) A part (“cable catching mechanism”) is fixed to top part of the under
-   joint fork to prevent the cable to jump out of the roller when the
-   joint extends while there is no tension in the cable. This part is
-   shaped so as to deform in order to let the cable attachment pin pass
-   under it and close afterwards when the joint extends or closes.
+17) A part (“cable catching mechanism”) is fixed to top part of the under
+joint fork to prevent the cable to jump out of the roller when the
+joint extends while there is no tension in the cable. This part is
+shaped so as to deform in order to let the cable attachment pin pass
+under it and close afterwards when the joint extends or closes.
 
 Sensor and electrical interfaces:
 
-1) A magnet is glued to the joint axle
+18) A magnet is glued to the joint axle.
 
-2) The rotation of the magnet is measured by a Hall-effect sensor
-   implemented in an IC mounted on the sensor board
+19) The rotation of the magnet is measured by a Hall-effect sensor implemented in an IC mounted on the sensor board.
 
-3) The signal provided by the sensor board is conditioned and
-   transmitted by the SIM-board (described in Deliverable 4.1). Both
-   boards are housed in one of the side covers.
+20) The signal provided by the sensor board is conditioned and transmitted by the SIM-board (described in Deliverable 4.1). Both boards are housed in one of the side covers.
 
-4) Openings and cable channels are implemented to enable the electrical
-   cabling between sensor and SIM-board and between the electrical
-   interfaces of the structural bonds on both sides of the joint.
+21) Openings and cable channels are implemented to enable the electrical cabling between sensor and SIM-board and between the electrical interfaces of the structural bonds on both sides of the joint.
 
-Material and fabrication
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Material and fabrication**
 
 +-----------------------------------------------------+------------------+---------------------------------+
 | Element name                                        | Material         | Fabrication processes           |
@@ -1601,159 +1602,256 @@ Material and fabrication
 | Parallel pins (cable attachment and pulley axles)   | Steel            | purchase (standard component)   |
 +-----------------------------------------------------+------------------+---------------------------------+
 
-Assembly Procedure
-^^^^^^^^^^^^^^^^^^
+**Assembly Procedure**
 
-+-------------------------+---------------------------------+---------------------------------+
-| |image99|\ |image100|   | Material needed:                | 2x lock washer DIN 6799 5mm     |
-|                         |                                 |                                 |
-|                         | 1x upper joint fork             | 2x lock washer DIN 6799 3mm     |
-|                         |                                 |                                 |
-|                         | 1x under joint fork             | 2x bearings 625 6x19x6 mm       |
-|                         |                                 |                                 |
-|                         | 2x upper metal sheets           | 5x cylinder screw M2            |
-|                         |                                 |                                 |
-|                         | 2x under metal sheets           | 2x circlip DIN 471 - 9 x 1      |
-|                         |                                 |                                 |
-|                         | 1x joint axle                   | 2x circlip DIN 471 -6 x 0.7     |
-|                         |                                 |                                 |
-|                         | 1x side covers-R                | 5x M2 brass inserts             |
-|                         |                                 |                                 |
-|                         | 1x side covers-L                | 4x M3 brass inserts             |
-|                         |                                 |                                 |
-|                         | 1x cable catching mech.         | 4x M3 brass inserts with head   |
-|                         |                                 |                                 |
-|                         | 1x guiding pulley               | 1x roller                       |
-|                         |                                 |                                 |
-|                         | 1x cable centering clip         | 1x magnet                       |
-|                         |                                 |                                 |
-|                         | 1x hinge pin 45x6 mm            | 1x hall-effect sensor           |
-|                         |                                 |                                 |
-|                         | 1x hinge pin 25x4 mm            | 1x SIM-board                    |
-|                         |                                 |                                 |
-|                         | 1x hinge pin 25x3 mm            |                                 |
-|                         |                                 |                                 |
-|                         | 2x lock washer DIN 6799 3.2mm   |                                 |
-+=========================+=================================+=================================+
-+-------------------------+---------------------------------+---------------------------------+
+.. _D3.4_image91:
+.. figure:: images/image91.jpg
+    :align: center
 
-+------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| **Step 1: Mount metal sheets on upper joint fork**   |
-+======================================================+=============================================================================================+
-| |image101|                                           | -  Press the four M2 brass inserts into the upper joint fork using pliers or a bench vise   |
-|                                                      |                                                                                             |
-| |image102|                                           | -  Screw the two upper metal sheets on the sides with M2 screws                             |
-+------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| **Step 2: Mount the cable catching**                 |
-+------------------------------------------------------+---------------------------------------------------------------------------------------------+
-| |image103|                                           | -  Press the M2 brass insert into the upper joint fork on the top side                      |
-|                                                      |                                                                                             |
-| |image104|                                           | -  Fix the cable catching mechanism with M2 screws                                          |
-+------------------------------------------------------+---------------------------------------------------------------------------------------------+
+.. _D3.4_image92:
+.. figure:: images/image92.jpg
+    :align: center
 
-+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Step 3: Mount the guiding pulley**                         |
-+==============================================================+=====================================================================================================================================================+
-| |image105|                                                   | -  (if needed) adjust the diameter of the mounting holes for the pulley axle (hinge pin 25x4 mm)                                                    |
-|                                                              |                                                                                                                                                     |
-| |image106|                                                   | -                                                                                                                                                   |
-|                                                              |                                                                                                                                                     |
-|                                                              | |image107|                                                                                                                                          |
-|                                                              |                                                                                                                                                     |
-|                                                              | -  Mount the pulley and the axle                                                                                                                    |
-|                                                              |                                                                                                                                                     |
-|                                                              | -  Secure the axle on both sides with the lock washers                                                                                              |
-+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Step 4: Mount the metal sheets on the under joint fork**   |
-+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-| |image108|                                                   | -  Insert the M3 brass inserts in the holes on the inner side (inserts with heads) and outer side (inserts without heads) of the under joint fork   |
-|                                                              |                                                                                                                                                     |
-| |image109|                                                   | -  Insert the under metal sheets in the appropriate slots and fix them with M3 screws                                                               |
-+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+Material needed:
 
-+--------------------------------------------+-----------------------------------------------------------------------------------------------------------+
-| **Step 5: Mount the cable fixation pin**   |
-+============================================+===========================================================================================================+
-| |image110|                                 | -  (if needed) adjust the diameter of the mounting holes for the cable fixation pin (hinge pin 45x6 mm)   |
-|                                            |                                                                                                           |
-|                                            | -  Mount the pin                                                                                          |
-|                                            |                                                                                                           |
-|                                            | -  Secure the pin on both sides with the lock washers                                                     |
-|                                            |                                                                                                           |
-|                                            | -  Clip on it the cable centring clip                                                                     |
-+--------------------------------------------+-----------------------------------------------------------------------------------------------------------+
+1x upper joint fork
 
-+-----------------------------------------+----------------------------------------------------+
-| **Step 6: Mount the guiding pulley **   |
-+=========================================+====================================================+
-| |image111| |image112|                   | -  Press the ball bearing into the pulley          |
-|                                         |                                                    |
-| |image113|                              | -  Insert the axle pin in the ball bearing         |
-|                                         |                                                    |
-|                                         | -  Mount the assembly in to the upper joint fork   |
-+-----------------------------------------+----------------------------------------------------+
+1x under joint fork
 
-+------------------------------------------------+------------------------------------------------------------------------+
-| **Step 7: Assemble the joint axle (part 1)**   |
-+================================================+========================================================================+
-| |image114|                                     | -  Mount on one side of the joint axle:                                |
-|                                                |                                                                        |
-| |image115|                                     |    -  one of the large circlips (DIN 471 - 9 x 1)                      |
-|                                                |                                                                        |
-|                                                |    -  one ball bearing                                                 |
-|                                                |                                                                        |
-|                                                |    -  one of the small circlips (DIN 471 -6 x 0.7)                     |
-|                                                |                                                                        |
-|                                                | -  Insert the joint axle through the upper and under joint forks       |
-|                                                |                                                                        |
-|                                                | -  Mount the other large circlip on the other side of the joint axle   |
-+------------------------------------------------+------------------------------------------------------------------------+
-| **Step 8: Assemble the joint axle (part 2)**   |
-+------------------------------------------------+------------------------------------------------------------------------+
-| |image116|                                     | -  Mount the other ball bearing                                        |
-|                                                |                                                                        |
-| |image117|                                     | -  Mount the other small circlip                                       |
-|                                                |                                                                        |
-|                                                | -  Glue the sensor magnet (use only a small drop of glue!)             |
-|                                                |                                                                        |
-|                                                | -  Secure the joint axle with the countersunk M3 screw                 |
-|                                                |                                                                        |
-|                                                | Note: the magnet can also be glued before mounting the joint axle      |
-+------------------------------------------------+------------------------------------------------------------------------+
+2x upper metal sheets
 
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------------+
-| **Step 9: Mount the side covers**   |
-+=====================================+========================================================================================================================+
-| |image118|                          | -  Assemble the sensor and SIM boards and the circular space in the larger side cover (glue the boards to the cover)   |
-|                                     |                                                                                                                        |
-|                                     | -  Screw the side covers on the under joint fork                                                                       |
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------------+
+2x under metal sheets
 
-+---------------------------------------------------------------------+----------------------------------------------------------+
-| **Step 10: Solder the cables on one of the SB connection boards**   |
-+=====================================================================+==========================================================+
-| |image119|                                                          | Prepare cable tree on connector boards                   |
-|                                                                     |                                                          |
-|                                                                     | Cut on 15 cm length:                                     |
-|                                                                     |                                                          |
-|                                                                     | 4 data wires 0,25 mm\ :sup:`2`                           |
-|                                                                     |                                                          |
-|                                                                     | 2 power wires highly flexible silicon 1,5 mm\ :sup:`2`   |
-+---------------------------------------------------------------------+----------------------------------------------------------+
+1x joint axle
 
-+----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
-| **Step 11: Guide the cables through the joint and solder them to the other SB connection board**   |
-+====================================================================================================+============================================================================================================================+
-| |image120|                                                                                         | Strip all cables until the SB-pocket.                                                                                      |
-|                                                                                                    |                                                                                                                            |
-|                                                                                                    | Pull cables through the connector board and solder from top. Screw both connector boards to joint with four M1,6 screws.   |
-|                                                                                                    |                                                                                                                            |
-|                                                                                                    | Tips:                                                                                                                      |
-|                                                                                                    |                                                                                                                            |
-|                                                                                                    | -  Put the joint in the position of the longest cable path!                                                                |
-|                                                                                                    |                                                                                                                            |
-|                                                                                                    | -  Avoid cable crossovers by connecting to board                                                                           |
-+----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
+1x side covers-R
+
+1x side covers-L
+
+1x cable catching mech.
+
+1x guiding pulley
+
+1x cable centering clip
+
+1x hinge pin 45x6 mm
+
+1x hinge pin 25x4 mm
+
+1x hinge pin 25x3 mm
+
+2x lock washer DIN 6799 3.2mm
+
+2x lock washer DIN 6799 5mm
+
+2x lock washer DIN 6799 3mm
+
+2x bearings 625 6x19x6 mm
+
+5x cylinder screw M2
+
+2x circlip DIN 471 - 9 x 1
+
+2x circlip DIN 471 -6 x 0.7
+
+5x M2 brass inserts
+
+4x M3 brass inserts
+
+4x M3 brass inserts with head
+
+1x roller
+
+1x magnet
+
+1x hall-effect sensor
+
+1x SIM-board
+
+**Step 1: Mount metal sheets on upper joint fork**
+
+.. _D3.4_image93:
+.. figure:: images/image93.jpg
+    :align: center
+
+.. _D3.4_image94:
+.. figure:: images/image94.jpg
+    :align: center
+
+•	Press the four M2 brass inserts into the upper joint fork using pliers or a bench vise
+•	Screw the two upper metal sheets on the sides with M2 screws
+
+**Step 2: Mount the cable catching**
+
+.. _D3.4_image95:
+.. figure:: images/image95.jpg
+    :align: center
+
+.. _D3.4_image96:
+.. figure:: images/image96.jpg
+    :align: center
+
+•	Press the M2 brass insert into the upper joint fork on the top side
+•	Fix the cable catching mechanism with M2 screws
+
+ **Step 3: Mount the guiding pulley**
+
+.. _D3.4_image97:
+.. figure:: images/image97.jpg
+   :align: center
+
+.. _D3.4_image98:
+.. figure:: images/image98.jpg
+   :align: center
+
+.. _D3.4_image99:
+.. figure:: images/image99.jpg
+    :align: center
+
+•	(if needed) adjust the diameter of the mounting holes for the pulley axle (hinge pin 25x4 mm)
+•	Mount the pulley and the axle
+•	Secure the axle on both sides with the lock washers
+
+**Step 4: Mount the metal sheets on the under joint fork**
+
+.. _D3.4_image100:
+.. figure:: images/image100.jpg
+   :align: center
+
+.. _D3.4_image101:
+.. figure:: images/image101.jpg
+   :align: center
+
+•	Insert the M3 brass inserts in the holes on the inner side (inserts with heads) and outer side (inserts without heads) of the under joint fork
+•	Insert the under metal sheets in the appropriate slots and fix them with M3 screws
+
+**Step 5: Mount the cable fixation pin**
+
+.. _D3.4_image102:
+.. figure:: images/image102.jpg
+   :align: center
+
+•	(if needed) adjust the diameter of the mounting holes for the cable fixation pin (hinge pin 45x6 mm)
+•	Mount the pin
+•	Secure the pin on both sides with the lock washers
+•	Clip on it the cable centring clip
+
+**Step 6: Mount the guiding pulley**
+
+.. _D3.4_image103:
+.. figure:: images/image103.png
+   :align: center
+
+.. _D3.4_image104:
+.. figure:: images/image104.jpg
+    :align: center
+
+•	Press the ball bearing into the pulley
+•	Insert the axle pin in the ball bearing
+•	Mount the assembly in to the upper joint fork
+
+**Step 7: Assemble the joint axle (part 1)**
+
+.. _D3.4_image105:
+.. figure:: images/image105.jpg
+   :align: center
+
+.. _D3.4_image106:
+.. figure:: images/image106.jpg
+  :align: center
+
+•	Mount on one side of the joint axle:
+
+  o	one of the large circlips (DIN 471 - 9 x 1)
+  o	one ball bearing
+  o	one of the small circlips (DIN 471 -6 x 0.7)
+
+•	Insert the joint axle through the upper and under joint forks
+•	Mount the other large circlip on the other side of the joint axle
+
+**Step 8: Assemble the joint axle (part 2)**
+
+.. _D3.4_image107:
+.. figure:: images/image107.jpg
+   :align: center
+
+.. _D3.4_image108:
+.. figure:: images/image108.jpg
+    :align: center
+
+•	Mount the other ball bearing
+•	Mount the other small circlip
+•	Glue the sensor magnet (use only a small drop of glue!)
+•	Secure the joint axle with the countersunk M3 screw
+
+Note: the magnet can also be glued before mounting the joint axle
+
+**Step 9: Mount the side covers**
+
+.. _D3.4_image109:
+.. figure:: images/image109.jpg
+    :align: center
+
+•	Assemble the sensor and SIM boards and the circular space in the larger side cover (glue the boards to the cover)
+•	Screw the side covers on the under joint fork
+
+**Step 10: Solder the cables on one of the SB connection boards**
+
+.. _D3.4_image110:
+.. figure:: images/image110.jpg
+    :align: center
+
+Prepare cable tree on connector boards
+Cut on 15 cm length:
+4 data wires 0,25 mm2
+2 power wires highly flexible silicon 1,5 mm2
+
+Connector side:
+
+.. _D3.4_image110A:
+.. figure:: images/image110A.png
+    :align: center
+
+Pin colour code:
+
+F1+ white
+
+F1 - brown
+
+F2 + yellow
+
+F2 - green
+
+**Step 11: Guide the cables through the joint and solder them to the other SB connection board**
+
+.. _D3.4_image111:
+.. figure:: images/image111.jpg
+    :align: center
+
+Strip all cables until the SB-pocket.
+Pull cables through the connector board and solder from top. Screw both connector boards to joint with four M1,6 screws.
+
+Connector side:
+
+.. _D3.4_image111A:
+.. figure:: images/image111A.png
+    :align: center
+
+Pin colour code:
+
+F1+ white
+
+F1 - brown
+
+F2 + yellow
+
+F2 - green
+
+Tips:
+
+-	Put the joint in the position of the longest cable path!
+
+-	Avoid cable crossovers by connecting to board
 
 Type 3 – Pivot
 --------------
@@ -1769,9 +1867,11 @@ shaft and the lid have each an interface for a structural bond. The
 electrical interfaces on both joint ends are embedded in the structural
 bonds and the electric cabling joining them is guided through the joint.
 
-|image121|
+.. _D3.4_image112:
+.. figure:: images/image112.png
+    :align: center
 
-Figure 10: Illustration of the joint construction for Type 2
+Illustration of the joint construction for Type 2
 
 Variety 1
 ~~~~~~~~~
@@ -1780,11 +1880,15 @@ This implementation provides a large symmetrical range of rotation of
 the joint. To reduce the friction and increase the efficiency of the
 joint, two ball bearings are used to support the joint axle.
 
-|image122|\ Illustrations
-^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _D3.4_image113:
+.. figure:: images/image113.png
+    :align: center
 
-Dimensions
-^^^^^^^^^^^
+.. _D3.4_image114:
+.. figure:: images/image114.png
+    :align: center
+
+**Dimensions**
 
 +-----+-------------------------------------+
 | H   | Distance between joint end planes   |
@@ -1796,13 +1900,12 @@ Dimensions
 | Θ   | Motion range of the joint           |
 +-----+-------------------------------------+
 
-Implemented instances
-^^^^^^^^^^^^^^^^^^^^^
+**Implemented instances**
 
 +--------------------------+-------------------+--------+--------+
-| Reference                | JOINT-SC2-T3-V1   |
+| Reference                | JOINT-SC2-T3-V1   |                 |
 +==========================+===================+========+========+
-| Corresponding DP-Class   | II                |
+| Corresponding DP-Class   | II                |                 |
 +--------------------------+-------------------+--------+--------+
 | Dimensions               | H                 | 65     | [mm]   |
 +--------------------------+-------------------+--------+--------+
@@ -1815,49 +1918,38 @@ Implemented instances
 |                          | M                 | 115    | [g]    |
 +--------------------------+-------------------+--------+--------+
 
-Features
-^^^^^^^^
+**Features**
 
 Barrel-shaped housing:
 
-1) The barrel-shaped housing contains a reservoir for the electrical
-   cables, into which the electric cable can freely move when the joint
-   is rotating.
+1) The barrel-shaped housing contains a reservoir for the electrical cables, into which the electric cable can freely move when the joint is rotating.
 
-2) On the outside of the housing, two holding devices are embedded for
-   the pulleys redirecting the cable transmission.
+2) On the outside of the housing, two holding devices are embedded for the pulleys redirecting the cable transmission.
 
-3) A holding bay in the housing allows attaching a SIM-board (described
-   in Deliverable 4.1) on the side.
+3) A holding bay in the housing allows attaching a SIM-board (described in Deliverable 4.1) on the side.
 
 4) Two mechanical stoppers limit the motion range of the joint.
 
 Pivot shaft:
 
-1) The bearing on the extremity of the shaft is fixed by a nut screwed
-   on the pivot shaft.
 
-2) Two cable attachments (CA-SC2-T2), allowing the bidirectional
-   actuation of the joint, and a continuous guide are implemented on the
-   pivot shaft.
+5) The bearing on the extremity of the shaft is fixed by a nut screwed on the pivot shaft.
 
-3) The SB is integrated on the pivot shaft.
+6) Two cable attachments (CA-SC2-T2), allowing the bidirectional actuation of the joint, and a continuous guide are implemented on the pivot shaft.
 
-4) To measure the rotation of the joint, an magnetic absolute position
-   sensor is integrated in the joint. Its magnet element is mounted in
-   the shaft.
+7) The SB is integrated on the pivot shaft.
+
+8) To measure the rotation of the joint, an magnetic absolute position sensor is integrated in the joint. Its magnet element is mounted in the shaft.
 
 Lid:
 
-1) The lid is screwed to the barrel-shaped housing and its position
-   secured by four pins.
+9) The lid is screwed to the barrel-shaped housing and its position secured by four pins.
 
-2) The SB is integrated on the screw-on lid.
+10) The SB is integrated on the screw-on lid.
 
-3) The position sensor board is fixed on the inside of the lid.
+11) The position sensor board is fixed on the inside of the lid.
 
-Material and fabrication
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Material and fabrication**
 
 +-------------------------+------------------+------------------------------------+
 | Element name            | Material         | Fabrication processes              |
@@ -1877,10 +1969,11 @@ Material and fabrication
 | Pulleys                 | Polymer          | -  purchase (standard component)   |
 +-------------------------+------------------+------------------------------------+
 
-Assembly Procedure
-^^^^^^^^^^^^^^^^^^
+**Assembly Procedure**
 
-|image123|
+.. _D3.4_image115:
+.. figure:: images/image115.png
+    :align: center
 
 Material needed
 
@@ -1902,61 +1995,102 @@ Material needed
 
 8 x M1,6 x 6
 
-+----------------------------------------+--------------------------------------------------------------------------------+
-| **Step 1: Mount sensor board **        |                                                                                |
-+========================================+================================================================================+
-| |image124|                             | (1) Push the sensor cables through the cable channel.                          |
-|                                        |                                                                                |
-|                                        | (2) Place the sensor board on the pins and glue on two points.                 |
-|                                        |                                                                                |
-|                                        | Tips:                                                                          |
-|                                        |                                                                                |
-|                                        | -  for pre fixation of the board melt the plastic pins with a soldering iron   |
-+----------------------------------------+--------------------------------------------------------------------------------+
-| **Step 2: Mount pulleys and magnet**   |                                                                                |
-+----------------------------------------+--------------------------------------------------------------------------------+
-| |image125|                             | (1) Put in the two pulleys                                                     |
-|                                        |                                                                                |
-|                                        | (2) Fix them with the pins.                                                    |
-|                                        |                                                                                |
-|                                        | (3) Glue the magnet into the pivot shaft.                                      |
-+----------------------------------------+--------------------------------------------------------------------------------+
+**Step 1: Mount sensor board **
 
-+------------------------------------------------------+---------------------------------------------------------------------------+
-| **Step 3: Place the bearings into the housing**      |
-+======================================================+===========================================================================+
-| |image126|                                           | Place the two bearings into the barrel-shaped housing from below.         |
-+------------------------------------------------------+---------------------------------------------------------------------------+
-| **Step 4: screw the pivot shaft into the housing**   |
-+------------------------------------------------------+---------------------------------------------------------------------------+
-| |image127|                                           | Put the pivot shaft into the barrel-shaped housing and tighten the nut.   |
-+------------------------------------------------------+---------------------------------------------------------------------------+
-| **Step 5: screw lid on barrel-shaped housing**       |
-+------------------------------------------------------+---------------------------------------------------------------------------+
-| |image128|                                           | Screw the lid on the barrel-shaped housing and put in the security pin.   |
-+------------------------------------------------------+---------------------------------------------------------------------------+
+.. _D3.4_image116:
+.. figure:: images/image116.png
+    :align: center
 
-+-----------------------------------------------------------+---------------------------------------------------------------+
-| **Step 6: Solder cables to the board**                    |
-+===========================================================+===============================================================+
-| |image129|                                                | Prepare cable tree on connector boards                        |
-|                                                           |                                                               |
-|                                                           | Cut on 15 cm length:                                          |
-|                                                           |                                                               |
-|                                                           | 4 data wires 0,25 mm\ :sup:`2`                                |
-|                                                           |                                                               |
-|                                                           | 2 power wires highly flexible silicon 1,5 mm\ :sup:`2`        |
-+-----------------------------------------------------------+---------------------------------------------------------------+
-| **Step 7: Cable and solder cables to the second board**   |
-+-----------------------------------------------------------+---------------------------------------------------------------+
-| |image130|                                                | Place PCB carrier in SB                                       |
-|                                                           |                                                               |
-|                                                           | Solder cables to the second board (from below)                |
-|                                                           |                                                               |
-|                                                           | Push cable tree through the joint                             |
-|                                                           |                                                               |
-|                                                           | Screw both connector boards to joint with four M1,6 screws.   |
-+-----------------------------------------------------------+---------------------------------------------------------------+
+(1) Push the sensor cables through the cable channel.
+(2) Place the sensor board on the pins and glue on two points.
+
+Tips:
+
+-	for pre fixation of the board melt the plastic pins with a soldering iron
+
+**Step 2: Mount pulleys and magnet**
+
+.. _D3.4_image117:
+.. figure:: images/image117.png
+    :align: center
+
+(1)	Put in the two pulleys.
+(2)	Fix them with the pins.
+(3)	Glue the magnet into the pivot shaft.
+
+**Step 3: Place the bearings into the housing**
+
+.. _D3.4_image118:
+.. figure:: images/image118.jpg
+    :align: center
+
+Place the two bearings into the barrel-shaped housing from below.
+
+**Step 4: screw the pivot shaft into the housing**
+
+.. _D3.4_image119:
+.. figure:: images/image119.jpg
+    :align: center
+
+Put the pivot shaft into the barrel-shaped housing and tighten the nut.
+
+**Step 5: screw lid on barrel-shaped housing**
+
+.. _D3.4_image120:
+.. figure:: images/image120.png
+    :align: center
+
+Screw the lid on the barrel-shaped housing and put in the security pin.
+
+**Step 6: Solder cables to the board**
+
+.. _D3.4_image121:
+.. figure:: images/image121.jpg
+    :align: center
+
+Connector side:
+
+.. _D3.4_image121A:
+.. figure:: images/image121A.png
+    :align: center
+
+Pin colour code:
+
+F1+ white
+
+F1 - brown
+
+F2 + yellow
+
+F2 - green
+
+**Step 7: Cable and solder cables to the second board**
+
+.. _D3.4_image122:
+.. figure:: images/image122.png
+    :align: center
+
+Place PCB carrier in SB
+Solder cables to the second board (from below)
+
+Carrier orientation:
+
+.. _D3.4_image122A:
+.. figure:: images/image122A.png
+    :align: center
+
+Pin colour code:
+
+F1+ white
+
+F1 - brown
+
+F2 + yellow
+
+F2 - green
+
+Push cable tree through the joint.
+Screw both connector boards to joint with four M1,6 screws.
 
 Type 4: Hinge-Pivot
 -------------------
@@ -1977,17 +2111,23 @@ actuating the pivot part (in red hereunder) are running through the
 centre of the axles of the hinge part. The absolute joint angles are
 measured using Hall-effect sensors and magnet rings.
 
-Illustrations
-^^^^^^^^^^^^^
+**Illustrations**
 
-|image131|
+.. _D3.4_image123:
+.. figure:: images/image123.png
+    :align: center
 
-Figure 11: Illustration of the Hinge-Pivot joint construction
+    Illustration of the Hinge-Pivot joint construction
 
-|image132|
+.. _D3.4_image124:
+.. figure:: images/image124.png
+    :align: center
 
-Dimensions
-^^^^^^^^^^
+.. _D3.4_image125:
+.. figure:: images/image125.png
+    :align: center
+
+**Dimensions**
 
 +-----+-------------------------------------+----+-------------------+-----------------------------+
 | H   | Distance between joint end planes   |    | Θ\ :sub:`hinge`   | Motion range of the hinge   |
@@ -1999,13 +2139,12 @@ Dimensions
 | X   | Height of the hinge rotation axis   |    |                   |                             |
 +-----+-------------------------------------+----+-------------------+-----------------------------+
 
-Implemented instances
-^^^^^^^^^^^^^^^^^^^^^
+**Implemented instances**
 
 +--------------------------+-------------------+--------+--------+
-| Reference                | JOINT-SC2-T4-V1   |
+| Reference                | JOINT-SC2-T4-V1   |                 |
 +==========================+===================+========+========+
-| Corresponding DP-Class   | II                |
+| Corresponding DP-Class   | II                |                 |
 +--------------------------+-------------------+--------+--------+
 | Dimensions               | H                 | 95     | [mm]   |
 +--------------------------+-------------------+--------+--------+
@@ -2022,90 +2161,73 @@ Implemented instances
 |                          | M                 | ~300   | [g]    |
 +--------------------------+-------------------+--------+--------+
 
-Features
-^^^^^^^^
+**Features**
 
 Base:
 
 1) It holds the bearings for the hinge.
 
-2) Two mechanical stoppers limit the motion range of the hinge by
-   contacting the ring mount
+2) Two mechanical stoppers limit the motion range of the hinge by contacting the ring mount
 
-3) The structural bond (SB) is integrated on the proximal side of the
-   Base.
+3) The structural bond (SB) is integrated on the proximal side of the base.
 
 4) It provides a fixation point on each side to screw a pulley-support.
 
-*Pulley-support*
+Pulley-support
 
-1) This part holds a pulley redirecting one of the tendon cables
-   actuating the pivot through the hinge axle.
+5) This part holds a pulley redirecting one of the tendon cables actuating the pivot through the hinge axle.
 
 Ring mount:
 
-1) Two cable attachments (CA-SC2-T2) are provided, allowing the
-   bidirectional actuation of the hinge.
+6) Two cable attachments (CA-SC2-T2) are provided, allowing the bidirectional actuation of the hinge.
 
-2) It holds two angular ball bearings for the pivot.
+7) It holds two angular ball bearings for the pivot.
 
-3) It holds two pulleys that guide the tendon-cables for the pivot
-   actuation towards the cable winch
+8) It holds two pulleys that guide the tendon-cables for the pivot actuation towards the cable winch
 
-4) It holds the two axles of the hinge, which are inserted with
-   interference fit.
+9) It holds the two axles of the hinge, which are inserted with interference fit.
 
-5) The shafts are axially secured with steel sheets.
+10) The shafts are axially secured with steel sheets.
 
-6) Each steel sheet is secured with a cover clipped on the ring mount.
+11) Each steel sheet is secured with a cover clipped on the ring mount.
 
-7) A half magnet is mounted on its right side for the measurement of the
-   hinge absolute position
+12) A half magnet is mounted on its right side for the measurement of the hinge absolute position
 
-8) The electronic board with the sensor measuring the absolute position
-   of the pivot is mounted on its back
+13) The electronic board with the sensor measuring the absolute position of the pivot is mounted on its back
 
-*Cable winch:*
+Cable winch:
 
-1) Two tendon cable attachments are provided for the bidirectional
-   actuation of the pivot and the round shape of the cable insures a
-   constant lever arm.
+14) Two tendon cable attachments are provided for the bidirectional actuation of the pivot and the round shape of the cable insures a constant lever arm.
 
-2) A magnet ring is mounted on the cable winch to measure the pivot
-   absolute position.
+15) A magnet ring is mounted on the cable winch to measure the pivot absolute position.
 
-*Output shaft:*
+Output shaft:
 
-1) The output shaft is mounted in the two angular ball bearings.
+16) The output shaft is mounted in the two angular ball bearings.
 
-2) The structural bond (SB) is integrated on the distal end of the
-   output shaft.
+17) The structural bond (SB) is integrated on the distal end of the output shaft.
 
-3) The cable winch is fixed to the output shaft with a screw with inner
-   hole, allowing the passage of the electric cables
+18) The cable winch is fixed to the output shaft with a screw with inner hole, allowing the passage of the electric cables
 
-*Bearing cover:*
+Bearing cover:
 
-1) The bearing cover covers the two angular ball bearings.
+19) The bearing cover covers the two angular ball bearings.
 
-2) A mechanical stopper limits the motion range of the pivot.
+20) A mechanical stopper limits the motion range of the pivot.
 
-3) It is assembled with four screws on the ring mount.
+21) It is assembled with four screws on the ring mount.
 
-*Sensor and electrical interfaces:*
+Sensor and electrical interfaces:
 
-1) The sensor board for the hinge is attached on a pulley-support.
+22) The sensor board for the hinge is attached on a pulley-support.
 
-2) The sensor board for the pivot movement is attached on the HX-ring
-   mount.
+23) The sensor board for the pivot movement is attached on the HX-ring mount.
 
-3) The cables routing (for the sensors) is supported by mounting clamps
+24) The cables routing (for the sensors) is supported by mounting clamps.
 
-4) The cables between the electrical interfaces of the structural bonds
-   are guided through the output shaft
+25) The cables between the electrical interfaces of the structural bonds are guided through the output shaft.
 
-Material and fabrication
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Material and fabrication**
 
 +--------------------------+------------------+------------------------------------+
 | Element name             | Material         | Fabrication processes              |
@@ -2171,26 +2293,31 @@ lever arm with respect to the rotation axis it actuates. The two
 absolute angles are measured with a position sensor located in the
 intersection point of both axes.
 
-|image133|
+.. _D3.4_image126:
+.. figure:: images/image126.png
+    :align: center
 
 **Illustrations:**
 
-*Overview:*
+Overview:
 
-|image134|
+.. _D3.4_image127:
+.. figure:: images/image127.png
+    :align: center
 
-|image135|
+.. _D3.4_image128:
+.. figure:: images/image128.png
+    :align: center
 
-|image136|
+Individual elements:
 
-*
-*
+.. _D3.4_image129:
+.. figure:: images/image129.png
+    :align: center
 
-*Individual elements:*
-
-|image137|
-
-|image138|
+.. _D3.4_image130:
+.. figure:: images/image130.png
+    :align: center
 
 **Dimensions:**
 
@@ -2209,9 +2336,9 @@ X Height of the proximal axis
 **Implemented instances:**
 
 +--------------------------+-------------------+---------+--------+
-| Reference                | JOINT-SC2-T5-V1   |
+| Reference                | JOINT-SC2-T5-V1   |                  |
 +==========================+===================+=========+========+
-| Corresponding DP-Class   | II                |
+| Corresponding DP-Class   | II                |                  |
 +--------------------------+-------------------+---------+--------+
 | Dimensions               | H                 | 115     | [mm]   |
 +--------------------------+-------------------+---------+--------+
@@ -2230,82 +2357,57 @@ X Height of the proximal axis
 
 **Features:**
 
-*Proximal part:*
+Proximal part:
 
 1)  Two bearings and two screws are implemented in the proximal part.
 
-2)  Two ceramic bushes are implemented on the proximal axis of the
-    proximal part.
+2)  Two ceramic bushes are implemented on the proximal axis of the proximal part.
 
-3)  The proximal structural bond (SB) is integrated on the proximal
-    part.
+3)  The proximal structural bond (SB) is integrated on the proximal part.
 
-4)  The topology of the part from the SB to the joint axis and the
-    ceramic bushes is optimized to the expected loads.
+4)  The topology of the part from the SB to the joint axis and the ceramic bushes is optimized to the expected loads.
 
-5)  A bridge for attaching the position sensor (originally a joystick
-    sensor) is located in the center of both rotation axes.
+5)  A bridge for attaching the position sensor (originally a joystick sensor) is located in the center of both rotation axes.
 
-6)  The cables coming from the proximal SB connection board are guided
-    through a tunnel to the center of the joint.
+6)  The cables coming from the proximal SB connection board are guided through a tunnel to the center of the joint.
 
-7)  The cables from the sensor are guided through a tunnel to the SIM
-    board.
+7)  The cables from the sensor are guided through a tunnel to the SIM board.
 
-8)  The part includes an emplacement on the side to attach the SIM
-    board.
+8)  The part includes an emplacement on the side to attach the SIM board.
 
-9)  Mechanical stoppers, which collide with (17), limit the motion of
-    range of the proximal rotation.
+9)  Mechanical stoppers, which collide with (17), limit the motion of range of the proximal rotation.
 
-10) Mechanical stoppers, which collide with (23), limit the motion of
-    range of the distal rotation.
+10) Mechanical stoppers, which collide with (23), limit the motion of range of the distal rotation.
 
-*Middle part:*
+Middle part:
 
-1) The middle part holds the four axles (implemented using screws)
-   together.
+11) The middle part holds the four axles (implemented using screws) together.
 
-2) Hexagonal openings allow the insertion of nuts to screw the axles in
-   place.
+12) Hexagonal openings allow the insertion of nuts to screw the axles in place.
 
-3) Cable attachments for the tendon cables actuating the rotation around
-   the proximal axis are provided on the middle part, in the form of
-   screws around which the tendon cables can be knotted.
+13) Cable attachments for the tendon cables actuating the rotation around the proximal axis are provided on the middle part, in the form of screws around which the tendon cables can be knotted.
 
-4) The tendon cables are guided on a circular arc centered on the
-   proximal axis with a constant lever arm to the MYO-Muscle.
+14) The tendon cables are guided on a circular arc centered on the proximal axis with a constant lever arm to the MYO-Muscle.
 
-5) Two aluminum sheets on each side of the circular arc reinforce the
-   middle part, so that it is able to cope with the high forces applied
-   by the tendon cables. Two distance spacers embedded in the middle
-   part are used to screw the aluminum sheets.
+15) Two aluminum sheets on each side of the circular arc reinforce the middle part, so that it is able to cope with the high forces applied by the tendon cables. Two distance spacers embedded in the middle part are used to screw the aluminum sheets.
 
-6) Rings and walls inside the middle part guide the electric cables from
-   the proximal part to the distal part
+16) Rings and walls inside the middle part guide the electric cables from the proximal part to the distal part
 
-7) Mechanical stoppers, which collide with (9), limit the motion of
-   range of the proximal rotation.
+17) Mechanical stoppers, which collide with (9), limit the motion of range of the proximal rotation.
 
-*Distal Part:*
+Distal Part:
 
-1) Two bearings and two screws are implemented in the distal part.
+18) Two bearings and two screws are implemented in the distal part.
 
-2) The distal structural bond (SB) is integrated on the distal part.
+19) The distal structural bond (SB) is integrated on the distal part.
 
-3) A bar directed towards the center of the joint allows the attachment
-   of the magnet used with the position sensor. The distance between the
-   magnet and position sensor is constant.
+20) A bar directed towards the center of the joint allows the attachment of the magnet used with the position sensor. The distance between the magnet and position sensor is constant.
 
-4) Two cable attachments (CA-T2-DPX), allowing the bidirectional
-   actuation of the rotation around the distal axis, and guides for the
-   tendon cables are implemented.
+21) Two cable attachments (CA-T2-DPX), allowing the bidirectional actuation of the rotation around the distal axis, and guides for the tendon cables are implemented.
 
-5) Rings and tunnels guide the electric cables coming from the middle
-   part to distal SB connection board.
+22) Rings and tunnels guide the electric cables coming from the middle part to distal SB connection board.
 
-6) Mechanical stoppers, which collide with (10), limit the motion of
-   range of the distal rotation.
+23) Mechanical stoppers, which collide with (10), limit the motion of range of the distal rotation.
 
 **Material and fabrication:**
 
@@ -2357,8 +2459,15 @@ can be adjusted by tightening or losing a single nut (4). This allows to
 adjust easily the length of the tendon cable and/or to adjust the joint
 position at which the spring starts to be loaded.
 
-Ilustrations\ |image139|
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Ilustrations**
+
+.. _D3.4_image131:
+.. figure:: images/image131.png
+    :align: center
+
+.. _D3.4_image132:
+.. figure:: images/image132.png
+    :align: center
 
 Type 1: Unilateral Series Elastic Actuator
 ------------------------------------------
@@ -2384,23 +2493,27 @@ characteristics of a non-linear progressive spring. The origin of this
 idea can be tracked back to [Hyodo1993] and has been implemented in
 different forms in various SEA and variable stiffness actuators.
 
-Illustrations
-^^^^^^^^^^^^^
+**Illustrations**
 
-|image140|\ Overview:
+Overview:
+
+.. _D3.4_image133:
+.. figure:: images/image133.png
+    :align: center
 
 Individual elements:
 
-|image141|\ |image142|
-
-|image143|
+.. _D3.4_image134:
+.. figure:: images/image134.png
+    :align: center
 
 Integration to BONE-SC2-T1-V1:
 
-|image144|\ |image145|
+.. _D3.4_image135:
+.. figure:: images/image135.png
+    :align: center
 
-Dimensions
-^^^^^^^^^^
+**Dimensions**
 
 +------+------------------------------------------------------------------------------+
 | D1   | Total length of the actuator                                                 |
@@ -2410,15 +2523,14 @@ Dimensions
 | D3   | Lever arm of the tension force in the cable w.r.t. the bone section centre   |
 +------+------------------------------------------------------------------------------+
 
-Implemented instances
-^^^^^^^^^^^^^^^^^^^^^
+**Implemented instances**
 
 +--------------------------+----------------------+-------+--------+
-| Reference                | MUSCLE-T1-V1-P100W   |
+| Reference                | MUSCLE-T1-V1-P100W   |                |
 +==========================+======================+=======+========+
-| Corresponding DP-Class   | II & III             |
+| Corresponding DP-Class   | II & III             |                |
 +--------------------------+----------------------+-------+--------+
-| Motor power              | 100 W                |
+| Motor power              | 100 W                |                |
 +--------------------------+----------------------+-------+--------+
 | Dimensions               | D1                   | 192   | [mm]   |
 +--------------------------+----------------------+-------+--------+
@@ -2427,61 +2539,37 @@ Implemented instances
 |                          | D3                   | 32    | [mm]   |
 +--------------------------+----------------------+-------+--------+
 
-Features
-^^^^^^^^
+**Features**
 
 Mechanical base:
 
-1) The mechanical base is connected to the bone using multiple anchor
-   carriers developed for the BONE-SC2-T1-V1 (“Anchors circular pattern
-   for vis-à-vis attachment”, described in page 7). As this
-   implementation is based on an already existing hardware, it was not
-   straightforward to directly use the available adaptor. For that
-   reason one part of the adaptor was directly integrated in the
-   mechanical base. Using the other parts of the anchor carrier
-   (represented in green), the mechanical base can be fixed to the bone.
+1) The mechanical base is connected to the bone using multiple anchor carriers developed for the BONE-SC2-T1-V1 (“Anchors circular pattern for vis-à-vis attachment”, described in page 7). As this implementation is based on an already existing hardware, it was not straightforward to directly use the available adaptor. For that reason one part of the adaptor was directly integrated in the mechanical base. Using the other parts of the anchor carrier (represented in green), the mechanical base can be fixed to the bone.
 
-2) The mechanical base contains a set of pulleys that redirect the cable
-   transmission, from the motor reel, via the series elastic element, to
-   come out parallel to the bone longitudinal axis.
+2) The mechanical base contains a set of pulleys that redirect the cable transmission, from the motor reel, via the series elastic element, to come out parallel to the bone longitudinal axis.
 
 DC motor:
 
-1) The DC motor is fixed to the mechanical base by a set of screws. It
-   is equipped with an optical incremental encoder.
+3) The DC motor is fixed to the mechanical base by a set of screws. It is equipped with an optical incremental encoder.
 
-2) A cable reel is attached to the DC motor shaft to wind up the cable.
-   It has a cable attachment (of type CA-SC2-T1) to attach one side of
-   the cable and is supported by a bearing at its extremity.
+4) A cable reel is attached to the DC motor shaft to wind up the cable. It has a cable attachment (of type CA-SC2-T1) to attach one side of the cable and is supported by a bearing at its extremity.
 
-3) The motor driver board (see hereunder) is fixed on one side of the
-   mechanical base.
+5) The motor driver board (see hereunder) is fixed on one side of the mechanical base.
 
 Series elastic element:
 
-1) The series elastic element is based on a compression steel coil
-   spring.
+6) The series elastic element is based on a compression steel coil spring.
 
-2) The spring compression is guided by a cylindrical plastic part, two
-   bearings to slide linearly and a guide roller that prevents any
-   twists. The other side of the spring is fixed using a spacer sleeve,
-   a knurled nut and a nut witch are screwed together to a threaded rod
-   witch is concentric to the cylindrical plastic part.
+7) The spring compression is guided by a cylindrical plastic part, two bearings to slide linearly and a guide roller that prevents any twists. The other side of the spring is fixed using a spacer sleeve, a knurled nut and a nut witch are screwed together to a threaded rod witch is concentric to the cylindrical plastic part.
 
-3) To measure the deflection of the spring, a hall sensor in combination
-   with a magnetic strip is used. It measures the linear displacement of
-   the cylindrical plastic part. The sensor board (described in
-   Deliverable 4.1) is fixed with a wedge-shaped clip that has a spring
-   lock mechanism.
+8) To measure the deflection of the spring, a hall sensor in combination with a magnetic strip is used. It measures the linear displacement of the cylindrical plastic part. The sensor board (described in Deliverable 4.1) is fixed with a wedge-shaped clip that has a spring lock mechanism.
 
 Cable:
 
 Cables made of high performance polyethylene fibres (HPPE), also
 commercially referred to as Dyneema\ :sup:`®`, were selected for their
-high strength, light weight, low stretch and flexibility
+high strength, light weight, low stretch and flexibility.
 
- Material and fabrication
-^^^^^^^^^^^^^^^^^^^^^^^^^
+**Material and fabrication**
 
 +----------------------+----------------------------+---------------------------------+
 | Element name         | Material                   | Fabrication processes           |
@@ -2503,8 +2591,7 @@ high strength, light weight, low stretch and flexibility
 | Cable                | Dyneema\ :sup:`®` (HPPE)   | purchase (standard component)   |
 +----------------------+----------------------------+---------------------------------+
 
-Integration of the electronics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Integration of the electronics**
 
 Motor driver board (MDB):
 
@@ -2516,8 +2603,7 @@ the MYO-Ganglion via SPI and also has a CAN interface for stand-alone
 applications, debugging and configuration. More information about the
 MDB can be found in Deliverable 4.1.
 
-Accessories
-^^^^^^^^^^^
+**Accessories**
 
 Spring adaptors
 
@@ -2542,128 +2628,103 @@ forces selected from the catalogue of Gutekunst Feder
 | F\ :sub:`n`\ (N)   |          |              |            |            |
 +--------------------+----------+--------------+------------+------------+
 
-|image146|
+.. _D3.4_image136:
+.. figure:: images/image136.png
+    :align: center
 
-Adaptors for VD-361
+**Assembly Procedure MYO-Muscle**
 
-|image147|
+.. _D3.4_image137:
+.. figure:: images/image137.png
+    :align: center
 
-Adaptors for VD-339A-01
+**Step 1: Mount the plain bearings into the housing**
 
-|image148|
+.. _D3.4_image138:
+.. figure:: images/image138.png
+    :align: center
 
-Adaptors for VD-361
+Put the **plain bearing (1)** and the **clip plain bearings (2)** into the housing.
+Put the two **M2** **inserts (3)** in the holes of the housing.
 
-|image149|
+**Step 2: Assemble the pulley yoke and the spring guide shaft**
 
-Adaptors for VD-364P
+.. _D3.4_image139:
+.. figure:: images/image139.png
+    :align: center
 
-Assembly Procedure MYO-Muscle
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Put screw glue into the screw thread of the **pulley yoke** **(1)** and connect it with the **threaded rod (2).**
+Stick the **magnetic strip (3)** in the longitudinal groove in the **spring guide shaft (4)**. The magnetic strip should be as near as possible to the pulley yoke as you can see in the example).
+Slide the pulley yoke with the threaded rod from the right through the clip plain bearings (5) and put it in position.
+Slide the spring guide shaft from the left through the clip plain bearings so that the threaded rod passes in its middle. Fix the rod on the shaft with the **nut and washer** (6).
 
-|image150|
+**Step 3: Assemble the cross-guide**
 
-+---------------------------------------------------------------------------------------+----+
-| **Step 1: Mount the plain bearings into the housing**                                 |    |
-+=======================================================================================+====+
-| |image151|                                                                            |
-+---------------------------------------------------------------------------------------+----+
-| Put the **plain bearing (1)** and the **clip plain bearings (2)** into the housing.   |
-|                                                                                       |
-| Put the two **M2** **inserts (3)** in the holes of the housing.                       |
-+---------------------------------------------------------------------------------------+----+
+.. _D3.4_image140:
+.. figure:: images/image140.png
+    :align: center
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----+
-| **Step 2: Assemble the pulley yoke and the spring guide shaft**                                                                                                                                      |    |
-+======================================================================================================================================================================================================+====+
-| |image152|                                                                                                                                                                                           |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----+
-| Put screw glue into the screw thread of the **pulley yoke** **(1)** and connect it with the **threaded rod (2).**                                                                                    |
-|                                                                                                                                                                                                      |
-| Stick the **magnetic strip (3)** in the longitudinal groove in the **spring guide shaft (4)**. The magnetic strip should be as near as possible to the pulley yoke as you can see in the example).   |
-|                                                                                                                                                                                                      |
-| Slide the pulley yoke with the threaded rod from the right through the clip plain bearings (5) and put it in position.                                                                               |
-|                                                                                                                                                                                                      |
-| Slide the spring guide shaft from the left through the clip plain bearings so that the threaded rod passes in its middle. Fix the rod on the shaft with the **nut and washer** (6).                  |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----+
+Insert the **plain bearings** (1) into the **guide-roller** (2) and insert the **cylindrical pin** (3).
+Mount the **cross-guide** (4) into the housing.
 
-+-----------------------------------------------------------------------------------------------------------+----+
-| **Step 3: Assemble the cross-guide**                                                                      |    |
-+===========================================================================================================+====+
-| |image153|                                                                                                |
-+-----------------------------------------------------------------------------------------------------------+----+
-| Insert the **plain bearings** (1) into the **guide-roller** (2) and insert the **cylindrical pin** (3).   |
-|                                                                                                           |
-| Mount the **cross-guide** (4) into the housing.                                                           |
-+-----------------------------------------------------------------------------------------------------------+----+
+**Step 4: Mount the cross-guide**
 
-+-----------------------------------------------------------------------------------+----+
-| **Step 4: Mount the cross-guide**                                                 |    |
-+===================================================================================+====+
-| |image154|                                                                        |
-+-----------------------------------------------------------------------------------+----+
-| Mount the cross-guide on the housing.                                             |
-|                                                                                   |
-| Fix the cross-guide with the **screws (1)** and the **spring washers** **(2)**.   |
-+-----------------------------------------------------------------------------------+----+
+.. _D3.4_image141:
+.. figure:: images/image141.png
+    :align: center
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----+
-| **Step 5: Assemble the cover**                                                                                                                                       |    |
-+======================================================================================================================================================================+====+
-| |image155|                                                                                                                                                           |
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----+
-| Press the three **M3 inserts (1)** into the **cover (2)**.                                                                                                           |
-|                                                                                                                                                                      |
-| Insert the **plain bearings (3)** in the cover and place the printed **pulley (4**) between the plain bearings.                                                      |
-|                                                                                                                                                                      |
-| Fix the printed pulley to the cover by inserting the **cylindrical pin (5)** through both the pulley and the plain bearing. The pin must be pressed in the pulley.   |
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----+
+Mount the cross-guide on the housing.
+Fix the cross-guide with the **screws (1)** and the **spring washers** **(2)**.
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+----+
-| **Step 6: Mount the cover and the pulleys on the housing**                                                                                        |    |
-+===================================================================================================================================================+====+
-| |image156|                                                                                                                                        |
-+---------------------------------------------------------------------------------------------------------------------------------------------------+----+
-| Insert the **screws (2) and (4)** from the back of the housing in holes (a), (b) and (c). The **black screw (4)** must be in hole (a).            |
-|                                                                                                                                                   |
-| Use the screw in hole (c) as axle for the **brass pulley (1)** and the black screw in hole (a) as axle for the **ball-bearing pulley** **(3).**   |
-|                                                                                                                                                   |
-| Mount the **cover (5)** on the housing and tighten all screws. Make sure that the brass pulley can still rotate freely.                           |
-+---------------------------------------------------------------------------------------------------------------------------------------------------+----+
+**Step 5: Assemble the cover**
 
-+-------------------------------------------------------------------------------------------------------------------------+----+
-| **Step 7: Mount the spring**                                                                                            |    |
-+=========================================================================================================================+====+
-| |image157|                                                                                                              |
-+-------------------------------------------------------------------------------------------------------------------------+----+
-| Slide first the **spring (1)** then the **spacer sleeve (2)** from the left over the **spring guide shaft (4)** axle.   |
-|                                                                                                                         |
-| Use the **knurled nut (3)** to push the spacer sleeve until it starts to preload the spring.                            |
-+-------------------------------------------------------------------------------------------------------------------------+----+
+.. _D3.4_image142:
+.. figure:: images/image142.png
+    :align: center
 
-+--------------------------------------------------------------------------------+----+
-| **Step 8: Mount the reel on the motor shaft**                                  |    |
-+================================================================================+====+
-| |image158|                                                                     |
-+--------------------------------------------------------------------------------+----+
-| Put screw glue on the **setscrew (2)**.                                        |
-|                                                                                |
-| Mount the **reel (1)** using the setscrew on the shaft of the **motor (3)**.   |
-+--------------------------------------------------------------------------------+----+
+Press the three **M3 inserts (1)** into the **cover (2)**.
+Insert the **plain bearings (3)** in the cover and place the printed **pulley (4**) between the plain bearings.
+Fix the printed pulley to the cover by inserting the **cylindrical pin (5)** through both the pulley and the plain bearing. The pin must be pressed in the pulley.
 
-+-------------------------------------------------------------------+
-| **Step 9: Mount the motor and the motor driver board**            |
-+===================================================================+
-| |image159|                                                        |
-+-------------------------------------------------------------------+
-| Use the three **screws (1)** to mount the motor to the housing.   |
-|                                                                   |
-| Connect the motor to the **motor driver board** **(2)**.          |
-|                                                                   |
-| Mount the board with the **screws** **(3)** to the housing.       |
-+-------------------------------------------------------------------+
+**Step 6: Mount the cover and the pulleys on the housing**
 
- MYO-Ganglion
+.. _D3.4_image143:
+.. figure:: images/image143.png
+    :align: center
+
+Insert the **screws (2) and (4)** from the back of the housing in holes (a), (b) and (c). The **black screw (4)** must be in hole (a).
+Use the screw in hole (c) as axle for the **brass pulley (1)** and the black screw in hole (a) as axle for the **ball-bearing pulley** **(3).**
+Mount the **cover (5)** on the housing and tighten all screws. Make sure that the brass pulley can still rotate freely.
+
+**Step 7: Mount the spring**
+
+.. _D3.4_image144:
+.. figure:: images/image144.png
+    :align: center
+
+Slide first the **spring (1)** then the **spacer sleeve (2)** from the left over the **spring guide shaft (4)** axle.
+Use the **knurled nut (3)** to push the spacer sleeve until it starts to preload the spring.
+
+**Step 8: Mount the reel on the motor shaft**
+
+.. _D3.4_image145:
+.. figure:: images/image145.png
+    :align: center
+
+Put screw glue on the **setscrew (2)**.
+Mount the **reel (1)** using the setscrew on the shaft of the **motor (3)**.
+
+**Step 9: Mount the motor and the motor driver board**
+
+.. _D3.4_image146:
+.. figure:: images/image146.png
+    :align: center
+
+Use the three **screws (1)** to mount the motor to the housing.
+Connect the motor to the **motor driver board** **(2)**.
+Mount the board with the **screws** **(3)** to the housing.
+
+MYO-Ganglion
 =============
 
 Type1: ECU with FlexRay bus
@@ -2706,13 +2767,7 @@ Other developments
 Alternative concept for the MYO-Bone design
 -------------------------------------------
 
-In the Deliverable D3.1 – 7.1.2 *Catalogue of design principles*,
-different promising directions regarding the design of the MYO-Bone
-structure were highlighted. In particular, the direction referred *as
-Bionic structure (+ biotensegrity)* was explored after the completion of
-the MYO-Bone – Type 1 design.
-
-In this endeavour, a new MYO-Bone design was developed, which was
+An alternative, bio-inspired MYO-Bone design was developed,
 composed of a monolithic 3D-printed core and peripheral tensile elements
 (see Figure 1).
 
@@ -2728,10 +2783,12 @@ or accessories on the MYO-Bone. The shape of the segment was
 topologically optimized to reduce the stress in the core in the two
 different modes of loading, i.e. bending and torsion.
 
-|image160|
+.. _D3.4_image147:
+.. figure:: images/image147.png
+    :align: center
 
-Figure 12: Alternative concept for MYO-Bone design implementing the
-*Bionic structure (+biotensegrity)* concept
+    Alternative concept for MYO-Bone design implementing the
+    *Bionic structure (+biotensegrity)* concept.
 
 To evaluate the performances of the new design regarding resistance and
 stiffness (with respect to both bending and stiffness), prototypes with
@@ -2745,7 +2802,7 @@ constant loads the monolithic core experienced severe creep due to the
 nature of the 3D-printed material, which led to permanent deformations.
 For that reason, the development of this design was abandoned.
 
- Ball-and-socket joint
+Ball-and-socket joint
 ----------------------
 
 Sensor principle
@@ -2762,14 +2819,15 @@ used to exactly determine the absolute orientation and position in the
 joint. Using an optical method to determine the absolute pose of a
 joint-socket, with a unique pattern, gives two possibilities. The first
 one is to recognize a complex marker. (A pattern consists of multiple
-markers, Figure 13 - right) This requires an expensive camera. The other
+markers, :numref:`D3.4_image148` - right) This requires an expensive camera. The other
 possibility, which is novel, uses multiple simple markers detected by
 two very cheap sensors. This can be seen in Figure 13.
 
-|image161|
+.. _D3.4_image148:
+.. figure:: images/image148.png
+    :align: center
 
-Figure 13: Principle scheme *(left)*, Single code-disk *(middle)*,
-pattern consitting of disk-codes *(right)*
+    Principle scheme *(left)*, Single code-disk *(middle)*, pattern consitting of disk-codes *(right)*.
 
 Known optical orientation systems, and their pattern, require a
 comparatively high number of pixels. To recognize fine structures or
@@ -2779,7 +2837,7 @@ three degrees of freedom systems, the rotary orientation of a target to
 the sensor is arbitrary. The code-disks (orientation points) in the
 pattern are specially designed for the mouse-sensor, considering the low
 resolution and variable rotation of the Images. A single code-disk can
-be seen in Figure 13 - middle. The circular shaped code-disk is all
+be seen in :numref:`D3.4_image148`- middle. The circular shaped code-disk is all
 around uniformly arranged. This means that the appearance is independent
 of the rotation. A rotation of the code-disk does not change the content
 of the frame. In the right drawing a pattern area consisting of
@@ -2801,9 +2859,11 @@ from the outside to the inside of the code-disk, the last pixel of the
 specific code is always located in the centre. As soon as the pixel
 position matches, the specific codes can be collated to the code-disk.
 
-|image162|
+.. _D3.4_image149:
+.. figure:: images/image149.png
+    :align: center
 
-Figure 14: Test Set up
+    Test Set up
 
 The test setup of one sensor can be seen in Figure 14.The sensitivity of
 both systems is quite low (20 - 30 %). But possibilities for the
@@ -2829,7 +2889,11 @@ implemented. The basic structure of the prototype, as illustrated in
 Figure 2, has a weight of about 315 grams and an overall dimension of
 115x156x125 mm.
 
-|image163|
+.. _D3.4_image150:
+.. figure:: images/image150.png
+    :align: center
+
+    Main dimensions of the ball-and-socket joint prototype
 
 The ball-socket joint is actuated by three pairs of antagonistic tendon
 cables (see Figure 3). Their attachment points are located centrally for
@@ -2837,9 +2901,11 @@ a symmetrical application of the force. The moveable cable transmission
 systems are able to redirect the cables and provide returning forces for
 the whole motion space of the ball-socket joint.
 
-|image164|
+.. _D3.4_image151:
+.. figure:: images/image151.png
+    :align: center
 
-Figure 16: Cable transmission and assembly of the ball-and-socket joint
+    Cable transmission and assembly of the ball-and-socket joint
 
 Two different sensors that are located inside of the joint for
 protection reasons generate the three absolute angle positions (see
@@ -2848,7 +2914,11 @@ joint and the other one (using a 2 DoF joystick sensor) inside of the
 ball-socket. Both sensors are based on a contactless, magnetic
 measurement principle.
 
-|image165|
+.. _D3.4_image152:
+.. figure:: images/image152.png
+    :align: center
+
+    Absolute position sensors for the measure of the three joint angles
 
 Alternative concept for MYO-Muscle design using leaf spring
 -----------------------------------------------------------
@@ -2886,10 +2956,11 @@ due to the different geometry of the three redirecting pulleys
 locations. This allows a larger range of stiffness variation via
 co-contraction of two antagonistic MYO-Muscles.
 
-|image166|
+.. _D3.4_image153:
+.. figure:: images/image153.png
+    :align: center
 
-Figure 18: Alternative implementation of the MYO-Muscle – Type 1 using
-leaf springs as series elastic elements
+    Alternative implementation of the MYO-Muscle – Type 1 using leaf springs as series elastic elements
 
 A first prototype of this promising concept was built as
 proof-of-concept (see Figure 2) and points where further developments
@@ -2916,14 +2987,20 @@ as reference actuator for the bi-articular module development because of
 its greater compactness. As it was still under development, the
 MYO-Muscle was only summarily modelled.
 
-|image167|
+.. _D3.4_image154:
+.. figure:: images/image154.png
+    :align: center
 
-Figure 19: Bi-articular muscle module. In the middle picture: (a)
-bi-articular module block and pulley cable, (b) output tendon cable from
-bi-articular module towards distal joint (here extension of asymmetric
-hinge joint), (c) output tendon cable from mono-articular MYO-Muscle and
-(d) output tendon cable from bi-articular module towards proximal joint
-(here flexion of asymmetric hinge joint)
+.. _D3.4_image155:
+.. figure:: images/image155.png
+    :align: center
+
+    Bi-articular muscle module. In the middle picture: (a)
+    bi-articular module block and pulley cable, (b) output tendon cable from
+    bi-articular module towards distal joint (here extension of asymmetric
+    hinge joint), (c) output tendon cable from mono-articular MYO-Muscle and
+    (d) output tendon cable from bi-articular module towards proximal joint
+    (here flexion of asymmetric hinge joint)
 
 The developed module is represented in Figure 6. It is composed of a
 main casing ((2) on the top part of the figure) that can be fixed on the
@@ -2948,9 +3025,11 @@ human leg.
 A physical prototype from this construction was built (see Figure 7),
 where the MYO-Muscle modules were replaced by extension springs.
 
-|image168|
+.. _D3.4_image156:
+.. figure:: images/image156.png
+    :align: center
 
-Figure 20: Prototype of the bi-articular muscle module
+    Prototype of the bi-articular muscle module
 
 Scaling of selected design primitives
 -------------------------------------
@@ -2970,14 +3049,17 @@ dimensions have been reduced significantly in comparison to joints of
 the size class II (see in both figures the size of the module compared
 to a 1 Euro coin).
 
-|image169|
+.. _D3.4_image157:
+.. figure:: images/image157.png
+    :align: center
 
-Figure 21: Prototype of the asymmetric hinge joint for the small size
-class
+    Prototype of the asymmetric hinge joint for the small size class
 
-|image170|
+.. _D3.4_image158:
+.. figure:: images/image158.png
+    :align: center
 
-Figure 22: Prototype of the muscle module for the small size class
+    Prototype of the muscle module for the small size class
 
 Injection Moulding
 ------------------
@@ -2988,12 +3070,14 @@ plastic parts of the toolkit. The design of various toolkit parts (see
 Figure 10) was adapted in order to be producible using injection
 moulding.
 
-|image171|
+.. _D3.4_image159:
+.. figure:: images/image159.png
+    :align: center
 
-Figure 23: Toolkit parts adapted for injection moulding, from top left
-to bottom right: base of the MYO-Muscle - T1 - V1, upper and under joint
-forks of the MYO-Joint - T2 - V2, end-spacer of the MYO-Bone - T1- V1,
-clamping ring of the structural bond
+    Toolkit parts adapted for injection moulding, from top left
+    to bottom right: base of the MYO-Muscle - T1 - V1, upper and under joint
+    forks of the MYO-Joint - T2 - V2, end-spacer of the MYO-Bone - T1- V1,
+    clamping ring of the structural bond
 
 Different types of moulding technologies were considered. A relatively
 new method, coined *Rapid Tooling*, turned out to be the most promising
@@ -3007,10 +3091,12 @@ out that it is the most cost-effective production method from a few tens
 up to one thousand pieces. Hence this production technique allows to
 nicely “close the gap” between prototyping and series production.
 
-|image172|
+.. _D3.4_image160:
+.. figure:: images/image160.png
+    :align: center
 
-Figure 24: CAD design of the mould and mechanical adaptor (left) and
-moulded clamping rings (right)
+    CAD design of the mould and mechanical adaptor (left) and
+    moulded clamping rings (right)
 
 Initial testing with this production technique was performed using
 in-house injection moulding machine. Given limitations on the total
@@ -3022,523 +3108,3 @@ required to investigate the tolerances of the produced parts (and
 especially their evolution during the production, as the mould degrades)
 as well as the mechanical properties of the parts compared to those of
 parts produced with laser sintering.
-
-.. |image0| image:: media/image1.png
-   :width: 2.97917in
-   :height: 0.97917in
-.. |image1| image:: media/image2.png
-   :width: 1.02708in
-   :height: 1.22014in
-.. |image2| image:: media/image3.png
-   :width: 0.97361in
-   :height: 1.60694in
-.. |image3| image:: media/image4.png
-   :width: 1.58681in
-   :height: 1.03333in
-.. |image4| image:: media/image5.png
-   :width: 1.56806in
-   :height: 1.12431in
-.. |image5| image:: media/image6.png
-   :width: 1.25347in
-   :height: 1.16667in
-.. |image6| image:: media/image7.png
-   :width: 1.04028in
-   :height: 0.77986in
-.. |image7| image:: media/image8.png
-   :width: 3.63158in
-   :height: 1.51142in
-.. |image8| image:: media/image9.png
-   :width: 1.41042in
-   :height: 1.17917in
-.. |image9| image:: media/image10.png
-   :width: 1.34233in
-   :height: 1.18110in
-.. |image10| image:: media/image11.png
-   :width: 1.22968in
-   :height: 1.18110in
-.. |image11| image:: media/image12.png
-   :width: 3.87368in
-   :height: 1.12767in
-.. |image12| image:: media/image13.png
-   :width: 1.47174in
-   :height: 1.18110in
-.. |image13| image:: media/image14.png
-   :width: 1.20472in
-   :height: 1.18110in
-.. |image14| image:: media/image15.png
-   :width: 1.67561in
-   :height: 1.18110in
-.. |image15| image:: media/image16.png
-   :width: 1.20000in
-   :height: 1.27986in
-.. |image16| image:: media/image17.png
-   :width: 1.50000in
-   :height: 1.37986in
-.. |image17| image:: media/image18.png
-   :width: 1.41319in
-   :height: 1.42014in
-.. |image18| image:: media/image19.png
-   :width: 1.21319in
-   :height: 1.47361in
-.. |image19| image:: media/image20.png
-   :width: 2.61198in
-   :height: 2.30120in
-.. |image20| image:: media/image21.png
-   :width: 2.10843in
-   :height: 2.48556in
-.. |image21| image:: media/image22.png
-   :width: 1.77165in
-   :height: 1.18110in
-.. |image22| image:: media/image23.png
-   :width: 1.90458in
-   :height: 1.18110in
-.. |image23| image:: media/image24.png
-   :width: 4.54028in
-   :height: 1.52014in
-.. |image24| image:: media/image25.png
-   :width: 4.02715in
-   :height: 1.58947in
-.. |image25| image:: media/image26.png
-   :width: 2.12569in
-   :height: 3.50000in
-.. |image26| image:: media/image27.png
-   :width: 0.87500in
-   :height: 2.84236in
-.. |image27| image:: media/image28.png
-   :width: 2.10556in
-   :height: 2.51319in
-.. |image28| image:: media/image29.png
-   :width: 1.87500in
-   :height: 1.21111in
-.. |image29| image:: media/image30.png
-   :width: 2.75000in
-   :height: 2.21875in
-.. |image30| image:: media/image31.png
-   :width: 2.09028in
-   :height: 2.08681in
-.. |image31| image:: media/image32.png
-   :width: 0.40000in
-   :height: 2.00764in
-.. |image32| image:: media/image33.png
-   :width: 4.60833in
-   :height: 2.52431in
-.. |image33| image:: media/image34.png
-   :width: 3.02500in
-   :height: 1.96667in
-.. |image34| image:: media/image35.jpeg
-   :width: 5.58333in
-   :height: 1.96389in
-.. |image35| image:: media/image37.png
-   :width: 1.85069in
-   :height: 1.71181in
-.. |image36| image:: media/image38.png
-   :width: 1.87500in
-   :height: 1.40278in
-.. |image37| image:: media/image40.png
-   :width: 1.75000in
-   :height: 1.12153in
-.. |image38| image:: media/image41.png
-   :width: 2.69792in
-   :height: 0.91667in
-.. |image39| image:: media/image43.png
-   :width: 5.16742in
-   :height: 2.32530in
-.. |image40| image:: media/image44.png
-   :width: 6.23056in
-   :height: 2.01389in
-.. |image41| image:: media/image45.png
-   :width: 6.40556in
-   :height: 1.50347in
-.. |image42| image:: media/image47.png
-   :width: 6.44722in
-   :height: 3.18889in
-.. |image43| image:: media/image48.png
-   :width: 2.55278in
-   :height: 1.99306in
-.. |image44| image:: media/image49.png
-   :width: 2.20278in
-   :height: 2.07708in
-.. |image45| image:: media/image10.png
-   :width: 2.50347in
-   :height: 2.20278in
-.. |image46| image:: media/image50.png
-   :width: 3.13264in
-   :height: 2.65069in
-.. |image47| image:: media/image51.jpeg
-   :width: 6.38889in
-   :height: 2.43125in
-.. |image48| image:: media/image53.jpeg
-   :width: 2.25208in
-   :height: 2.00694in
-.. |image49| image:: media/image54.jpeg
-   :width: 3.31458in
-   :height: 1.48958in
-.. |image50| image:: media/image57.jpeg
-   :width: 3.74028in
-   :height: 1.72569in
-.. |image51| image:: media/image58.jpeg
-   :width: 2.39861in
-   :height: 1.99306in
-.. |image52| image:: media/image59.png
-   :width: 3.18889in
-   :height: 1.76944in
-.. |image53| image:: media/image60.jpeg
-   :width: 2.35694in
-   :height: 2.06319in
-.. |image54| image:: media/image61.jpeg
-   :width: 2.50347in
-   :height: 1.87431in
-.. |image55| image:: media/image62.png
-   :width: 2.60139in
-   :height: 2.34931in
-.. |image56| image:: media/image63.png
-   :width: 2.72500in
-   :height: 2.66875in
-.. |image57| image:: media/image64.png
-   :width: 2.64306in
-   :height: 2.39167in
-.. |image58| image:: media/image65.jpeg
-   :width: 2.43845in
-   :height: 2.14019in
-.. |image59| image:: media/image66.jpeg
-   :width: 2.65069in
-   :height: 2.42639in
-.. |image60| image:: media/image67.png
-   :width: 1.18125in
-   :height: 1.00417in
-.. |image61| image:: media/image68.png
-   :width: 2.58056in
-   :height: 2.60139in
-.. |image62| image:: media/image69.jpeg
-   :width: 2.55278in
-   :height: 2.11875in
-.. |image63| image:: media/image70.jpeg
-   :width: 2.82500in
-   :height: 2.58056in
-.. |image64| image:: media/image71.jpeg
-   :width: 2.62222in
-   :height: 2.32153in
-.. |image65| image:: media/image72.jpeg
-   :width: 6.38947in
-   :height: 4.04211in
-.. |image66| image:: media/image75.jpeg
-   :width: 6.12632in
-   :height: 2.34737in
-.. |image67| image:: media/image80.jpeg
-   :width: 6.12632in
-   :height: 2.83158in
-.. |image68| image:: media/image84.jpeg
-   :width: 6.12569in
-   :height: 2.83125in
-.. |image69| image:: media/image88.jpeg
-   :width: 2.85239in
-   :height: 2.13913in
-.. |image70| image:: media/image89.jpeg
-   :width: 2.85238in
-   :height: 2.13913in
-.. |image71| image:: media/image60.jpeg
-   :width: 2.60748in
-   :height: 2.28250in
-.. |image72| image:: media/image92.jpeg
-   :width: 2.92246in
-   :height: 2.18750in
-.. |image73| image:: media/image93.jpeg
-   :width: 3.11068in
-   :height: 2.81250in
-.. |image74| image:: media/image94.jpeg
-   :width: 1.55208in
-   :height: 1.33333in
-.. |image75| image:: media/image95.jpeg
-   :width: 1.55208in
-   :height: 1.33073in
-.. |image76| image:: media/image96.jpeg
-   :width: 1.55208in
-   :height: 1.47917in
-.. |image77| image:: media/image97.jpeg
-   :width: 1.47917in
-   :height: 1.47917in
-.. |image78| image:: media/image98.jpeg
-   :width: 2.29167in
-   :height: 1.50483in
-.. |image79| image:: media/image99.png
-   :width: 5.26111in
-   :height: 3.22569in
-.. |image80| image:: media/image100.png
-   :width: 6.67500in
-   :height: 2.15556in
-.. |image81| image:: media/image104.png
-   :width: 6.96944in
-   :height: 2.24167in
-.. |image82| image:: media/image110.png
-   :width: 3.07917in
-   :height: 3.14931in
-.. |image83| image:: media/image111.png
-   :width: 2.65903in
-   :height: 2.62917in
-.. |image84| image:: media/image115.png
-   :width: 2.27292in
-   :height: 2.48264in
-.. |image85| image:: media/image117.png
-   :width: 2.34236in
-   :height: 2.00694in
-.. |image86| image:: media/image118.jpeg
-   :width: 2.46165in
-   :height: 2.28681in
-.. |image87| image:: media/image119.jpeg
-   :width: 2.67153in
-   :height: 2.00000in
-.. |image88| image:: media/image120.jpeg
-   :width: 2.73403in
-   :height: 2.01389in
-.. |image89| image:: media/image121.png
-   :width: 1.31528in
-   :height: 1.86875in
-.. |image90| image:: media/image122.png
-   :width: 1.62500in
-   :height: 1.62500in
-.. |image91| image:: media/image123.png
-   :width: 2.22361in
-   :height: 2.90903in
-.. |image92| image:: media/image124.png
-   :width: 6.50347in
-   :height: 3.45764in
-.. |image93| image:: media/image124.png
-   :width: 6.24931in
-   :height: 3.45764in
-.. |image94| image:: media/image125.png
-   :width: 7.07569in
-   :height: 3.16528in
-.. |image95| image:: media/image127.png
-   :width: 6.24931in
-   :height: 3.78542in
-.. |image96| image:: media/image129.png
-   :width: 6.24931in
-   :height: 3.69514in
-.. |image97| image:: media/image131.jpeg
-   :width: 6.30694in
-   :height: 5.61042in
-.. |image98| image:: media/image135.png
-   :width: 6.29028in
-   :height: 8.69792in
-.. |image99| image:: media/image140.jpeg
-   :width: 2.15442in
-   :height: 1.93684in
-.. |image100| image:: media/image142.jpeg
-   :width: 2.15789in
-   :height: 1.96172in
-.. |image101| image:: media/image143.jpeg
-   :width: 2.32292in
-   :height: 1.75781in
-.. |image102| image:: media/image144.jpeg
-   :width: 2.32292in
-   :height: 1.79167in
-.. |image103| image:: media/image145.jpeg
-   :width: 2.39583in
-   :height: 1.89583in
-.. |image104| image:: media/image146.jpeg
-   :width: 2.37500in
-   :height: 1.98958in
-.. |image105| image:: media/image147.jpeg
-   :width: 1.86622in
-   :height: 1.76842in
-.. |image106| image:: media/image148.jpeg
-   :width: 1.87368in
-   :height: 1.60000in
-.. |image107| image:: media/image149.jpeg
-   :width: 2.38542in
-   :height: 1.78906in
-.. |image108| image:: media/image150.jpeg
-   :width: 2.39583in
-   :height: 1.71875in
-.. |image109| image:: media/image151.jpeg
-   :width: 2.38542in
-   :height: 1.71875in
-.. |image110| image:: media/image152.jpeg
-   :width: 2.38542in
-   :height: 1.78906in
-.. |image111| image:: media/image153.jpeg
-   :width: 1.82325in
-   :height: 0.77379in
-.. |image112| image:: media/image154.jpeg
-   :width: 1.11579in
-   :height: 1.83158in
-.. |image113| image:: media/image155.jpeg
-   :width: 2.36458in
-   :height: 2.13542in
-.. |image114| image:: media/image156.jpeg
-   :width: 2.34375in
-   :height: 1.75781in
-.. |image115| image:: media/image157.jpeg
-   :width: 2.30769in
-   :height: 1.73077in
-.. |image116| image:: media/image158.jpeg
-   :width: 2.25000in
-   :height: 1.68750in
-.. |image117| image:: media/image159.jpeg
-   :width: 2.24172in
-   :height: 1.68160in
-.. |image118| image:: media/image160.jpeg
-   :width: 2.28125in
-   :height: 1.76042in
-.. |image119| image:: media/image120.jpeg
-   :width: 2.73403in
-   :height: 2.01389in
-.. |image120| image:: media/image161.jpeg
-   :width: 2.66667in
-   :height: 2.36458in
-.. |image121| image:: media/image162.png
-   :width: 6.67083in
-   :height: 3.39306in
-.. |image122| image:: media/image164.png
-   :width: 7.52337in
-   :height: 8.44158in
-.. |image123| image:: media/image171.png
-   :width: 2.30069in
-   :height: 2.48194in
-.. |image124| image:: media/image174.png
-   :width: 1.87431in
-   :height: 1.96528in
-.. |image125| image:: media/image175.png
-   :width: 3.32847in
-   :height: 2.28681in
-.. |image126| image:: media/image176.jpeg
-   :width: 2.45486in
-   :height: 1.83889in
-.. |image127| image:: media/image177.jpeg
-   :width: 2.42639in
-   :height: 1.80417in
-.. |image128| image:: media/image178.jpeg
-   :width: 2.31458in
-   :height: 1.76944in
-.. |image129| image:: media/image120.jpeg
-   :width: 2.73403in
-   :height: 2.01389in
-.. |image130| image:: media/image179.png
-   :width: 1.75000in
-   :height: 2.00000in
-.. |image131| image:: media/image20.png
-   :width: 3.23736in
-   :height: 2.85217in
-.. |image132| image:: media/image180.png
-   :width: 6.23871in
-   :height: 7.01290in
-.. |image133| image:: media/image194.png
-   :width: 5.46087in
-   :height: 3.57985in
-.. |image134| image:: media/image21.png
-   :width: 6.36522in
-   :height: 2.27932in
-.. |image135| image:: media/image195.png
-   :width: 5.23478in
-   :height: 2.25935in
-.. |image136| image:: media/image196.png
-   :width: 5.37857in
-   :height: 2.23320in
-.. |image137| image:: media/image197.png
-   :width: 6.44508in
-   :height: 3.92595in
-.. |image138| image:: media/image198.png
-   :width: 3.01806in
-   :height: 4.11250in
-.. |image139| image:: media/image199.jpeg
-   :width: 6.39252in
-   :height: 3.28972in
-.. |image140| image:: media/image201.png
-   :width: 6.42569in
-   :height: 2.12569in
-.. |image141| image:: media/image210.png
-   :width: 1.98542in
-   :height: 1.65347in
-.. |image142| image:: media/image211.png
-   :width: 0.69375in
-   :height: 1.61389in
-.. |image143| image:: media/image212.png
-   :width: 1.94306in
-   :height: 1.26736in
-.. |image144| image:: media/image213.png
-   :width: 1.62986in
-   :height: 2.63750in
-.. |image145| image:: media/image214.png
-   :width: 4.11875in
-   :height: 2.67153in
-.. |image146| image:: media/image215.png
-   :width: 3.93681in
-   :height: 1.28403in
-.. |image147| image:: media/image216.png
-   :width: 3.93681in
-   :height: 1.34236in
-.. |image148| image:: media/image217.png
-   :width: 3.93681in
-   :height: 1.34236in
-.. |image149| image:: media/image218.png
-   :width: 3.92986in
-   :height: 1.37083in
-.. |image150| image:: media/image219.png
-   :width: 6.50359in
-   :height: 3.34375in
-.. |image151| image:: media/image220.jpeg
-   :width: 4.16806in
-   :height: 3.16111in
-.. |image152| image:: media/image221.jpeg
-   :width: 4.59444in
-   :height: 2.80417in
-.. |image153| image:: media/image222.png
-   :width: 3.97917in
-   :height: 2.11875in
-.. |image154| image:: media/image223.jpeg
-   :width: 4.24444in
-   :height: 2.09139in
-.. |image155| image:: media/image224.jpeg
-   :width: 4.88125in
-   :height: 2.83889in
-.. |image156| image:: media/image225.jpeg
-   :width: 4.99306in
-   :height: 3.23750in
-.. |image157| image:: media/image226.jpeg
-   :width: 4.56667in
-   :height: 2.63303in
-.. |image158| image:: media/image227.jpeg
-   :width: 4.11319in
-   :height: 2.10208in
-.. |image159| image:: media/image228.jpeg
-   :width: 5.39167in
-   :height: 3.19583in
-.. |image160| image:: media/image229.emf
-   :width: 6.39759in
-   :height: 4.98795in
-.. |image161| image:: media/image232.png
-   :width: 6.29907in
-   :height: 1.64486in
-.. |image162| image:: media/image234.png
-   :width: 6.30252in
-   :height: 1.89076in
-.. |image163| image:: media/image236.png
-   :width: 5.42292in
-   :height: 2.83056in
-.. |image164| image:: media/image237.png
-   :width: 5.64744in
-   :height: 3.08974in
-.. |image165| image:: media/image238.png
-   :width: 6.30303in
-   :height: 3.81061in
-.. |image166| image:: media/image239.png
-   :width: 6.29907in
-   :height: 4.37383in
-.. |image167| image:: media/image242.png
-   :width: 6.30252in
-   :height: 6.88235in
-.. |image168| image:: media/image245.png
-   :width: 5.90461in
-   :height: 2.97500in
-.. |image169| image:: media/image246.png
-   :width: 6.30000in
-   :height: 3.54167in
-.. |image170| image:: media/image248.png
-   :width: 6.33333in
-   :height: 4.94167in
-.. |image171| image:: media/image252.png
-   :width: 6.29545in
-   :height: 4.04508in
-.. |image172| image:: media/image258.jpeg
-   :width: 6.29545in
-   :height: 2.38636in
