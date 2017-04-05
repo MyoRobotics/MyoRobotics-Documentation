@@ -34,6 +34,7 @@ organized, for each DP functional category, using the following
 hierarchical classification:
 
 Types        (T)    are used to distinguish the hardware elements on the basis of their design principle.
+
 Varieties    (V)    are used, if needed, to distinguish the hardware elements based on the same design principles, on the basis of the technical implementation.
 
 The description of each variety follows the following structure:
@@ -60,9 +61,9 @@ Overview of the implemented library elements
 Mechanical couplings
 ~~~~~~~~~~~~~~~~~~~~
 
-Structural Bond
+**Structural Bond**
 
-Type 1: Flange clamp with conical flange
+*Type 1: Flange clamp with conical flange*
 
 .. _D3.4_image1:
 .. figure:: images/image1.png
@@ -70,9 +71,9 @@ Type 1: Flange clamp with conical flange
 
    Variety 1 (D3.4 - page 13)
 
-Anchor Fastener
+**Anchor Fastener**
 
-Type 1: Screw Fasteners
+*Type 1: Screw Fasteners*
 
 .. _D3.4_image3:
 .. figure:: images/image3.png
@@ -80,9 +81,9 @@ Type 1: Screw Fasteners
 
     Variety 1 (D3.4 - page 18)
 
-Cable attachment
+**Cable attachment**
 
-Type 1: Through hole
+*Type 1: Through hole*
 
 .. _D3.4_image4:
 .. figure:: images/image4.png
@@ -90,8 +91,7 @@ Type 1: Through hole
 
     (D3.4 - page 19)
 
-Type 2: Conical socket
-
+*Type 2: Conical socket*
 
 .. _D3.4_image5:
 .. figure:: images/image5.png
@@ -102,43 +102,39 @@ Type 2: Conical socket
 Design Primitives
 ~~~~~~~~~~~~~~~~~
 
-MYO-Bones
+**MYO-Bones**
 
-Type 1: Parallel Assemblies
-
-Variety 1 (D3.4 - page 21)
+*Type 1: Parallel Assemblies*
 
 .. _D3.4_image7:
 .. figure:: images/image7.png
     :align: center
 
-    Four Round Tubes Fibres
+    Variety 1 (D3.4 - page 21): Four Round Tubes Fibres
 
 .. _D3.4_image8:
 .. figure:: images/image8.png
     :align: center
 
-    Accessories: 	MYO-Muscle adaptor	Pulley module	 Cable attachment
+    Accessories
 
-Type 2: Monolithic core
-
-Variety 1 (D3.4 - page 31)
+*Type 2: Monolithic core*
 
 .. _D3.4_image11:
 .. figure:: images/image11.png
     :align: center
 
-    T-slot profile
+    T-slot profile: Variety 1 (D3.4 - page 31)
 
 .. _D3.4_image12:
 .. figure:: images/image12.png
     :align: center
 
-    Accessories: 	MYO-Muscle adaptor	Pulley module	 Cable attachment
+    Accessories
 
-MYO-Joints
+**MYO-Joints**
 
-Type 1: Symmetric Hinge
+*Type 1: Symmetric Hinge*
 
 .. _D3.4_image15:
 .. figure:: images/image15.png
@@ -146,7 +142,7 @@ Type 1: Symmetric Hinge
 
     Variety 1 (D3.4 - page 35)
 
-Type 2: Asymmetric Hinge
+*Type 2: Asymmetric Hinge*
 
 .. _D3.4_image16:
 .. figure:: images/image16.png
@@ -160,7 +156,7 @@ Type 2: Asymmetric Hinge
 
     Variety 2 (D3.4 - page 44)
 
-Type 3: Pivot
+*Type 3: Pivot*
 
 .. _D3.4_image18:
 .. figure:: images/image18.png
@@ -168,7 +164,7 @@ Type 3: Pivot
 
     Variety 1 (D3.4 - page 50)
 
-Type 4: Hinge-Pivot
+*Type 4: Hinge-Pivot*
 
 .. _D3.4_image19:
 .. figure:: images/image19.png
@@ -176,7 +172,7 @@ Type 4: Hinge-Pivot
 
     Variety 1 (D3.4 - page 56)
 
-Type 5: Hinge-Hinge
+*Type 5: Hinge-Hinge*
 
 .. _D3.4_image20:
 .. figure:: images/image20.png
@@ -184,31 +180,27 @@ Type 5: Hinge-Hinge
 
     Variety 1 (D3.4 - page 60)
 
-MYO-Muscles
+**MYO-Muscles**
 
-Type 0: Passive Muscle
-
-Variety 1 (D3.4 - page 65)
+*Type 0: Passive Muscle*
 
 .. _D3.4_image21:
 .. figure:: images/image21.png
     :align: center
 
-    Simple spring
+    Simple spring: Variety 1 (D3.4 - page 65)
 
-Type 1: Unilateral Series Elastic Actuator
-
-Variety 1 (D3.4 - page 65)
+*Type 1: Unilateral Series Elastic Actuator*
 
 .. _D3.4_image23:
 .. figure:: images/image23.png
     :align: center
 
-    Compression spring
+    Compression spring: Variety 1 (D3.4 - page 65)
 
-MYO-Ganglion
+**MYO-Ganglion**
 
-Type 1: ECU with FlexRay bus (page 73)
+*Type 1: ECU with FlexRay bus (page 73)*
 
 .. _D3.4_image24:
 .. figure:: images/image24.png
@@ -226,7 +218,7 @@ The structural bond is made of the following elements:
 
 -  One *clamp ring* which clamps the two flange plates together.
 
--  An e\ *lectrical interface* with spring contacts
+-  An e\ *lectrical interface* with spring contacts.
 
 Variety 1: Screwed Half Clamps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -250,89 +242,81 @@ Individual elements:
 .. figure:: images/image26.png
     :align: center
 
-Dimensions
+**Dimensions**
 
-+------+----------------------------------------------------------------------------------+
-| D1   | distance between the outer faces of the clamp ring                               |
-+======+==================================================================================+
-| D2   | diameter of the clamp ring along its short axis                                  |
-+------+----------------------------------------------------------------------------------+
-| D3   | diameter of the clamp ring along its long axis                                   |
-+------+----------------------------------------------------------------------------------+
-| D4   | radius of the square pattern of the pins                                         |
-+------+----------------------------------------------------------------------------------+
-| D5   | radius of the square pattern of the screws                                       |
-+------+----------------------------------------------------------------------------------+
-| D6   | total thickness of the flange (conical and cylindrical section)                  |
-+------+----------------------------------------------------------------------------------+
-| D7   | width of the flange, i.e. difference between the outer and inner flange radius   |
-+------+----------------------------------------------------------------------------------+
-| D8   | thickness of the cylindrical section of the flange                               |
-+------+----------------------------------------------------------------------------------+
-| D9   | diameter of the central hole of the flange plates                                |
-+------+----------------------------------------------------------------------------------+
+D1 Distance between the outer faces of the clamp ring
 
-Implemented instances:
+D2 Diameter of the clamp ring along its short axis
+
+D3 Diameter of the clamp ring along its long axis
+
+D4 Radius of the square pattern of the pins
+
+D5 Radius of the square pattern of the screws
+
+D6 Total thickness of the flange (conical and cylindrical section)
+
+D7 Width of the flange, i.e. difference between the outer and inner flange radius
+
+D8 Thickness of the cylindrical section of the flange
+
+D9 Diameter of the central hole of the flange plates
+
+**Implemented instances:**
 
 +--------------------------+----------------+--------+--------+
-| Reference                | SB-SC2-T1-V1   |        |        |
+| Reference                | SB-SC2-T1-V1                     |
 +==========================+================+========+========+
-| Corresponding DP-Class   | II             |        |        |
+| Corresponding DP-Class   | II                               |
 +--------------------------+----------------+--------+--------+
-| Dimensions               | D1             | 8      | [mm]   |
-+--------------------------+----------------+--------+--------+
+|                          | D1             | 8      | [mm]   |
++                          +----------------+--------+--------+
 |                          | D2             | 50     | [mm]   |
-+--------------------------+----------------+--------+--------+
++                          +----------------+--------+--------+
 |                          | D3             | 62     | [mm]   |
-+--------------------------+----------------+--------+--------+
++                          +----------------+--------+--------+
 |                          | D4             | 15     | [mm]   |
-+--------------------------+----------------+--------+--------+
-|                          | D5             | 16     | [mm]   |
-+--------------------------+----------------+--------+--------+
++                          +----------------+--------+--------+
+|        Dimensions        | D5             | 16     | [mm]   |
++                          +----------------+--------+--------+
 |                          | D6             | 3      | [mm]   |
-+--------------------------+----------------+--------+--------+
++                          +----------------+--------+--------+
 |                          | D7             | 4      | [mm]   |
-+--------------------------+----------------+--------+--------+
++                          +----------------+--------+--------+
 |                          | D8             | 1      | [mm]   |
-+--------------------------+----------------+--------+--------+
++                          +----------------+--------+--------+
 |                          | D9             | 24,5   | [mm]   |
 +--------------------------+----------------+--------+--------+
 
-Features:
+**Features:**
 
-Flange plates:
+*Flange plates:*
 
-1) The flange plates are fixed to the joint or bone assembly using a
-square screw pattern
+1) The flange plates are fixed to the joint or bone assembly using a square screw pattern
 
-2) The flange plates can also be integrated in the bone or joint
-construction
+2) The flange plates can also be integrated in the bone or joint construction
 
-3) The two flange plates are additionally connected via a set of up to
-four pins. They prevent the relative rotation of the flange plates
-along the longitudinal axis and contribute to transmit the torsion
-moment.
+3) The two flange plates are additionally connected via a set of up to four pins. They prevent the relative rotation of the flange plates along the longitudinal axis and contribute to transmit the torsion moment.
 
-4) The flange plates have an octagon in their centre to fix the
-electronic interface in it
+4) The flange plates have an octagon in their centre to fix the electronic interface in it
 
-Clamp ring:
+*Clamp ring:*
 
 5) The clamp ring is made of two parts, joined together by two screws
 
-Material and fabrication
+**Material and fabrication**
 
 +----------------+-----------------+-------------------------+
 | Element name   | Material        | Fabrication processes   |
 +================+=================+=========================+
-| flange plate   | aluminium       | -  machining            |
-+----------------+-----------------+-------------------------+
+|                | aluminium       | -  machining            |
++  flange plate  +-----------------+-------------------------+
 |                | polyamid (PA)   | -  laser sintering      |
 +----------------+-----------------+-------------------------+
 | clamp ring     | polyamid (PA)   | -  laser sintering      |
 +----------------+-----------------+-------------------------+
 
-Integration of the electronics
+**Integration of the electronics**
 
 In order to implement power (24V) and communication (FlexRay)
 connectivity, PCBs with spring loaded contacts are integrated into the
@@ -360,13 +344,13 @@ Variety 1: Pair of Screws
 
 This variety uses two screw-thread pairs, whose openings are coplanar.
 
-Illustrations
+**Illustrations**
 
 .. _D3.4_image33:
 .. figure:: images/image33.png
     :align: center
 
-Dimensions
+**Dimensions**
 
 +------+-----------------------------------+
 | D1   | screw diameter                    |
@@ -376,17 +360,17 @@ Dimensions
 | D3   | distance between the screw hole   |
 +------+-----------------------------------+
 
-Implemented instances
+**Implemented instances**
 
 +--------------------------+----------------+------+--------+
-| Reference                | AF-SC2-T1-V1   |               |
+| Reference                | AF-SC2-T1-V1                   |
 +==========================+================+======+========+
-| Corresponding DP-Class   | II             |               |
+| Corresponding DP-Class   | II                             |
 +--------------------------+----------------+------+--------+
-| Dimensions               | D1             | M3   |        |
-+--------------------------+----------------+------+--------+
-|                          | D2             | 5    | [mm]   |
-+--------------------------+----------------+------+--------+
+|                          | D1             | M3   |        |
++                          +----------------+------+--------+
+|        Dimensions        | D2             | 5    | [mm]   |
++                          +----------------+------+--------+
 |                          | D3             | 30   | [mm]   |
 +--------------------------+----------------+------+--------+
 
@@ -402,27 +386,25 @@ Overview
 .. figure:: images/image34.png
     :align: center
 
-Dimensions
+**Dimensions**
 
-+------+-------------------------+
-| D1   | cable diameter          |
-+======+=========================+
-| D2   | hole chamfer distance   |
-+------+-------------------------+
-| D3   | hole chamfer angle      |
-+------+-------------------------+
+D1 Cable diameter
 
-Implemented instances
+D2 Hole chamfer distance
+
+D3 Hole chamfer angle
+
+**Implemented instances**
 
 +--------------------------+-------------+-------+--------+
-| Reference                | CA-SC2-T1   |                |
+| Reference                | CA-SC2-T1                    |
 +==========================+=============+=======+========+
-| Corresponding DP-Class   | II          |                |
+| Corresponding DP-Class   | II                           |
 +--------------------------+-------------+-------+--------+
-| Dimensions               | D1          | 1.6   | [mm]   |
-+--------------------------+-------------+-------+--------+
-|                          | D2          | 1     | [mm]   |
-+--------------------------+-------------+-------+--------+
+|                          | D1          | 1.6   | [mm]   |
++                          +-------------+-------+--------+
+|        Dimensions        | D2          | 1     | [mm]   |
++                          +-------------+-------+--------+
 |                          | D3          | 45    | [°]    |
 +--------------------------+-------------+-------+--------+
 
@@ -432,13 +414,13 @@ Type 2: Conical socket
 In this type, the cable-end and the corresponding socket, have a conical
 shape.
 
-Overview
+**Overview**
 
 .. _D3.4_image35:
 .. figure:: images/image35.png
     :align: center
 
-Dimensions
+**Dimensions**
 
 +------+----------------------------------+
 | D1   | cable diameter                   |
@@ -450,37 +432,33 @@ Dimensions
 | D4   | end connector minimum diameter   |
 +------+----------------------------------+
 
-Implemented instances
+**Implemented instances**
 
 +--------------------------+-------------+-------+--------+
-| Reference                | CA-SC2-T2   |                |
+| Reference                | CA-SC2-T2                    |
 +==========================+=============+=======+========+
-| Corresponding DP-Class   | II          |                |
+| Corresponding DP-Class   | II                           |
 +--------------------------+-------------+-------+--------+
-| Dimensions               | D1          | 2     | [mm]   |
-+--------------------------+-------------+-------+--------+
+|                          | D1          | 2     | [mm]   |
++                          +-------------+-------+--------+
 |                          | D2          | 6     | [mm]   |
-+--------------------------+-------------+-------+--------+
++        Dimensions        +-------------+-------+--------+
 |                          | D3          | 10    | [mm]   |
-+--------------------------+-------------+-------+--------+
++                          +-------------+-------+--------+
 |                          | D4          | 4,8   | [mm]   |
 +--------------------------+-------------+-------+--------+
 
-Features
+**Features**
 
 1) The cable-end has a conical shape to allow a better distribution of the transmitted force.
 
 2) The cable runs through the cylindrical channel of the cable-end.
 
-3) To fix the cable to the cable-end, a knot is made at the end of the
-cable, which is melted to prevent the knot to loosen. This knot is
-larger than the cylindrical channel and therefore applies the cable
-force on the internal cylindrical surface of the cable-end.
+3) To fix the cable to the cable-end, a knot is made at the end of the cable, which is melted to prevent the knot to loosen. This knot is larger than the cylindrical channel and therefore applies the cable force on the internal cylindrical surface of the cable-end.
 
-4) The conical cable-end can be secured in a cylindrical socket built in
-one of the Design Primitives.
+4) The conical cable-end can be secured in a cylindrical socket built in one of the Design Primitives.
 
-Material and fabrication
+**Material and fabrication**
 
 +----------------+----------------------+------------------------------------+
 | Element name   | Material             | Fabrication processes              |
@@ -529,7 +507,7 @@ used as fibres and they are placed so that the intersections of the
 fibre longitudinal axes with the transverse plane are located at the
 vertex of a square.
 
-Illustrations
+**Illustrations**
 
 Overview:
 
@@ -547,7 +525,7 @@ Individual elements:
 .. figure:: images/image40.png
     :align: center
 
-Dimensions
+**Dimensions**
 
 +------+--------------------------------------------+
 | D1   | Diameter of the round tubes.               |
@@ -557,23 +535,23 @@ Dimensions
 | D3   | Distance between two successive spacers.   |
 +------+--------------------------------------------+
 
-Implemented instances
+**Implemented instances**
 
 +--------------------------+------------------+-------+--------+
-| Reference                | BONE-SC2-T1-V1   |                |
+| Reference                | BONE-SC2-T1-V1                    |
 +==========================+==================+=======+========+
-| Corresponding DP-Class   | II               |                |
+| Corresponding DP-Class   | II                                |
 +--------------------------+------------------+-------+--------+
-| Dimensions               | D1               | 6     | [mm]   |
-+--------------------------+------------------+-------+--------+
+|                          | D1               | 6     | [mm]   |
++                          +------------------+-------+--------+
 |                          | D2               | 30    | [mm]   |
-+--------------------------+------------------+-------+--------+
++       Dimensions         +------------------+-------+--------+
 |                          | D3               | 50    | [mm]   |
-+--------------------------+------------------+-------+--------+
++                          +------------------+-------+--------+
 |                          | M                | 188   | [g]    |
 +--------------------------+------------------+-------+--------+
 
-Features
+**Features**
 
 Fibres:
 
@@ -587,28 +565,23 @@ Spacers:
 
 4) The spacers are attached to the fibres using flexure clamps.
 
-5) The spacers are shaped to allow the integration of the muscle, close
-to the central axis on the four lateral sides of the bone.
+5) The spacers are shaped to allow the integration of the muscle, close to the central axis on the four lateral sides of the bone.
 
-6) The spacers have a central hole to let the electric cables run
-through them.
+6) The spacers have a central hole to let the electric cables run through them.
 
 End-spacers:
 
-7) The fixation of the fibres to the end-spacers is achieved via a screw
-connection.
+7) The fixation of the fibres to the end-spacers is achieved via a screw connection.
 
-8) The end-spacers also have a central hole to let the electric cables
-run through them.
+8) The end-spacers also have a central hole to let the electric cables run through them.
 
 Attachment points:
 
 9) Each end-spacer has a screw pattern to attach one side of a SB.
 
-10) Each section of fibre between two successive spacers can be used to
-attach one or more anchor carriers (see Accessories).
+10) Each section of fibre between two successive spacers can be used to attach one or more anchor carriers (see Accessories).
 
-Material and fabrication
+**Material and fabrication**
 
 +----------------+----------------------+------------------------------------+
 | Element name   | Material             | Fabrication processes              |
@@ -619,18 +592,18 @@ Material and fabrication
 +----------------+----------------------+------------------------------------+
 | insert         | steel                | -  standard component              |
 +----------------+----------------------+------------------------------------+
-| spacers        | aluminium            | -  water-jet cutting               |
+|                | aluminium            | -  water-jet cutting               |
 |                |                      |                                    |
-|                |                      | -  machining                       |
-+----------------+----------------------+------------------------------------+
+|    spacers     |                      | -  machining                       |
+|                |                      |                                    |
 |                | PA                   | -  laser sintering                 |
 +----------------+----------------------+------------------------------------+
 | end-spacers    | PA                   | -  laser sintering                 |
 +----------------+----------------------+------------------------------------+
 
-Accessories
+**Accessories**
 
-MYO-Muscle adaptor
+*MYO-Muscle adaptor*
 
 .. _D3.4_image41:
 .. figure:: images/image41.png
@@ -644,7 +617,7 @@ Features:
 
 3) Like the spacers, the carrier is shaped to allow the compact integration of the muscles and has a hole in the middle to let the electric cables run through.
 
-Pulley module
+*Pulley module*
 
 .. _D3.4_image42:
 .. figure:: images/image42.png
@@ -660,7 +633,7 @@ Features:
 
 4) The connector allows a secure lock of up to four pulleys. It has a hole in the middle to let the electric cables run through and an opening to allow an easy insertion.
 
-Cable attachment
+*Cable attachment*
 
 .. _D3.4_image43:
 .. figure:: images/image43.png
@@ -668,26 +641,19 @@ Cable attachment
 
 Features:
 
-1) The end of the tendon cable is secured with a pin that can be quickly
-mounted or unmounted
+1) The end of the tendon cable is secured with a pin that can be quickly mounted or unmounted
 
-2) The construction includes two aluminium plates that can be easily
-exchanged to adjust the pin position with respect to the end of the
-MYO-Bone
+2) The construction includes two aluminium plates that can be easily exchanged to adjust the pin position with respect to the end of the MYO-Bone
 
-3) The cable attachment is shaped to allow a fast mounting to the
-parallel fibres and is fixed to them by clamping (using another cable
-attachment on the opposite side of the MYO-Bone)
+3) The cable attachment is shaped to allow a fast mounting to the parallel fibres and is fixed to them by clamping (using another cable attachment on the opposite side of the MYO-Bone)
 
-4) Up to four cable attachments can be mounted at the end of the
-MYO-Bone, while leaving sufficient space in the middle to let the
-electric cables run through.
+4) Up to four cable attachments can be mounted at the end of the MYO-Bone, while leaving sufficient space in the middle to let the electric cables run through.
 
-In-house production manual
+**In-house production manual**
 
-Production of the fibers
+*Production of the fibers*
 
-Step 1: Cut fibres to the desired length
+**Step 1: Cut fibres to the desired length**
 
 .. _D3.4_image44:
 .. figure:: images/image44.jpg
@@ -699,7 +665,7 @@ Tips:
 
 -	Lathe can create a precise cut and avoids damaging the tube
 
-Step 2: Mill the tube ends
+**Step 2: Mill the tube ends**
 
 .. _D3.4_image45:
 .. figure:: images/image45.jpg
@@ -713,7 +679,7 @@ Tips:
 
 -	Use gloves to protect you from dust
 
-Step 3: Positioning of the tube length
+**Step 3: Positioning of the tube length**
 
 .. _D3.4_image46:
 .. figure:: images/image46.jpg
@@ -721,7 +687,7 @@ Step 3: Positioning of the tube length
 
 Insert the tubes in the tube holding-support and position the tubes with the distance support. Fix the tubes with the screws.
 
-Step 4: Gluing threaded pin in tube ends
+**Step 4: Gluing threaded pin in tube ends**
 
 .. _D3.4_image47:
 .. figure:: images/image47.jpg
@@ -735,7 +701,7 @@ Tips:
 
 -	Wear protective gloves
 
-Step 5: Remove the leftover glue
+**Step 5: Remove the leftover glue**
 
 .. _D3.4_image48:
 .. figure:: images/image48.png
@@ -743,9 +709,9 @@ Step 5: Remove the leftover glue
 
 Remove the glue with a cutter knife. Consider the hardening-time of the glue.
 
-Production of spacers
+*Production of spacers*
 
-Step 1: Water-jet
+**Step 1: Water-jet**
 
 .. _D3.4_image49:
 .. figure:: images/image49.jpg
@@ -753,7 +719,7 @@ Step 1: Water-jet
 
 Order water-jet cut part shape (aluminium)
 
-Step 2: Drilling and threading of holes
+**Step 2: Drilling and threading of holes**
 
 .. _D3.4_image50:
 .. figure:: images/image50.jpg
@@ -765,43 +731,53 @@ Tips:
 
 -	Put small fibers in the flexure clamps to avoid deformation caused by the pressure exerted by the drill bit
 
-Production of the other parts
+*Production of the other parts*
 
 .. _D3.4_image51:
 .. figure:: images/image51.png
     :align: center
 
 End Spacer:
+
 -	Selective Laser Sintering (Polyamide)
 
 SB Flange plate:
+
 -	Machining (Aluminium)
+
 -	Selective Laser Sintering  (Polyamide)
 
 Screws, nuts and washers are standard parts
 
-Assembly
+**Assembly**
 
 .. _D3.4_image52:
 .. figure:: images/image52.png
     :align: center
 
-Material needed
+*Material needed*
+
 4 x 	CFRP tubes with threaded ends
 
 4 x 	spacers
+
 16 x 	M2.5x10 countersunk head screw (DIN 965)
 
 2 x 	end spacer
+
 8 x 	M4 thin nut (DIN 39)
+
 8 x 	M4 spring washer (DIN 127)
 
 2 x 	SB flange plates
+
 8 x 	M3x25 countersunk head screw (DIN 7991)
+
 8 x 	M3 thin nut (DIN 39)
+
 8 x 	M3 spring washer (DIN 6798)
 
-Step 1: Assemble fibres and spacers
+**Step 1: Assemble fibres and spacers**
 
 .. _D3.4_image53:
 .. figure:: images/image53.png
@@ -817,7 +793,7 @@ Tips:
 
 -	In preparation for next step, regroup the spacers next to each other
 
-Step 2: Plug fibres in the end-spacer
+**Step 2: Plug fibres in the end-spacer**
 
 .. _D3.4_image54:
 .. figure:: images/image54.jpg
@@ -831,7 +807,7 @@ Tips:
 
 -	Do not press the fibers firmly into the holes
 
-Step 3: Screw fibres to the end spacer
+**Step 3: Screw fibres to the end spacer**
 
 .. _D3.4_image55:
 .. figure:: images/image55.jpg
@@ -845,7 +821,7 @@ Tips:
 
 -	(if you screw further, you may pull the threaded pin out of the tube)
 
-Step 4: Attach the other end-spacer
+**Step 4: Attach the other end-spacer**
 
 .. _D3.4_image56:
 .. figure:: images/image56.png
@@ -861,7 +837,7 @@ Tips:
   -	Perpendicular to the fibres
   -	Lay the bone on the table to ensure that it is not twisted
 
-Step 5: Adjust the spacers
+**Step 5: Adjust the spacers**
 
 .. _D3.4_image57:
 .. figure:: images/image57.jpg
@@ -875,7 +851,7 @@ Tips:
 
 -	Ensure that the spacers are perpendicular to the fibres
 
-Step 6: Check straightness
+**Step 6: Check straightness**
 
 .. _D3.4_image58:
 .. figure:: images/image58.jpg
@@ -885,7 +861,7 @@ Check that the MYO-Bone is straight and that both end-spacers are parallel to ea
 
 If necessary proceed to adjustments.
 
-Step 7: Attach the SB flange plates
+**Step 7: Attach the SB flange plates**
 
 .. _D3.4_image59:
 .. figure:: images/image59.jpg
@@ -913,7 +889,7 @@ fitting in the T-slot.
 .. figure:: images/image60.png
     :align: center
 
-Dimensions
+**Dimensions**
 
 +------+--------------------------------+
 | D1   | Width of the profile section   |
@@ -921,21 +897,21 @@ Dimensions
 | D2   | Diameter of the centre hole    |
 +------+--------------------------------+
 
-Implemented instances
+**Implemented instances**
 
 +--------------------------+------------------+-------+--------+
-| Reference                | BONE-SC2-T2-V1   |                |
+| Reference                | BONE-SC2-T2-V1                    |
 +==========================+==================+=======+========+
-| Corresponding DP-Class   | II               |                |
+| Corresponding DP-Class   | II                                |
 +--------------------------+------------------+-------+--------+
-| Dimensions               | D1               | 25    | [mm]   |
-+--------------------------+------------------+-------+--------+
-|                          | D2               | 8.5   | [mm]   |
-+--------------------------+------------------+-------+--------+
+|                          | D1               | 25    | [mm]   |
++                          +------------------+-------+--------+
+|        Dimensions        | D2               | 8.5   | [mm]   |
++                          +------------------+-------+--------+
 |                          | M                | 255   | [g]    |
 +--------------------------+------------------+-------+--------+
 
-Features
+**Features**
 
 Aluminium profile:
 
@@ -947,13 +923,13 @@ Aluminium profile:
 
 Adaptor:
 
-1) The end adaptor is screwed to the aluminium profile using the four peripheral holes that can easily be threaded
+1) The end adaptor is screwed to the aluminium profile using the four peripheral holes that can easily be threaded.
 
 2) The end adaptor has a central hole to let the electric cables run through it.
 
-3) The end adaptor has a screw pattern to attach one side of a SB
+3) The end adaptor has a screw pattern to attach one side of a SB.
 
-Material and fabrication
+**Material and fabrication**
 
 +------------------+-------------+---------------------------------+
 | Element name     | Material    | Fabrication processes           |
@@ -967,9 +943,9 @@ Material and fabrication
 |                  |             | -  post-processing: machining   |
 +------------------+-------------+---------------------------------+
 
-Accessories
+**Accessories**
 
-MYO-Muscle Adaptor
+*MYO-Muscle Adaptor*
 
 .. _D3.4_image61:
 .. figure:: images/image61.png
@@ -983,7 +959,7 @@ Features:
 
 3) Each adaptor is attached with two screws on one of the four sides of the T-Slot profile.
 
-Pulley module
+*Pulley module*
 
 .. _D3.4_image62:
 .. figure:: images/image62.png
@@ -997,7 +973,7 @@ Features:
 
 3) The pulley module is shaped to allow a fast attachment with one screw to the profile.
 
-Cable attachment
+*Cable attachment*
 
 .. _D3.4_image63:
 .. figure:: images/image63.png
@@ -1011,11 +987,11 @@ Features:
 
 3) The cable attachment is shaped to allow a fast attachment with two screws to the profile.
 
-In-house production manual
+**In-house production manual**
 
-Profile
+*Profile*
 
-Step 1: Cut profiles to the desired length
+**Step 1: Cut profiles to the desired length**
 
 .. _D3.4_image64:
 .. figure:: images/image64.jpg
@@ -1027,7 +1003,7 @@ Tips:
 
 -	Using circular saw creates a suitable cut and provides a good surface.
 
-Step 2: Thread the holes at both ends of the profile
+**Step 2: Thread the holes at both ends of the profile**
 
 .. _D3.4_image65:
 .. figure:: images/image65.jpg
@@ -1036,9 +1012,9 @@ Step 2: Thread the holes at both ends of the profile
 •	Drill first the holes with a ∅ 4,2 mm bit
 •	Thread with a M5 tap
 
-Adaptor
+*Adaptor*
 
-Step 1: Order water-jet cut parts
+**Step 1: Order water-jet cut parts**
 
 .. _D3.4_image66:
 .. figure:: images/image66.jpg
@@ -1046,7 +1022,7 @@ Step 1: Order water-jet cut parts
 
 Order water-jet cut part shape
 
-Step 2: Countersinking of holes
+**Step 2: Countersinking of holes**
 
 .. _D3.4_image67:
 .. figure:: images/image67.jpg
@@ -1063,11 +1039,17 @@ Countersink the M5 clearance holes for the fixation to the profile
 **Material needed**
 
 1X       Aluminum profile with threaded ends
+
 2X       Adaptor
+
 8X       M5 countersunk head screw (DIN 965)
+
 2X       SB flange plates
+
 8X       M3x25 countersunk head screw (DIN 7991)
+
 8X       M3 thin nut (DIN 31)
+
 8X       M3 spring washer (DIN 6798)
 
 **Step 1: Assemble profile and adaptors**
@@ -1109,7 +1091,7 @@ joint end planes. The provided angular range of rotation is *symmetric*
 with respect to the axis perpendicular to its interface plane provided
 by the structural bond. This DoF is provided by a combination of axle
 and rotational bearings. The basic structure of the joint is illustrated
-in Figure 4.
+in :numref:`D3.4_image72`.
 
 Both joint ends are shaped as forks (the *upper-* and *under joint*
 *forks*) and provide an interface for the structural bond. The
@@ -1165,26 +1147,26 @@ the joint to be easily accessible for configuration purpose.
 **Implemented instances**
 
 +--------------------------+-------------------+-------+--------+
-| Reference                | JOINT-SC2-T1-V1   |                |
+| Reference                | JOINT-SC2-T1-V1                    |
 +==========================+===================+=======+========+
-| Corresponding DP-Class   | II                |                |
+| Corresponding DP-Class   | II                                 |
 +--------------------------+-------------------+-------+--------+
-| Dimensions               | H                 | 60    | [mm]   |
-+--------------------------+-------------------+-------+--------+
+|                          | H                 | 60    | [mm]   |
++                          +-------------------+-------+--------+
 |                          | W                 | 55    | [mm]   |
-+--------------------------+-------------------+-------+--------+
++                          +-------------------+-------+--------+
 |                          | T                 | 36    | [mm]   |
-+--------------------------+-------------------+-------+--------+
++        Dimensions        +-------------------+-------+--------+
 |                          | X                 | 29    | [mm]   |
-+--------------------------+-------------------+-------+--------+
++                          +-------------------+-------+--------+
 |                          | Θ                 | 140   | [°]    |
-+--------------------------+-------------------+-------+--------+
++                          +-------------------+-------+--------+
 |                          | M                 | 70    | [g]    |
 +--------------------------+-------------------+-------+--------+
 
 **Features**
 
-Under joint fork:
+*Under joint fork:*
 
 1) Both bearings are implemented in the under joint fork.
 
@@ -1196,7 +1178,7 @@ Under joint fork:
 
 5) A holding device allows attaching a SIM-board on the side.
 
-Upper joint fork:
+*Upper joint fork:*
 
 6) Two cable attachments (CA-SC2-T2), allowing the bidirectional actuation of the joint, and a continuous guide for the cables are implemented.
 
@@ -1208,7 +1190,7 @@ Upper joint fork:
 
 10) Both shafts of the joint are implemented with interference fit.
 
-Sensor and electrical interfaces:
+*Sensor and electrical interfaces:*
 
 11) The sensor board and its protection cap can be easily fixed on the under joint fork.
 
@@ -1216,10 +1198,7 @@ Sensor and electrical interfaces:
 
 13) The electrical interfaces are small PCBs which are embedded in the structural bonds.
 
-14) Openings and cable channels are implemented to enable the electrical
-cabling between sensor and SIM-board (described in Deliverable 4.1)
-and between the electrical interfaces of the structural bonds on both
-sides of the joint.
+14) Openings and cable channels are implemented to enable the electrical cabling between sensor and SIM-board (described in Deliverable 4.1) and between the electrical interfaces of the structural bonds on both sides of the joint.
 
 **Material and fabrication**
 
@@ -1246,14 +1225,23 @@ sides of the joint.
 Material needed:
 
 1 x Upper hinge part
+
 1 x Lower hinge part
+
 1 x Sensor cap
+
 2 Bearings 625 5x16x5 mm
+
 1 x shaft left side
+
 1 x shaft sensor side
+
 4 data wires 0,25 mm\ :sup:`2`
+
 2 power wires highly flexible silicon 1,5 mm\ :sup:`2`
+
 2 x connector boards, four spring contacts
+
 8 x M1,6 x 6
 
 **Step 1: Mount sensor board**
@@ -1292,10 +1280,11 @@ Put the ball bearings in the housing on both sides.
 **Step 4: Assemble upper and under hinge part**
 
 .. _D3.4_image79:
- .. figure:: images/image79.png
+.. figure:: images/image79.png
    :align: center
 
 Assemble the upper and under hinge part.
+
 Plug in the shafts to fix the joint parts.
 
 Tips:
@@ -1311,9 +1300,12 @@ Tips:
     :align: center
 
 Prepare cable tree on connector boards
+
 Cut on 15 cm length:
-4 data wires 0,25 mm2
-2 power wires highly flexible silicon 1,5 mm2
+
+4 data wires 0,25 mm\ :sup:`2`
+
+2 power wires highly flexible silicon 1,5 mm\ :sup:`2`
 
 Connector side:
 
@@ -1322,9 +1314,13 @@ Connector side:
     :align: center
 
 Pin colour code:
+
 F1+ white
+
 F1 - brown
+
 F2 + yellow
+
 F2 - green
 
 **Step 6: Cabling**
@@ -1350,6 +1346,7 @@ Push cable tree through the joint
     :align: center
 
 Skinning all cables long till the SB-pocket.
+
 Pull cables through connector board and solder from top. Screw both connector boards to joint with four M1,6 screws.
 
 Connector side:
@@ -1359,9 +1356,13 @@ Connector side:
     :align: center
 
 Pin colour code:
+
 F1+ white
+
 F1 - brown
+
 F2 + yellow
+
 F2 - green
 
 Tips:
@@ -1379,7 +1380,7 @@ angular range of rotation is *asymmetric* with respect to the axis
 perpendicular to its interface plane provided by the structural bond.
 Following Principle II, this DoF is provided by a combination of axle
 and rotational bearings. The basic structure of the joint is illustrated
-in Figure 4.
+in :numref:`D3.4_image72`.
 
 Both joint ends are shaped as forks (the *upper-* and *under joint*
 *forks*) and provide an interface for the structural bond. The
@@ -1422,7 +1423,7 @@ direction.
 
 This cable guidance implementation does not insure a constant lever arm
 length, which significantly decreases as the joint flexes, as shown in
-:numref:`D3.4_image84`. Tests performed by ETH showed that this pronounced decrease of
+:numref:`D3.4_image85`. Tests performed by ETH showed that this pronounced decrease of
 the lever arm length was prejudicial in applications. For that reason
 another asymmetric hinge variety was developed, which is described in
 the next section.
@@ -1466,8 +1467,7 @@ the pulley (cable catching mechanisms).
     Lever arm length variation of the extensor and flexor muscles cables
     (resp. red and green lines) as the asymmetric hinge joint (variety 2) flexes from 0° to 140°
 
-Illustrations
-^^^^^^^^^^^^^
+**Illustrations**
 
 .. _D3.4_image88:
 .. figure:: images/image88.png
@@ -1496,77 +1496,68 @@ X	Height of the rotation axis
 **Implemented instances**
 
 +--------------------------+-------------------+---------+--------+
-| Reference                | JOINT-SC2-T2-V2   |                  |
+| Reference                | JOINT-SC2-T2-V2                      |
 +==========================+===================+=========+========+
-| Corresponding DP-Class   | II                |                  |
+| Corresponding DP-Class   | II                                   |
 +--------------------------+-------------------+---------+--------+
-| Dimensions               | H                 | 80      | [mm]   |
-+--------------------------+-------------------+---------+--------+
+|                          | H                 | 80      | [mm]   |
++                          +-------------------+---------+--------+
 |                          | W                 | 66,25   | [mm]   |
-+--------------------------+-------------------+---------+--------+
++                          +-------------------+---------+--------+
 |                          | T                 | 84      | [mm]   |
-+--------------------------+-------------------+---------+--------+
++        Dimensions        +-------------------+---------+--------+
 |                          | X                 | 40      | [mm]   |
-+--------------------------+-------------------+---------+--------+
++                          +-------------------+---------+--------+
 |                          | Θ                 | 140     | [°]    |
-+--------------------------+-------------------+---------+--------+
++                          +-------------------+---------+--------+
 |                          | M                 | 224     | [g]    |
 +--------------------------+-------------------+---------+--------+
 
 **Features**
 
-Under joint fork:
+*Under joint fork:*
 
-1) The joint axle is pressed through the under joint fork, while relative rotation is prevented via a chamfer
+1) The joint axle is pressed through the under joint fork, while relative rotation is prevented via a chamfer.
 
-2) The axle is axially secured with one circlip on each of its sides
+2) The axle is axially secured with one circlip on each of its sides.
 
-3) Two mechanical stoppers on each side of the under joint fork limit the extension of the joint
+3) Two mechanical stoppers on each side of the under joint fork limit the extension of the joint.
 
-4) The structural bond (SB) is integrated on the under joint fork
+4) The structural bond (SB) is integrated on the under joint fork.
 
-5) M2 brass inserts are embedded in the under joint fork as fixation points for the metal sheets holding the guiding pulley
+5) M2 brass inserts are embedded in the under joint fork as fixation points for the metal sheets holding the guiding pulley.
 
-6) A M2 brass insert is embedded in the top part of the under joint fork as fixation point for the cable catching mechanism
+6) A M2 brass insert is embedded in the top part of the under joint fork as fixation point for the cable catching mechanism.
 
-Upper joint fork:
+*Upper joint fork:*
 
-7) The ball bearings are mounted in the upper joint fork
+7) The ball bearings are mounted in the upper joint fork.
 
-8) The bearings are axially secured on the medial side by the upper joint fork itself and on the lateral side by the two side covers screwed on the upper joint fork
+8) The bearings are axially secured on the medial side by the upper joint fork itself and on the lateral side by the two side covers screwed on the upper joint fork.
 
-9) Two mechanical stoppers on each side of the upper joint fork limit the flexion of the joint
+9) Two mechanical stoppers on each side of the upper joint fork limit the flexion of the joint.
 
-10) The SB is integrated on the under joint fork
+10) The SB is integrated on the under joint fork.
 
-11) M2 brass inserts are embedded in the upper joint fork as fixation points for the metal sheets holding the cable attachment for the extensor muscle cable
+11) M2 brass inserts are embedded in the upper joint fork as fixation points for the metal sheets holding the cable attachment for the extensor muscle cable.
 
-Flexor muscle cable guidance and attachment:
+*Flexor muscle cable guidance and attachment:*
 
-12) The cable attachment is implemented as a transversal parallel pin around which the end of the cable is attached. The pin is pressed in the upper joint fork
+12) The cable attachment is implemented as a transversal parallel pin around which the end of the cable is attached. The pin is pressed in the upper joint fork.
 
-13) A pulley equipped with ball bearing is fixed on the under joint fork to guide the cable when the joint is close to most extended position
+13) A pulley equipped with ball bearing is fixed on the under joint fork to guide the cable when the joint is close to most extended position.
 
-Extensor muscle cable guidance and attachment:
+*Extensor muscle cable guidance and attachment:*
 
-14) The cable attachment is implemented as a transversal parallel pin around which the end of the cable is attached. The pin is supported by the two metal sheets inserted in the upper joint fork structure
-and additionally fixed to it with four screws
+14) The cable attachment is implemented as a transversal parallel pin around which the end of the cable is attached. The pin is supported by the two metal sheets inserted in the upper joint fork structure and additionally fixed to it with four screws.
 
-15) To prevent that the cable slides laterally, a part (“cable centring
-clip”) is clipped on the pin to constraint the position of the cable
-to its centre
+15) To prevent that the cable slides laterally, a part (“cable centring clip”) is clipped on the pin to constraint the position of the cable to its centre.
 
-16) The cable guidance is implemented as a roller born by a transversal
-parallel pin supported by the two metal sheets screwed to the under
-joint fork
+16) The cable guidance is implemented as a roller born by a transversal parallel pin supported by the two metal sheets screwed to the under joint fork.
 
-17) A part (“cable catching mechanism”) is fixed to top part of the under
-joint fork to prevent the cable to jump out of the roller when the
-joint extends while there is no tension in the cable. This part is
-shaped so as to deform in order to let the cable attachment pin pass
-under it and close afterwards when the joint extends or closes.
+17) A part (“cable catching mechanism”) is fixed to top part of the under joint fork to prevent the cable to jump out of the roller when the joint extends while there is no tension in the cable. This part is shaped so as to deform in order to let the cable attachment pin pass under it and close afterwards when the joint extends or closes.
 
-Sensor and electrical interfaces:
+*Sensor and electrical interfaces:*
 
 18) A magnet is glued to the joint axle.
 
@@ -1612,7 +1603,7 @@ Sensor and electrical interfaces:
 .. figure:: images/image92.jpg
     :align: center
 
-Material needed:
+*Material needed:*
 
 1x upper joint fork
 
@@ -1694,7 +1685,7 @@ Material needed:
 •	Press the M2 brass insert into the upper joint fork on the top side
 •	Fix the cable catching mechanism with M2 screws
 
- **Step 3: Mount the guiding pulley**
+**Step 3: Mount the guiding pulley**
 
 .. _D3.4_image97:
 .. figure:: images/image97.jpg
@@ -1763,7 +1754,9 @@ Material needed:
 •	Mount on one side of the joint axle:
 
   o	one of the large circlips (DIN 471 - 9 x 1)
+
   o	one ball bearing
+
   o	one of the small circlips (DIN 471 -6 x 0.7)
 
 •	Insert the joint axle through the upper and under joint forks
@@ -1802,9 +1795,12 @@ Note: the magnet can also be glued before mounting the joint axle
     :align: center
 
 Prepare cable tree on connector boards
+
 Cut on 15 cm length:
-4 data wires 0,25 mm2
-2 power wires highly flexible silicon 1,5 mm2
+
+4 data wires 0,25 mm\ :sup:`2`
+
+2 power wires highly flexible silicon 1,5 mm\ :sup:`2`
 
 Connector side:
 
@@ -1829,6 +1825,7 @@ F2 - green
     :align: center
 
 Strip all cables until the SB-pocket.
+
 Pull cables through the connector board and solder from top. Screw both connector boards to joint with four M1,6 screws.
 
 Connector side:
@@ -1871,7 +1868,7 @@ bonds and the electric cabling joining them is guided through the joint.
 .. figure:: images/image112.png
     :align: center
 
-Illustration of the joint construction for Type 2
+    Illustration of the joint construction for Type 2
 
 Variety 1
 ~~~~~~~~~
@@ -1903,24 +1900,24 @@ joint, two ball bearings are used to support the joint axle.
 **Implemented instances**
 
 +--------------------------+-------------------+--------+--------+
-| Reference                | JOINT-SC2-T3-V1   |                 |
+| Reference                | JOINT-SC2-T3-V1                     |
 +==========================+===================+========+========+
-| Corresponding DP-Class   | II                |                 |
+| Corresponding DP-Class   | II                                  |
 +--------------------------+-------------------+--------+--------+
-| Dimensions               | H                 | 65     | [mm]   |
-+--------------------------+-------------------+--------+--------+
+|                          | H                 | 65     | [mm]   |
++                          +-------------------+--------+--------+
 |                          | W                 | 66,8   | [mm]   |
-+--------------------------+-------------------+--------+--------+
-|                          | T                 | 50     | [mm]   |
-+--------------------------+-------------------+--------+--------+
++                          +-------------------+--------+--------+
+|       Dimensions         | T                 | 50     | [mm]   |
++                          +-------------------+--------+--------+
 |                          | Θ                 | 164    | [°]    |
-+--------------------------+-------------------+--------+--------+
++                          +-------------------+--------+--------+
 |                          | M                 | 115    | [g]    |
 +--------------------------+-------------------+--------+--------+
 
 **Features**
 
-Barrel-shaped housing:
+*Barrel-shaped housing:*
 
 1) The barrel-shaped housing contains a reservoir for the electrical cables, into which the electric cable can freely move when the joint is rotating.
 
@@ -1930,8 +1927,7 @@ Barrel-shaped housing:
 
 4) Two mechanical stoppers limit the motion range of the joint.
 
-Pivot shaft:
-
+*Pivot shaft:*
 
 5) The bearing on the extremity of the shaft is fixed by a nut screwed on the pivot shaft.
 
@@ -1941,7 +1937,7 @@ Pivot shaft:
 
 8) To measure the rotation of the joint, an magnetic absolute position sensor is integrated in the joint. Its magnet element is mounted in the shaft.
 
-Lid:
+*Lid:*
 
 9) The lid is screwed to the barrel-shaped housing and its position secured by four pins.
 
@@ -1975,7 +1971,7 @@ Lid:
 .. figure:: images/image115.png
     :align: center
 
-Material needed
+Material needed:
 
 1 x Barrel-shaped housing
 
@@ -1995,7 +1991,7 @@ Material needed
 
 8 x M1,6 x 6
 
-**Step 1: Mount sensor board **
+**Step 1: Mount sensor board**
 
 .. _D3.4_image116:
 .. figure:: images/image116.png
@@ -2048,6 +2044,14 @@ Screw the lid on the barrel-shaped housing and put in the security pin.
 .. figure:: images/image121.jpg
     :align: center
 
+Prepare cable tree on connector boards
+
+Cut on 15 cm length:
+
+4 data wires 0,25 mm\ :sup:`2`
+
+2 power wires highly flexible silicon 1,5 mm\ :sup:`2`
+
 Connector side:
 
 .. _D3.4_image121A:
@@ -2071,6 +2075,7 @@ F2 - green
     :align: center
 
 Place PCB carrier in SB
+
 Solder cables to the second board (from below)
 
 Carrier orientation:
@@ -2090,6 +2095,7 @@ F2 + yellow
 F2 - green
 
 Push cable tree through the joint.
+
 Screw both connector boards to joint with four M1,6 screws.
 
 Type 4: Hinge-Pivot
@@ -2129,61 +2135,65 @@ measured using Hall-effect sensors and magnet rings.
 
 **Dimensions**
 
-+-----+-------------------------------------+----+-------------------+-----------------------------+
-| H   | Distance between joint end planes   |    | Θ\ :sub:`hinge`   | Motion range of the hinge   |
-+=====+=====================================+====+===================+=============================+
-| W   | Maximal width of the joint          |    | Θ\ :sub:`pivot`   | Motion range of the pivot   |
-+-----+-------------------------------------+----+-------------------+-----------------------------+
-| T   | Maximal thickness of the joint      |    |                   |                             |
-+-----+-------------------------------------+----+-------------------+-----------------------------+
-| X   | Height of the hinge rotation axis   |    |                   |                             |
-+-----+-------------------------------------+----+-------------------+-----------------------------+
++---------------------+-------------------------------------+
+| H                   | Distance between joint end planes   |
++---------------------+-------------------------------------+
+| W                   | Maximal width of the joint          |
++---------------------+-------------------------------------+
+| T                   | Maximal thickness of the joint      |
++---------------------+-------------------------------------+
+| X                   | Height of the hinge rotation axis   |
++---------------------+-------------------------------------+
+| Θ\ :sub:`hinge`     | Motion range of the hinge           |
++---------------------+-------------------------------------+
+| Θ\ :sub:`pivot`     | Motion range of the pivot           |
++---------------------+-------------------------------------+
 
 **Implemented instances**
 
 +--------------------------+-------------------+--------+--------+
-| Reference                | JOINT-SC2-T4-V1   |                 |
+| Reference                | JOINT-SC2-T4-V1                     |
 +==========================+===================+========+========+
-| Corresponding DP-Class   | II                |                 |
+| Corresponding DP-Class   | II                                  |
 +--------------------------+-------------------+--------+--------+
-| Dimensions               | H                 | 95     | [mm]   |
-+--------------------------+-------------------+--------+--------+
+|                          | H                 | 95     | [mm]   |
++                          +-------------------+--------+--------+
 |                          | W                 | 142    | [mm]   |
-+--------------------------+-------------------+--------+--------+
++                          +-------------------+--------+--------+
 |                          | T                 | 78,5   | [mm]   |
-+--------------------------+-------------------+--------+--------+
-|                          | X                 | 47,5   | [mm]   |
-+--------------------------+-------------------+--------+--------+
++                          +-------------------+--------+--------+
+|        Dimensions        | X                 | 47,5   | [mm]   |
++                          +-------------------+--------+--------+
 |                          | Θ\ :sub:`hinge`   | 140    | [°]    |
-+--------------------------+-------------------+--------+--------+
++                          +-------------------+--------+--------+
 |                          | Θ\ :sub:`pivot`   | 180    | [°]    |
-+--------------------------+-------------------+--------+--------+
++                          +-------------------+--------+--------+
 |                          | M                 | ~300   | [g]    |
 +--------------------------+-------------------+--------+--------+
 
 **Features**
 
-Base:
+*Base:*
 
 1) It holds the bearings for the hinge.
 
-2) Two mechanical stoppers limit the motion range of the hinge by contacting the ring mount
+2) Two mechanical stoppers limit the motion range of the hinge by contacting the ring mount.
 
 3) The structural bond (SB) is integrated on the proximal side of the base.
 
 4) It provides a fixation point on each side to screw a pulley-support.
 
-Pulley-support
+*Pulley-support:*
 
 5) This part holds a pulley redirecting one of the tendon cables actuating the pivot through the hinge axle.
 
-Ring mount:
+*Ring mount:*
 
 6) Two cable attachments (CA-SC2-T2) are provided, allowing the bidirectional actuation of the hinge.
 
 7) It holds two angular ball bearings for the pivot.
 
-8) It holds two pulleys that guide the tendon-cables for the pivot actuation towards the cable winch
+8) It holds two pulleys that guide the tendon-cables for the pivot actuation towards the cable winch.
 
 9) It holds the two axles of the hinge, which are inserted with interference fit.
 
@@ -2191,25 +2201,25 @@ Ring mount:
 
 11) Each steel sheet is secured with a cover clipped on the ring mount.
 
-12) A half magnet is mounted on its right side for the measurement of the hinge absolute position
+12) A half magnet is mounted on its right side for the measurement of the hinge absolute position.
 
-13) The electronic board with the sensor measuring the absolute position of the pivot is mounted on its back
+13) The electronic board with the sensor measuring the absolute position of the pivot is mounted on its back.
 
-Cable winch:
+*Cable winch:*
 
 14) Two tendon cable attachments are provided for the bidirectional actuation of the pivot and the round shape of the cable insures a constant lever arm.
 
 15) A magnet ring is mounted on the cable winch to measure the pivot absolute position.
 
-Output shaft:
+*Output shaft:*
 
 16) The output shaft is mounted in the two angular ball bearings.
 
 17) The structural bond (SB) is integrated on the distal end of the output shaft.
 
-18) The cable winch is fixed to the output shaft with a screw with inner hole, allowing the passage of the electric cables
+18) The cable winch is fixed to the output shaft with a screw with inner hole, allowing the passage of the electric cables.
 
-Bearing cover:
+*Bearing cover:*
 
 19) The bearing cover covers the two angular ball bearings.
 
@@ -2217,7 +2227,7 @@ Bearing cover:
 
 21) It is assembled with four screws on the ring mount.
 
-Sensor and electrical interfaces:
+*Sensor and electrical interfaces:*
 
 22) The sensor board for the hinge is attached on a pulley-support.
 
@@ -2299,7 +2309,7 @@ intersection point of both axes.
 
 **Illustrations:**
 
-Overview:
+*Overview:*
 
 .. _D3.4_image127:
 .. figure:: images/image127.png
@@ -2309,7 +2319,7 @@ Overview:
 .. figure:: images/image128.png
     :align: center
 
-Individual elements:
+*Individual elements:*
 
 .. _D3.4_image129:
 .. figure:: images/image129.png
@@ -2336,28 +2346,28 @@ X Height of the proximal axis
 **Implemented instances:**
 
 +--------------------------+-------------------+---------+--------+
-| Reference                | JOINT-SC2-T5-V1   |                  |
+| Reference                | JOINT-SC2-T5-V1                      |
 +==========================+===================+=========+========+
-| Corresponding DP-Class   | II                |                  |
+| Corresponding DP-Class   | II                                   |
 +--------------------------+-------------------+---------+--------+
-| Dimensions               | H                 | 115     | [mm]   |
-+--------------------------+-------------------+---------+--------+
+|                          | H                 | 115     | [mm]   |
++                          +-------------------+---------+--------+
 |                          | W                 | 131,2   | [mm]   |
-+--------------------------+-------------------+---------+--------+
++                          +-------------------+---------+--------+
 |                          | T                 | 86      | [mm]   |
-+--------------------------+-------------------+---------+--------+
-|                          | X                 | 55      | [mm]   |
-+--------------------------+-------------------+---------+--------+
++                          +-------------------+---------+--------+
+|        Dimensions        | X                 | 55      | [mm]   |
++                          +-------------------+---------+--------+
 |                          | Θ\ :sub:`prox`    | 140     | [°]    |
-+--------------------------+-------------------+---------+--------+
++                          +-------------------+---------+--------+
 |                          | Θ\ :sub:`dist`    | 110     | [°]    |
-+--------------------------+-------------------+---------+--------+
++                          +-------------------+---------+--------+
 |                          | M                 | ~320    | [g]    |
 +--------------------------+-------------------+---------+--------+
 
 **Features:**
 
-Proximal part:
+*Proximal part:*
 
 1)  Two bearings and two screws are implemented in the proximal part.
 
@@ -2379,7 +2389,7 @@ Proximal part:
 
 10) Mechanical stoppers, which collide with (23), limit the motion of range of the distal rotation.
 
-Middle part:
+*Middle part:*
 
 11) The middle part holds the four axles (implemented using screws) together.
 
@@ -2395,7 +2405,7 @@ Middle part:
 
 17) Mechanical stoppers, which collide with (9), limit the motion of range of the proximal rotation.
 
-Distal Part:
+*Distal Part:*
 
 18) Two bearings and two screws are implemented in the distal part.
 
@@ -2430,11 +2440,11 @@ Distal Part:
 |                    |                              |                                     |
 | Plain washer       |                              |                                     |
 +--------------------+------------------------------+-------------------------------------+
-| Ceramic bush       | Ceramic (polished surface)   |     purchase                        |
+| Ceramic bush       | Ceramic (polished surface)   |     purchased                       |
 +--------------------+------------------------------+-------------------------------------+
 | Position sensor    |                              |     purchased                       |
-|                    |                              |                                     |
 | Magnet             |                              |                                     |
+|                    |                              |                                     |
 +--------------------+------------------------------+-------------------------------------+
 
 MYO-Muscle
@@ -2459,7 +2469,7 @@ can be adjusted by tightening or losing a single nut (4). This allows to
 adjust easily the length of the tendon cable and/or to adjust the joint
 position at which the spring starts to be loaded.
 
-**Ilustrations**
+**Illustrations**
 
 .. _D3.4_image131:
 .. figure:: images/image131.png
@@ -2517,7 +2527,7 @@ Integration to BONE-SC2-T1-V1:
 
 +------+------------------------------------------------------------------------------+
 | D1   | Total length of the actuator                                                 |
-+======+==============================================================================+
++------+------------------------------------------------------------------------------+
 | D2   | Total height of the actuator                                                 |
 +------+------------------------------------------------------------------------------+
 | D3   | Lever arm of the tension force in the cable w.r.t. the bone section centre   |
@@ -2526,28 +2536,28 @@ Integration to BONE-SC2-T1-V1:
 **Implemented instances**
 
 +--------------------------+----------------------+-------+--------+
-| Reference                | MUSCLE-T1-V1-P100W   |                |
+| Reference                | MUSCLE-T1-V1-P100W                    |
 +==========================+======================+=======+========+
-| Corresponding DP-Class   | II & III             |                |
+| Corresponding DP-Class   | II & III                              |
 +--------------------------+----------------------+-------+--------+
-| Motor power              | 100 W                |                |
+| Motor power              | 100 W                                 |
 +--------------------------+----------------------+-------+--------+
-| Dimensions               | D1                   | 192   | [mm]   |
-+--------------------------+----------------------+-------+--------+
-|                          | D2                   | 60    | [mm]   |
-+--------------------------+----------------------+-------+--------+
+|                          | D1                   | 192   | [mm]   |
++                          +----------------------+-------+--------+
+|        Dimensions        | D2                   | 60    | [mm]   |
++                          +----------------------+-------+--------+
 |                          | D3                   | 32    | [mm]   |
 +--------------------------+----------------------+-------+--------+
 
 **Features**
 
-Mechanical base:
+*Mechanical base:*
 
 1) The mechanical base is connected to the bone using multiple anchor carriers developed for the BONE-SC2-T1-V1 (“Anchors circular pattern for vis-à-vis attachment”, described in page 7). As this implementation is based on an already existing hardware, it was not straightforward to directly use the available adaptor. For that reason one part of the adaptor was directly integrated in the mechanical base. Using the other parts of the anchor carrier (represented in green), the mechanical base can be fixed to the bone.
 
 2) The mechanical base contains a set of pulleys that redirect the cable transmission, from the motor reel, via the series elastic element, to come out parallel to the bone longitudinal axis.
 
-DC motor:
+*DC motor:*
 
 3) The DC motor is fixed to the mechanical base by a set of screws. It is equipped with an optical incremental encoder.
 
@@ -2555,7 +2565,7 @@ DC motor:
 
 5) The motor driver board (see hereunder) is fixed on one side of the mechanical base.
 
-Series elastic element:
+*Series elastic element:*
 
 6) The series elastic element is based on a compression steel coil spring.
 
@@ -2563,7 +2573,7 @@ Series elastic element:
 
 8) To measure the deflection of the spring, a hall sensor in combination with a magnetic strip is used. It measures the linear displacement of the cylindrical plastic part. The sensor board (described in Deliverable 4.1) is fixed with a wedge-shaped clip that has a spring lock mechanism.
 
-Cable:
+*Cable:*
 
 Cables made of high performance polyethylene fibres (HPPE), also
 commercially referred to as Dyneema\ :sup:`®`, were selected for their
@@ -2593,7 +2603,7 @@ high strength, light weight, low stretch and flexibility.
 
 **Integration of the electronics**
 
-Motor driver board (MDB):
+*Motor driver board (MDB):*
 
 This driver board is based on the dsPIC33FJ128MC802 from Microchip, a
 micro-controller particularly suited for motor control applications. The
@@ -2605,7 +2615,7 @@ MDB can be found in Deliverable 4.1.
 
 **Accessories**
 
-Spring adaptors
+*Spring adaptors*
 
 The mechanical base of the muscle was designed to allow the usage of
 various springs, as long as their dimensions are compatible with the
@@ -2621,11 +2631,11 @@ forces selected from the catalogue of Gutekunst Feder
 +====================+==========+==============+============+============+
 | Stiffness          | 30,682   | 64,301       | 63,636     | 127,805    |
 |                    |          |              |            |            |
-| R(N/mm)            |          |              |            |            |
+| R (N/mm)           |          |              |            |            |
 +--------------------+----------+--------------+------------+------------+
 | Maximal force      | 664,58   | 813,639      | 1191,193   | 1337,561   |
 |                    |          |              |            |            |
-| F\ :sub:`n`\ (N)   |          |              |            |            |
+| F \ :sub:`n`\ (N)  |          |              |            |            |
 +--------------------+----------+--------------+------------+------------+
 
 .. _D3.4_image136:
@@ -2645,6 +2655,7 @@ forces selected from the catalogue of Gutekunst Feder
     :align: center
 
 Put the **plain bearing (1)** and the **clip plain bearings (2)** into the housing.
+
 Put the two **M2** **inserts (3)** in the holes of the housing.
 
 **Step 2: Assemble the pulley yoke and the spring guide shaft**
@@ -2654,8 +2665,11 @@ Put the two **M2** **inserts (3)** in the holes of the housing.
     :align: center
 
 Put screw glue into the screw thread of the **pulley yoke** **(1)** and connect it with the **threaded rod (2).**
+
 Stick the **magnetic strip (3)** in the longitudinal groove in the **spring guide shaft (4)**. The magnetic strip should be as near as possible to the pulley yoke as you can see in the example).
+
 Slide the pulley yoke with the threaded rod from the right through the clip plain bearings (5) and put it in position.
+
 Slide the spring guide shaft from the left through the clip plain bearings so that the threaded rod passes in its middle. Fix the rod on the shaft with the **nut and washer** (6).
 
 **Step 3: Assemble the cross-guide**
@@ -2665,6 +2679,7 @@ Slide the spring guide shaft from the left through the clip plain bearings so th
     :align: center
 
 Insert the **plain bearings** (1) into the **guide-roller** (2) and insert the **cylindrical pin** (3).
+
 Mount the **cross-guide** (4) into the housing.
 
 **Step 4: Mount the cross-guide**
@@ -2674,6 +2689,7 @@ Mount the **cross-guide** (4) into the housing.
     :align: center
 
 Mount the cross-guide on the housing.
+
 Fix the cross-guide with the **screws (1)** and the **spring washers** **(2)**.
 
 **Step 5: Assemble the cover**
@@ -2683,7 +2699,9 @@ Fix the cross-guide with the **screws (1)** and the **spring washers** **(2)**.
     :align: center
 
 Press the three **M3 inserts (1)** into the **cover (2)**.
+
 Insert the **plain bearings (3)** in the cover and place the printed **pulley (4**) between the plain bearings.
+
 Fix the printed pulley to the cover by inserting the **cylindrical pin (5)** through both the pulley and the plain bearing. The pin must be pressed in the pulley.
 
 **Step 6: Mount the cover and the pulleys on the housing**
@@ -2693,7 +2711,9 @@ Fix the printed pulley to the cover by inserting the **cylindrical pin (5)** thr
     :align: center
 
 Insert the **screws (2) and (4)** from the back of the housing in holes (a), (b) and (c). The **black screw (4)** must be in hole (a).
+
 Use the screw in hole (c) as axle for the **brass pulley (1)** and the black screw in hole (a) as axle for the **ball-bearing pulley** **(3).**
+
 Mount the **cover (5)** on the housing and tighten all screws. Make sure that the brass pulley can still rotate freely.
 
 **Step 7: Mount the spring**
@@ -2703,6 +2723,7 @@ Mount the **cover (5)** on the housing and tighten all screws. Make sure that th
     :align: center
 
 Slide first the **spring (1)** then the **spacer sleeve (2)** from the left over the **spring guide shaft (4)** axle.
+
 Use the **knurled nut (3)** to push the spacer sleeve until it starts to preload the spring.
 
 **Step 8: Mount the reel on the motor shaft**
@@ -2712,6 +2733,7 @@ Use the **knurled nut (3)** to push the spacer sleeve until it starts to preload
     :align: center
 
 Put screw glue on the **setscrew (2)**.
+
 Mount the **reel (1)** using the setscrew on the shaft of the **motor (3)**.
 
 **Step 9: Mount the motor and the motor driver board**
@@ -2721,7 +2743,9 @@ Mount the **reel (1)** using the setscrew on the shaft of the **motor (3)**.
     :align: center
 
 Use the three **screws (1)** to mount the motor to the housing.
+
 Connect the motor to the **motor driver board** **(2)**.
+
 Mount the board with the **screws** **(3)** to the housing.
 
 MYO-Ganglion
@@ -2769,7 +2793,7 @@ Alternative concept for the MYO-Bone design
 
 An alternative, bio-inspired MYO-Bone design was developed,
 composed of a monolithic 3D-printed core and peripheral tensile elements
-(see Figure 1).
+(see :numref:`D3.4_image147`).
 
 The tensile elements were implemented with Dyneema cables running in
 parallel to longitudinal axis of the bone and are fixed at its two ends.
@@ -2821,7 +2845,7 @@ joint-socket, with a unique pattern, gives two possibilities. The first
 one is to recognize a complex marker. (A pattern consists of multiple
 markers, :numref:`D3.4_image148` - right) This requires an expensive camera. The other
 possibility, which is novel, uses multiple simple markers detected by
-two very cheap sensors. This can be seen in Figure 13.
+two very cheap sensors. This can be seen in :numref:`D3.4_image148`.
 
 .. _D3.4_image148:
 .. figure:: images/image148.png
@@ -2865,7 +2889,7 @@ position matches, the specific codes can be collated to the code-disk.
 
     Test Set up
 
-The test setup of one sensor can be seen in Figure 14.The sensitivity of
+The test setup of one sensor can be seen in :numref:`D3.4_image149`. The sensitivity of
 both systems is quite low (20 - 30 %). But possibilities for the
 improvement are considered. Besides an important characteristic, the
 Positive Predictive Value is high (85 -95 %), which shows the
@@ -2886,7 +2910,7 @@ increases the stability of the 3D joint and keeps the ball-socket into
 position. On both ends of the ball-socket joint, standardised
 electromechanical interfaces (structural bond) for other modules are
 implemented. The basic structure of the prototype, as illustrated in
-Figure 2, has a weight of about 315 grams and an overall dimension of
+:numref:`D3.4_image150`, has a weight of about 315 grams and an overall dimension of
 115x156x125 mm.
 
 .. _D3.4_image150:
@@ -2896,7 +2920,7 @@ Figure 2, has a weight of about 315 grams and an overall dimension of
     Main dimensions of the ball-and-socket joint prototype
 
 The ball-socket joint is actuated by three pairs of antagonistic tendon
-cables (see Figure 3). Their attachment points are located centrally for
+cables (see :numref:`D3.4_image151`). Their attachment points are located centrally for
 a symmetrical application of the force. The moveable cable transmission
 systems are able to redirect the cables and provide returning forces for
 the whole motion space of the ball-socket joint.
@@ -2909,7 +2933,7 @@ the whole motion space of the ball-socket joint.
 
 Two different sensors that are located inside of the joint for
 protection reasons generate the three absolute angle positions (see
-Figure 4). One sensor (using a magnet ring) is placed on the upper pivot
+:numref:`D3.4_image152`). One sensor (using a magnet ring) is placed on the upper pivot
 joint and the other one (using a 2 DoF joystick sensor) inside of the
 ball-socket. Both sensors are based on a contactless, magnetic
 measurement principle.
@@ -2925,7 +2949,7 @@ Alternative concept for MYO-Muscle design using leaf spring
 
 A new variety of MYO-Muscle Type 1 was developed as alternative to the
 existing design based on compression spring. In this new design
-(represented in Figure 2), the series elastic element is implemented
+(represented in :numref:`D3.4_image153`), the series elastic element is implemented
 with two leaf springs, mounted symmetrically on the sides of the DC
 motor. Instead of a single tendon cable, two tendon cables are used in
 parallel to transmit the tendon force and are wrapping around the motor
@@ -2963,7 +2987,7 @@ co-contraction of two antagonistic MYO-Muscles.
     Alternative implementation of the MYO-Muscle – Type 1 using leaf springs as series elastic elements
 
 A first prototype of this promising concept was built as
-proof-of-concept (see Figure 2) and points where further developments
+proof-of-concept (see :numref:`D3.4_image153`) and points where further developments
 are required were identified. These include the dimensioning of the leaf
 springs and the adaptation of the redirecting pulleys dimensions. In
 addition a concept for the sensing of the tendon cable tension is still
@@ -3002,7 +3026,7 @@ MYO-Muscle was only summarily modelled.
     (d) output tendon cable from bi-articular module towards proximal joint
     (here flexion of asymmetric hinge joint)
 
-The developed module is represented in Figure 6. It is composed of a
+The developed module is represented in :numref:`D3.4_image155`. It is composed of a
 main casing ((2) on the top part of the figure) that can be fixed on the
 MYO-Bone structure and fit above a MYO-Muscle (which acts as the
 mono-articular muscle of the next MYO-Joint, numbered as 2 in the
@@ -3022,7 +3046,7 @@ purpose and the module was integrated to mimic the Gastrocnemius muscle,
 which is the knee flexor - ankle extensor bi-articular muscle in the
 human leg.
 
-A physical prototype from this construction was built (see Figure 7),
+A physical prototype from this construction was built (see :numref:`D3.4_image153`),
 where the MYO-Muscle modules were replaced by extension springs.
 
 .. _D3.4_image156:
@@ -3044,7 +3068,7 @@ considered for one type of each design primitives, namely:
 -  the MYO-Muscle Type 1 – Variety 1
 
 The resulting prototypes for the joint and muscle design primitives are
-shown in Figure 8 and Figure 9 respectively. In both cases, the
+shown in :numref:`D3.4_image157` and :numref:`D3.4_image158` respectively. In both cases, the
 dimensions have been reduced significantly in comparison to joints of
 the size class II (see in both figures the size of the module compared
 to a 1 Euro coin).
@@ -3067,7 +3091,7 @@ Injection Moulding
 Finally, preliminary investigations were performed towards using
 injecting moulding instead of 3D.printing for the production of the
 plastic parts of the toolkit. The design of various toolkit parts (see
-Figure 10) was adapted in order to be producible using injection
+:numref:`D3.4_image159`) was adapted in order to be producible using injection
 moulding.
 
 .. _D3.4_image159:
@@ -3102,7 +3126,7 @@ Initial testing with this production technique was performed using
 in-house injection moulding machine. Given limitations on the total
 injection volume (to 12 cc), the clamping ring was chosen for the first
 test. The mould and the adaptors for mounting on the machine were
-designed (see Figure 11) and a first series of 100 pieces was produced,
+designed (see :numref:`D3.4_image160`) and a first series of 100 pieces was produced,
 which confirmed the feasibility of the approach. Further work is
 required to investigate the tolerances of the produced parts (and
 especially their evolution during the production, as the mould degrades)
