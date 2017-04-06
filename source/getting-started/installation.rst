@@ -87,7 +87,7 @@ In different terminals run:
    rosrun ros_control_boilerplate keyboard_teleop
 
 
-.. _myo_blink: https://github.com/Victor-Savu/myo_blink/tree/reflex
+.. _myo_blink: https://github.com/Roboy/myo_blink
 .. _ros_control_boilerplate fork: https://github.com/compiaffe/ros_control_boilerplate/tree/MyoArm
-.. _flexrayusbinterface: https://github.com/Victor-Savu/flexrayusbinterface/tree/reflex
+.. _flexrayusbinterface: https://github.com/Roboy/flexrayusbinterface/tree/develop
 .. _ROS kinetic: http://wiki.ros.org/kinetic/Installation
