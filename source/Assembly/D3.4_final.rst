@@ -1621,19 +1621,23 @@ X	Height of the rotation axis
 
 1x hinge pin 25x3 mm
 
-2x lock washer DIN 6799 3.2mm
+2x lock washer DIN 6799 2.3mm
 
 2x lock washer DIN 6799 5mm
 
 2x lock washer DIN 6799 3mm
 
-2x bearings 625 6x19x6 mm
+2x bearings 6x19x6 mm
 
 5x cylinder screw M2
 
 2x circlip DIN 471 - 9 x 1
 
 2x circlip DIN 471 -6 x 0.7
+
+8x screw M3 x 8
+
+5x screw M2 x6
 
 5x M2 brass inserts
 
@@ -2630,6 +2634,12 @@ forces selected from the catalogue of Gutekunst Feder
 
 **Assembly Procedure MYO-Muscle**
 ----------------------------------
+
+**Materials needed**
+
+.. csv-table:: Libraries and external Software
+  :header: "Level","Manufacturer P/N","Manufacturer Name","Part Type","Description","Quantity","Designator"
+  :file: 20170406-Muscle-11.csv
 
 .. _D3.4_image137:
 .. figure:: images/image137.png
