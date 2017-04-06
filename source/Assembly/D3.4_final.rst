@@ -2612,11 +2612,15 @@ Put the two **M2** **inserts (3)** in the holes of the housing.
 
 Put screw glue into the screw thread of the **pulley yoke** **(1)** and connect it with the **threaded rod (2).**
 
-Stick the **magnetic strip (3)** in the longitudinal groove in the **spring guide shaft (4)**. The magnetic strip should be as near as possible to the pulley yoke as you can see in the example).
+Stick the **magnetic strip (3)** in the longitudinal groove in the **spring guide shaft (4)**. The magnetic strip should be as near as possible to the pulley yoke as you can see in the example.
 
-Slide the pulley yoke with the threaded rod from the right through the clip plain bearings (5) and put it in position.
+Slide the **washer (5)** down the threaded rod to the pulley yoke.
 
-Slide the spring guide shaft from the left through the clip plain bearings so that the threaded rod passes in its middle. Fix the rod on the shaft with the **nut and washer** (6).
+Slide the pulley yoke with the threaded rod from the right through the **clip plain bearings (6)** and put it in position.
+
+Slide the spring guide shaft from the left through the clip plain bearings so that the threaded rod passes in its middle. Fix the rod on the shaft with the **nut and washer (7)**.
+
+
 
 **Step 3: Assemble the cross-guide**
 
