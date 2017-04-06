@@ -2627,12 +2627,14 @@ forces selected from the catalogue of Gutekunst Feder
     :align: center
 
 **Assembly Procedure MYO-Muscle**
+----------------------------------
 
 .. _D3.4_image137:
 .. figure:: images/image137.png
     :align: center
 
 **Step 1: Mount the plain bearings into the housing**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image138:
 .. figure:: images/image138.png
@@ -2643,6 +2645,7 @@ Put the **plain bearing (1)** and the **clip plain bearings (2)** into the housi
 Put the two **M2** **inserts (3)** in the holes of the housing.
 
 **Step 2: Assemble the pulley yoke and the spring guide shaft**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image139:
 .. figure:: images/image139.png
@@ -2659,6 +2662,7 @@ Slide the pulley yoke with the threaded rod from the right through the **clip pl
 Slide the spring guide shaft from the left through the clip plain bearings so that the threaded rod passes in its middle. Fix the rod on the shaft with the **nut and washer (7)**.
 
 **Step 3: Mount the spring**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image140:
 .. figure:: images/image140.png
@@ -2671,6 +2675,7 @@ Use the **washer (3)** to push the spacer sleeve until it starts to preload the 
 Then fix in place with the **wing nut (5)**.
 
 **Step 4: Assemble the cross-guide**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image141:
 .. figure:: images/image141.png
@@ -2683,6 +2688,7 @@ Mount the **cross-guide** (4) into the housing.
 Then screw in the two **screws (5)** to hold it in place.
 
 **Step 5: Assemble the cover**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image142:
 .. figure:: images/image142.png
@@ -2695,6 +2701,7 @@ Insert the **plain bearings (3)** in the cover and place the printed **pulley (4
 Fix the printed pulley to the cover by inserting the **cylindrical pin (5)** through both the pulley and the plain bearing. The pin must be pressed in the pulley.
 
 **Step 6: Mount the cover and the pulleys on the housing**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image143:
 .. figure:: images/image143.png
@@ -2707,6 +2714,7 @@ The other **black screw (3)** goes in hole (c) as an axle for one of the **beari
 Mount the **cover (4)** on the housing and tighten all screws. Make sure that the brass pulley can still rotate freely.
 
 **Step 7: Mount the reel on the motor shaft**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image145:
 .. figure:: images/image144.png
@@ -2717,6 +2725,7 @@ Put screw glue on the **setscrew (2)**.
 Mount the **reel (1)** using the setscrew on the shaft of the **motor (3)**.
 
 **Step 8: Mount the motor and the motor driver board**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image146:
 .. figure:: images/image145.png
@@ -2729,6 +2738,7 @@ Connect the motor to the **motor driver board** **(2)**.
 Mount the board with the **screws** **(3)** to the housing.
 
 **Step 9: Connect to the dispacement sensor to the Motor board**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _D3.4_image144:
 .. figure:: images/image146.png
