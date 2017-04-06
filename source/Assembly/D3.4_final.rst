@@ -2622,25 +2622,30 @@ Slide the spring guide shaft from the left through the clip plain bearings so th
 
 
 
-**Step 3: Assemble the cross-guide**
+**Step 3: Mount the spring**
 
 .. _D3.4_image140:
 .. figure:: images/image140.png
+    :align: center
+
+Slide first the **spring (1)** then the **spacer sleeve (2)** from the left over the **spring guide shaft (4)** axle.
+
+Use the **washer (3)** to push the spacer sleeve until it starts to preload the spring.
+
+Then fix in place with the **wing nut (5)**.
+
+
+**Step 4: Assemble the cross-guide**
+
+.. _D3.4_image141:
+.. figure:: images/image141.png
     :align: center
 
 Insert the **plain bearings** (1) into the **guide-roller** (2) and insert the **cylindrical pin** (3).
 
 Mount the **cross-guide** (4) into the housing.
 
-**Step 4: Mount the cross-guide**
-
-.. _D3.4_image141:
-.. figure:: images/image141.png
-    :align: center
-
-Mount the cross-guide on the housing.
-
-Fix the cross-guide with the **screws (1)** and the **spring washers** **(2)**.
+Then screw in the two **screws (5)** to hold it in place.
 
 **Step 5: Assemble the cover**
 
