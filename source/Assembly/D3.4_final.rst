@@ -1715,7 +1715,8 @@ X	Height of the rotation axis
 •	(if needed) adjust the diameter of the mounting holes for the cable fixation pin (hinge pin 45x6 mm)
 •	Mount the pin
 •	Secure the pin on both sides with the lock washers
-•	Clip on it the cable centring clip
+•	Clip on it the cable centring clip or glue in the pin
+• Note: Bearings should **not** be in the under joint fork at this time
 
 **Step 6: Mount the guiding pulley**
 
@@ -1772,10 +1773,11 @@ Note: the magnet can also be glued before mounting the joint axle
 **Step 9: Mount the side covers**
 
 .. _D3.4_image109:
-.. figure:: images/image109.jpg
+.. figure:: images/image109.png
     :align: center
 
 •	Assemble the sensor and SIM boards and the circular space in the larger side cover (glue the boards to the cover)
+• Check that the red, blue and green cables are facing upwards and the other red cables are behind
 •	Screw the side covers on the under joint fork
 
 **Step 10: Solder the cables on one of the SB connection boards**
