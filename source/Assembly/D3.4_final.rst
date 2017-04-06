@@ -2700,36 +2700,26 @@ Fix the printed pulley to the cover by inserting the **cylindrical pin (5)** thr
 .. figure:: images/image143.png
     :align: center
 
-Insert the **screws (2) and (3)** from the back of the housing in holes (a), (b) and (c). One **black screw (4)** must be in hole (a).
+Insert the **screws (2) and (3)** from the back of the housing in holes (a), (b) and (c). One **black screw (3)** must be in hole (a).
 
 The other **black screw (3)** goes in hole (c) as an axle for one of the **bearings (1)** and other black screw in hole (a) acts as another axle for the other **bearing (1)**.
 
 Mount the **cover (4)** on the housing and tighten all screws. Make sure that the brass pulley can still rotate freely.
 
-**Step 7: Mount the spring**
-
-.. _D3.4_image144:
-.. figure:: images/image144.png
-    :align: center
-
-Slide first the **spring (1)** then the **spacer sleeve (2)** from the left over the **spring guide shaft (4)** axle.
-
-Use the **knurled nut (3)** to push the spacer sleeve until it starts to preload the spring.
-
-**Step 8: Mount the reel on the motor shaft**
+**Step 7: Mount the reel on the motor shaft**
 
 .. _D3.4_image145:
-.. figure:: images/image145.png
+.. figure:: images/image144.png
     :align: center
 
 Put screw glue on the **setscrew (2)**.
 
 Mount the **reel (1)** using the setscrew on the shaft of the **motor (3)**.
 
-**Step 9: Mount the motor and the motor driver board**
+**Step 8: Mount the motor and the motor driver board**
 
 .. _D3.4_image146:
-.. figure:: images/image146.png
+.. figure:: images/image145.png
     :align: center
 
 Use the three **screws (1)** to mount the motor to the housing.
@@ -2737,6 +2727,22 @@ Use the three **screws (1)** to mount the motor to the housing.
 Connect the motor to the **motor driver board** **(2)**.
 
 Mount the board with the **screws** **(3)** to the housing.
+
+**Step 9: Connect to the dispacement sensor to the Motor board**
+
+.. _D3.4_image144:
+.. figure:: images/image146.png
+    :align: center
+
+The **motor board (3)** should already be attached by the screws in previous step.
+
+Insert the DS (distribution Board pins) on **wire (2)** into the **distribution Board (1)**.
+
+Then the MD (Motor Driver board pins) on **wire (2)** into the motor Board.
+
+Then place the **distribution board (1)** and **wedge (4)** into the slot on top of the housing unit in the photo on the right.
+
+The side of the distribution board you can see in the photo should be in the inside of the housing unit as close to the magnet inside.
 
 MYO-Ganglion
 =============
