@@ -1,0 +1,48 @@
+0,Muscle,MyoRobotics Consortium,Muscles,,
+1,JFM-0304-03,Igus,Bearings,Igus Gleitlager JFM 0304-03 (Guide-Pulley),Cross-Guide
+1,JFM-0304-05,Igus,Bearings,Igus Gleitlager JFM 0304-05 (Guide-Roller),
+1,JFM-0608-06,Igus,Bearings,Igus Gleitlager JFM 0608-06 (Motor Reel),Tendon-Spooling
+1,MCM-12-02,Igus,Bearings,Igus Cliplager MCM-12-02,Displacement-Assembly
+1,2534-294,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",Zylinderkopfschraube M 3x25,
+1,4001-205,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",Selbstschneidende Schraube(Blechschraube),
+1,2534-236,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",Zylinderkopfschraube M 2x8,Cross-Guide
+1,1160-043,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods","Senkkopfschraube M 2,5x10",
+1,1018-082,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",Zylinderstift 3x24,Cross-Guide
+1,1018-076,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",Zylinderstift 3x18,
+1,812 000 020.800,Kerb Konus,"Nuts, rings, inserts",Brass Insert M2,Cross-Guide
+1,852 000 030.800,Kerb Konus,"Nuts, rings, inserts",Brass Insert M3,
+1,M12 main body allConfig CE - new,MyoRobotics Consortium,MyoCAD,body,
+1,M11 main body cover,Shapeways ,MyoCAD,body cover,
+1,M11 cable pulley horizontal,Shapeways ,MyoCAD,cable pulley,
+1,M11 cross guide cover,Shapeways ,MyoCAD,cross guide cover,Cross-Guide
+1,M11 cross guide roller - new,Shapeways ,MyoCAD,cross guide roller,Cross-Guide
+1,D-311,Gutekunst Federn,Springs,Feder D-311,Displacement-Assembly
+1,myoMotorDriver, Embedded Robotic Systems LLP,Boards,Motor Driver Board,
+1,2534-288,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",Zylinderkopfschraube M3x18,
+1,Spring Displacement Sensor Board, Embedded Robotic Systems LLP,Boards,Sensor  Board,Displacement-Assembly
+1,MyoMuscle Assembly,GI,Labour,,
+1,Cable-Displacement-Sensor,GI,"Tendon, Rope, Cables",Displacement Sensor Cable ,Displacement-Assembly
+2,SHR-06V-S-B,JST,"Tendon, Rope, Cables","Connector Male - 1.0mm pitch/Disconnectable Crimp style connectors, with protrusions",
+2,SH3-SH3-28150,JST,"Tendon, Rope, Cables","Cable, crimped, 150mm  for JST SH3 series",
+2,MyoMuscle Assembly,GI,Labour,,
+1,458375,Maxon,Motors,Maxon Motor-Getriebe-Encoder-Kombination,
+1,ISO 7379-4-M3-20,Ganter Griff,"Screws, Bolts and Rods","ISO 7379 Passschrauben mit Bund Stahl, Festigkeit 12.9",
+1,Complete pulley spring displacement shaft without spring,GI,Machined parts,"Complete assembly of pulley, shaft, magnetic strip, threaded rod, but NO spring",
+2,Assembly of pulley fork for displacement shaft,GI,Machined parts,Pulley in fork to be installed on displacement shaft,
+3,MyoMuscle Assembly,GI,Labour,,
+3,GN 751-4-8-M4-SL-AL,Ganter Griff,"Screws, Bolts and Rods",Gabelgelenke GN 751 aus Aluminium bestehen aus dem Gabelkopf DIN 71752 und einem Bolzen mit axialer KL- oder SL-Wellensicherung.,
+3,SZU4-13 U604ZZ,"YongTian bearing Co.,Ltd. ( NBZH Precision Bearings )",Bearings,Roller Bearing U groove 604UU 4*13*4mm,
+2,Displacement shaft,GI,Machined parts,Shaft holding the magnetic strip of the displacement sensor,
+2,2210-850,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",M4 DIN 976 Gewindestangen,Displacement-Assembly
+2,KBEE5-1.2KL50,Bogen Electronic,Sensors,Linear Magnetic Scale Incremental ,"Displacement-Assembly, Displacement-Sensor"
+2,M11 spacer sleeve,Shapeways ,MyoCAD,spacer sleeve,
+2,MyoMuscle Assembly,GI,Labour,,Assemble parts
+2,2012-104,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",DIN 315 Flügelmuttern kleine Flügelform,Displacement-Assembly
+2,1544-020,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods","M4 4,3 x 20mm Kotflügelscheiben",Displacement-Assembly
+2,2896-150,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods",M4 DIN 934 Sechskantmuttern,
+2,1900-144,Wegertseder GmbH - Schrauben Shop,"Nuts, rings, inserts",Fächerscheibe Az 4.3 (für M4),
+1,SZU4-13 U604ZZ,"YongTian bearing Co.,Ltd. ( NBZH Precision Bearings )",Bearings,Roller Bearing U groove 604UU 4*13*4mm,
+1,M11 motor reel,GI,Machined parts,Cable Winch,Tendon-Spooling
+1,M11 Spring Sensor Wedge,GI,MyoCAD,Wedge for holding in the magnetic encoder of the displacement sensor,Displacement-Assembly
+1,2118-924,Wegertseder GmbH - Schrauben Shop,"Screws, Bolts and Rods","DIN 913 Gewindestifte mit Kegelkuppe, mit Innensechskant ""Madenschraube""",Tendon-Spooling
+1,1708-844,Wegertseder GmbH - Schrauben Shop,"Nuts, rings, inserts",Federringe B2 (for M2),Cross-Guide
