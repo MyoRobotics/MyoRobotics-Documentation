@@ -1,3 +1,4 @@
 General Interfaces
 ===================
-General Interfaces can provide fully assembled solutions based on MyoRobotics components.
+`General Interfaces
+<https://www.gi.ai/#>`_ can provide fully assembled solutions based on MyoRobotics components.
