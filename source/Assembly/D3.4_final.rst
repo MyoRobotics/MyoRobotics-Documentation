@@ -2620,8 +2620,6 @@ Slide the pulley yoke with the threaded rod from the right through the **clip pl
 
 Slide the spring guide shaft from the left through the clip plain bearings so that the threaded rod passes in its middle. Fix the rod on the shaft with the **nut and washer (7)**.
 
-
-
 **Step 3: Mount the spring**
 
 .. _D3.4_image140:
@@ -2633,7 +2631,6 @@ Slide first the **spring (1)** then the **spacer sleeve (2)** from the left over
 Use the **washer (3)** to push the spacer sleeve until it starts to preload the spring.
 
 Then fix in place with the **wing nut (5)**.
-
 
 **Step 4: Assemble the cross-guide**
 
@@ -2665,11 +2662,11 @@ Fix the printed pulley to the cover by inserting the **cylindrical pin (5)** thr
 .. figure:: images/image143.png
     :align: center
 
-Insert the **screws (2) and (4)** from the back of the housing in holes (a), (b) and (c). The **black screw (4)** must be in hole (a).
+Insert the **screws (2) and (3)** from the back of the housing in holes (a), (b) and (c). One **black screw (4)** must be in hole (a).
 
-Use the screw in hole (c) as axle for the **brass pulley (1)** and the black screw in hole (a) as axle for the **ball-bearing pulley** **(3).**
+The other **black screw (3)** goes in hole (c) as an axle for one of the **bearings (1)** and other black screw in hole (a) acts as another axle for the other **bearing (1)**.
 
-Mount the **cover (5)** on the housing and tighten all screws. Make sure that the brass pulley can still rotate freely.
+Mount the **cover (4)** on the housing and tighten all screws. Make sure that the brass pulley can still rotate freely.
 
 **Step 7: Mount the spring**
 
