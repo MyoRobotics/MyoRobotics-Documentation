@@ -228,7 +228,6 @@ pressure of the clamp ring on the conical flanges is ensured by two
 screws.
 
 Illustrations
-^^^^^^^^^^^^^
 
 Overview:
 
@@ -352,13 +351,11 @@ This variety uses two screw-thread pairs, whose openings are coplanar.
 
 **Dimensions**
 
-+------+-----------------------------------+
-| D1   | screw diameter                    |
-+======+===================================+
-| D2   | depth of the screw hole           |
-+------+-----------------------------------+
-| D3   | distance between the screw hole   |
-+------+-----------------------------------+
+D1 Screw diameter
+
+D2 Depth of the screw hole
+
+D3 Distance between the screw hole
 
 **Implemented instances**
 
@@ -422,15 +419,13 @@ shape.
 
 **Dimensions**
 
-+------+----------------------------------+
-| D1   | cable diameter                   |
-+======+==================================+
-| D2   | end connector maximum diameter   |
-+------+----------------------------------+
-| D3   | end connector length             |
-+------+----------------------------------+
-| D4   | end connector minimum diameter   |
-+------+----------------------------------+
+D1 Cable diameter
+
+D2 End connector maximum diameter
+
+D3 End connector length
+
+D4 End connector minimum diameter
 
 **Implemented instances**
 
@@ -527,13 +522,12 @@ Individual elements:
 
 **Dimensions**
 
-+------+--------------------------------------------+
-| D1   | Diameter of the round tubes.               |
-+======+============================================+
-| D2   | Distance between two adjacent fibres.      |
-+------+--------------------------------------------+
-| D3   | Distance between two successive spacers.   |
-+------+--------------------------------------------+
+D1 Diameter of the round tubes
+
+D2 Distance between two adjacent fibres
+
+D3 Distance between two successive spacers
+
 
 **Implemented instances**
 
@@ -891,11 +885,9 @@ fitting in the T-slot.
 
 **Dimensions**
 
-+------+--------------------------------+
-| D1   | Width of the profile section   |
-+======+================================+
-| D2   | Diameter of the centre hole    |
-+------+--------------------------------+
+D1 Width of the profile section
+
+D2 Diameter of the centre hole
 
 **Implemented instances**
 
@@ -1132,17 +1124,15 @@ the joint to be easily accessible for configuration purpose.
 
 **Dimensions**
 
-+-----+-------------------------------------+
-| H   | Distance between joint end planes   |
-+=====+=====================================+
-| W   | Maximal width of the joint          |
-+-----+-------------------------------------+
-| T   | Maximal thickness of the joint      |
-+-----+-------------------------------------+
-| X   | Height of the tilt axis             |
-+-----+-------------------------------------+
-| Θ   | Motion range of the joint           |
-+-----+-------------------------------------+
+H Distance between joint end planes
+
+W Maximal width of the joint
+
+T Maximal thickness of the joint
+
+X Height of the tilt axis
+
+Θ Motion range of the joint
 
 **Implemented instances**
 
@@ -1887,15 +1877,13 @@ joint, two ball bearings are used to support the joint axle.
 
 **Dimensions**
 
-+-----+-------------------------------------+
-| H   | Distance between joint end planes   |
-+=====+=====================================+
-| W   | Maximal width of the joint          |
-+-----+-------------------------------------+
-| T   | Maximal thickness of the joint      |
-+-----+-------------------------------------+
-| Θ   | Motion range of the joint           |
-+-----+-------------------------------------+
+H	Distance between joint end planes
+
+W	Maximal width of the joint
+
+T	Maximal thickness of the joint
+
+Θ	Motion range of the joint
 
 **Implemented instances**
 
@@ -2135,19 +2123,17 @@ measured using Hall-effect sensors and magnet rings.
 
 **Dimensions**
 
-+---------------------+-------------------------------------+
-| H                   | Distance between joint end planes   |
-+---------------------+-------------------------------------+
-| W                   | Maximal width of the joint          |
-+---------------------+-------------------------------------+
-| T                   | Maximal thickness of the joint      |
-+---------------------+-------------------------------------+
-| X                   | Height of the hinge rotation axis   |
-+---------------------+-------------------------------------+
-| Θ\ :sub:`hinge`     | Motion range of the hinge           |
-+---------------------+-------------------------------------+
-| Θ\ :sub:`pivot`     | Motion range of the pivot           |
-+---------------------+-------------------------------------+
+H	Distance between joint end planes
+
+W	Maximal width of the joint
+
+T	Maximal thickness of the joint
+
+X Height of the hinge rotation axis
+
+Θ\ :sub:`hinge`	Motion range of the joint
+
+Θ\ :sub:`pivot`	Motion range of the pivot
 
 **Implemented instances**
 
@@ -2525,13 +2511,11 @@ Integration to BONE-SC2-T1-V1:
 
 **Dimensions**
 
-+------+------------------------------------------------------------------------------+
-| D1   | Total length of the actuator                                                 |
-+------+------------------------------------------------------------------------------+
-| D2   | Total height of the actuator                                                 |
-+------+------------------------------------------------------------------------------+
-| D3   | Lever arm of the tension force in the cable w.r.t. the bone section centre   |
-+------+------------------------------------------------------------------------------+
+D1 Total length of the actuator
+
+D2 Total height of the actuator
+
+D3 Lever arm of the tension force in the cable w.r.t. the bone section centre
 
 **Implemented instances**
 
@@ -2765,8 +2749,8 @@ FlexRay interface, using a ’FlexRay typical’ 1ms control loop.
 More information about the MYO-Ganglion (including the circuit diagram)
 and the overall control architecture can be found in Deliverable 6.4.
 
-Integration the Electronics
-===========================
+Integration of the Electronics
+==============================
 
 Integration of the MYO-Ganglion
 -------------------------------
