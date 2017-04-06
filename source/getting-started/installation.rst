@@ -1,3 +1,5 @@
+.. _make-your-own:
+
 Installation
 ===============
 How to get started with a set of MyoMuscles, Ganglia and Flexray2USBAdapter
