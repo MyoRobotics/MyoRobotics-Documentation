@@ -2,7 +2,7 @@
 
 Installation
 ===============
-How to get started with a set of MyoMuscles, Ganglia and Flexray2USBAdapter
+How to get started with a set of MyoMuscles, Ganglia and Flexray2USBAdapter.
 
 Cabling and Power
 ------------------
