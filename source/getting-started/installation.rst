@@ -37,7 +37,7 @@ Install flexrayusbinterface
 .. code-block:: console
 
    roscd && cd ../src
-   git clone https://github.com/roboy/flexrayusbinterface.git -b reflex
+   git clone https://github.com/roboy/flexrayusbinterface.git -b develop
    cd flexrayusbinterface && ./install_deps.sh
 
 Install myo_blink
