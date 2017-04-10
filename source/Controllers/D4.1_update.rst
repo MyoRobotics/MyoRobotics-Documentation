@@ -13,11 +13,11 @@ muscles and sensors) and a PC based simulation, development and test
 environment (Caliper and MYODE). This report provides a comprehensive
 description of the component parts that make up the release version of
 the control architecture and provides testing results of the various
-operational modes that it supports. It is intended that this report
+operational modes that it supports. It is intended that this page
 will serve as a technical reference manual for end users to understand
 the system, visualise its performance and appreciate its constraints.
 
-The report is composed of 3 sections; A technical description of the
+Tis page is composed of 3 sections; A technical description of the
 various components that make up the control architecture; A
 comprehensive guide to the connectivity between components necessary
 to build a MYO-Robot; and finally a collection of integrated test
@@ -46,14 +46,14 @@ to it. They communicate on a shared 1 Mbit/s CAN bus with the
 MYO-Ganglion. This CAN bus is also shared with up to 12 MYO-receptors,
 external sensors that can provide various external values to the
 Myorobot, e.g. pressure, temperature etc. The message (or sampling) rate
-of the joint sensors is :math:`1 \frac{message}{ms}`, the MYO-Receptors
+of the joint sensors is :math:`1\frac{message}{ms}`, the MYO-Receptors
 only provide their sensor status every 10ms. This asymmetry allows good
 utilisation of the CAN bus, whilst guaranteeing a sufficient update rate
 for the joint angles, important for their control.
 
 An overview of the communication and control infrastructure is given in
 :numref:`D4.1_my-figure`. In the following sections, we will introduce and
-desrcibe the relevant subsystems and explain how the several linear
+describe the relevant subsystems and explain how the several linear
 control schemes are implemented.
 
 .. _D4.1_my-figure:
@@ -139,7 +139,7 @@ off (0). S4 is used for joint calibration and needs to be in the off
 position during normal operation, see below.
 
 In case of 1DOF operation, only one CAN message with the MsgID indicated
-by switches S1 and S2 is sent. For 2DOF operations two CAN messages are
+by switches S1 and S2 is sent. For 2DOF operations, two CAN messages are
 sent, the first one has the MsgID indicated by switches S1 and S2, the
 second CAN message has the ID indicated with switches S1 and S2 plus 1.
 
@@ -175,7 +175,7 @@ data is the moving average of the last 16 measurements.
 
 LED1 on the sensor board blinks at 1 Hz, indicating operation. LED2
 blinks as a function of the AN0 value, the lowest frequency is 1Hz,
-the highest frequency is 500Hz. (AN0=0) In other words, a low
+the highest frequency is 500Hz (AN0=0). In other words, a low
 frequency (i.e. a large period) corresponds to a large AN0 reading.
 This allows simple visual inspection of the operation of the joint
 sensor. LED3 is only on when the board is connected to a
@@ -195,25 +195,25 @@ has to be performed once, the calibration values are stored in the
 EEPROM/FlashMemory of the JASB microcontroller. The calibration can be
 repeated if necessary. Procedure:
 
--  adjust S1, S2 and S3 according to joint configuration (i.e. address and DOF)
+-  adjust S1, S2 and S3 according to joint configuration (i.e. address and DOF).
 
--  power joint up
+-  power joint up.
 
 -  put S1 and S2 to off, S3 can remain in current position.
 
--  switch S4 on
+-  switch S4 on.
 
 -  move joint in negative direction until at end stop, hold in position and flick S1 on and off again.
 
 -  move joint in positive direction until at end stop, hold in position and flick S2 on and off again.
 
--  joint end positions are now stored, flick S4 back to off to write position into EEPROM/FlashMemory
+-  joint end positions are now stored, flick S4 back to off to write position into EEPROM/FlashMemory.
 
--  bring S1 and S2 back to correct address position
+-  bring S1 and S2 back to correct address position.
 
--  calibration has been performed and joint angle measurement values will now move through continuous range without zero-crossing or overflow
+-  calibration has been performed and joint angle measurement values will now move through continuous range without zero-crossing or overflow.
 
-When calibrating a 2DOF joint move both degrees of freedom to there
+When calibrating a 2DOF joint, move both degrees of freedom to there
 negative and positive end position at the same time when performing this
 calibration procedure.
 
@@ -270,7 +270,7 @@ sensor provide 40 encoder pulses per magnet (pole pair).
 The sensor provides an incremental encoder interface which is read
 by the micro-controller. Similar to the motor shaft position
 feedback, the encoder interface is configured in :math:`4 \times` -
-mode, so that resolution of
+mode, so that resolution is of
 :math:`\frac{2.4 mm}{40 \times 4} = 15 \mbox { }  \mu m/count` ,
 i.e. :math:`r_{displacement}=66.\overline{6} \mbox{ }counts/mm`.
 
@@ -328,12 +328,12 @@ master and communicates motor control parameters to the motor driver
 boards. The motor driver board supplies the MYO-Ganglion with shaft
 position, shaft velocity, motor current, spring displacement and
 various error codes. Details of this communication protocol can be
-found in the software section of this document.
+found in :numref:`D4.1_Software`.
 
 **CAN communication:** For testing and de-bugging but also in order
 to use the motor driver board in different applications, a 1Mbit/s
 CAN interface has been implemented. This non-essential communication
-interface is not described further in this document.
+interface is not described further in this page.
 
 Power and Communication Distribution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -376,7 +376,7 @@ Connectivity
 In order to connect motor drivers, MYO-Ganglions, spring displacement
 sensor and joint angle sensors, various cable connections are required.
 The connections between the boards are not 1 to 1 and not all connecting
-cables are symmetric, i.e. it is important which connector goes were. In
+cables are symmetric, i.e. it is important which connector goes where. In
 the following, details of the connector cables are given.
 
 Spring Displacement Sensor :math:`\Longleftrightarrow` Motor Driver Board
@@ -398,7 +398,7 @@ Spring Displacement Sensor :math:`\Longleftrightarrow` Motor Driver Board
     with the motor driver board; red circles mark the applicable
     connectors on the printed circuit boards.
 
-**This cable is not symetric!**
+**This cable is not symmetric!**
 
 SPI: Distribution Board :math:`\Longleftrightarrow` Motor Driver Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -419,7 +419,7 @@ SPI: Distribution Board :math:`\Longleftrightarrow` Motor Driver Board
     board with the motor driver board; red circles mark the applicable
     connectors on the printed circuit boards.
 
-**This cable is symetric!**
+**This cable is symmetric!**
 
 SPI:MYO-Ganglion :math:`\Longleftrightarrow` Distribution Board
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -526,6 +526,8 @@ on the joint angle sensor boards.
     Gnd and white is the sensor signal output. For 1DOF only AN0 is
     supplied with a sensor output, for 2DOF AN0 and AN1 are supplied with
     one sensor output each.
+
+.. _D4.1_Software:
 
 Software
 ========
@@ -689,8 +691,7 @@ A MYO-Ganglion has an array of controller objects, containing a
 controller for each available control mode, for each motor connected to
 it. Which controller is active for each motor is determined by part of
 the command in the controller mode frame (see :numref:`D4.1_third-section`). Each
-motor has an independent control loop frequency, and each iteration (if
-the the currently selected controller is enabled) it calculates the
+motor has an independent control loop frequency, and each iteration (if the currently selected controller is enabled) it calculates the
 needed demand signal to be sent. In the core API we have implemented
 linear feedback PID controllers, which are used to control a variety of
 process variables, as well as a raw control mode that allows direct
@@ -698,7 +699,7 @@ setting of the motor driving PWM duty cycle. Each process variable is
 calculated from the raw sensor data provided by the motor driver board,
 to allow transparent tuning of PID gains via MYODE; the implemented
 process variable controllers, and their conversion factors are described
-in :numref:`D4.1_ourtable`]. The means for user extensibility of the
+in :numref:`D4.1_ourtable`. The means for user extensibility of the
 controller infrastructure is detailed in the API documentation.
 
 .. _D4.1_ourtable:
@@ -727,10 +728,10 @@ specification and simulation of a Myorobotics assembly, so that they can
 be loaded on to each MYO-Ganglion. The limits are enforced by each
 controller, and commands that try to exceed them will be limited to
 prevent them from doing so and generate fault messages transmitted as a
-dynamic frame. As an additional safety precaution controller output is
+dynamic frame. As an additional safety precaution controller, output is
 always checked against maximum drive values for the connected MYO-muscle
 to prevent user set limits from allowing maximum drive values to be
-exceeded. only want to do this using diagnostic CAN messages?
+exceeded.
 
 Linear Feedback Controller Implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -797,7 +798,7 @@ controller selected in the control mode command will have its parameters
 set, and so to expect parameter data in a dynamic frame that
 communication cycle. The parameters used by the currently implemented
 PID controller is a total of 84 bytes, so only one controller in the
-whole assembly may be updated each communication cycle, due to the small
+whole assembly may be updated during each communication cycle, due to the small
 size of the dynamic segment. However, as the communication cycle
 operates with a 1ms period, initialising one controller each for the
 maximum number of motors would only take 24ms. The initialisation
@@ -1024,7 +1025,7 @@ are ongoing.
 Position Control of 1-DOF Arm
 -----------------------------
 
-We conclude this report by demonstrating simple position control of the
+We conclude this page by demonstrating simple position control of the
 MYO-Muscle with an attached arm. This is a 1-DOF experiment with a
 single muscle, the counterforce is produced by gravity as can be
 understood from :numref:`D4.1_twentytwo-figure`.
@@ -1076,7 +1077,7 @@ without external disturbances.
     control signal.
 
 
-Also note that the change in motor shaft position negligible, i.e. the
+Also note that the change in motor shaft position is negligible, i.e. the
 position controller holds the position despite the external
 disturbances. In other words, the system is passively compliant and not
 dependent on ‘softly tuned’ motor controllers.
@@ -1094,9 +1095,6 @@ only normalised to allow their display in a single plot in order to
 demonstrate how they correlate. They are not post-processed for plotting
 which demonstrate the low-noise nature of our control and signal
 acquisition system.
-
-Summary
-=======
 
 .. [1]
    In this first instantiation of the design primitives, only three SPI

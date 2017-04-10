@@ -138,8 +138,8 @@ are referred to as **FRp** (FlexRay Plus, the positive signal) and
 **FRm** (FlexRay Minus, the negative signal). The FlexRay cable provided
 with your Myorobotic system is shown in :numref:`EAESS_its-figure`. The
 pink cable is used for the FRp and the green cable for the FRm signal.
-The MYO-Ganglions feature two pairs of FlexRay connections (see Figure
-[fig:MyoGanglionConnectivity]) which affords easy daisy-chaining of
+The MYO-Ganglions feature two pairs of FlexRay connections
+(see :numref:`EAESS_your-figure`) which affords easy daisy-chaining of
 multiple MYO-Ganglions.
 
 .. _EAESS_its-figure:
@@ -267,7 +267,7 @@ Wiring Scheme SPI Connector: Ganglion Distribution Board - Motor Driver Board
 Joint Sensor Board
 ==================
 
-The MYO-Joints are equiped with an absolute position sensors. An
+The MYO-Joints are equiped with absolute position sensors. An
 interface board (joint sensor board) is mounted on each joint as shown
 in :numref:`EAESS_second-figure`. The joint position is sent to
 the MYO-Ganglion via CAN. The joint sensor board reads the magnetic
@@ -518,7 +518,7 @@ system. In principle, four different timing cycles can be
 distinguished and they are illustrated in :numref:`EAESS_seventh-figure`.
 At the highest level is the **user application (UA)** running as part of MYODE.
 Typically, the cycle time of this control loop is in the tens of milliseconds range
-(e.g.:math:`20ms`) and is set by the user. Since a standard Ubuntu
+(e.g. :math:`20ms`) and is set by the user. Since a standard Ubuntu
 installation is used, it is important to note that the cycle time of
 the UA is not ‘hard real-time’ and some variance on the timing is to
 be expected. In the UA, data from the Myorobot is read, such as motor
@@ -556,7 +556,7 @@ loop on the MYO-Ganglion and exchange data with the FlexRay bus and the
 motor driver boards (**MD**); see :numref:`EAESS_fifth-section`. As
 explained above, the cycle time of the linear-feedback controllers is
 user configurable by setting the ``float32 timePeriod`` variable of the
-structure `` control_Parameters_t ``\ and configuration of the
+structure ``control_Parameters_t`` and configuration of the
 controller via the ``setControllerParams(.)`` method. The minimum cycle
 time is :math:`400\mu s`.
 
@@ -616,9 +616,7 @@ electronics and embedded system in the style of a ‘quick-start guide’.
 It should supply the user of a Myorobot with sufficient information to
 understand the infrastructure, connectivity, software interfaces and
 capabilities as well as an appreciation of the limitations of the
-system. For further details, the circuit diagrams as well as the
-software (documentation) on the Myorobotics repository should be
-consulted.
+system.
 
 .. [1]
    The 6-way JST SH series connectors are available from Farnell
