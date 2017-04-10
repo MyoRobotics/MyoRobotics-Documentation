@@ -46,7 +46,7 @@ Install myo_blink
 .. code-block:: console
 
    roscd && cd ../src
-   git clone https://github.com/roboy/myo_blink.git -b reflex
+   git clone https://github.com/roboy/myo_blink.git -b master
 
 Install ros_control_boilerplate fork
 ************************************
