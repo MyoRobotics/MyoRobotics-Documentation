@@ -37,7 +37,7 @@ Install flexrayusbinterface
 .. code-block:: console
 
    roscd && cd ../src
-   git clone https://github.com/Victor-Savu/flexrayusbinterface.git -b reflex
+   git clone https://github.com/roboy/flexrayusbinterface.git -b reflex
    cd flexrayusbinterface && ./install_deps.sh
 
 Install myo_blink
@@ -46,7 +46,7 @@ Install myo_blink
 .. code-block:: console
 
    roscd && cd ../src
-   git clone https://github.com/Victor-Savu/myo_blink.git -b reflex
+   git clone https://github.com/roboy/myo_blink.git -b reflex
 
 Install ros_control_boilerplate fork
 ************************************
