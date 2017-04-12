@@ -1,25 +1,17 @@
 Introduction
 ======================
 
-The deliverable in hand is the fourth deliverable of WP3, which aims at
-developing and production of modular hardware elements, called Design
-Primitives, suitable for building musculoskeletal robots. The content of
-this document is grounded on the work performed so far in Tasks 3.1 to
-3.6 of WP3.
-
-This deliverable presents the Design Primitives of the 2\ :sup:`nd`
+This page describes the MyoRobotics Design Primitives of the 2\ :sup:`nd`
 generation that were developed by Fraunhofer and delivered to the other
-project partners in the context of D3.3 (the electronic modules
-developed by BRL are not presented here, as they are presented in
-details in Deliverable D6.4). It also gives an overview of the
+project partners. It also gives an overview of the
 techniques used for the production of the mechanical parts and the
-assembly steps for each hardware module. For the sake of clarify the
+assembly steps for each hardware module. For the sake of clarity, the
 detailed information about the designs (including the bill of materials,
-the CAD files and drawings) are not included in this document, but made
+the CAD files and drawings) are not included in this document, but will be made
 available on the project repository.
 
-At the end of the deliverable, other developments and designs developed
-during the project but not yet included in the toolkit are also
+At the end of the page, other developments and designs developed
+during the project (but not yet included in the toolkit) are also
 presented.
 
 Content of the design primitive library
@@ -63,54 +55,44 @@ Mechanical couplings
 
 **Structural Bond**
 
-*Type 1: Flange clamp with conical flange*
-
 .. _D3.4_image1:
 .. figure:: images/image1.png
    :align: center
 
-   Variety 1 (D3.4 - page 13)
+   Type 1: Flange clamp with conical flange
 
 **Anchor Fastener**
-
-*Type 1: Screw Fasteners*
 
 .. _D3.4_image3:
 .. figure:: images/image3.png
     :align: center
 
-    Variety 1 (D3.4 - page 18)
+    Type 1: Screw Fasteners
 
 **Cable attachment**
-
-*Type 1: Through hole*
 
 .. _D3.4_image4:
 .. figure:: images/image4.png
     :align: center
 
-    (D3.4 - page 19)
-
-*Type 2: Conical socket*
+    Type 1: Through hole
 
 .. _D3.4_image5:
 .. figure:: images/image5.png
     :align: center
 
-    (D3.4 - page 19)
+    Type 2: Conical socket
 
 Design Primitives
 ~~~~~~~~~~~~~~~~~
 
 **MYO-Bones**
 
-*Type 1: Parallel Assemblies*
-
 .. _D3.4_image7:
 .. figure:: images/image7.png
     :align: center
 
-    Variety 1 (D3.4 - page 21): Four Round Tubes Fibres
+    Type 1: Parallel Assemblies - Four Round Tubes Fibres
 
 .. _D3.4_image8:
 .. figure:: images/image8.png
@@ -118,13 +100,11 @@ Design Primitives
 
     Accessories
 
-*Type 2: Monolithic core*
-
 .. _D3.4_image11:
 .. figure:: images/image11.png
     :align: center
 
-    T-slot profile: Variety 1 (D3.4 - page 31)
+    Type 2: Monolithic core - T-slot profile
 
 .. _D3.4_image12:
 .. figure:: images/image12.png
@@ -134,77 +114,63 @@ Design Primitives
 
 **MYO-Joints**
 
-*Type 1: Symmetric Hinge*
-
 .. _D3.4_image15:
 .. figure:: images/image15.png
     :align: center
 
-    Variety 1 (D3.4 - page 35)
-
-*Type 2: Asymmetric Hinge*
+    Type 1: Symmetric Hinge
 
 .. _D3.4_image16:
 .. figure:: images/image16.png
     :align: center
 
-    Variety 1 (D3.4 - page 43)
+    Type 2: Asymmetric Hinge
 
 .. _D3.4_image17:
 .. figure:: images/image17.png
     :align: center
 
-    Variety 2 (D3.4 - page 44)
-
-*Type 3: Pivot*
+    Type 2
 
 .. _D3.4_image18:
 .. figure:: images/image18.png
     :align: center
 
-    Variety 1 (D3.4 - page 50)
-
-*Type 4: Hinge-Pivot*
+    Type 3: Pivot
 
 .. _D3.4_image19:
 .. figure:: images/image19.png
     :align: center
 
-    Variety 1 (D3.4 - page 56)
-
-*Type 5: Hinge-Hinge*
+    Type 4: Hinge-Pivot
 
 .. _D3.4_image20:
 .. figure:: images/image20.png
     :align: center
 
-    Variety 1 (D3.4 - page 60)
+    Type 5: Hinge-Hinge
 
 **MYO-Muscles**
-
-*Type 0: Passive Muscle*
 
 .. _D3.4_image21:
 .. figure:: images/image21.png
     :align: center
 
-    Simple spring: Variety 1 (D3.4 - page 65)
-
-*Type 1: Unilateral Series Elastic Actuator*
+    Type 0: Passive Muscle - Simple spring
 
 .. _D3.4_image23:
 .. figure:: images/image23.png
     :align: center
 
-    Compression spring: Variety 1 (D3.4 - page 65)
+    Type 1: Unilateral Series Elastic Actuator - Compression spring
 
 **MYO-Ganglion**
-
-*Type 1: ECU with FlexRay bus (page 73)*
 
 .. _D3.4_image24:
 .. figure:: images/image24.png
     :align: center
+
+    Type 1: ECU with FlexRay bus
 
 Structural Bond
 ===============
@@ -218,7 +184,7 @@ The structural bond is made of the following elements:
 
 -  One *clamp ring* which clamps the two flange plates together.
 
--  An e\ *lectrical interface* with spring contacts.
+-  An *electrical interface* with spring contacts.
 
 Variety 1: Screwed Half Clamps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -653,8 +619,6 @@ Features:
 .. figure:: images/image44.jpg
     :align: center
 
-Cut the fibres to the desired length.
-
 Tips:
 
 -	Lathe can create a precise cut and avoids damaging the tube
@@ -687,7 +651,7 @@ Insert the tubes in the tube holding-support and position the tubes with the dis
 .. figure:: images/image47.jpg
     :align: center
 
-Add glue evenly to the threaded pin and hole. Use the distances according to the MYO-Bone class
+Add glue evenly to the threaded pin and hole. Use the distances according to the MYO-Bone class.
 
 Tips:
 
@@ -711,7 +675,7 @@ Remove the glue with a cutter knife. Consider the hardening-time of the glue.
 .. figure:: images/image49.jpg
     :align: center
 
-Order water-jet cut part shape (aluminium)
+Order water-jet cut part shape (aluminium).
 
 **Step 2: Drilling and threading of holes**
 
@@ -741,7 +705,7 @@ SB Flange plate:
 
 -	Selective Laser Sintering  (Polyamide)
 
-Screws, nuts and washers are standard parts
+Screws, nuts and washers are standard parts.
 
 **Assembly**
 
@@ -989,8 +953,6 @@ Features:
 .. figure:: images/image64.jpg
     :align: center
 
-Cut the profiles to the desired length.
-
 Tips:
 
 -	Using circular saw creates a suitable cut and provides a good surface.
@@ -1174,7 +1136,7 @@ X Height of the tilt axis
 
 7) The SB is integrated on the upper joint fork.
 
-8) The topology of the force transmitting volume from the SB to the joint axis is optimised
+8) The topology of the force transmitting volume from the SB to the joint axis is optimised.
 
 9) The “neck” of the upper joint fork features a location to add an extension, providing if necessary additional CA on the joint.
 
