@@ -130,7 +130,7 @@ Design Primitives
 .. figure:: images/image17.png
     :align: center
 
-    Type 2
+    Type 2: Revised Asymmetric Hinge
 
 .. _D3.4_image18:
 .. figure:: images/image18.png
@@ -257,17 +257,17 @@ D9 Diameter of the central hole of the flange plates
 
 *Flange plates:*
 
-1) The flange plates are fixed to the joint or bone assembly using a square screw pattern
+1) The flange plates are fixed to the joint or bone assembly using a square screw pattern.
 
-2) The flange plates can also be integrated in the bone or joint construction
+2) The flange plates can also be integrated in the bone or joint construction.
 
 3) The two flange plates are additionally connected via a set of up to four pins. They prevent the relative rotation of the flange plates along the longitudinal axis and contribute to transmit the torsion moment.
 
-4) The flange plates have an octagon in their centre to fix the electronic interface in it
+4) The flange plates have an octagon in their centre to fix the electronic interface in it.
 
 *Clamp ring:*
 
-5) The clamp ring is made of two parts, joined together by two screws
+5) The clamp ring is made of two parts, joined together by two screws.
 
 **Material and fabrication**
 
@@ -458,6 +458,8 @@ core, while the end-spacers play the role of the bone ends.
 
     Illustration of the bone construction Type 1 – “Parallel Assemblies”
 
+.. _D3.4_BONE:
+
 Variety 1: Four Round Tube Fibres
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -493,7 +495,6 @@ D1 Diameter of the round tubes
 D2 Distance between two adjacent fibres
 
 D3 Distance between two successive spacers
-
 
 **Implemented instances**
 
@@ -601,11 +602,11 @@ Features:
 
 Features:
 
-1) The end of the tendon cable is secured with a pin that can be quickly mounted or unmounted
+1) The end of the tendon cable is secured with a pin that can be quickly mounted or unmounted.
 
-2) The construction includes two aluminium plates that can be easily exchanged to adjust the pin position with respect to the end of the MYO-Bone
+2) The construction includes two aluminium plates that can be easily exchanged to adjust the pin position with respect to the end of the MYO-Bone.
 
-3) The cable attachment is shaped to allow a fast mounting to the parallel fibres and is fixed to them by clamping (using another cable attachment on the opposite side of the MYO-Bone)
+3) The cable attachment is shaped to allow a fast mounting to the parallel fibres and is fixed to them by clamping (using another cable attachment on the opposite side of the MYO-Bone).
 
 4) Up to four cable attachments can be mounted at the end of the MYO-Bone, while leaving sufficient space in the middle to let the electric cables run through.
 
@@ -749,7 +750,7 @@ Tips:
 
 -	Flexure clamp screws should be loose
 
--	In preparation for next step, regroup the spacers next to each other
+-	In preparation for the next step, regroup the spacers next to each other
 
 **Step 2: Plug fibres in the end-spacer**
 
@@ -955,7 +956,7 @@ Features:
 
 Tips:
 
--	Using circular saw creates a suitable cut and provides a good surface.
+-	Using circular saw creates a suitable cut and provides a good surface
 
 **Step 2: Thread the holes at both ends of the profile**
 
@@ -974,7 +975,7 @@ Tips:
 .. figure:: images/image66.jpg
     :align: center
 
-Order water-jet cut part shape
+Order water-jet cut part shape.
 
 **Step 2: Countersinking of holes**
 
@@ -982,7 +983,7 @@ Order water-jet cut part shape
 .. figure:: images/image67.jpg
     :align: center
 
-Countersink the M5 clearance holes for the fixation to the profile
+Countersink the M5 clearance holes for the fixation to the profile.
 
 **Assembly**
 
@@ -1150,7 +1151,7 @@ X Height of the tilt axis
 
 13) The electrical interfaces are small PCBs which are embedded in the structural bonds.
 
-14) Openings and cable channels are implemented to enable the electrical cabling between sensor and SIM-board (described in Deliverable 4.1) and between the electrical interfaces of the structural bonds on both sides of the joint.
+14) Openings and cable channels are implemented to enable the electrical cabling between sensor and SIM-board and between the electrical interfaces of the structural bonds on both sides of the joint.
 
 **Material and fabrication**
 
@@ -1251,7 +1252,7 @@ Tips:
 .. figure:: images/image80.jpg
     :align: center
 
-Prepare cable tree on connector boards
+Prepare cable tree on connector boards.
 
 Cut on 15 cm length:
 
@@ -1281,7 +1282,7 @@ F2 - green
 .. figure:: images/image81.png
    :align: center
 
-Place PCB carrier in SB
+Place PCB carrier in SB.
 
 Carrier orientation:
 
@@ -1289,7 +1290,7 @@ Carrier orientation:
 .. figure:: images/image81A.png
    :align: center
 
-Push cable tree through the joint
+Push cable tree through the joint.
 
 **Step 7: Connect cables to the second board**
 
@@ -1515,7 +1516,7 @@ X	Height of the rotation axis
 
 19) The rotation of the magnet is measured by a Hall-effect sensor implemented in an IC mounted on the sensor board.
 
-20) The signal provided by the sensor board is conditioned and transmitted by the SIM-board (described in Deliverable 4.1). Both boards are housed in one of the side covers.
+20) The signal provided by the sensor board is conditioned and transmitted by the SIM-board. Both boards are housed in one of the side covers.
 
 21) Openings and cable channels are implemented to enable the electrical cabling between sensor and SIM-board and between the electrical interfaces of the structural bonds on both sides of the joint.
 
@@ -1682,7 +1683,7 @@ X	Height of the rotation axis
 •	Glue the sensor magnet (use only a small drop of glue!)
 •	Secure the joint axle with the countersunk M3 screw
 
-Note: the magnet can also be glued before mounting the joint axle
+Note: the magnet can also be glued before mounting the joint axle.
 
 **Step 9: Mount the side covers**
 
@@ -1700,7 +1701,7 @@ Note: the magnet can also be glued before mounting the joint axle
 .. figure:: images/image110.jpg
     :align: center
 
-Prepare cable tree on connector boards
+Prepare cable tree on connector boards.
 
 Cut on 15 cm length:
 
@@ -1762,7 +1763,7 @@ Type 3 – Pivot
 This joint type provides 1 DoF of rotation along an axis perpendicular
 to the joint end planes. Following Principle II, this DoF is provided by
 a combination of axle and rotational bearings. The basic structure of
-the joint is illustrated in Figure 10. One side of the joint includes
+the joint is illustrated in :numref:`D3.4_image112`. One side of the joint includes
 the joint axle and is called the *pivot shaft*. This part includes the
 cable attachments. The other side of the joint carries one or multiple
 bearings and is made of a *barrel-shaped housing* and a *lid*. The pivot
@@ -1827,7 +1828,7 @@ T	Maximal thickness of the joint
 
 2) On the outside of the housing, two holding devices are embedded for the pulleys redirecting the cable transmission.
 
-3) A holding bay in the housing allows attaching a SIM-board (described in Deliverable 4.1) on the side.
+3) A holding bay in the housing allows attaching a SIM-board on the side.
 
 4) Two mechanical stoppers limit the motion range of the joint.
 
@@ -1948,7 +1949,7 @@ Screw the lid on the barrel-shaped housing and put in the security pin.
 .. figure:: images/image121.jpg
     :align: center
 
-Prepare cable tree on connector boards
+Prepare cable tree on connector boards.
 
 Cut on 15 cm length:
 
@@ -2397,8 +2398,7 @@ This type of actuator is mainly made of the following elements:
 Variety 1: Compression Spring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This implementation builds on the hardware developments achieved in the
-ROBOY project [Web-Roboy], in which the MYOROBOTICS consortium members
+This implementation builds on the hardware developments achieved in the `Roboy project <http://www.roboy.org/>`_, in which the MYOROBOTICS consortium members
 TUM and ETH are contributing. The series elastic element is a linear
 compression spring combined with a set of pulleys, to reproduce the
 characteristics of a non-linear progressive spring. The origin of this
@@ -2419,7 +2419,7 @@ Individual elements:
 .. figure:: images/image134.png
     :align: center
 
-Integration to BONE-SC2-T1-V1:
+Integration to BONE-SC2-T1-V1 (see :numref:`D3.4_BONE`):
 
 .. _D3.4_image135:
 .. figure:: images/image135.png
@@ -2453,7 +2453,7 @@ D3 Lever arm of the tension force in the cable w.r.t. the bone section centre
 
 *Mechanical base:*
 
-1) The mechanical base is connected to the bone using multiple anchor carriers developed for the BONE-SC2-T1-V1 (“Anchors circular pattern for vis-à-vis attachment”, described in page 7). As this implementation is based on an already existing hardware, it was not straightforward to directly use the available adaptor. For that reason one part of the adaptor was directly integrated in the mechanical base. Using the other parts of the anchor carrier (represented in green), the mechanical base can be fixed to the bone.
+1) The mechanical base is connected to the bone using multiple anchor carriers developed for the BONE-SC2-T1-V1 (“Anchors circular pattern for vis-à-vis attachment”, see :numref:`D3.4_BONE`). As this implementation is based on an already existing hardware, it was not straightforward to directly use the available adaptor. For that reason one part of the adaptor was directly integrated in the mechanical base. Using the other parts of the anchor carrier (represented in green), the mechanical base can be fixed to the bone.
 
 2) The mechanical base contains a set of pulleys that redirect the cable transmission, from the motor reel, via the series elastic element, to come out parallel to the bone longitudinal axis.
 
@@ -2471,7 +2471,7 @@ D3 Lever arm of the tension force in the cable w.r.t. the bone section centre
 
 7) The spring compression is guided by a cylindrical plastic part, two bearings to slide linearly and a guide roller that prevents any twists. The other side of the spring is fixed using a spacer sleeve, a knurled nut and a nut witch are screwed together to a threaded rod witch is concentric to the cylindrical plastic part.
 
-8) To measure the deflection of the spring, a hall sensor in combination with a magnetic strip is used. It measures the linear displacement of the cylindrical plastic part. The sensor board (described in Deliverable 4.1) is fixed with a wedge-shaped clip that has a spring lock mechanism.
+8) To measure the deflection of the spring, a hall sensor in combination with a magnetic strip is used. It measures the linear displacement of the cylindrical plastic part. The sensor board is fixed with a wedge-shaped clip that has a spring lock mechanism.
 
 *Cable:*
 
@@ -2510,8 +2510,7 @@ micro-controller particularly suited for motor control applications. The
 MDB includes a sensor for the motor current and inputs for additional
 sensors, such as the spring displacement. The MDB can communicate with
 the MYO-Ganglion via SPI and also has a CAN interface for stand-alone
-applications, debugging and configuration. More information about the
-MDB can be found in Deliverable 4.1.
+applications, debugging and configuration.
 
 **Accessories**
 
@@ -2523,8 +2522,8 @@ spring guidance mechanism. The interface between the mechanical base and
 the spring guidance mechanism on one side and the spring on the other
 side is achieved by *spring adaptors*. The adaptors designed so far
 allow the usage of four springs with different stiffness and maximal
-forces selected from the catalogue of Gutekunst Feder
-(www.federnshop.com).
+forces selected from the catalogue of `Gutekunst Feder
+<http://www.federnshop.com/>`_.
 
 +--------------------+----------+--------------+------------+------------+
 | Reference          | D-311    | VD-339A-01   | VD-361     | VD-364P    |
@@ -2535,7 +2534,7 @@ forces selected from the catalogue of Gutekunst Feder
 +--------------------+----------+--------------+------------+------------+
 | Maximal force      | 664,58   | 813,639      | 1191,193   | 1337,561   |
 |                    |          |              |            |            |
-| F \ :sub:`n`\ (N)  |          |              |            |            |
+| F \ :sub:`n`\  (N) |          |              |            |            |
 +--------------------+----------+--------------+------------+------------+
 
 .. _D3.4_image136:
@@ -2553,9 +2552,11 @@ forces selected from the catalogue of Gutekunst Feder
   :header: "Level","Manufacturer P/N","Manufacturer Name","Part Type","Description","Quantity","Designator"
   :file: 20170406-Muscle-12.csv
 
+
 .. _D3.4_image137:
 .. figure:: images/image137.png
     :align: center
+
 
 **Step 1: Mount the plain bearings into the housing**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2605,9 +2606,9 @@ Then fix in place with the **wing nut (5)**.
 .. figure:: images/image141.png
     :align: center
 
-Insert the **plain bearings** (1) into the **guide-roller** (2) and insert the **cylindrical pin** (3).
+Insert the **plain bearings (1)** into the **guide-roller (2)** and insert the **cylindrical pin (3)**.
 
-Mount the **cross-guide** (4) into the housing.
+Mount the **cross-guide (4)** into the housing.
 
 Then screw in the two **screws (5)** to hold it in place.
 
@@ -2692,9 +2693,6 @@ control up to four actuators. Fully transparent access to motor and
 sensor data from MYODE is possible through the integrated 10Mbit/s
 FlexRay interface, using a ’FlexRay typical’ 1ms control loop.
 
-More information about the MYO-Ganglion (including the circuit diagram)
-and the overall control architecture can be found in Deliverable 6.4.
-
 Integration of the Electronics
 ==============================
 
@@ -2709,11 +2707,7 @@ Integration of the cabling and connectivity
 -------------------------------------------
 
 The bone and joint designs presented above allow to run the power and
-communication cables through the bones and joints. The distribution of
-the power and communication signals to the individual electronic boards
-is described in details in Deliverables 4.1 and 6.4. They also document
-the connections between the MDB, MYO-Ganglion and the SIMs (MYO-Muscle
-spring displacement sensor and MYO-Joint angle).
+communication cables through the bones and joints.
 
 Other developments
 ==================
@@ -2772,10 +2766,10 @@ spheroid surface of the ball. This pattern contains information which is
 used to exactly determine the absolute orientation and position in the
 joint. Using an optical method to determine the absolute pose of a
 joint-socket, with a unique pattern, gives two possibilities. The first
-one is to recognize a complex marker. (A pattern consists of multiple
-markers, :numref:`D3.4_image148` - right) This requires an expensive camera. The other
+one is to recognize a complex marker (a pattern consists of multiple
+markers, :numref:`D3.4_image148` - right), which requires an expensive camera. The other
 possibility, which is novel, uses multiple simple markers detected by
-two very cheap sensors. This can be seen in :numref:`D3.4_image148`.
+two very cheap sensors, that can be seen in :numref:`D3.4_image148`.
 
 .. _D3.4_image148:
 .. figure:: images/image148.png
@@ -2791,7 +2785,7 @@ three degrees of freedom systems, the rotary orientation of a target to
 the sensor is arbitrary. The code-disks (orientation points) in the
 pattern are specially designed for the mouse-sensor, considering the low
 resolution and variable rotation of the Images. A single code-disk can
-be seen in :numref:`D3.4_image148`- middle. The circular shaped code-disk is all
+be seen in :numref:`D3.4_image148` - middle. The circular shaped code-disk is all
 around uniformly arranged. This means that the appearance is independent
 of the rotation. A rotation of the code-disk does not change the content
 of the frame. In the right drawing a pattern area consisting of
@@ -2822,7 +2816,7 @@ position matches, the specific codes can be collated to the code-disk.
 The test setup of one sensor can be seen in :numref:`D3.4_image149`. The sensitivity of
 both systems is quite low (20 - 30 %). But possibilities for the
 improvement are considered. Besides an important characteristic, the
-Positive Predictive Value is high (85 -95 %), which shows the
+Positive Predictive Value is high (85 - 95 %), which shows the
 reliability of the system.
 
 Mechanical design
@@ -2917,10 +2911,10 @@ co-contraction of two antagonistic MYO-Muscles.
     Alternative implementation of the MYO-Muscle – Type 1 using leaf springs as series elastic elements
 
 A first prototype of this promising concept was built as
-proof-of-concept (see :numref:`D3.4_image153`) and points where further developments
-are required were identified. These include the dimensioning of the leaf
+proof-of-concept (see :numref:`D3.4_image153`) and helped identify where further developments
+are required. These include the dimensioning of the leaf
 springs and the adaptation of the redirecting pulleys dimensions. In
-addition a concept for the sensing of the tendon cable tension is still
+addition, a concept for the sensing of the tendon cable tension is still
 required.
 
 Bi-articular muscle modules
@@ -2936,7 +2930,7 @@ As mono-articular and bi-articular muscles have different roles, it is
 generally desirable to be able to implement both of them. This poses a
 practical challenge because (1) the space available on the MYO-Bone is
 limited and (2) the tendon cables of the multiple muscles actuating the
-same joint should be interfere. The new MYO-Muscle design was selected
+same joint should not interfere. The new MYO-Muscle design was selected
 as reference actuator for the bi-articular module development because of
 its greater compactness. As it was still under development, the
 MYO-Muscle was only summarily modelled.
@@ -2991,11 +2985,9 @@ Scaling of selected design primitives
 The issue of scaling the design primitives to other size classes was
 considered for one type of each design primitives, namely:
 
--  the MYO-Muscle Type 1 – Variety 1
+-  the MYO-Muscle Type 1 (:numref:`D3.4_image23`)
 
--  the MYO-Joint Type 2 – Variety
-
--  the MYO-Muscle Type 1 – Variety 1
+-  the MYO-Joint Type 2 (:numref:`D3.4_image16`)
 
 The resulting prototypes for the joint and muscle design primitives are
 shown in :numref:`D3.4_image157` and :numref:`D3.4_image158` respectively. In both cases, the
@@ -3019,7 +3011,7 @@ Injection Moulding
 ------------------
 
 Finally, preliminary investigations were performed towards using
-injecting moulding instead of 3D.printing for the production of the
+injecting moulding instead of 3D printing for the production of the
 plastic parts of the toolkit. The design of various toolkit parts (see
 :numref:`D3.4_image159`) was adapted in order to be producible using injection
 moulding.
