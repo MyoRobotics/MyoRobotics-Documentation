@@ -514,7 +514,7 @@ on the joint angle sensor boards.
 +====================================+==========+==========+=========+=========+=========+=========+
 | **Sensor board, pad #**            | 5        | 7        | 6       | 8       | 9       | 10      |
 +------------------------------------+----------+----------+---------+---------+---------+---------+
-| **magnetic sensor cable colour**   | orange   | orange   | red     | red     | white   | white   |
+| **magnetic sensor cable colour**   | blue     | orange   | red     | red     | green   | white   |
 +------------------------------------+----------+----------+---------+---------+---------+---------+
 
 .. _D4.1_eleven-figure:
@@ -525,7 +525,8 @@ on the joint angle sensor boards.
     sensors with the joint angle sensor board; red is +3.3 V, orange is
     Gnd and white is the sensor signal output. For 1DOF only AN0 is
     supplied with a sensor output, for 2DOF AN0 and AN1 are supplied with
-    one sensor output each.
+    one sensor output each. Make sure to solder the opposite side to the red
+    wires that go to the distrbution board (see 2.3.6).
 
 .. _D4.1_Software:
 
