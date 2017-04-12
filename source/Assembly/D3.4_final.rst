@@ -1557,63 +1557,11 @@ X	Height of the rotation axis
 
 *Material needed:*
 
-1x upper joint fork
+`J22 Asymmetric joint <https://roboy.open-aligni.com/part/show/375#tab_part-list>`_
 
-1x under joint fork
-
-2x upper metal sheets
-
-2x under metal sheets
-
-1x joint axle
-
-1x side covers-R
-
-1x side covers-L
-
-1x cable catching mech.
-
-1x guiding pulley
-
-1x cable centering clip
-
-1x hinge pin 45x6 mm
-
-1x hinge pin 25x4 mm
-
-1x hinge pin 25x3 mm
-
-2x lock washer DIN 6799 2.3mm
-
-2x lock washer DIN 6799 5mm
-
-2x lock washer DIN 6799 3mm
-
-2x bearings 6x19x6 mm
-
-5x cylinder screw M2
-
-2x circlip DIN 471 - 9 x 1
-
-2x circlip DIN 471 -6 x 0.7
-
-8x screw M3 x 8
-
-5x screw M2 x6
-
-5x M2 brass inserts
-
-4x M3 brass inserts
-
-4x M3 brass inserts with head
-
-1x roller
-
-1x magnet
-
-1x hall-effect sensor
-
-1x SIM-board
+.. csv-table:: Libraries and external Software
+  :header: "Level","Manufacturer P/N","Manufacturer Name","Part Type","Description","Quantity","Designator"
+  :file: 20170406-J22Asymmetricjoint-A_complete .csv
 
 **Step 1: Mount metal sheets on upper joint fork**
 
@@ -2599,9 +2547,11 @@ forces selected from the catalogue of Gutekunst Feder
 
 **Materials needed**
 
+`Muscle <https://roboy.open-aligni.com/part/show/361#tab_part-list>`_
+
 .. csv-table:: Libraries and external Software
   :header: "Level","Manufacturer P/N","Manufacturer Name","Part Type","Description","Quantity","Designator"
-  :file: 20170406-Muscle-11.csv
+  :file: 20170406-Muscle-12.csv
 
 .. _D3.4_image137:
 .. figure:: images/image137.png
