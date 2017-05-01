@@ -26,16 +26,25 @@ Overview
 ========
 
 An overview of the distributed control system is presented in :numref:`EAESS_my-figure`.
-The Myorobotics system consists of the PC (UBUNTU 12.04 LTS) application ‘Caliper’
-including the ‘MYODE’ plug-in that communicates with the Myorobot via a USB 2.0
-interface. The USBFlexRay board establishes the link between the FlexRay
-bus (the main Myorobotics communication system) and the PC.
+The Myorobotics system consists of:
+
+- a PC (Ubuntu 16.04 or newer with a working installation of the Robot Operating System - ROS),
+- a Flexray2USB adapter board
+- up to 6 ganglia (intermediary controller boards)
+- up to 4 'motors with driver boards' per connected ganglion
+
 
 .. _EAESS_my-figure:
 .. figure:: img/systemOverviewECU.png
    :align: center
 
    Overview of the Myorobotics distributed control infrastructure.
+
+   The PC communicates with the Flexray2USB adapter via a USB 2.0
+   interface.
+   The Flexray2USB board establishes the link between the FlexRay bus (the main Myorobotics communication system) and the PC.
+   All ganglia are connected to the same Flexray bus, which is controlled by the Flexray2USB board.
+   Each ganglion can control up to 4 motor driver boards and their motors via an SPI interface.
 
 A Myrobotics system consists of up to 6 MYO-Ganglions, which are local
 32-bit floating point electronic control units (ECU) that communicate
@@ -53,9 +62,15 @@ rate of 100Hz.
 MYO-Ganglion
 ============
 
-The MYO-Ganglion comprises three printed circuit boards (PCB) that are
-mounted on a carrier that can be clipped onto a medium-size MYO-Bone
-(:numref:`EAESS_her-figure`). The centre board features the main
+The MYO-Ganglion comprises three printed circuit boards (PCB). The PCBs of this set are linked using 2 ribbon cables, the ganglion is powered with up to 24V from simple stripped wires and there are 2 sets of Flexray connectors to connect to the FlexrayBus and daisy-chain other devices: (:numref:`EAESS_her-figure`).
+
+The ganglion can be mounted in 3 different ways:
+
+- 'MyoRobotics carrier' for the MyoBone - see (:numref:`EAESS_her-figure`)
+- 'Ganglion stack' (:numref:`EAESS_g-stack`)
+- 'Ganglion mount' 'spider' (:numref:`EAESS_g-mount`)
+
+The centre board features the main
 floating-point processor, the TMS570LS20216 from Texas Instruments
 running at 140MHz. Adjacent to the processor board are the power supply
 and distribution boards, respectively.
@@ -74,6 +89,23 @@ and distribution boards, respectively.
    :align: center
 
    The MYO-Ganglion mounted on bone before cables are attached.
+
+
+.. _EAESS_g-stack:
+.. figure:: img/GanglionStack.*
+   :align: center
+
+   The ganglion stack allows for stacking all 3 parts of the ganglion into a tightly integrated package.
+   It is designed to be mounted on the side of a `groove 6 aluminium profile`_.
+
+.. _groove 6 aluminium profile: https://roboy.open-aligni.com/part/show/478?revision_id=439
+
+
+.. _EAESS_g-mount:
+.. figure:: img/GanglionMount.*
+   :align: center
+
+   Three (3) ganglion mounts are required to mount a ganglion to a `groove 6 aluminium profile`_.
 
 Addressing
 ----------
