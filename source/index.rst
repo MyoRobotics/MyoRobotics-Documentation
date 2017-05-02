@@ -43,7 +43,7 @@ The main documentation for the site is organized into a couple sections:
 
    getting-started/*
 
-.. _make-your-own:
+.. _make-your-own-robot:
 
 .. toctree::
    :maxdepth: 2

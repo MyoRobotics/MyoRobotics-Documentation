@@ -1562,7 +1562,7 @@ X	Height of the rotation axis
 
 .. csv-table:: Libraries and external Software
   :header: "Level","Manufacturer P/N","Manufacturer Name","Part Type","Description","Quantity","Designator"
-  :file: 20170406-J22Asymmetricjoint-A_complete .csv
+  :file: 20170406-J22Asymmetricjoint-A_complete.csv
 
 **Step 1: Mount metal sheets on upper joint fork**
 
@@ -2607,6 +2607,8 @@ Then fix in place with the **wing nut (5)**.
     :align: center
 
 Insert the **plain bearings (1)** into the **guide-roller (2)** and insert the **cylindrical pin (3)**.
+
+Insert this assembly into the **cross-guide (4)**.
 
 Mount the **cross-guide (4)** into the housing.
 
