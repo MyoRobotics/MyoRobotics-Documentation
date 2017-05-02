@@ -106,6 +106,8 @@ and distribution boards, respectively.
    :align: center
 
    Three (3) ganglion mounts are required to mount a ganglion to a `groove 6 aluminium profile`_.
+   The ganglion mounts can be integrated into complex structures such as bones.
+
 
 Addressing
 ----------
@@ -145,12 +147,14 @@ convenient way to temporarily disable a Ganglion that is not required
 
 
 
-.. _EAESS_forth-section:
 
 USB-FlexRay Bridge
 ==================
 
-In order to connect MYODE with a Myorobot, a USB-FlexRay bridge is
+.. _EAESS-forth-section:
+
+
+In order to connect ROS with a Myorobot, a USB-FlexRay bridge is
 provided. This system is illustrated in :numref:`EAESS_his-figure`. To
 connnect to the PC, a mini-USB lead is necessary. The bridge board is
 also supplied with 24V, which should be the same voltage source that
@@ -165,7 +169,7 @@ through a 2-wire FlexRay interface.
    The Myorobotics USB-FlexRay Bridge
 
 FlexRay is a differential serial bus and the FlexRay cables used for a
-Myorobot are a simple twisted pair wires. The two FlexRay signal lines
+Myorobot are a simple twisted pair wires, such as the dedicated Flexray cable `FLR09YS-YW`_. The two FlexRay signal lines
 are referred to as **FRp** (FlexRay Plus, the positive signal) and
 **FRm** (FlexRay Minus, the negative signal). The FlexRay cable provided
 with your Myorobotic system is shown in :numref:`EAESS_its-figure`. The
@@ -179,7 +183,9 @@ multiple MYO-Ganglions.
    :align: center
 
    The FlexRay cable used for Myorobotic system: green is the FRm signal, pink
-   the FRp signal.
+   the FRp signal, i.e. model `FLR09YS-YW`_.
+
+.. _FLR09YS-YW: https://roboy.open-aligni.com/part/show/568
 
 .. _EAESS_fifth-section:
 
@@ -209,17 +215,13 @@ spring displacement sensor is connected to the motor driver board. The
 sensor is supplied via the motor driver board and connected via a 6-pin
 JST connector [1]_ as depicted in :numref:`EAESS_their-figure`.
 
-.. _EAESS_their-figure:
-.. figure:: img/displacementSensorwithlabels.png
-   :align: center
 
-   The spring displacement sensor and connector: Please note that the connector
-   cable is not symmetric. Consequently, one end of the connector cable (marked with S or D)
-   is plugged into the sensor board (A) and the other end (B) (marked with M) is plugged into
-   the motor driver board (:numref:`EAESS_our-figure`)
+.. _eaess-sds-cs:
 
 Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**This cable is NOT symmetric.**
 
 +----------------------------------+-------+--------+--------+-----+-------+-------+
 | **Signal Name**                  | GND   | EncA   | EncB   | O   | Idx   | +5V   |
@@ -229,6 +231,15 @@ Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
 | **Motor Driver Board, pin #**    | 5     | 3      | 2      | 1   | 4     | 6     |
 +----------------------------------+-------+--------+--------+-----+-------+-------+
 
+.. _EAESS_their-figure:
+.. figure:: img/displacementSensorwithlabels.png
+   :align: center
+
+   The spring displacement sensor and connector: Please note that **the connector
+   cable is not symmetric.** Consequently, one end of the connector cable (marked with S or D)
+   is plugged into the sensor board (A) and the other end (B) (marked with M) is plugged into
+   the motor driver board (:numref:`EAESS_our-figure`)
+   The connectivity of the cable is described in :numref:`eaess-sds-cs` .
 
 .. _EAESS_the-figure:
 .. figure:: img/Cablesandconnectors.png
@@ -237,8 +248,8 @@ Wiring Scheme: Spring Displacement Sensor - Motor Driver Board
     Cables and connectors to connect the spring displacement sensor with the motor
     driver board; red circles mark the applicable connectors on the printed circuit boards.
 
-MYO-Muscle Assembly
--------------------
+Driver Board Mounting
+----------------------
 
 To illustrate how a motor driver board is mounted on the MYO-Muscle
 please refer to :numref:`EAESS_a-figure`. The connector for the
@@ -258,9 +269,9 @@ Connectivity
 The motor driver board has to be connected to the MYO-Ganglion board
 using the 5-pin JST connectors [2]_ . Depending where the motor driver
 board is plugged in (SPI0, SPI1, SPI2 or SPI3) the associate MYO-Muscle
-can be addressed with the corresponding index in MYODE. In other words,
-the address of a motor driver board (and therefore the MYO-Muscle) is
-dependent upon the SPI connector it is connected to (see :numref:`EAESS_atable`).
+can be addressed with the corresponding index the flexrayusbinterface. In other words,
+the **address of a motor driver board (and therefore the MYO-Muscle) is
+dependent upon the SPI connector it is connected to** (see :numref:`EAESS_atable`).
 
 .. _EAESS_atable:
 
@@ -497,16 +508,16 @@ control topology depicted in :numref:`EAESS_fifth-figure`.
 .. figure:: img/linearfeedbackcontroller.png
     :align: center
 
-    The linear feedback controller topology: the controller is freely congurable within
-    MYODE and runs on the MYO-Ganglion. Four motor controllers run in parallel, controlling
-    the four MYO-Muscles. The control frequency is currently limited to a maximum of 2:5kHz
+    The linear feedback controller topology: the controller is freely configurable within
+    the flexrayusbinterface and runs on the MYO-Ganglion. Four motor controllers run in parallel, controlling
+    the four MYO-Muscles. The control frequency is currently limited to a maximum of 2.5kHz
     and is also configurable.
 
 To be clear, these controllers run on the MYO-Ganglion autonomously.
-They are configured via MYODE (control parameters, cycle time, etc)
+They are configured via flexrayusbinterface (control parameters, cycle time, etc)
 during the start-up phase of the user’s high-level controller running
-within MYODE. By default, the gains are all set to zero, so no control
-action is issued. During run-time, MYODE sends the reference values to
+within flexrayusbinterface. By default, the gains are all set to zero, so no control
+action is issued. During run-time, flexrayusbinterface sends the reference values to
 the controllers which can happen at any point in time and with arbitrary
 update rates. Furthermore, the control parameters can also be changed
 during runtime. Note, however, that the control parameters are not
@@ -517,8 +528,9 @@ be re-configured.
 
 Configuring a Controller
 ------------------------
+.. todo:: Reference the new flexrayusbinterface!
 
-The MYODE interface to a muscle provides a controller configuration
+The flexrayusbinterface interface to a muscle provides a controller configuration
 method, namely ``void setControllerParams(const comsControllerMode controlMode, control_Parameters_t controlParameters)``.
 The control mode is implemented as an enumeration the valid modes of
 which are:
@@ -575,7 +587,7 @@ also runs as a ‘soft real-time’ system with a nominal update rate of
 the Myorobot is also limited to a minimum update rate of 2ms.
 
 The next level of communication is realised with the **USB-FlexRay
-bridge (UFR)** (see :numref:`EAESS_forth-section`). Here, the USB data is
+bridge (UFR)** (see :numref:`EAESS-forth-section`). Here, the USB data is
 exchanged with the ‘hard real-time’ FlexRay bus that forms the
 communication backbone of the Myorobot, allowing the exchange of data
 between the UFR and the MYO-Ganglions in a fully synchronous and
@@ -590,7 +602,7 @@ explained above, the cycle time of the linear-feedback controllers is
 user configurable by setting the ``float32 timePeriod`` variable of the
 structure ``control_Parameters_t`` and configuration of the
 controller via the ``setControllerParams(.)`` method. The minimum cycle
-time is :math:`400\mu s`.
+time is :math:`400\mu s` representing an update rate of :math:`2.5kHz`.
 
 .. _EAESS_seventh-section:
 
