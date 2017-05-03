@@ -6,9 +6,25 @@ How to get started with a set of MyoMuscles, Ganglia and Flexray2USBAdapter.
 
 Cabling and Power
 ------------------
-Check if:
-1. all motor cables are plugged in correctly. There are 2 ribbon cables (grey and rainbow coloured) that connect each motor with its motor driver board.
-2. all sensor displacement cables are plugged in correctly
+.. WARNING::
+  Check if:
+
+  * all motor cables are plugged in correctly. There are 2 ribbon cables (grey and rainbow coloured) that connect each motor with its motor driver board
+  * all :ref:`sensor displacement cables <eaess-sds-cs>` are plugged in correctly
+  * all motor driver boards are connected to power with common ground and power is turned off
+  * all motor driver boards are connected to their respective ganglion (via SPI)
+  * all joint sensors are connected to ganglia
+  * all ganglia are connected to power with common ground and power is turned off
+  * all ganglia are connected to the flexray bus
+  * all power supplies are set to output at the very most 24V (for basic testing the 13 muscle MyoArm will run off a single 3A power supply)
+  * the Flexray2USB adapter is connected to power with common ground and power is turned off
+  * the Flexray2USB adapter is connected to the flexray bus
+  * turn the power on and check if
+
+    * all driver boards are lighting/flashing green
+    * the joint has a blinking light whose frequency changes with the joint's angular displacement
+
+  * the software starts
 
 Software Installation
 ----------------------

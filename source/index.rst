@@ -56,11 +56,15 @@ The main documentation for the site is organized into a couple sections:
    :caption: Myo Toolbox
 
    designPrimitives/overview.rst
+   designPrimitives/designPrimitivesLibrary.rst
    designPrimitives/accessories.rst
    designPrimitives/overview-bones.rst
    designPrimitives/muscle.rst
    designPrimitives/joints.rst
+   designPrimitives/jointSensor.rst
+   designPrimitives/motorDriver.rst
    designPrimitives/ganglion.rst
+   designPrimitives/usbFlexRayAdapter.rst
    designPrimitives/alternativeDesigns.rst
 
 
@@ -77,27 +81,16 @@ The main documentation for the site is organized into a couple sections:
 
 
 
-.. _Electronics:
+.. _controllers:
 
 .. toctree::
     :maxdepth: 2
     :glob:
     :numbered:
-    :caption: Electronics and Embedded System
+    :caption: Control, Software
 
-    Electronics/*
-
-
-
-.. _Controllers:
-
-.. toctree::
-    :maxdepth: 2
-    :glob:
-    :numbered:
-    :caption: Muscle Linear Feedback Controllers
-
-    Controllers/*
+    controllers/FirmwareInterface.rst
+    controllers/D4.1_update.rst
 
 
 
