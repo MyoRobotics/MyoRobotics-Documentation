@@ -6,7 +6,9 @@ How to get started with a set of MyoMuscles, Ganglia and Flexray2USBAdapter.
 
 Cabling and Power
 ------------------
-
+Check if:
+1. all motor cables are plugged in correctly. There are 2 ribbon cables (grey and rainbow coloured) that connect each motor with its motor driver board.
+2. all sensor displacement cables are plugged in correctly
 
 Software Installation
 ----------------------

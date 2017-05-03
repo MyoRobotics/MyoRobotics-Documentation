@@ -147,12 +147,10 @@ convenient way to temporarily disable a Ganglion that is not required
 
 
 
+.. _EAESS-forth-section:
 
 USB-FlexRay Bridge
 ==================
-
-.. _EAESS-forth-section:
-
 
 In order to connect ROS with a Myorobot, a USB-FlexRay bridge is
 provided. This system is illustrated in :numref:`EAESS_his-figure`. To
@@ -528,9 +526,14 @@ be re-configured.
 
 Configuring a Controller
 ------------------------
-.. todo:: Reference the new flexrayusbinterface!
+.. todo:: Turn the descripton into sphinx/breathe doxygen type documentation
 
-The flexrayusbinterface interface to a muscle provides a controller configuration
+The flexrayusbinterface interface (internally as well as externally) makes heavy use of `mapbox variants <https://github.com/mapbox/variant>`_ and one should be familiar with the concept to use the library, as well as develop it.
+
+Flexrayusbinterface takes a FlexRayBus object generated from a configuration yaml to instantiate the flexray interface. Using a variant it will return the FlexRayHardwareInterface upon successful instantiation or return a std::pair<FlexRayBus, FtResult>. See the example at the `Roboy/flexrayusbinterface repo <https://github.com/Roboy/myo_blink/blob/master/src/myo_blink.cpp#L204>`_
+
+
+to a muscle provides a controller configuration
 method, namely ``void setControllerParams(const comsControllerMode controlMode, control_Parameters_t controlParameters)``.
 The control mode is implemented as an enumeration the valid modes of
 which are:

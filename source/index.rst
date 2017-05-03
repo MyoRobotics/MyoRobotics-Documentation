@@ -45,14 +45,37 @@ The main documentation for the site is organized into a couple sections:
 
    getting-started/*
 
+
+
+.. _designPrimitives:
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+   :numbered:
+   :caption: Myo Toolbox
+
+   designPrimitives/overview.rst
+   designPrimitives/accessories.rst
+   designPrimitives/overview-bones.rst
+   designPrimitives/muscle.rst
+   designPrimitives/joints.rst
+   designPrimitives/ganglion.rst
+   designPrimitives/alternativeDesigns.rst
+
+
+
 .. _make-your-own-robot:
 
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: Make your own
+   :numbered:
+   :caption: Production & Assembly
 
-   assembly/*
+   assembly/overview*
+
+
 
 .. _Electronics:
 
@@ -65,6 +88,7 @@ The main documentation for the site is organized into a couple sections:
     Electronics/*
 
 
+
 .. _Controllers:
 
 .. toctree::
@@ -75,16 +99,6 @@ The main documentation for the site is organized into a couple sections:
 
     Controllers/*
 
-
-.. _Assembly:
-
-.. toctree::
-    :maxdepth: 2
-    :glob:
-    :numbered:
-    :caption: Production techniques, assembly guidelines and final design primitive library
-
-    Assembly/*
 
 
 .. _suppliers_partners:
