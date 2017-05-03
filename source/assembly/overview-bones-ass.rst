@@ -7,4 +7,4 @@ There are a number of different MyoBone types:
    :glob:
 
    bones-ass-parallel.rst
-   bones-ass-monolithic.rst
+   bones-ass-monolithic*
