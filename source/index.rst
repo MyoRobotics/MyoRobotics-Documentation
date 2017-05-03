@@ -75,7 +75,12 @@ The main documentation for the site is organized into a couple sections:
    :numbered:
    :caption: Production & Assembly
 
+   assembly/overview.rst
+   assembly/overview-bones*
+   assembly/overview-joints*
+   assembly/overview-muscles*
    assembly/overview*
+
 
 
 
