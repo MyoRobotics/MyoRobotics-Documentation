@@ -110,7 +110,7 @@ exclude_patterns = []
 # output. They are ignored by default.
 #
 # show_authors = False
-
+numfig = True
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
@@ -435,4 +435,5 @@ epub_exclude_files = ['search.html']
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+intersphinx_mapping = {'https://docs.python.org/': None,
+'flexrayusbinterface':('', None)}
