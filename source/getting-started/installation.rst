@@ -90,19 +90,64 @@ Build it
    roscd && cd ..
    catkin_make
 
-Run it
-********
-In different terminals run:
+Run it using the myo_blink example application
+***********************************************
 
+For using ROS effectively, you will need a large number of terminals open at the same time. I recommend using the terminal app: **terminator**.
+Here you can split the screen into multiple terminals or add tabs. Once it is installed, see what a *right-click* allows you to do.
+
+**Install it using:**
+
+.. code-block:: console
+
+  sudo apt-get install terminator -y
+
+----
+
+In different (terminator) terminals run:
 
 .. code-block:: console
 
    source .../MyoArm/devel/setup.bash
-   roscore
-   rostopic echo -c /rrbot/joint_states
-   rostopic echo -c /rrbot/joint_effort/controller/command
-   roslaunch ros_control_boilerplate rrbot_hardware.launch
-   rosrun ros_control_boilerplate keyboard_teleop
+
+Then **one** of the following:
+
+.. code-block:: console
+
+  roscore
+  roslaunch myo_blink myo_blink.launch
+  rostopic list
+
+For the last one you should now see a list of 13 topics starting with */myo_blink/muscles/*
+
+----
+
+To see the state of a muscle you need to subscribe to its topic: Every muscle has a topic where it publishes it's state. These are the 13 topics found above.
+
+i.e. listen to the topic of the *biceps* muscle as follows:
+
+.. code-block:: console
+
+  rostopic echo -c /myo_blink/muscles/biceps
+
+.. IMPORTANT:: Please note, that nothing will be published on these topics before you have sent any command to the motor!
+
+----
+
+In order to control a motor you need to send a rosservice call to it **in a new console**:
+
+.. code-block:: console
+
+   rosservice call /myo_blink/move "biceps
+   action: 'move with'
+   setpoint: 0.0"
+
+.. IMPORTANT:: When typing the rosservice call parameters **autocomplete is your friend**: Start by typing *rosservice call /myo_blink/move* and then press *tab* once or twice. ROS will autocomplete your text as good as it can. All you still need to do is fill in the action, to one of the options shown below and type in a setpoint.
+
+**Control mode (action):**
+- 'move to' - PositionController
+- 'move with' - VelocityController
+- 'keep' - Effort / ForceController
 
 
 .. _myo_blink: https://github.com/Roboy/myo_blink
