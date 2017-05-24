@@ -145,9 +145,10 @@ In order to control a motor you need to send a rosservice call to it **in a new 
 .. IMPORTANT:: When typing the rosservice call parameters **autocomplete is your friend**: Start by typing *rosservice call /myo_blink/move* and then press *tab* once or twice. ROS will autocomplete your text as good as it can. All you still need to do is fill in the action, to one of the options shown below and type in a setpoint.
 
 **Control mode (action):**
-- 'move to' - PositionController
-- 'move with' - VelocityController
-- 'keep' - Effort / ForceController
+
+* 'move to' - PositionController
+* 'move with' - VelocityController
+* 'keep' - Effort / ForceController
 
 
 .. _myo_blink: https://github.com/Roboy/myo_blink
