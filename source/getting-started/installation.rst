@@ -58,6 +58,20 @@ Install flexrayusbinterface
    git clone https://github.com/roboy/flexrayusbinterface.git -b develop
    cd flexrayusbinterface && ./install_deps.sh
 
+.. IMPORTANT:: The ftd2xx driver does not get loaded automatically. In order to use it you need to either install our udev rules [#fudev]_ (recommended):
+
+  .. code-block:: console
+
+    cd flexrayusbinterface && ./install_udev_rules.sh
+
+
+  Or manually unload the standard drivers **every time you re-plug** the Flexray2USBInterface board:
+
+  .. code-block:: console
+
+    sudo rmmod ftdi_sio
+    sudo rmmod usbserial
+
 Install myo_blink
 *****************
 
@@ -155,3 +169,5 @@ In order to control a motor you need to send a rosservice call to it **in a new 
 .. _ros_control_boilerplate fork: https://github.com/compiaffe/ros_control_boilerplate/tree/MyoArm
 .. _flexrayusbinterface: https://github.com/Roboy/flexrayusbinterface/tree/develop
 .. _ROS kinetic: http://wiki.ros.org/kinetic/Installation
+
+.. [#fudev] The udev rules are based on this article: https://www.ikalogic.com/ftdi-d2xx-linux-overcoming-big-problem/
