@@ -38,7 +38,8 @@ Allow your user to access the serial device
 By default Ubuntu does not let you access your serial adapters. To change that we will add your user to the group 'dialout'.
 Execute the following in a terminal:
 
-.. code-block:: console
+.. code-block:: bash
+
   sudo usermod -a -G dialout $(whoami)
 
 This only needs to be done once.
@@ -47,7 +48,7 @@ Create a new workspace
 ************************
 Create a new folder that will contain your ROS / catkin workspace and all code.
 
-.. code-block:: console
+.. code-block:: bash
 
    source /opt/ros/kinetic/setup.bash
    mkdir -p ~/MyoArm_ws/src && cd MyoArm_ws/src && catkin_init_workspace
@@ -65,7 +66,7 @@ Now add the workspace to your ~/.bashrc so that it gets automatically sourced up
 Install flexrayusbinterface
 ****************************
 
-.. code-block:: console
+.. code-block:: bash
 
    roscd && cd ../src
    git clone https://github.com/roboy/flexrayusbinterface.git -b develop
@@ -73,14 +74,14 @@ Install flexrayusbinterface
 
 .. IMPORTANT:: The ftd2xx driver does not get loaded automatically. In order to use it you need to either install our udev rules [#fudev]_ (recommended):
 
-  .. code-block:: console
+  .. code-block:: bash
 
     cd flexrayusbinterface && ./install_udev_rules.sh
 
 
   Or manually unload the standard drivers **every time you re-plug** the Flexray2USBInterface board:
 
-  .. code-block:: console
+  .. code-block:: bash
 
     sudo rmmod ftdi_sio
     sudo rmmod usbserial
@@ -92,7 +93,7 @@ Install myo_blink
 Clone
 +++++++
 
-.. code-block:: console
+.. code-block:: bash
 
    roscd && cd ../src
    git clone https://github.com/roboy/myo_blink.git -b master
@@ -114,7 +115,7 @@ Most importantly it **contains the serial number** of the USB2Flexray adapter. A
 
     Unplug the USB cable of the USB2Flexray adapter and **in a terminal do one by one:**
 
-    .. code-block:: console
+    .. code-block:: bash
 
       ls -1 /dev > ~/before.txt
 
@@ -126,7 +127,7 @@ Most importantly it **contains the serial number** of the USB2Flexray adapter. A
 
     You should see a few lines, one of which should start with:
 
-    .. code-block:: console
+    .. code-block:: bash
 
       > ttyUSBn
 
@@ -138,7 +139,7 @@ Most importantly it **contains the serial number** of the USB2Flexray adapter. A
 
     Use the following command, but replace the **ttyUSBn** with the above found name starting with **ttyUSB**:
 
-    .. code-block:: console
+    .. code-block:: bash
 
       /bin/udevadm info --name=/dev/ttyUSBn | grep SERIAL_SHORT
 
@@ -153,7 +154,7 @@ Most importantly it **contains the serial number** of the USB2Flexray adapter. A
 Install ros_control_boilerplate fork
 ************************************
 
-.. code-block:: console
+.. code-block:: bash
 
    roscd && cd ../src
    git clone https://github.com/compiaffe/ros_control_boilerplate.git -b MyoArm
@@ -163,7 +164,7 @@ Install ros_control_boilerplate fork
   Also set the serial number in the corresponding yaml file as per :ref:`find-set-usb-serial`.
   The yaml file is placed in
 
-  .. code-block:: console
+  .. code-block:: bash
 
     roscd ros_control_boilerplate/rrbot_control/config
 
@@ -173,7 +174,7 @@ Install ros_control_boilerplate fork
 Install all ROS dependencies
 ****************************
 
-.. code-block:: console
+.. code-block:: bash
 
    apt-get install -y ros-kinetic-rosparam-shortcuts ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-control-msgs ros-kinetic-urdf ros-kinetic-control-toolbox ros-kinetic-robot-state-publisher libgflags-dev libncurses5-dev libncursesw5-dev wget vim
 
@@ -182,7 +183,7 @@ Install all ROS dependencies
 Build it
 ***************
 
-.. code-block:: console
+.. code-block:: bash
 
    roscd && cd ..
    catkin_make
@@ -198,7 +199,7 @@ Here you can split the screen into multiple terminals or add tabs. Once it is in
 
 **Install it using:**
 
-.. code-block:: console
+.. code-block:: bash
 
   sudo apt-get install terminator -y
 
@@ -206,13 +207,13 @@ Here you can split the screen into multiple terminals or add tabs. Once it is in
 
 In different (terminator) terminals run:
 
-.. code-block:: console
+.. code-block:: bash
 
    source .../MyoArm/devel/setup.bash
 
 Then **one** of the following:
 
-.. code-block:: console
+.. code-block:: bash
 
   roscore
   roslaunch myo_blink myo_blink.launch
@@ -226,7 +227,7 @@ To see the state of a muscle you need to subscribe to its topic: Every muscle ha
 
 i.e. listen to the topic of the *biceps* muscle as follows:
 
-.. code-block:: console
+.. code-block:: bash
 
   rostopic echo -c /myo_blink/muscles/biceps
 
@@ -236,7 +237,7 @@ i.e. listen to the topic of the *biceps* muscle as follows:
 
 In order to control a motor you need to send a rosservice call to it **in a new console**:
 
-.. code-block:: console
+.. code-block:: bash
 
    rosservice call /myo_blink/move "biceps
    action: 'move with'
