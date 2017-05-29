@@ -32,6 +32,17 @@ To get started we recommend installing both the `myo_blink`_ and `ros_control_bo
 
 These examples require `ROS kinetic`_ to be installed on Ubuntu 16.04.
 
+Allow your user to access the serial device
+********************************************
+
+By default Ubuntu does not let you access your serial adapters. To change that we will add your user to the group 'dialout'.
+Execute the following in a terminal:
+
+.. code-block:: console
+  sudo usermod -a -G dialout $(whoami)
+
+This only needs to be done once.
+
 Create a new workspace
 ************************
 Create a new folder that will contain your ROS / catkin workspace and all code.
