@@ -31,7 +31,7 @@ Verify this by running:
 
 - If you get a 'device not found' you didn't replace the right number for n in ttyUSBn
 - If you do not get anything, just a clean return you have correct access rights. Press Ctrl+C and find the problem elsewhere.
-- If you get a 'permission denied' then you have verified this problem. Add yourself to the 'dialout' group as described here: :ref:`add-to-dialout`
+- If you get a 'permission denied' then you have verified this problem. Add yourself to the 'dialout' group as described here: :ref:`add-to-dialout`.
 
 ----
 
@@ -50,6 +50,7 @@ Go and do it. No harm in doing it twice.: :ref:`install-flexrayusbinterface`
 You did not install the udev rules
 ++++++++++++++++++++++++++++++++++++
 - Check if there is a file called '30-ftdi.rules' in '/etc/udev/rules.d/':
+
   .. code-block:: bash
 
     ls -alh /etc/udev/rules.d
@@ -57,11 +58,13 @@ You did not install the udev rules
     # sudo ls -alh /etc/udev/rules.d
 
 - The file should contain a line with something like this at the end:
+
   .. code-block:: bash
 
     /sys/bus/usb/drivers/ftdi_sio/unbind
 
 - If it does, compare it with the file supplied by 'flexrayusbinterface'. It is located at:
+
   .. code-block:: bash
 
     roscd flexrayusbinterface/udev
