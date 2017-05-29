@@ -70,13 +70,13 @@ Install flexrayusbinterface
 
    roscd && cd ../src
    git clone https://github.com/roboy/flexrayusbinterface.git -b develop
-   cd flexrayusbinterface && ./install_deps.sh
+   roscd flexrayusbinterface && ./install_deps.sh
 
 .. IMPORTANT:: The ftd2xx driver does not get loaded automatically. In order to use it you need to either install our udev rules [#fudev]_ (recommended):
 
   .. code-block:: bash
 
-    cd flexrayusbinterface && ./install_udev_rules.sh
+    roscd flexrayusbinterface && sudo ./install_udev_rules.sh
 
 
   Or manually unload the standard drivers **every time you re-plug** the Flexray2USBInterface board:
