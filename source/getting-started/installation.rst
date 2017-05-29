@@ -49,6 +49,8 @@ Now add the workspace to your ~/.bashrc so that it gets automatically sourced up
 
    echo 'source ~/MyoArm_ws/devel/setup.bash' >> ~/.bashrc
 
+----
+
 Install flexrayusbinterface
 ****************************
 
@@ -72,13 +74,64 @@ Install flexrayusbinterface
     sudo rmmod ftdi_sio
     sudo rmmod usbserial
 
+----
+
 Install myo_blink
 *****************
+Clone
++++++++
 
 .. code-block:: console
 
    roscd && cd ../src
    git clone https://github.com/roboy/myo_blink.git -b master
+
+
+Configure the myo_blink software example.
++++++++++++++++++++++++++++++++++++++++++
+
+All system configuration is placed inside a yaml file in the 'config' directory of this package.
+Most importantly it **contains the serial number** of the USB2Flexray adapter. Adjust it to your devices ID.
+
+.. HINT:: How to find the serial number
+
+  1. **Find your device in /dev**
+
+    Unplug the USB cable of the USB2Flexray adapter and **in a terminal do one by one:**
+
+    .. code-block:: console
+
+      ls -1 /dev > ~/before.txt
+
+      # Plug the UBS cable back in
+
+      ls -1 /dev > ~/after.txt
+
+      diff ~/before.txt ~/after.txt
+
+    You should see a few lines, one of which should start with:
+
+    .. code-block:: console
+
+      > USB
+
+    This is the name of your USB device, now let's:
+
+  2. **Find the device's serial number**
+
+    Use the following command, but replace the **REPLACE_ME** with the above found name starting with **USB**:
+
+    .. code-block:: console
+
+      /bin/udevadm info --name=/dev/REPLACE_ME | grep SERIAL_SHORT
+
+    The returned string is the unique serial of the USB2FLEXRAY adapter, please copy it.
+
+  3. **Update the .YAML file**
+
+    Replace the string after the tag **serial:** in the yaml file located in the **config** directory of the myo_blink package with the newly found serial.
+
+----
 
 Install ros_control_boilerplate fork
 ************************************
@@ -88,6 +141,9 @@ Install ros_control_boilerplate fork
    roscd && cd ../src
    git clone https://github.com/compiaffe/ros_control_boilerplate.git -b MyoArm
 
+----
+
+
 Install all ROS dependencies
 ****************************
 
@@ -95,6 +151,7 @@ Install all ROS dependencies
 
    apt-get install -y ros-kinetic-rosparam-shortcuts ros-kinetic-ros-control ros-kinetic-ros-controllers ros-kinetic-control-msgs ros-kinetic-urdf ros-kinetic-control-toolbox ros-kinetic-robot-state-publisher libgflags-dev libncurses5-dev libncursesw5-dev wget vim
 
+----
 
 Build it
 ***************
@@ -103,6 +160,9 @@ Build it
 
    roscd && cd ..
    catkin_make
+
+
+----
 
 Run it using the myo_blink example application
 ***********************************************
