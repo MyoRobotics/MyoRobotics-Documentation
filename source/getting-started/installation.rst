@@ -87,13 +87,15 @@ Clone
    git clone https://github.com/roboy/myo_blink.git -b master
 
 
+.. _find-set-usb-serial:
+
 Configure the myo_blink software example.
 +++++++++++++++++++++++++++++++++++++++++
 
 All system configuration is placed inside a yaml file in the 'config' directory of this package.
 Most importantly it **contains the serial number** of the USB2Flexray adapter. Adjust it to your devices ID.
 
-.. HINT:: How to find the serial number
+.. HINT::
 
   1. **Find your device in /dev**
 
@@ -140,6 +142,15 @@ Install ros_control_boilerplate fork
 
    roscd && cd ../src
    git clone https://github.com/compiaffe/ros_control_boilerplate.git -b MyoArm
+
+.. IMPORTANT::
+
+  Also set the serial number in the corresponding yaml file as per :ref:`find-set-usb-serial`.
+  The yaml file is placed in
+
+  .. code-block:: console
+
+    roscd ros_control_boilerplate/rrbot_control/config
 
 ----
 
