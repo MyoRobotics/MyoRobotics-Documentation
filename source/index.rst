@@ -41,7 +41,8 @@ The main documentation for the site is organized into a couple sections:
    :glob:
    :caption: Using MyoRobotics
 
-   getting-started/*
+   getting-started/installation.rst
+   getting-started/troubleshooting.rst
 
 
 

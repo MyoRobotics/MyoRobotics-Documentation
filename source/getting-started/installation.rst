@@ -26,11 +26,17 @@ Cabling and Power
 
   * the software starts
 
+----
+
 Software Installation
 ----------------------
 To get started we recommend installing both the `myo_blink`_ and `ros_control_boilerplate fork`_ examples on top of the required `flexrayusbinterface`_.
 
 These examples require `ROS kinetic`_ to be installed on Ubuntu 16.04.
+
+----
+
+.. _add-to-dialout:
 
 Allow your user to access the serial device
 ********************************************
@@ -43,6 +49,8 @@ Execute the following in a terminal:
   sudo usermod -a -G dialout $(whoami)
 
 This only needs to be done once.
+
+----
 
 Create a new workspace
 ************************
@@ -63,6 +71,8 @@ Now add the workspace to your ~/.bashrc so that it gets automatically sourced up
 
 ----
 
+.. _install-flexrayusbinterface:
+
 Install flexrayusbinterface
 ****************************
 
@@ -80,6 +90,8 @@ Install flexrayusbinterface
 
 
   Or manually unload the standard drivers **every time you re-plug** the Flexray2USBInterface board:
+
+  .. _manual-unload-kernel-modules:
 
   .. code-block:: bash
 
