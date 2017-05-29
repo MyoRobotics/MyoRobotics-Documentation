@@ -97,7 +97,9 @@ Most importantly it **contains the serial number** of the USB2Flexray adapter. A
 
 .. HINT::
 
-  1. **Find your device in /dev**
+  1. **Find your device mounting location in /dev**
+
+    All unix systems treat everything (including devices) as files. So first we want to find where your Ubuntu has mounted the USB2Flexray adapter.
 
     Unplug the USB cable of the USB2Flexray adapter and **in a terminal do one by one:**
 
@@ -115,21 +117,23 @@ Most importantly it **contains the serial number** of the USB2Flexray adapter. A
 
     .. code-block:: console
 
-      > USB
+      > ttyUSBn
 
-    This is the name of your USB device, now let's:
+    Where 'n' is a number: This is the device location.
+
+    ttyUSBn is the name of your USB device (i. e. ttyUSB1). It has been mounted at **/dev/** as **/dev/ttyUSBn** now let's:
 
   2. **Find the device's serial number**
 
-    Use the following command, but replace the **REPLACE_ME** with the above found name starting with **USB**:
+    Use the following command, but replace the **ttyUSBn** with the above found name starting with **ttyUSB**:
 
     .. code-block:: console
 
-      /bin/udevadm info --name=/dev/REPLACE_ME | grep SERIAL_SHORT
+      /bin/udevadm info --name=/dev/ttyUSBn | grep SERIAL_SHORT
 
     The returned string is the unique serial of the USB2FLEXRAY adapter, please copy it.
 
-  3. **Update the .YAML file**
+  3. **Update the .yaml file**
 
     Replace the string after the tag **serial:** in the yaml file located in the **config** directory of the myo_blink package with the newly found serial.
 
