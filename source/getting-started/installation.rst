@@ -251,7 +251,7 @@ In order to control a motor you need to send a rosservice call to it **in a new 
 
 .. code-block:: bash
 
-   rosservice call /myo_blink/move "biceps
+   rosservice call /myo_blink/move "muscle: 'biceps'
    action: 'move with'
    setpoint: 0.0"
 
