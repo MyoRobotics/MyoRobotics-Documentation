@@ -203,8 +203,8 @@ Build it
 
 ----
 
-Run it using the myo_blink example application
-***********************************************
+ROS' plentitute of terminals
+******************************
 
 For using ROS effectively, you will need a large number of terminals open at the same time. I recommend using the terminal app: **terminator**.
 Here you can split the screen into multiple terminals or add tabs. Once it is installed, see what a *right-click* allows you to do.
@@ -216,6 +216,12 @@ Here you can split the screen into multiple terminals or add tabs. Once it is in
   sudo apt-get install terminator -y
 
 ----
+
+
+Run it using the myo_blink example application
+***********************************************
+
+
 
 In different (terminator) terminals run:
 
