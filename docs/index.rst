@@ -13,7 +13,6 @@ This documentation is compiled from documentation produced by the concluded `FP7
 
 License
 -------
-It has never been decided to assign a license to this work.
 
 It has never been decided to assign a license to this work.
 
@@ -21,9 +20,9 @@ The code is owned by TU Munich.
 
 The CAD designs are owned by Fraunhofer IPA.
 
-.. _FP7 ICT MyoRobotics Project (dead): http://myorobotics.eu/the-myo-project/
+.. _FP7 ICT MyoRobotics Project: http://myorobotics.eu/the-myo-project/ (dead)
 .. _Roboy Project at TU Munich: http://roboy.org
-.. _Embedded Robotic Systems (dead): http://embedded-robotic-systems.co.uk/
+.. _Embedded Robotic Systems: http://embedded-robotic-systems.co.uk/ (dead)
 .. _Fraunhofer IPA: http://www.ipa.fraunhofer.de/baukasten_fuer_softrobotik.html
 
 

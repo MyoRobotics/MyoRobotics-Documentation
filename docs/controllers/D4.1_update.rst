@@ -3,7 +3,6 @@ Introduction
 
 .. DANGER:: This control section describes the old MYODE architecture. While most parts of the hardware and firmware are unchanged, the high-level control is very different. The remaining, valid information will be incorporated into the above section.
 
-.. todo:: Integrate and update D4.1_update.rst
 
 A heterogeneous distributed control architecture has been developed to
 allow the modular configuration and control of compliant

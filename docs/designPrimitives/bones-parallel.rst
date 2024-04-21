@@ -112,7 +112,6 @@ Attachment points:
 10) Each section of fibre between two successive spacers can be used to attach one or more anchor carriers (see Accessories).
 
 
-.. todo:: Explain downside of four round tube fibres
 
 Material and fabrication
 ++++++++++++++++++++++++++++++++++++++

@@ -34,7 +34,6 @@ be re-configured.
 
 Configuring a Controller
 ------------------------
-.. todo:: Turn the descripton into sphinx/breathe doxygen type documentation
 
 The flexrayusbinterface interface (internally as well as externally) makes heavy use of `mapbox variants <https://github.com/mapbox/variant>`_ and one should be familiar with the concept to use the library, as well as develop it.
 
@@ -90,7 +89,6 @@ FlexRayHardwareInterface provides an interface to the individual motors, allowin
 
 It spins an additional thread in the background, that will exchange data (thereby reading the state of the motors) with the flexraybus at the update rate specified in the yaml file.
 
-.. todo:: Update this following the found, hardcoded update rate of 100 Hz
 
 The interface offers 3 control modes as enumerated with 'ControlMode':
 
