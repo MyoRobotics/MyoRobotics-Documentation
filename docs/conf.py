@@ -59,8 +59,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'MyoRobotics Documentation'
-copyright = u'2017, Raphael Dürscheid, ...'
-author = u'Raphael Dürscheid, ...'
+copyright = u'2017, MyoRobotics Consortium, ...'
+author = u'Raphael Dürscheid, MyoRobotics Consortium...'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
